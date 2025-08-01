@@ -3,18 +3,22 @@
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
 import { useRouter } from 'next/navigation';
-import { 
-  User, 
-  Mail, 
-  Lock, 
-  Eye, 
+import {
+  User,
+  Mail,
+  Lock,
+  Eye,
   EyeOff,
   CheckCircle,
   AlertCircle,
   Calendar,
   Users,
   Globe,
-  Heart
+  Heart,
+  Mic,
+  Handshake,
+  Award,
+  ArrowRight
 } from 'lucide-react';
 import { userStorage } from '@/lib/storage';
 import { userService } from '@/lib/database';
@@ -218,17 +222,95 @@ export default function RegisterPage() {
       </header>
 
       <div className="flex items-center justify-center py-12 px-4 sm:px-6 lg:px-8">
-        <div className="max-w-md w-full space-y-8">
-          {/* Registration Form */}
-          <div className="bg-white rounded-xl shadow-lg p-8">
-            <div className="text-center mb-8">
-              <h2 className="text-3xl font-bold text-gray-900 mb-2">
-                Join RemoteInbound 2025
-              </h2>
-              <p className="text-gray-600">
-                Create your free account and join the first edition of our fan-driven HubSpot event
-              </p>
+        <div className="max-w-4xl w-full space-y-8">
+          {/* Registration Options */}
+          <div className="text-center mb-8">
+            <h1 className="text-4xl font-bold text-gray-900 mb-4">
+              Join RemoteInbound 2025
+            </h1>
+            <p className="text-xl text-gray-600 mb-8">
+              Choose how you'd like to participate in our fan-driven HubSpot community event
+            </p>
+            
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
+              {/* Attendee Registration */}
+              <div className="bg-white rounded-xl shadow-lg p-6 border-2 border-orange-200 hover:border-orange-400 transition-colors">
+                <div className="w-12 h-12 bg-orange-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <Users className="w-6 h-6 text-orange-600" />
+                </div>
+                <h3 className="text-lg font-semibold text-gray-900 mb-2">Attendee</h3>
+                <p className="text-gray-600 text-sm mb-4">
+                  Join as a community member to learn and network
+                </p>
+                <div className="text-center">
+                  <span className="text-2xl font-bold text-green-600">FREE</span>
+                </div>
+              </div>
+
+              {/* Speaker Registration */}
+              <Link href="/register/speaker" className="block">
+                <div className="bg-white rounded-xl shadow-lg p-6 border-2 border-gray-200 hover:border-orange-400 transition-colors h-full">
+                  <div className="w-12 h-12 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                    <Mic className="w-6 h-6 text-purple-600" />
+                  </div>
+                  <h3 className="text-lg font-semibold text-gray-900 mb-2">Speaker</h3>
+                  <p className="text-gray-600 text-sm mb-4">
+                    Share your HubSpot expertise with the community
+                  </p>
+                  <div className="flex items-center justify-center text-orange-600">
+                    <span className="text-sm font-medium">Apply Now</span>
+                    <ArrowRight className="w-4 h-4 ml-1" />
+                  </div>
+                </div>
+              </Link>
+
+              {/* Partner Registration */}
+              <Link href="/register/partner" className="block">
+                <div className="bg-white rounded-xl shadow-lg p-6 border-2 border-gray-200 hover:border-orange-400 transition-colors h-full">
+                  <div className="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                    <Handshake className="w-6 h-6 text-blue-600" />
+                  </div>
+                  <h3 className="text-lg font-semibold text-gray-900 mb-2">Partner</h3>
+                  <p className="text-gray-600 text-sm mb-4">
+                    Join our ecosystem and help fans succeed
+                  </p>
+                  <div className="flex items-center justify-center text-orange-600">
+                    <span className="text-sm font-medium">Apply Now</span>
+                    <ArrowRight className="w-4 h-4 ml-1" />
+                  </div>
+                </div>
+              </Link>
+
+              {/* Sponsor Registration */}
+              <Link href="/register/sponsor" className="block">
+                <div className="bg-white rounded-xl shadow-lg p-6 border-2 border-gray-200 hover:border-orange-400 transition-colors h-full">
+                  <div className="w-12 h-12 bg-yellow-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                    <Award className="w-6 h-6 text-yellow-600" />
+                  </div>
+                  <h3 className="text-lg font-semibold text-gray-900 mb-2">Sponsor</h3>
+                  <p className="text-gray-600 text-sm mb-4">
+                    Support the community and grow your business
+                  </p>
+                  <div className="flex items-center justify-center text-orange-600">
+                    <span className="text-sm font-medium">Apply Now</span>
+                    <ArrowRight className="w-4 h-4 ml-1" />
+                  </div>
+                </div>
+              </Link>
             </div>
+          </div>
+
+          {/* Attendee Registration Form */}
+          <div className="max-w-md mx-auto">
+            <div className="bg-white rounded-xl shadow-lg p-8">
+              <div className="text-center mb-8">
+                <h2 className="text-2xl font-bold text-gray-900 mb-2">
+                  Register as Attendee
+                </h2>
+                <p className="text-gray-600">
+                  Create your free account and join the first edition of our fan-driven HubSpot event
+                </p>
+              </div>
 
             {errors.general && (
               <div className="mb-6 p-4 bg-red-50 border border-red-200 rounded-lg flex items-center space-x-2">
@@ -456,6 +538,7 @@ export default function RegisterPage() {
                 </div>
                 <span className="text-gray-700">Fan-driven learning experience</span>
               </div>
+            </div>
             </div>
           </div>
         </div>

@@ -6,12 +6,43 @@ export interface User {
   jobTitle?: string;
   phone?: string;
   avatar?: string;
-  role?: 'attendee' | 'speaker' | 'admin';
+  role?: 'attendee' | 'speaker' | 'partner' | 'sponsor' | 'admin';
   createdAt: string;
   updatedAt: string;
   preferences?: {
     notifications: boolean;
     theme: 'light' | 'dark' | 'system';
+  };
+  // Additional fields for speakers
+  speakerProfile?: {
+    bio: string;
+    expertise: string[];
+    social: {
+      twitter?: string;
+      linkedin?: string;
+      website?: string;
+    };
+    availableForNetworking: boolean;
+    sessionPreferences: string[];
+  };
+  // Additional fields for partners
+  partnerProfile?: {
+    companyDescription: string;
+    partnershipType: 'technology' | 'service' | 'integration' | 'community';
+    website: string;
+    logo?: string;
+    offerings: string[];
+    interestedInSpeaking: boolean;
+  };
+  // Additional fields for sponsors
+  sponsorProfile?: {
+    companyDescription: string;
+    sponsorshipTier: 'platinum' | 'gold' | 'silver' | 'bronze' | 'community';
+    website: string;
+    logo?: string;
+    marketingGoals: string[];
+    boothRequirements?: string;
+    interestedInSpeaking: boolean;
   };
 }
 
@@ -101,4 +132,43 @@ export interface Notification {
   read: boolean;
   createdAt: string;
   actionUrl?: string;
+}
+
+export interface Partner {
+  id: string;
+  userId: string;
+  companyName: string;
+  companyDescription: string;
+  partnershipType: 'technology' | 'service' | 'integration' | 'community';
+  website: string;
+  logo?: string;
+  offerings: string[];
+  contactPerson: {
+    name: string;
+    email: string;
+    title: string;
+  };
+  status: 'pending' | 'approved' | 'active' | 'inactive';
+  createdAt: string;
+  updatedAt: string;
+}
+
+export interface Sponsor {
+  id: string;
+  userId: string;
+  companyName: string;
+  companyDescription: string;
+  sponsorshipTier: 'platinum' | 'gold' | 'silver' | 'bronze' | 'community';
+  website: string;
+  logo?: string;
+  marketingGoals: string[];
+  boothRequirements?: string;
+  contactPerson: {
+    name: string;
+    email: string;
+    title: string;
+  };
+  status: 'pending' | 'approved' | 'active' | 'inactive';
+  createdAt: string;
+  updatedAt: string;
 }
