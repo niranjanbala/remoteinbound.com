@@ -14,9 +14,9 @@ NEXT_PUBLIC_SUPABASE_URL=https://tdcghhupwfoiwfwoqqrt.supabase.co
 NEXT_PUBLIC_SUPABASE_ANON_KEY=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InRkY2doaHVwd2ZvaXdmd29xcXJ0Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3NTQwMjgxNTcsImV4cCI6MjA2OTYwNDE1N30.2AQbJoNI0JUJe_kIkuBdGgEmS_JQffkn3Pf47kD7XQ8
 SUPABASE_SERVICE_ROLE_KEY=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InRkY2doaHVwd2ZvaXdmd29xcXJ0Iiwicm9sZSI6InNlcnZpY2Vfcm9sZSIsImlhdCI6MTc1NDAyODE1NywiZXhwIjoyMDY5NjA0MTU3fQ.ibU5UkafwwelRJUeQnmbi7GRUK4X8RWn3M_y5s-sXwQ
 
-# App Configuration (Optional)
-NEXTAUTH_SECRET=your_nextauth_secret_key
-NEXTAUTH_URL=https://your-netlify-site-url.netlify.app
+# App Configuration (Optional - Not currently used)
+# NEXTAUTH_SECRET=your_nextauth_secret_key
+# NEXTAUTH_URL=https://your-netlify-site-url.netlify.app
 ```
 
 ---
@@ -54,15 +54,7 @@ Add these variables one by one:
 - **Scopes**: All scopes
 - **⚠️ Important**: This is a sensitive key - keep it secure!
 
-#### **Variable 4: NextAuth Secret (Optional)**
-- **Key**: `NEXTAUTH_SECRET`
-- **Value**: Generate a random secret or use: `your_nextauth_secret_key`
-- **Scopes**: All scopes
-
-#### **Variable 5: NextAuth URL (Optional)**
-- **Key**: `NEXTAUTH_URL`
-- **Value**: Your Netlify site URL (e.g., `https://remoteinbound.netlify.app`)
-- **Scopes**: All scopes
+**Note**: The NextAuth variables are commented out because RemoteInbound uses Supabase authentication instead of NextAuth. You only need the 3 Supabase variables above for full functionality.
 
 ### **Step 4: Save and Redeploy**
 1. Click **"Save"** after adding each variable
@@ -176,7 +168,7 @@ To set up a custom domain:
 2. Click **"Add custom domain"**
 3. Enter your domain (e.g., `remoteinbound.com`)
 4. Follow DNS configuration instructions
-5. Update `NEXTAUTH_URL` environment variable to your custom domain
+5. Your site will be accessible at your custom domain
 
 ---
 
