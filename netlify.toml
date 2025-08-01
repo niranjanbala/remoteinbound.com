@@ -1,15 +1,13 @@
 [build]
-  publish = "out"
-  command = "rm -rf .next node_modules package-lock.json && npm install && npm run build"
+  publish = ".next"
+  command = "npm run build"
 
 [build.environment]
   NODE_VERSION = "20"
   NPM_FLAGS = "--production=false"
 
-[[redirects]]
-  from = "/*"
-  to = "/index.html"
-  status = 200
+[[plugins]]
+  package = "@netlify/plugin-nextjs"
 
 [context.production.environment]
   NODE_ENV = "production"
