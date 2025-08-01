@@ -4,24 +4,23 @@ import { createBrowserClient } from '@supabase/ssr';
 const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL || '';
 const supabaseAnonKey = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY || '';
 
-// Check if Supabase is configured
+// Check if Supabase is configured (now optional for frontend)
 const isSupabaseConfigured = supabaseUrl &&
   supabaseAnonKey &&
   supabaseUrl !== 'your_supabase_project_url' &&
   supabaseAnonKey !== 'your_supabase_anon_key';
 
-// Browser client for client-side operations
+// Browser client for client-side operations (deprecated - use API routes instead)
 export const createBrowserSupabaseClient = () => {
+  console.warn('Direct Supabase client usage is deprecated. Use API routes instead for security.');
   if (!isSupabaseConfigured) {
-    throw new Error('Supabase is not configured. Please set NEXT_PUBLIC_SUPABASE_URL and NEXT_PUBLIC_SUPABASE_ANON_KEY in your .env.local file.');
+    throw new Error('Direct Supabase access is disabled for security. All database operations now use secure API routes.');
   }
   return createBrowserClient(supabaseUrl, supabaseAnonKey);
 };
 
-// Simple client for basic operations
-export const supabase = isSupabaseConfigured
-  ? createClient(supabaseUrl, supabaseAnonKey)
-  : null;
+// Simple client for basic operations (deprecated - use API routes instead)
+export const supabase = null; // Disabled for security
 
 // Export configuration status
 export { isSupabaseConfigured };

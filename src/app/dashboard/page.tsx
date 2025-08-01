@@ -3,13 +3,14 @@
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
 import { useRouter } from 'next/navigation';
-import { 
-  User, 
-  Calendar, 
-  Clock, 
-  MapPin, 
-  Users, 
-  Settings, 
+import { useSession, signOut } from 'next-auth/react';
+import {
+  User,
+  Calendar,
+  Clock,
+  MapPin,
+  Users,
+  Settings,
   LogOut,
   Bell,
   Edit3,
@@ -22,11 +23,11 @@ import {
   BookOpen
 } from 'lucide-react';
 import { User as UserType, Event } from '@/types';
-import { userStorage } from '@/lib/storage';
 import { eventService, registrationService, userService } from '@/lib/database';
 
 export default function DashboardPage() {
   const router = useRouter();
+  const { data: session, status } = useSession();
   const [user, setUser] = useState<UserType | null>(null);
   const [registeredEvents, setRegisteredEvents] = useState<Event[]>([]);
   const [upcomingEvents, setUpcomingEvents] = useState<Event[]>([]);
@@ -34,15 +35,30 @@ export default function DashboardPage() {
   const [activeTab, setActiveTab] = useState<'overview' | 'events' | 'profile'>('overview');
 
   useEffect(() => {
-    const currentUser = userStorage.getCurrentUser();
-    if (!currentUser) {
-      router.push('/register');
+    if (status === 'loading') return; // Still loading
+    
+    if (status === 'unauthenticated') {
+      router.push('/auth/signin?callbackUrl=/dashboard');
       return;
     }
-    
-    setUser(currentUser);
-    loadDashboardData(currentUser.id);
-  }, [router]);
+
+    if (session?.user) {
+      // Convert NextAuth user to our User type
+      const currentUser: UserType = {
+        id: session.user.id,
+        email: session.user.email || '',
+        fullName: session.user.name || '',
+        company: undefined,
+        jobTitle: undefined,
+        phone: undefined,
+        createdAt: new Date().toISOString(),
+        updatedAt: new Date().toISOString(),
+      };
+      
+      setUser(currentUser);
+      loadDashboardData(session.user.id);
+    }
+  }, [session, status, router]);
 
   const loadDashboardData = async (userId: string) => {
     try {
@@ -79,9 +95,8 @@ export default function DashboardPage() {
     }
   };
 
-  const handleLogout = () => {
-    userStorage.clearCurrentUser();
-    router.push('/');
+  const handleLogout = async () => {
+    await signOut({ callbackUrl: '/' });
   };
 
   const formatDate = (dateString: string) => {
@@ -100,12 +115,16 @@ export default function DashboardPage() {
     });
   };
 
-  if (isLoading) {
+  if (status === 'loading' || isLoading) {
     return (
       <div className="min-h-screen bg-gray-50 flex items-center justify-center">
         <div className="animate-spin w-8 h-8 border-2 border-blue-600 border-t-transparent rounded-full"></div>
       </div>
     );
+  }
+
+  if (status === 'unauthenticated') {
+    return null; // Will redirect in useEffect
   }
 
   return (

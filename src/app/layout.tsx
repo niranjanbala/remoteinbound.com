@@ -2,6 +2,7 @@ import type { Metadata, Viewport } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import PWAInstallPrompt from "@/components/PWAInstallPrompt";
+import SessionProvider from "@/components/SessionProvider";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -89,8 +90,10 @@ export default function RootLayout({
         <meta name="msapplication-tap-highlight" content="no" />
       </head>
       <body className={`font-inter antialiased bg-white text-gray-900`}>
-        {children}
-        <PWAInstallPrompt />
+        <SessionProvider>
+          {children}
+          <PWAInstallPrompt />
+        </SessionProvider>
       </body>
     </html>
   );

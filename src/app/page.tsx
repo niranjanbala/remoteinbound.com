@@ -80,6 +80,12 @@ export default function Home() {
                 </button>
               )}
               <Link
+                href="/auth/signin"
+                className="text-gray-700 hover:text-orange-500 font-medium"
+              >
+                Sign In
+              </Link>
+              <Link
                 href="/register"
                 className="bg-orange-500 text-white px-6 py-2 rounded-full hover:bg-orange-600 transition-colors font-medium"
               >
