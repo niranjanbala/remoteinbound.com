@@ -22,20 +22,20 @@ export default function APIDocsPage() {
 
   if (loading) {
     return (
-      <div className="min-h-screen bg-gray-50 flex items-center justify-center">
-        <div className="animate-spin w-8 h-8 border-2 border-blue-600 border-t-transparent rounded-full"></div>
+      <div className="min-h-screen bg-gradient-to-br from-orange-50 via-white to-orange-50 flex items-center justify-center">
+        <div className="animate-spin w-8 h-8 border-2 border-orange-600 border-t-transparent rounded-full"></div>
       </div>
     );
   }
 
   return (
-    <div className="min-h-screen bg-gray-50">
+    <div className="min-h-screen bg-gradient-to-br from-orange-50 via-white to-orange-50">
       {/* Header */}
-      <header className="bg-white shadow-sm border-b">
+      <header className="bg-white/80 backdrop-blur-md shadow-sm border-b border-gray-200">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-16">
             <div className="flex items-center space-x-3">
-              <div className="w-8 h-8 bg-gradient-to-r from-blue-600 to-indigo-600 rounded-lg flex items-center justify-center">
+              <div className="w-8 h-8 bg-gradient-to-r from-orange-500 to-orange-600 rounded-lg flex items-center justify-center">
                 <Book className="w-5 h-5 text-white" />
               </div>
               <div>
@@ -49,7 +49,7 @@ export default function APIDocsPage() {
                 href="/api/docs"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center space-x-2 px-3 py-2 text-sm bg-blue-100 text-blue-700 rounded-lg hover:bg-blue-200 transition-colors"
+                className="flex items-center space-x-2 px-3 py-2 text-sm bg-orange-100 text-orange-700 rounded-lg hover:bg-orange-200 transition-colors"
               >
                 <Code className="w-4 h-4" />
                 <span>OpenAPI Spec</span>
@@ -68,8 +68,8 @@ export default function APIDocsPage() {
               RemoteInbound API Documentation
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Comprehensive REST API for managing virtual events, users, speakers, and registrations. 
-              Built with security, validation, and developer experience in mind.
+              Comprehensive REST API for managing fan-driven HubSpot events, community members, speakers, and registrations. 
+              Built with security, validation, and developer experience in mind for the RemoteInbound community.
             </p>
           </div>
 
@@ -81,13 +81,13 @@ export default function APIDocsPage() {
               </div>
               <h3 className="font-semibold text-gray-900 mb-2">Secure & Authenticated</h3>
               <p className="text-gray-600 text-sm">
-                Protected with NextAuth.js and role-based access control
+                Protected with NextAuth.js and role-based access control for community safety
               </p>
             </div>
             
             <div className="text-center">
-              <div className="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                <CheckCircle className="w-6 h-6 text-blue-600" />
+              <div className="w-12 h-12 bg-orange-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                <CheckCircle className="w-6 h-6 text-orange-600" />
               </div>
               <h3 className="font-semibold text-gray-900 mb-2">Validated & Robust</h3>
               <p className="text-gray-600 text-sm">
@@ -101,13 +101,13 @@ export default function APIDocsPage() {
               </div>
               <h3 className="font-semibold text-gray-900 mb-2">Developer Friendly</h3>
               <p className="text-gray-600 text-sm">
-                Clear documentation, consistent responses, and detailed examples
+                Clear documentation, consistent responses, and detailed examples for HubSpot fans
               </p>
             </div>
           </div>
 
           {/* Quick Start */}
-          <div className="bg-gray-50 rounded-lg p-6">
+          <div className="bg-orange-50 rounded-lg p-6 border border-orange-200">
             <h3 className="font-semibold text-gray-900 mb-4">Quick Start</h3>
             <div className="space-y-4">
               <div>
@@ -120,7 +120,7 @@ export default function APIDocsPage() {
               <div>
                 <h4 className="font-medium text-gray-800 mb-2">Authentication</h4>
                 <p className="text-gray-600 text-sm mb-2">
-                  The API uses session-based authentication. Include your session cookie or bearer token:
+                  The RemoteInbound API uses session-based authentication. Include your session cookie or bearer token:
                 </p>
                 <code className="bg-gray-800 text-green-400 px-3 py-1 rounded text-sm block">
                   Authorization: Bearer your-jwt-token
@@ -137,16 +137,16 @@ export default function APIDocsPage() {
           {spec && (
             <div className="space-y-8">
               {Object.entries(spec.paths || {}).map(([path, methods]: [string, any]) => (
-                <div key={path} className="border-l-4 border-blue-500 pl-6">
+                <div key={path} className="border-l-4 border-orange-500 pl-6">
                   <h3 className="text-lg font-semibold text-gray-900 mb-4">{path}</h3>
                   
                   <div className="space-y-4">
                     {Object.entries(methods).map(([method, details]: [string, any]) => (
-                      <div key={method} className="bg-gray-50 rounded-lg p-4">
+                      <div key={method} className="bg-orange-50 rounded-lg p-4 border border-orange-100">
                         <div className="flex items-center space-x-3 mb-3">
                           <span className={`px-2 py-1 text-xs font-medium rounded uppercase ${
                             method === 'get' ? 'bg-green-100 text-green-800' :
-                            method === 'post' ? 'bg-blue-100 text-blue-800' :
+                            method === 'post' ? 'bg-orange-100 text-orange-800' :
                             method === 'put' ? 'bg-yellow-100 text-yellow-800' :
                             method === 'delete' ? 'bg-red-100 text-red-800' :
                             'bg-gray-100 text-gray-800'
@@ -200,21 +200,21 @@ export default function APIDocsPage() {
           
           <div className="space-y-6">
             <div>
-              <h3 className="font-semibold text-gray-900 mb-3">Create a User</h3>
+              <h3 className="font-semibold text-gray-900 mb-3">Create a Community Member</h3>
               <div className="bg-gray-800 text-green-400 p-4 rounded-lg overflow-x-auto">
                 <pre>{`curl -X POST ${spec?.servers?.[0]?.url || 'http://localhost:3000'}/api/users \\
   -H "Content-Type: application/json" \\
   -d '{
-    "email": "john.doe@example.com",
-    "fullName": "John Doe",
-    "company": "Tech Corp",
-    "jobTitle": "Developer"
+    "email": "hubspot.fan@example.com",
+    "fullName": "Jane HubSpot Fan",
+    "company": "HubSpot Partner Agency",
+    "jobTitle": "Marketing Operations Manager"
   }'`}</pre>
               </div>
             </div>
             
             <div>
-              <h3 className="font-semibold text-gray-900 mb-3">Get All Events</h3>
+              <h3 className="font-semibold text-gray-900 mb-3">Get All RemoteInbound Events</h3>
               <div className="bg-gray-800 text-green-400 p-4 rounded-lg overflow-x-auto">
                 <pre>{`curl -X GET ${spec?.servers?.[0]?.url || 'http://localhost:3000'}/api/events \\
   -H "Content-Type: application/json"`}</pre>
@@ -222,13 +222,13 @@ export default function APIDocsPage() {
             </div>
             
             <div>
-              <h3 className="font-semibold text-gray-900 mb-3">Update a User</h3>
+              <h3 className="font-semibold text-gray-900 mb-3">Update Community Member Profile</h3>
               <div className="bg-gray-800 text-green-400 p-4 rounded-lg overflow-x-auto">
                 <pre>{`curl -X PUT ${spec?.servers?.[0]?.url || 'http://localhost:3000'}/api/users/{id} \\
   -H "Content-Type: application/json" \\
   -d '{
-    "fullName": "John Smith",
-    "jobTitle": "Senior Developer"
+    "fullName": "Jane Smith",
+    "jobTitle": "Senior Marketing Operations Manager"
   }'`}</pre>
               </div>
             </div>
@@ -240,7 +240,7 @@ export default function APIDocsPage() {
           <h2 className="text-2xl font-bold text-gray-900 mb-6">Error Handling</h2>
           
           <p className="text-gray-600 mb-4">
-            The API returns consistent error responses with detailed information to help you debug issues.
+            The RemoteInbound API returns consistent error responses with detailed information to help you debug issues.
           </p>
           
           <div className="space-y-4">
@@ -269,7 +269,7 @@ export default function APIDocsPage() {
               <h3 className="font-semibold text-gray-900 mb-2">Not Found Error (404)</h3>
               <div className="bg-gray-800 text-red-400 p-4 rounded-lg overflow-x-auto">
                 <pre>{`{
-  "error": "User not found"
+  "error": "Community member not found"
 }`}</pre>
               </div>
             </div>
@@ -278,7 +278,7 @@ export default function APIDocsPage() {
               <h3 className="font-semibold text-gray-900 mb-2">Conflict Error (409)</h3>
               <div className="bg-gray-800 text-red-400 p-4 rounded-lg overflow-x-auto">
                 <pre>{`{
-  "error": "User with this email already exists"
+  "error": "Community member with this email already exists"
 }`}</pre>
               </div>
             </div>

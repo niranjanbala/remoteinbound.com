@@ -117,8 +117,8 @@ export default function DashboardPage() {
 
   if (status === 'loading' || isLoading) {
     return (
-      <div className="min-h-screen bg-gray-50 flex items-center justify-center">
-        <div className="animate-spin w-8 h-8 border-2 border-blue-600 border-t-transparent rounded-full"></div>
+      <div className="min-h-screen bg-gradient-to-br from-orange-50 via-white to-orange-50 flex items-center justify-center">
+        <div className="animate-spin w-8 h-8 border-2 border-orange-600 border-t-transparent rounded-full"></div>
       </div>
     );
   }
@@ -128,16 +128,13 @@ export default function DashboardPage() {
   }
 
   return (
-    <div className="min-h-screen bg-gray-50">
+    <div className="min-h-screen bg-gradient-to-br from-orange-50 via-white to-orange-50">
       {/* Header */}
-      <header className="bg-white shadow-sm border-b">
+      <header className="bg-white/80 backdrop-blur-md shadow-sm border-b border-gray-200">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-16">
-            <Link href="/" className="flex items-center space-x-2">
-              <div className="w-8 h-8 bg-gradient-to-r from-blue-600 to-indigo-600 rounded-lg flex items-center justify-center">
-                <Calendar className="w-5 h-5 text-white" />
-              </div>
-              <span className="text-xl font-bold text-gray-900">RemoteInbound</span>
+            <Link href="/" className="text-2xl font-bold text-orange-500">
+              RemoteInbound
             </Link>
             
             <div className="flex items-center space-x-4">
@@ -145,8 +142,8 @@ export default function DashboardPage() {
                 <Bell className="w-5 h-5" />
               </button>
               <div className="flex items-center space-x-3">
-                <div className="w-8 h-8 bg-blue-100 rounded-full flex items-center justify-center">
-                  <User className="w-5 h-5 text-blue-600" />
+                <div className="w-8 h-8 bg-orange-100 rounded-full flex items-center justify-center">
+                  <User className="w-5 h-5 text-orange-600" />
                 </div>
                 <span className="text-sm font-medium text-gray-700">{user?.fullName}</span>
               </div>
@@ -161,7 +158,7 @@ export default function DashboardPage() {
           <div className="lg:w-64 flex-shrink-0">
             <div className="bg-white rounded-xl shadow-sm p-6">
               <div className="flex items-center space-x-3 mb-6">
-                <div className="w-12 h-12 bg-gradient-to-r from-blue-600 to-indigo-600 rounded-full flex items-center justify-center">
+                <div className="w-12 h-12 bg-gradient-to-r from-orange-500 to-orange-600 rounded-full flex items-center justify-center">
                   <User className="w-6 h-6 text-white" />
                 </div>
                 <div>
@@ -175,7 +172,7 @@ export default function DashboardPage() {
                   onClick={() => setActiveTab('overview')}
                   className={`w-full flex items-center space-x-3 px-3 py-2 rounded-lg text-left ${
                     activeTab === 'overview' 
-                      ? 'bg-blue-50 text-blue-700' 
+                      ? 'bg-orange-50 text-orange-700' 
                       : 'text-gray-600 hover:bg-gray-50'
                   }`}
                 >
@@ -187,7 +184,7 @@ export default function DashboardPage() {
                   onClick={() => setActiveTab('events')}
                   className={`w-full flex items-center space-x-3 px-3 py-2 rounded-lg text-left ${
                     activeTab === 'events' 
-                      ? 'bg-blue-50 text-blue-700' 
+                      ? 'bg-orange-50 text-orange-700' 
                       : 'text-gray-600 hover:bg-gray-50'
                   }`}
                 >
@@ -199,7 +196,7 @@ export default function DashboardPage() {
                   onClick={() => setActiveTab('profile')}
                   className={`w-full flex items-center space-x-3 px-3 py-2 rounded-lg text-left ${
                     activeTab === 'profile' 
-                      ? 'bg-blue-50 text-blue-700' 
+                      ? 'bg-orange-50 text-orange-700' 
                       : 'text-gray-600 hover:bg-gray-50'
                   }`}
                 >
@@ -231,10 +228,10 @@ export default function DashboardPage() {
             {activeTab === 'overview' && (
               <div className="space-y-6">
                 {/* Welcome Section */}
-                <div className="bg-gradient-to-r from-blue-600 to-indigo-600 rounded-xl p-6 text-white">
-                  <h1 className="text-2xl font-bold mb-2">Welcome back, {user?.fullName?.split(' ')[0]}!</h1>
-                  <p className="text-blue-100">
-                    You have {registeredEvents.length} registered events and {upcomingEvents.length} new events to explore.
+                <div className="bg-gradient-to-r from-orange-500 to-orange-600 rounded-xl p-6 text-white">
+                  <h1 className="text-2xl font-bold mb-2">Welcome back to RemoteInbound, {user?.fullName?.split(' ')[0]}!</h1>
+                  <p className="text-orange-100">
+                    You have {registeredEvents.length} registered events and {upcomingEvents.length} new fan-driven HubSpot events to explore.
                   </p>
                 </div>
 
@@ -246,8 +243,8 @@ export default function DashboardPage() {
                         <p className="text-sm font-medium text-gray-600">Registered Events</p>
                         <p className="text-2xl font-bold text-gray-900">{registeredEvents.length}</p>
                       </div>
-                      <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center">
-                        <Calendar className="w-6 h-6 text-blue-600" />
+                      <div className="w-12 h-12 bg-orange-100 rounded-lg flex items-center justify-center">
+                        <Calendar className="w-6 h-6 text-orange-600" />
                       </div>
                     </div>
                   </div>
@@ -280,8 +277,8 @@ export default function DashboardPage() {
                 {/* Upcoming Events */}
                 <div className="bg-white rounded-xl shadow-sm p-6">
                   <div className="flex items-center justify-between mb-4">
-                    <h2 className="text-lg font-semibold text-gray-900">Discover New Events</h2>
-                    <Link href="/events" className="text-blue-600 hover:text-blue-700 text-sm font-medium">
+                    <h2 className="text-lg font-semibold text-gray-900">Discover New RemoteInbound Events</h2>
+                    <Link href="/events" className="text-orange-600 hover:text-orange-700 text-sm font-medium">
                       View all
                     </Link>
                   </div>
@@ -290,7 +287,7 @@ export default function DashboardPage() {
                     {upcomingEvents.map((event) => (
                       <div key={event.id} className="flex items-center justify-between p-4 border border-gray-200 rounded-lg hover:bg-gray-50">
                         <div className="flex items-center space-x-4">
-                          <div className="w-12 h-12 bg-gradient-to-r from-blue-500 to-purple-600 rounded-lg flex items-center justify-center">
+                          <div className="w-12 h-12 bg-gradient-to-r from-orange-500 to-orange-600 rounded-lg flex items-center justify-center">
                             <Video className="w-6 h-6 text-white" />
                           </div>
                           <div>
@@ -311,10 +308,10 @@ export default function DashboardPage() {
             {activeTab === 'events' && (
               <div className="space-y-6">
                 <div className="flex items-center justify-between">
-                  <h1 className="text-2xl font-bold text-gray-900">My Events</h1>
+                  <h1 className="text-2xl font-bold text-gray-900">My RemoteInbound Events</h1>
                   <Link
                     href="/events"
-                    className="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 flex items-center space-x-2"
+                    className="bg-orange-600 text-white px-4 py-2 rounded-lg hover:bg-orange-700 flex items-center space-x-2"
                   >
                     <Calendar className="w-4 h-4" />
                     <span>Browse Events</span>
@@ -326,11 +323,11 @@ export default function DashboardPage() {
                     <Calendar className="w-16 h-16 text-gray-300 mx-auto mb-4" />
                     <h3 className="text-lg font-medium text-gray-900 mb-2">No events registered yet</h3>
                     <p className="text-gray-500 mb-6">
-                      Discover amazing virtual events and start your learning journey.
+                      Discover amazing fan-driven HubSpot events and start your learning journey with the RemoteInbound community.
                     </p>
                     <Link
                       href="/events"
-                      className="bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 inline-flex items-center space-x-2"
+                      className="bg-orange-600 text-white px-6 py-3 rounded-lg hover:bg-orange-700 inline-flex items-center space-x-2"
                     >
                       <BookOpen className="w-4 h-4" />
                       <span>Browse Events</span>
@@ -346,7 +343,7 @@ export default function DashboardPage() {
                               <div className="flex items-center space-x-2 mb-2">
                                 <span className={`px-2 py-1 text-xs font-medium rounded-full ${
                                   event.status === 'upcoming' 
-                                    ? 'bg-blue-100 text-blue-800'
+                                    ? 'bg-orange-100 text-orange-800'
                                     : event.status === 'live'
                                     ? 'bg-green-100 text-green-800'
                                     : 'bg-gray-100 text-gray-800'
@@ -404,7 +401,7 @@ export default function DashboardPage() {
                 <div className="bg-white rounded-xl shadow-sm p-6">
                   <div className="flex items-center justify-between mb-6">
                     <h2 className="text-lg font-semibold text-gray-900">Personal Information</h2>
-                    <button className="text-blue-600 hover:text-blue-700 flex items-center space-x-1">
+                    <button className="text-orange-600 hover:text-orange-700 flex items-center space-x-1">
                       <Edit3 className="w-4 h-4" />
                       <span>Edit</span>
                     </button>
@@ -440,17 +437,17 @@ export default function DashboardPage() {
                     <div className="flex items-center justify-between">
                       <div>
                         <h3 className="font-medium text-gray-900">Email Notifications</h3>
-                        <p className="text-sm text-gray-500">Receive updates about your registered events</p>
+                        <p className="text-sm text-gray-500">Receive updates about your registered RemoteInbound events</p>
                       </div>
-                      <button className="bg-blue-600 text-white px-4 py-2 rounded-lg text-sm">
+                      <button className="bg-orange-600 text-white px-4 py-2 rounded-lg text-sm">
                         Enabled
                       </button>
                     </div>
                     
                     <div className="flex items-center justify-between">
                       <div>
-                        <h3 className="font-medium text-gray-900">Marketing Emails</h3>
-                        <p className="text-sm text-gray-500">Get notified about new events and features</p>
+                        <h3 className="font-medium text-gray-900">Community Updates</h3>
+                        <p className="text-sm text-gray-500">Get notified about new fan-driven events and community features</p>
                       </div>
                       <button className="bg-gray-200 text-gray-700 px-4 py-2 rounded-lg text-sm">
                         Disabled

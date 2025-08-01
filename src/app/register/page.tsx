@@ -14,7 +14,7 @@ import {
   Calendar,
   Users,
   Globe,
-  Smartphone
+  Heart
 } from 'lucide-react';
 import { userStorage } from '@/lib/storage';
 import { userService } from '@/lib/database';
@@ -179,7 +179,7 @@ export default function RegisterPage() {
 
   if (registrationSuccess) {
     return (
-      <div className="min-h-screen bg-gradient-to-br from-blue-50 via-white to-indigo-50 flex items-center justify-center px-4">
+      <div className="min-h-screen bg-gradient-to-br from-orange-50 via-white to-orange-50 flex items-center justify-center px-4">
         <div className="max-w-md w-full bg-white rounded-xl shadow-lg p-8 text-center">
           <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
             <CheckCircle className="w-8 h-8 text-green-600" />
@@ -188,30 +188,27 @@ export default function RegisterPage() {
           <p className="text-gray-600 mb-6">
             Your account has been created successfully. You&apos;ll be redirected to your dashboard shortly.
           </p>
-          <div className="animate-spin w-6 h-6 border-2 border-blue-600 border-t-transparent rounded-full mx-auto"></div>
+          <div className="animate-spin w-6 h-6 border-2 border-orange-600 border-t-transparent rounded-full mx-auto"></div>
         </div>
       </div>
     );
   }
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-blue-50 via-white to-indigo-50">
+    <div className="min-h-screen bg-gradient-to-br from-orange-50 via-white to-orange-50">
       {/* Header */}
       <header className="bg-white/80 backdrop-blur-md border-b border-gray-200">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-16">
-            <Link href="/" className="flex items-center space-x-2">
-              <div className="w-8 h-8 bg-gradient-to-r from-blue-600 to-indigo-600 rounded-lg flex items-center justify-center">
-                <Calendar className="w-5 h-5 text-white" />
-              </div>
-              <span className="text-xl font-bold text-gray-900">RemoteInbound</span>
+            <Link href="/" className="text-2xl font-bold text-orange-500">
+              RemoteInbound
             </Link>
             
             <div className="flex items-center space-x-4">
               <span className="text-gray-600">Already have an account?</span>
               <Link
                 href="/login"
-                className="text-blue-600 hover:text-blue-700 font-medium"
+                className="text-orange-600 hover:text-orange-700 font-medium"
               >
                 Sign In
               </Link>
@@ -226,10 +223,10 @@ export default function RegisterPage() {
           <div className="bg-white rounded-xl shadow-lg p-8">
             <div className="text-center mb-8">
               <h2 className="text-3xl font-bold text-gray-900 mb-2">
-                Join RemoteInbound
+                Join RemoteInbound 2025
               </h2>
               <p className="text-gray-600">
-                Create your free account and start attending amazing virtual events
+                Create your free account and join the first edition of our fan-driven HubSpot event
               </p>
             </div>
 
@@ -256,7 +253,7 @@ export default function RegisterPage() {
                     type="text"
                     value={formData.name}
                     onChange={handleInputChange}
-                    className={`block w-full pl-10 pr-3 py-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 ${
+                    className={`block w-full pl-10 pr-3 py-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-500 ${
                       errors.name ? 'border-red-300' : 'border-gray-300'
                     }`}
                     placeholder="Enter your full name"
@@ -282,7 +279,7 @@ export default function RegisterPage() {
                     type="email"
                     value={formData.email}
                     onChange={handleInputChange}
-                    className={`block w-full pl-10 pr-3 py-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 ${
+                    className={`block w-full pl-10 pr-3 py-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-500 ${
                       errors.email ? 'border-red-300' : 'border-gray-300'
                     }`}
                     placeholder="Enter your email address"
@@ -308,7 +305,7 @@ export default function RegisterPage() {
                     type={showPassword ? 'text' : 'password'}
                     value={formData.password}
                     onChange={handleInputChange}
-                    className={`block w-full pl-10 pr-10 py-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 ${
+                    className={`block w-full pl-10 pr-10 py-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-500 ${
                       errors.password ? 'border-red-300' : 'border-gray-300'
                     }`}
                     placeholder="Create a password"
@@ -345,7 +342,7 @@ export default function RegisterPage() {
                     type={showConfirmPassword ? 'text' : 'password'}
                     value={formData.confirmPassword}
                     onChange={handleInputChange}
-                    className={`block w-full pl-10 pr-10 py-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 ${
+                    className={`block w-full pl-10 pr-10 py-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-500 ${
                       errors.confirmPassword ? 'border-red-300' : 'border-gray-300'
                     }`}
                     placeholder="Confirm your password"
@@ -375,7 +372,7 @@ export default function RegisterPage() {
                   type="checkbox"
                   checked={formData.subscribeNewsletter}
                   onChange={handleInputChange}
-                  className="h-4 w-4 text-blue-600 focus:ring-blue-500 border-gray-300 rounded"
+                  className="h-4 w-4 text-orange-600 focus:ring-orange-500 border-gray-300 rounded"
                 />
                 <label htmlFor="subscribeNewsletter" className="ml-2 block text-sm text-gray-700">
                   Subscribe to our newsletter for event updates
@@ -391,17 +388,17 @@ export default function RegisterPage() {
                     type="checkbox"
                     checked={formData.agreeToTerms}
                     onChange={handleInputChange}
-                    className={`h-4 w-4 text-blue-600 focus:ring-blue-500 border-gray-300 rounded ${
+                    className={`h-4 w-4 text-orange-600 focus:ring-orange-500 border-gray-300 rounded ${
                       errors.agreeToTerms ? 'border-red-300' : ''
                     }`}
                   />
                   <label htmlFor="agreeToTerms" className="ml-2 block text-sm text-gray-700">
                     I agree to the{' '}
-                    <Link href="/terms" className="text-blue-600 hover:text-blue-700">
+                    <Link href="/terms" className="text-orange-600 hover:text-orange-700">
                       Terms of Service
                     </Link>{' '}
                     and{' '}
-                    <Link href="/privacy" className="text-blue-600 hover:text-blue-700">
+                    <Link href="/privacy" className="text-orange-600 hover:text-orange-700">
                       Privacy Policy
                     </Link>
                   </label>
@@ -415,7 +412,7 @@ export default function RegisterPage() {
               <button
                 type="submit"
                 disabled={isLoading}
-                className="w-full flex justify-center py-3 px-4 border border-transparent rounded-lg shadow-sm text-sm font-medium text-white bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 disabled:opacity-50 disabled:cursor-not-allowed"
+                className="w-full flex justify-center py-3 px-4 border border-transparent rounded-lg shadow-sm text-sm font-medium text-white bg-orange-600 hover:bg-orange-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-orange-500 disabled:opacity-50 disabled:cursor-not-allowed"
               >
                 {isLoading ? (
                   <div className="flex items-center space-x-2">
@@ -423,7 +420,7 @@ export default function RegisterPage() {
                     <span>Creating Account...</span>
                   </div>
                 ) : (
-                  'Create Free Account'
+                  'Join RemoteInbound Free'
                 )}
               </button>
             </form>
@@ -436,16 +433,16 @@ export default function RegisterPage() {
             </h3>
             <div className="space-y-3">
               <div className="flex items-center space-x-3">
-                <div className="w-8 h-8 bg-blue-100 rounded-full flex items-center justify-center">
-                  <Calendar className="w-4 h-4 text-blue-600" />
+                <div className="w-8 h-8 bg-orange-100 rounded-full flex items-center justify-center">
+                  <Calendar className="w-4 h-4 text-orange-600" />
                 </div>
-                <span className="text-gray-700">Access to all virtual events</span>
+                <span className="text-gray-700">Access to all RemoteInbound 2025 sessions</span>
               </div>
               <div className="flex items-center space-x-3">
                 <div className="w-8 h-8 bg-green-100 rounded-full flex items-center justify-center">
                   <Users className="w-4 h-4 text-green-600" />
                 </div>
-                <span className="text-gray-700">Networking opportunities</span>
+                <span className="text-gray-700">Virtual networking with HubSpot fans</span>
               </div>
               <div className="flex items-center space-x-3">
                 <div className="w-8 h-8 bg-purple-100 rounded-full flex items-center justify-center">
@@ -454,10 +451,10 @@ export default function RegisterPage() {
                 <span className="text-gray-700">Global community access</span>
               </div>
               <div className="flex items-center space-x-3">
-                <div className="w-8 h-8 bg-orange-100 rounded-full flex items-center justify-center">
-                  <Smartphone className="w-4 h-4 text-orange-600" />
+                <div className="w-8 h-8 bg-red-100 rounded-full flex items-center justify-center">
+                  <Heart className="w-4 h-4 text-red-600" />
                 </div>
-                <span className="text-gray-700">Mobile app access</span>
+                <span className="text-gray-700">Fan-driven learning experience</span>
               </div>
             </div>
           </div>

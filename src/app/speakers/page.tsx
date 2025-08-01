@@ -14,7 +14,8 @@ import {
   Calendar,
   Star,
   Award,
-  BookOpen
+  BookOpen,
+  Heart
 } from 'lucide-react';
 import { Speaker } from '@/types';
 
@@ -61,7 +62,7 @@ export default function SpeakersPage() {
   }, [speakers, searchTerm, selectedCompany, selectedExpertise]);
 
   const allCompanies = Array.from(new Set(speakers.map(speaker => speaker.company)));
-  const expertiseAreas = ['Technology', 'Product', 'Design', 'Marketing', 'Data', 'Business'];
+  const expertiseAreas = ['Marketing', 'Sales', 'Customer Success', 'Operations', 'RevOps', 'Growth'];
 
   const getSocialIcon = (platform: string) => {
     switch (platform) {
@@ -77,51 +78,63 @@ export default function SpeakersPage() {
   };
 
   return (
-    <div className="min-h-screen bg-gray-50">
+    <div className="min-h-screen bg-white">
       {/* Header */}
-      <header className="bg-white shadow-sm border-b border-gray-200">
+      <header className="bg-white border-b border-gray-100 sticky top-0 z-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-16">
-            <Link href="/" className="flex items-center space-x-2">
-              <div className="w-8 h-8 bg-gradient-to-r from-blue-600 to-indigo-600 rounded-lg flex items-center justify-center">
-                <Users className="w-5 h-5 text-white" />
-              </div>
-              <span className="text-xl font-bold text-gray-900">RemoteInbound</span>
-            </Link>
+            <div className="flex items-center">
+              <Link href="/" className="text-2xl font-bold text-orange-500">
+                RemoteInbound
+              </Link>
+            </div>
             
             <nav className="hidden md:flex items-center space-x-8">
-              <Link href="/events" className="text-gray-600 hover:text-gray-900 transition-colors">
+              <Link href="/events" className="text-gray-700 hover:text-orange-500 font-medium">
                 Events
               </Link>
-              <Link href="/speakers" className="text-blue-600 font-medium">
+              <Link href="/speakers" className="text-orange-500 font-medium">
                 Speakers
-              </Link>
-              <Link href="/schedule" className="text-gray-600 hover:text-gray-900 transition-colors">
-                Schedule
-              </Link>
-              <Link href="/networking" className="text-gray-600 hover:text-gray-900 transition-colors">
-                Networking
               </Link>
             </nav>
 
-            <Link
-              href="/register"
-              className="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition-colors"
-            >
-              Join Free
-            </Link>
+            <div className="flex items-center space-x-4">
+              <Link
+                href="/auth/signin"
+                className="text-gray-700 hover:text-orange-500 font-medium"
+              >
+                Sign In
+              </Link>
+              <Link
+                href="/register"
+                className="bg-orange-500 text-white px-6 py-2 rounded-full hover:bg-orange-600 transition-colors font-medium"
+              >
+                Join Free
+              </Link>
+            </div>
           </div>
         </div>
       </header>
 
       {/* Hero Section */}
-      <section className="bg-gradient-to-r from-blue-600 to-indigo-600 text-white py-16">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h1 className="text-4xl md:text-5xl font-bold mb-4">
-            Meet Our Expert Speakers
+      <section className="relative bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 py-20 lg:py-32 overflow-hidden">
+        {/* Background Pattern */}
+        <div className="absolute inset-0 opacity-10">
+          <div className="w-full h-full bg-repeat" style={{
+            backgroundImage: `url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23f97316' fill-opacity='0.3'%3E%3Ccircle cx='30' cy='30' r='2'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")`
+          }}></div>
+        </div>
+        
+        {/* Orange Gradient Accents */}
+        <div className="absolute top-0 right-0 w-96 h-96 bg-gradient-to-bl from-orange-500/20 to-transparent rounded-full blur-3xl"></div>
+        <div className="absolute bottom-0 left-0 w-96 h-96 bg-gradient-to-tr from-orange-600/20 to-transparent rounded-full blur-3xl"></div>
+        
+        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <h1 className="text-4xl md:text-5xl font-bold text-white mb-4">
+            Meet Our HubSpot Fan Speakers
           </h1>
-          <p className="text-xl text-blue-100 mb-8 max-w-2xl mx-auto">
-            Learn from industry leaders, innovators, and experts who are shaping the future of technology and business
+          <p className="text-xl text-gray-300 mb-8 max-w-2xl mx-auto">
+            Learn from passionate HubSpot users who are sharing their real-world expertise and innovative strategies
           </p>
           
           {/* Search Bar */}
@@ -133,7 +146,7 @@ export default function SpeakersPage() {
                 placeholder="Search speakers by name, company, or expertise..."
                 value={searchTerm}
                 onChange={(e) => setSearchTerm(e.target.value)}
-                className="w-full pl-12 pr-4 py-4 text-gray-900 bg-white rounded-lg shadow-lg focus:outline-none focus:ring-2 focus:ring-blue-300"
+                className="w-full pl-12 pr-4 py-4 text-gray-900 bg-white rounded-lg shadow-lg focus:outline-none focus:ring-2 focus:ring-orange-300"
               />
             </div>
           </div>
@@ -152,7 +165,7 @@ export default function SpeakersPage() {
               <select
                 value={selectedCompany}
                 onChange={(e) => setSelectedCompany(e.target.value)}
-                className="border border-gray-300 rounded-lg px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
+                className="border border-gray-300 rounded-lg px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-orange-500"
               >
                 <option value="all">All Companies</option>
                 {allCompanies.map(company => (
@@ -164,7 +177,7 @@ export default function SpeakersPage() {
               <select
                 value={selectedExpertise}
                 onChange={(e) => setSelectedExpertise(e.target.value)}
-                className="border border-gray-300 rounded-lg px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
+                className="border border-gray-300 rounded-lg px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-orange-500"
               >
                 <option value="all">All Expertise</option>
                 {expertiseAreas.map(area => (
@@ -181,13 +194,25 @@ export default function SpeakersPage() {
       </section>
 
       {/* Speakers Grid */}
-      <section className="py-12">
+      <section className="py-12 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           {filteredSpeakers.length === 0 ? (
             <div className="text-center py-12">
               <Users className="w-16 h-16 text-gray-300 mx-auto mb-4" />
-              <h3 className="text-xl font-semibold text-gray-900 mb-2">No speakers found</h3>
-              <p className="text-gray-600">Speakers will be announced soon. Check back later for updates.</p>
+              <h3 className="text-xl font-semibold text-gray-900 mb-2">Speakers Coming Soon</h3>
+              <p className="text-gray-600 mb-8">We're curating amazing HubSpot fan speakers from around the world. Check back soon for updates!</p>
+              <div className="space-y-4">
+                <div className="inline-flex items-center px-4 py-2 bg-orange-100 text-orange-800 rounded-full text-sm font-medium">
+                  <Heart className="w-4 h-4 mr-2" />
+                  100% Fan-Driven Speakers
+                </div>
+                <div className="block">
+                  <div className="inline-flex items-center px-4 py-2 bg-orange-100 text-orange-800 rounded-full text-sm font-medium">
+                    <Calendar className="w-4 h-4 mr-2" />
+                    September 3-5, 2025 • First Edition
+                  </div>
+                </div>
+              </div>
             </div>
           ) : (
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
@@ -195,7 +220,7 @@ export default function SpeakersPage() {
                 <div key={speaker.id} className="bg-white rounded-xl shadow-sm hover:shadow-lg transition-shadow overflow-hidden">
                   {/* Speaker Avatar */}
                   <div className="p-6 text-center">
-                    <div className="w-24 h-24 bg-gradient-to-r from-blue-500 to-indigo-600 rounded-full mx-auto mb-4 flex items-center justify-center">
+                    <div className="w-24 h-24 bg-gradient-to-r from-orange-500 to-orange-600 rounded-full mx-auto mb-4 flex items-center justify-center">
                       <span className="text-2xl font-bold text-white">
                         {speaker.name.split(' ').map(n => n[0]).join('')}
                       </span>
@@ -204,7 +229,7 @@ export default function SpeakersPage() {
                     <h3 className="text-xl font-semibold text-gray-900 mb-1">
                       {speaker.name}
                     </h3>
-                    <p className="text-blue-600 font-medium mb-1">
+                    <p className="text-orange-600 font-medium mb-1">
                       {speaker.title}
                     </p>
                     <div className="flex items-center justify-center text-gray-600 text-sm mb-4">
@@ -226,7 +251,7 @@ export default function SpeakersPage() {
                             href={url}
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="p-2 text-gray-400 hover:text-blue-600 transition-colors"
+                            className="p-2 text-gray-400 hover:text-orange-600 transition-colors"
                           >
                             {getSocialIcon(platform)}
                           </a>
@@ -243,7 +268,7 @@ export default function SpeakersPage() {
                     {/* View Profile Button */}
                     <Link
                       href={`/speakers/${speaker.id}`}
-                      className="w-full bg-blue-600 text-white py-2 px-4 rounded-lg hover:bg-blue-700 transition-colors text-center block font-medium"
+                      className="w-full bg-orange-500 text-white py-2 px-4 rounded-lg hover:bg-orange-600 transition-colors text-center block font-medium"
                     >
                       View Profile
                     </Link>
@@ -260,20 +285,20 @@ export default function SpeakersPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-              Speaker Highlights
+              HubSpot Fan Speaker Highlights
             </h2>
             <p className="text-xl text-gray-600">
-              Our speakers bring decades of combined experience and expertise
+              Our speakers bring decades of combined HubSpot experience and passion for sharing knowledge
             </p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
             <div className="text-center">
-              <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                <Award className="w-8 h-8 text-blue-600" />
+              <div className="w-16 h-16 bg-orange-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                <Heart className="w-8 h-8 text-orange-600" />
               </div>
-              <div className="text-3xl font-bold text-blue-600 mb-2">50+</div>
-              <div className="text-gray-600">Industry Awards</div>
+              <div className="text-3xl font-bold text-orange-600 mb-2">100%</div>
+              <div className="text-gray-600">Fan-Driven</div>
             </div>
             
             <div className="text-center">
@@ -288,43 +313,43 @@ export default function SpeakersPage() {
               <div className="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-4">
                 <BookOpen className="w-8 h-8 text-purple-600" />
               </div>
-              <div className="text-3xl font-bold text-purple-600 mb-2">100+</div>
-              <div className="text-gray-600">Published Articles</div>
+              <div className="text-3xl font-bold text-purple-600 mb-2">50+</div>
+              <div className="text-gray-600">Years Combined Experience</div>
             </div>
             
             <div className="text-center">
-              <div className="w-16 h-16 bg-orange-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                <Star className="w-8 h-8 text-orange-600" />
+              <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                <Star className="w-8 h-8 text-blue-600" />
               </div>
-              <div className="text-3xl font-bold text-orange-600 mb-2">15+</div>
-              <div className="text-gray-600">Years Average Experience</div>
+              <div className="text-3xl font-bold text-blue-600 mb-2">First</div>
+              <div className="text-gray-600">Edition Event</div>
             </div>
           </div>
         </div>
       </section>
 
       {/* CTA Section */}
-      <section className="bg-gradient-to-r from-blue-600 to-indigo-600 py-16">
+      <section className="bg-gradient-to-r from-orange-500 to-orange-600 py-16">
         <div className="max-w-4xl mx-auto text-center px-4 sm:px-6 lg:px-8">
           <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
-            Want to Speak at Our Events?
+            Want to Share Your HubSpot Story?
           </h2>
-          <p className="text-xl text-blue-100 mb-8">
-            Share your expertise with our global community of professionals
+          <p className="text-xl text-orange-100 mb-8">
+            Join fellow HubSpot fans in sharing your expertise with our global community
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link
-              href="/speaker-application"
-              className="bg-white text-blue-600 px-8 py-4 rounded-lg text-lg font-semibold hover:bg-gray-100 transition-colors"
+              href="/register"
+              className="bg-white text-orange-500 px-8 py-4 rounded-lg text-lg font-semibold hover:bg-gray-100 transition-colors"
             >
-              Apply to Speak
+              Join the Community
             </Link>
             <Link
-              href="/speaker-guidelines"
-              className="border-2 border-white text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-white hover:text-blue-600 transition-colors"
+              href="/events"
+              className="border-2 border-white text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-white hover:text-orange-500 transition-colors"
             >
-              Speaker Guidelines
+              View Sessions
             </Link>
           </div>
         </div>

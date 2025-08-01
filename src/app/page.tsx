@@ -66,9 +66,6 @@ export default function Home() {
               <Link href="/speakers" className="text-gray-700 hover:text-orange-500 font-medium">
                 Speakers
               </Link>
-              <Link href="/docs" className="text-gray-700 hover:text-orange-500 font-medium">
-                Resources
-              </Link>
             </nav>
 
             <div className="flex items-center space-x-4">

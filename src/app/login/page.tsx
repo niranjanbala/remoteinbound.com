@@ -9,7 +9,6 @@ import {
   Eye, 
   EyeOff,
   AlertCircle,
-  Calendar,
   CheckCircle
 } from 'lucide-react';
 import { userStorage } from '@/lib/storage';
@@ -124,23 +123,20 @@ export default function LoginPage() {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-blue-50 via-white to-indigo-50">
+    <div className="min-h-screen bg-gradient-to-br from-orange-50 via-white to-orange-50">
       {/* Header */}
       <header className="bg-white/80 backdrop-blur-md border-b border-gray-200">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-16">
-            <Link href="/" className="flex items-center space-x-2">
-              <div className="w-8 h-8 bg-gradient-to-r from-blue-600 to-indigo-600 rounded-lg flex items-center justify-center">
-                <Calendar className="w-5 h-5 text-white" />
-              </div>
-              <span className="text-xl font-bold text-gray-900">RemoteInbound</span>
+            <Link href="/" className="text-2xl font-bold text-orange-500">
+              RemoteInbound
             </Link>
             
             <div className="flex items-center space-x-4">
               <span className="text-gray-600">Don't have an account?</span>
               <Link
                 href="/register"
-                className="text-blue-600 hover:text-blue-700 font-medium"
+                className="text-orange-600 hover:text-orange-700 font-medium"
               >
                 Sign Up
               </Link>
@@ -155,10 +151,10 @@ export default function LoginPage() {
           <div className="bg-white rounded-xl shadow-lg p-8">
             <div className="text-center mb-8">
               <h2 className="text-3xl font-bold text-gray-900 mb-2">
-                Welcome Back
+                Welcome Back to RemoteInbound
               </h2>
               <p className="text-gray-600">
-                Sign in to access your dashboard and registered events
+                Sign in to access your dashboard and join the fan-driven HubSpot community
               </p>
             </div>
 
@@ -185,7 +181,7 @@ export default function LoginPage() {
                     type="email"
                     value={formData.email}
                     onChange={handleInputChange}
-                    className={`block w-full pl-10 pr-3 py-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 ${
+                    className={`block w-full pl-10 pr-3 py-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-500 ${
                       errors.email ? 'border-red-300' : 'border-gray-300'
                     }`}
                     placeholder="Enter your email address"
@@ -211,7 +207,7 @@ export default function LoginPage() {
                     type={showPassword ? 'text' : 'password'}
                     value={formData.password}
                     onChange={handleInputChange}
-                    className={`block w-full pl-10 pr-10 py-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 ${
+                    className={`block w-full pl-10 pr-10 py-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-500 ${
                       errors.password ? 'border-red-300' : 'border-gray-300'
                     }`}
                     placeholder="Enter your password"
@@ -237,7 +233,7 @@ export default function LoginPage() {
               <button
                 type="submit"
                 disabled={isLoading}
-                className="w-full flex justify-center py-3 px-4 border border-transparent rounded-lg shadow-sm text-sm font-medium text-white bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 disabled:opacity-50 disabled:cursor-not-allowed"
+                className="w-full flex justify-center py-3 px-4 border border-transparent rounded-lg shadow-sm text-sm font-medium text-white bg-orange-600 hover:bg-orange-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-orange-500 disabled:opacity-50 disabled:cursor-not-allowed"
               >
                 {isLoading ? (
                   <div className="flex items-center space-x-2">
@@ -245,7 +241,7 @@ export default function LoginPage() {
                     <span>Signing In...</span>
                   </div>
                 ) : (
-                  'Sign In'
+                  'Sign In to RemoteInbound'
                 )}
               </button>
             </form>
@@ -253,22 +249,22 @@ export default function LoginPage() {
             <div className="mt-6 text-center">
               <Link
                 href="/register"
-                className="text-blue-600 hover:text-blue-700 text-sm"
+                className="text-orange-600 hover:text-orange-700 text-sm"
               >
-                Don't have an account? Sign up here
+                Don't have an account? Join the community here
               </Link>
             </div>
           </div>
 
           {/* Demo Notice */}
-          <div className="bg-blue-50 rounded-xl p-6 border border-blue-200">
+          <div className="bg-orange-50 rounded-xl p-6 border border-orange-200">
             <div className="flex items-start space-x-3">
-              <CheckCircle className="w-5 h-5 text-blue-600 mt-0.5" />
+              <CheckCircle className="w-5 h-5 text-orange-600 mt-0.5" />
               <div>
-                <h3 className="font-medium text-blue-900 mb-1">Demo Mode</h3>
-                <p className="text-sm text-blue-700">
+                <h3 className="font-medium text-orange-900 mb-1">Demo Mode</h3>
+                <p className="text-sm text-orange-700">
                   For demo purposes, you can sign in with any registered email address and any password. 
-                  In production, this would use secure authentication.
+                  In production, this would use secure authentication with the RemoteInbound community platform.
                 </p>
               </div>
             </div>
