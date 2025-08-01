@@ -1,7 +1,7 @@
 {
-  "name": "Remote Inbound - Online Event Platform",
+  "name": "Remote Inbound 2025 - HubSpot Community Event",
   "short_name": "Remote Inbound",
-  "description": "A comprehensive PWA for hosting free virtual conferences, webinars, and networking events",
+  "description": "Fan-driven HubSpot community event featuring expert sessions, networking, and inbound marketing insights",
   "start_url": "/",
   "display": "standalone",
   "background_color": "#ffffff",

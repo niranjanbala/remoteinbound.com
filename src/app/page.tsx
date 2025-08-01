@@ -2,7 +2,8 @@
 
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
-import { 
+import Logo from '@/components/Logo';
+import {
   Play,
   ArrowRight,
   Calendar,
@@ -54,8 +55,8 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-16">
             <div className="flex items-center">
-              <Link href="/" className="text-2xl font-bold text-orange-500">
-                Remote Inbound
+              <Link href="/" className="flex items-center">
+                <Logo size="md" />
               </Link>
             </div>
             

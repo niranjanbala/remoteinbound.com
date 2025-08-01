@@ -11,14 +11,14 @@ const inter = Inter({
 
 export const metadata: Metadata = {
   title: {
-    default: "Remote Inbound - Free Online Event Platform",
-    template: "%s | Remote Inbound",
+    default: "Remote Inbound 2025 - Fan-Driven HubSpot Community Event",
+    template: "%s | Remote Inbound 2025",
   },
-  description: "A comprehensive PWA for hosting free virtual conferences, webinars, and networking events with local storage.",
-  keywords: ["virtual events", "online conferences", "webinars", "networking", "PWA", "free events"],
-  authors: [{ name: "Remote Inbound Team" }],
-  creator: "Remote Inbound",
-  publisher: "Remote Inbound",
+  description: "Join the first-ever Remote Inbound 2025 - a free, virtual HubSpot community event created by fans, for fans. Connect with HubSpot super users, learn from industry experts, and grow your inbound marketing skills.",
+  keywords: ["HubSpot", "inbound marketing", "community event", "virtual conference", "HubSpot fans", "marketing automation", "CRM", "sales enablement", "content marketing", "lead generation"],
+  authors: [{ name: "HubSpot Super Users Community" }],
+  creator: "Remote Inbound Community",
+  publisher: "Remote Inbound Community",
   formatDetection: {
     email: false,
     address: false,
