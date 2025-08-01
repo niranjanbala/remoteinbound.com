@@ -71,16 +71,52 @@ Make sure your `netlify.toml` file contains:
 ```toml
 [build]
   publish = "out"
-  command = "npm run build"
+  command = "npm ci && npm run build"
 
 [build.environment]
   NODE_VERSION = "18"
+  NPM_FLAGS = "--production=false"
 
 [[redirects]]
   from = "/*"
   to = "/index.html"
   status = 200
 ```
+
+**Note**: The build command uses `npm ci` to force clean dependency installation and avoid cache issues.
+
+---
+
+## 🧹 **Cache Issues Resolution**
+
+If you're experiencing deployment issues due to Netlify cache, use these methods:
+
+### **Method 1: Force Cache Clear (Recommended)**
+1. Go to **Site settings** → **Build & deploy** → **Environment variables**
+2. Add a temporary variable:
+   - **Key**: `CACHE_BUST`
+   - **Value**: `$(date +%s)` or any random string like `20250801`
+3. Click **"Save"**
+4. Go to **"Deploys"** tab and trigger a new deploy
+5. **Remove the variable** after successful deployment
+
+### **Method 2: Updated Build Configuration**
+The `netlify.toml` has been updated to force clean builds:
+- Uses `npm ci` instead of `npm install` (deletes `node_modules` completely)
+- Includes `NPM_FLAGS = "--production=false"`
+- Forces fresh dependency installation on every build
+
+### **Method 3: Manual Cache Clear via CLI**
+```bash
+# If you have Netlify CLI installed
+npm install -g netlify-cli
+netlify login
+netlify build --clear-cache
+netlify deploy --prod
+```
+
+### **Method 4: Git Commit to Force Rebuild**
+A `.cache-bust` file has been added to force fresh deployments when needed.
 
 ---
 
@@ -111,10 +147,17 @@ After deployment with environment variables:
 
 ### **Common Issues:**
 
+#### **Cache-Related Build Failures**
+- **Tailwind CSS v4 errors**: Use Method 1 above to add `CACHE_BUST` variable
+- **PostCSS module not found**: Clear cache and force clean `npm ci` install
+- **Old dependencies persisting**: Use `npm ci` instead of `npm install` in build command
+- **CSS compilation errors**: Ensure Tailwind CSS v3.4.17 is being used (not v4)
+
 #### **Build Still Failing**
 - Double-check all environment variable names (case-sensitive)
 - Ensure no extra spaces in variable values
 - Verify Supabase keys are correct and not expired
+- Try adding `CACHE_BUST` variable to force clean build
 
 #### **Database Connection Issues**
 - Check Supabase project is active
@@ -125,6 +168,12 @@ After deployment with environment variables:
 - Make sure variables are set for all scopes (Production, Deploy previews, Branch deploys)
 - Redeploy after adding variables
 - Check variable names match exactly what's used in code
+
+#### **CSS/Styling Issues**
+- Clear browser cache (Ctrl+F5 or Cmd+Shift+R)
+- Verify Tailwind CSS configuration is correct
+- Check that `postcss.config.mjs` exists and is properly configured
+- Ensure `globals.css` uses `@tailwind` directives (not v4 syntax)
 
 ---
 
