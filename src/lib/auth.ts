@@ -9,10 +9,15 @@ export const { handlers, auth, signIn, signOut } = NextAuth({
     secret: process.env.SUPABASE_SERVICE_ROLE_KEY!,
   }),
   providers: [
-    GoogleProvider({
-      clientId: process.env.GOOGLE_CLIENT_ID || 'demo',
-      clientSecret: process.env.GOOGLE_CLIENT_SECRET || 'demo',
-    }),
+    ...(process.env.GOOGLE_CLIENT_ID && process.env.GOOGLE_CLIENT_SECRET &&
+        process.env.GOOGLE_CLIENT_ID !== 'your_google_client_id' &&
+        process.env.GOOGLE_CLIENT_SECRET !== 'your_google_client_secret'
+      ? [GoogleProvider({
+          clientId: process.env.GOOGLE_CLIENT_ID,
+          clientSecret: process.env.GOOGLE_CLIENT_SECRET,
+        })]
+      : []
+    ),
   ],
   callbacks: {
     async session({ session, user }) {

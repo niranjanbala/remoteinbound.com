@@ -1,12 +1,12 @@
 'use client';
 
 import { signIn, getProviders } from 'next-auth/react';
-import { useState, useEffect } from 'react';
+import { useState, useEffect, Suspense } from 'react';
 import { useSearchParams } from 'next/navigation';
 import Link from 'next/link';
 import { Mail, Chrome, ArrowLeft } from 'lucide-react';
 
-export default function SignIn() {
+function SignInContent() {
   const [providers, setProviders] = useState<any>(null);
   const [email, setEmail] = useState('');
   const [isLoading, setIsLoading] = useState(false);
@@ -117,5 +117,23 @@ export default function SignIn() {
         </div>
       </div>
     </div>
+  );
+}
+
+export default function SignIn() {
+  return (
+    <Suspense fallback={
+      <div className="min-h-screen bg-gray-50 flex flex-col justify-center py-12 sm:px-6 lg:px-8">
+        <div className="sm:mx-auto sm:w-full sm:max-w-md">
+          <div className="text-center">
+            <h1 className="text-3xl font-bold text-gray-900 mb-2">
+              Loading...
+            </h1>
+          </div>
+        </div>
+      </div>
+    }>
+      <SignInContent />
+    </Suspense>
   );
 }
