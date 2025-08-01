@@ -1,6 +1,6 @@
 {
-  "name": "RemoteInbound - Online Event Platform",
-  "short_name": "RemoteInbound",
+  "name": "Remote Inbound - Online Event Platform",
+  "short_name": "Remote Inbound",
   "description": "A comprehensive PWA for hosting free virtual conferences, webinars, and networking events",
   "start_url": "/",
   "display": "standalone",

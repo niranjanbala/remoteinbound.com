@@ -225,7 +225,7 @@ export default function PartnerRegisterPage() {
           <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
             <CheckCircle className="w-8 h-8 text-green-600" />
           </div>
-          <h2 className="text-2xl font-bold text-gray-900 mb-2">Welcome to RemoteInbound!</h2>
+          <h2 className="text-2xl font-bold text-gray-900 mb-2">Welcome to Remote Inbound!</h2>
           <p className="text-gray-600 mb-6">
             Your partnership application has been submitted successfully. Our team will review your profile and get back to you soon.
           </p>
@@ -242,7 +242,7 @@ export default function PartnerRegisterPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-16">
             <Link href="/" className="text-2xl font-bold text-orange-500">
-              RemoteInbound
+              Remote Inbound
             </Link>
             
             <div className="flex items-center space-x-4">
@@ -267,7 +267,7 @@ export default function PartnerRegisterPage() {
                 <Handshake className="w-8 h-8 text-orange-600" />
               </div>
               <h2 className="text-3xl font-bold text-gray-900 mb-2">
-                Become a RemoteInbound Partner
+                Become a Remote Inbound Partner
               </h2>
               <p className="text-gray-600">
                 Join our ecosystem and help HubSpot fans succeed together
@@ -571,7 +571,7 @@ export default function PartnerRegisterPage() {
                     className="h-4 w-4 text-orange-600 focus:ring-orange-500 border-gray-300 rounded"
                   />
                   <label htmlFor="interestedInSpeaking" className="ml-2 block text-sm text-gray-700">
-                    I'm interested in speaking at RemoteInbound events
+                    I'm interested in speaking at Remote Inbound events
                   </label>
                 </div>
 
@@ -585,7 +585,7 @@ export default function PartnerRegisterPage() {
                     className="h-4 w-4 text-orange-600 focus:ring-orange-500 border-gray-300 rounded"
                   />
                   <label htmlFor="subscribeNewsletter" className="ml-2 block text-sm text-gray-700">
-                    Subscribe to RemoteInbound updates and partner resources
+                    Subscribe to Remote Inbound updates and partner resources
                   </label>
                 </div>
 

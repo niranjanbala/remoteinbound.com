@@ -40,7 +40,7 @@ export default function APIDocsPage() {
               </div>
               <div>
                 <h1 className="text-xl font-bold text-gray-900">API Documentation</h1>
-                <p className="text-sm text-gray-500">RemoteInbound API v1.0.0</p>
+                <p className="text-sm text-gray-500">Remote Inbound API v1.0.0</p>
               </div>
             </div>
             
@@ -65,11 +65,11 @@ export default function APIDocsPage() {
         <div className="bg-white rounded-xl shadow-sm p-8 mb-8">
           <div className="text-center mb-8">
             <h2 className="text-3xl font-bold text-gray-900 mb-4">
-              RemoteInbound API Documentation
+              Remote Inbound API Documentation
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
               Comprehensive REST API for managing fan-driven HubSpot events, community members, speakers, and registrations. 
-              Built with security, validation, and developer experience in mind for the RemoteInbound community.
+              Built with security, validation, and developer experience in mind for the Remote Inbound community.
             </p>
           </div>
 
@@ -120,7 +120,7 @@ export default function APIDocsPage() {
               <div>
                 <h4 className="font-medium text-gray-800 mb-2">Authentication</h4>
                 <p className="text-gray-600 text-sm mb-2">
-                  The RemoteInbound API uses session-based authentication. Include your session cookie or bearer token:
+                  The Remote Inbound API uses session-based authentication. Include your session cookie or bearer token:
                 </p>
                 <code className="bg-gray-800 text-green-400 px-3 py-1 rounded text-sm block">
                   Authorization: Bearer your-jwt-token
@@ -214,7 +214,7 @@ export default function APIDocsPage() {
             </div>
             
             <div>
-              <h3 className="font-semibold text-gray-900 mb-3">Get All RemoteInbound Events</h3>
+              <h3 className="font-semibold text-gray-900 mb-3">Get All Remote Inbound Events</h3>
               <div className="bg-gray-800 text-green-400 p-4 rounded-lg overflow-x-auto">
                 <pre>{`curl -X GET ${spec?.servers?.[0]?.url || 'http://localhost:3000'}/api/events \\
   -H "Content-Type: application/json"`}</pre>
@@ -240,7 +240,7 @@ export default function APIDocsPage() {
           <h2 className="text-2xl font-bold text-gray-900 mb-6">Error Handling</h2>
           
           <p className="text-gray-600 mb-4">
-            The RemoteInbound API returns consistent error responses with detailed information to help you debug issues.
+            The Remote Inbound API returns consistent error responses with detailed information to help you debug issues.
           </p>
           
           <div className="space-y-4">

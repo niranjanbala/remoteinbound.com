@@ -1,8 +1,8 @@
-# Netlify Deployment Guide - RemoteInbound
+# Netlify Deployment Guide - Remote Inbound
 
 ## 🚀 **Environment Variables Setup**
 
-The RemoteInbound application requires environment variables to be configured in Netlify for the database connection to work properly.
+The Remote Inbound application requires environment variables to be configured in Netlify for the database connection to work properly.
 
 ### **Required Environment Variables**
 
@@ -26,7 +26,7 @@ SUPABASE_SERVICE_ROLE_KEY=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhY
 ### **Step 1: Access Netlify Dashboard**
 1. Go to [https://app.netlify.com](https://app.netlify.com)
 2. Login to your Netlify account
-3. Find your RemoteInbound site in the dashboard
+3. Find your Remote Inbound site in the dashboard
 
 ### **Step 2: Navigate to Environment Variables**
 1. Click on your site name
@@ -54,7 +54,7 @@ Add these variables one by one:
 - **Scopes**: All scopes
 - **⚠️ Important**: This is a sensitive key - keep it secure!
 
-**Note**: The NextAuth variables are commented out because RemoteInbound uses Supabase authentication instead of NextAuth. You only need the 3 Supabase variables above for full functionality.
+**Note**: The NextAuth variables are commented out because Remote Inbound uses Supabase authentication instead of NextAuth. You only need the 3 Supabase variables above for full functionality.
 
 ### **Step 4: Save and Redeploy**
 1. Click **"Save"** after adding each variable
@@ -257,4 +257,4 @@ If you encounter issues:
 4. **Database Status**: Check Supabase project status
 5. **Clear Cache**: Try a fresh deploy
 
-The RemoteInbound platform should now be fully functional in production! 🚀
+The Remote Inbound platform should now be fully functional in production! 🚀

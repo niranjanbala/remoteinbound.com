@@ -376,7 +376,7 @@ export function generateOpenAPISpec() {
     openapi: '3.0.0',
     info: {
       version: '1.0.0',
-      title: 'RemoteInbound API',
+      title: 'Remote Inbound API',
       description: 'Comprehensive API for managing virtual events, users, speakers, and registrations',
       contact: {
         name: 'API Support',

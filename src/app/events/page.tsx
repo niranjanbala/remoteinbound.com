@@ -88,7 +88,7 @@ export default function EventsPage() {
           <div className="flex justify-between items-center h-16">
             <div className="flex items-center">
               <Link href="/" className="text-2xl font-bold text-orange-500">
-                RemoteInbound
+                Remote Inbound
               </Link>
             </div>
             
@@ -134,7 +134,7 @@ export default function EventsPage() {
         
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h1 className="text-4xl md:text-5xl font-bold text-white mb-4">
-            RemoteInbound 2025 Sessions
+            Remote Inbound 2025 Sessions
           </h1>
           <p className="text-xl text-gray-300 mb-8 max-w-2xl mx-auto">
             Discover amazing sessions from HubSpot fans sharing their expertise, strategies, and innovations

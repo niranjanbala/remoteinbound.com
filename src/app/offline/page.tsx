@@ -75,7 +75,7 @@ export default function OfflinePage() {
               <div className="w-8 h-8 bg-gradient-to-r from-blue-600 to-indigo-600 rounded-lg flex items-center justify-center">
                 <span className="text-white font-bold text-sm">RI</span>
               </div>
-              <span className="text-xl font-bold text-gray-900">RemoteInbound</span>
+              <span className="text-xl font-bold text-gray-900">Remote Inbound</span>
             </div>
             
             <div className="flex items-center space-x-2">
@@ -114,7 +114,7 @@ export default function OfflinePage() {
           <p className="text-xl text-gray-600 mb-8 max-w-2xl mx-auto">
             {isOnline 
               ? "Great! Your connection has been restored. You'll be redirected shortly."
-              : "Don't worry! RemoteInbound works offline too. You can still access many features without an internet connection."
+              : "Don't worry! Remote Inbound works offline too. You can still access many features without an internet connection."
             }
           </p>
 
@@ -231,7 +231,7 @@ export default function OfflinePage() {
 
         {/* PWA Installation Prompt */}
         <div className="mt-12 bg-gradient-to-r from-blue-600 to-indigo-600 rounded-xl shadow-lg p-8 text-white text-center">
-          <h2 className="text-2xl font-bold mb-4">Install RemoteInbound</h2>
+          <h2 className="text-2xl font-bold mb-4">Install Remote Inbound</h2>
           <p className="text-blue-100 mb-6">
             Install our app for the best offline experience and quick access from your home screen.
           </p>

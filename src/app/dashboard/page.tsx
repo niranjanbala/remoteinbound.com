@@ -134,7 +134,7 @@ export default function DashboardPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-16">
             <Link href="/" className="text-2xl font-bold text-orange-500">
-              RemoteInbound
+              Remote Inbound
             </Link>
             
             <div className="flex items-center space-x-4">
@@ -229,7 +229,7 @@ export default function DashboardPage() {
               <div className="space-y-6">
                 {/* Welcome Section */}
                 <div className="bg-gradient-to-r from-orange-500 to-orange-600 rounded-xl p-6 text-white">
-                  <h1 className="text-2xl font-bold mb-2">Welcome back to RemoteInbound, {user?.fullName?.split(' ')[0]}!</h1>
+                  <h1 className="text-2xl font-bold mb-2">Welcome back to Remote Inbound, {user?.fullName?.split(' ')[0]}!</h1>
                   <p className="text-orange-100">
                     You have {registeredEvents.length} registered events and {upcomingEvents.length} new fan-driven HubSpot events to explore.
                   </p>
@@ -277,7 +277,7 @@ export default function DashboardPage() {
                 {/* Upcoming Events */}
                 <div className="bg-white rounded-xl shadow-sm p-6">
                   <div className="flex items-center justify-between mb-4">
-                    <h2 className="text-lg font-semibold text-gray-900">Discover New RemoteInbound Events</h2>
+                    <h2 className="text-lg font-semibold text-gray-900">Discover New Remote Inbound Events</h2>
                     <Link href="/events" className="text-orange-600 hover:text-orange-700 text-sm font-medium">
                       View all
                     </Link>
@@ -308,7 +308,7 @@ export default function DashboardPage() {
             {activeTab === 'events' && (
               <div className="space-y-6">
                 <div className="flex items-center justify-between">
-                  <h1 className="text-2xl font-bold text-gray-900">My RemoteInbound Events</h1>
+                  <h1 className="text-2xl font-bold text-gray-900">My Remote Inbound Events</h1>
                   <Link
                     href="/events"
                     className="bg-orange-600 text-white px-4 py-2 rounded-lg hover:bg-orange-700 flex items-center space-x-2"
@@ -323,7 +323,7 @@ export default function DashboardPage() {
                     <Calendar className="w-16 h-16 text-gray-300 mx-auto mb-4" />
                     <h3 className="text-lg font-medium text-gray-900 mb-2">No events registered yet</h3>
                     <p className="text-gray-500 mb-6">
-                      Discover amazing fan-driven HubSpot events and start your learning journey with the RemoteInbound community.
+                      Discover amazing fan-driven HubSpot events and start your learning journey with the Remote Inbound community.
                     </p>
                     <Link
                       href="/events"
@@ -437,7 +437,7 @@ export default function DashboardPage() {
                     <div className="flex items-center justify-between">
                       <div>
                         <h3 className="font-medium text-gray-900">Email Notifications</h3>
-                        <p className="text-sm text-gray-500">Receive updates about your registered RemoteInbound events</p>
+                        <p className="text-sm text-gray-500">Receive updates about your registered Remote Inbound events</p>
                       </div>
                       <button className="bg-orange-600 text-white px-4 py-2 rounded-lg text-sm">
                         Enabled

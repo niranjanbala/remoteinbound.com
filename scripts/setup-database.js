@@ -18,7 +18,7 @@ const supabase = createClient(supabaseUrl, serviceRoleKey);
 
 async function setupDatabase() {
   try {
-    console.log('🚀 Setting up RemoteInbound database...');
+    console.log('🚀 Setting up Remote Inbound database...');
     
     // Read the schema file
     const schemaPath = path.join(__dirname, '..', 'supabase', 'schema.sql');

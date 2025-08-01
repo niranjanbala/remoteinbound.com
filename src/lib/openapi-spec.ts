@@ -1,7 +1,7 @@
 export const openApiSpec = {
   openapi: '3.0.0',
   info: {
-    title: 'RemoteInbound API',
+    title: 'Remote Inbound API',
     version: '1.0.0',
     description: 'Comprehensive API for managing virtual events, users, speakers, and registrations',
     contact: {

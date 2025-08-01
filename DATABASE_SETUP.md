@@ -1,6 +1,6 @@
 # Database Setup Guide
 
-This guide will help you set up the Supabase database for the RemoteInbound event platform.
+This guide will help you set up the Supabase database for the Remote Inbound event platform.
 
 ## Prerequisites
 

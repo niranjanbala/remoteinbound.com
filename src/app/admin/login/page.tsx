@@ -200,7 +200,7 @@ export default function AdminLoginPage() {
               href="/" 
               className="text-sm text-blue-600 hover:text-blue-700 font-medium"
             >
-              ← Back to RemoteInbound
+              ← Back to Remote Inbound
             </Link>
           </div>
         </div>

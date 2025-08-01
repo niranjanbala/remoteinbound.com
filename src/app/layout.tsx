@@ -11,14 +11,14 @@ const inter = Inter({
 
 export const metadata: Metadata = {
   title: {
-    default: "RemoteInbound - Free Online Event Platform",
-    template: "%s | RemoteInbound",
+    default: "Remote Inbound - Free Online Event Platform",
+    template: "%s | Remote Inbound",
   },
   description: "A comprehensive PWA for hosting free virtual conferences, webinars, and networking events with local storage.",
   keywords: ["virtual events", "online conferences", "webinars", "networking", "PWA", "free events"],
-  authors: [{ name: "RemoteInbound Team" }],
-  creator: "RemoteInbound",
-  publisher: "RemoteInbound",
+  authors: [{ name: "Remote Inbound Team" }],
+  creator: "Remote Inbound",
+  publisher: "Remote Inbound",
   formatDetection: {
     email: false,
     address: false,
@@ -32,13 +32,13 @@ export const metadata: Metadata = {
     type: "website",
     locale: "en_US",
     url: "https://remoteinbound.com",
-    title: "RemoteInbound - Free Online Event Platform",
+    title: "Remote Inbound - Free Online Event Platform",
     description: "A comprehensive PWA for hosting free virtual conferences, webinars, and networking events.",
-    siteName: "RemoteInbound",
+    siteName: "Remote Inbound",
   },
   twitter: {
     card: "summary_large_image",
-    title: "RemoteInbound - Free Online Event Platform",
+    title: "Remote Inbound - Free Online Event Platform",
     description: "A comprehensive PWA for hosting free virtual conferences, webinars, and networking events.",
     creator: "@remoteinbound",
   },
@@ -84,8 +84,8 @@ export default function RootLayout({
         <meta name="mobile-web-app-capable" content="yes" />
         <meta name="apple-mobile-web-app-capable" content="yes" />
         <meta name="apple-mobile-web-app-status-bar-style" content="default" />
-        <meta name="apple-mobile-web-app-title" content="RemoteInbound" />
-        <meta name="application-name" content="RemoteInbound" />
+        <meta name="apple-mobile-web-app-title" content="Remote Inbound" />
+        <meta name="application-name" content="Remote Inbound" />
         <meta name="msapplication-TileColor" content="#3b82f6" />
         <meta name="msapplication-tap-highlight" content="no" />
       </head>

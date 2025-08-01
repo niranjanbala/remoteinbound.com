@@ -188,7 +188,7 @@ export default function RegisterPage() {
           <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
             <CheckCircle className="w-8 h-8 text-green-600" />
           </div>
-          <h2 className="text-2xl font-bold text-gray-900 mb-2">Welcome to RemoteInbound!</h2>
+          <h2 className="text-2xl font-bold text-gray-900 mb-2">Welcome to Remote Inbound!</h2>
           <p className="text-gray-600 mb-6">
             Your account has been created successfully. You&apos;ll be redirected to your dashboard shortly.
           </p>
@@ -205,7 +205,7 @@ export default function RegisterPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-16">
             <Link href="/" className="text-2xl font-bold text-orange-500">
-              RemoteInbound
+              Remote Inbound
             </Link>
             
             <div className="flex items-center space-x-4">
@@ -226,7 +226,7 @@ export default function RegisterPage() {
           {/* Registration Options */}
           <div className="text-center mb-6 sm:mb-8">
             <h1 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-gray-900 mb-3 sm:mb-4 px-4">
-              Join RemoteInbound 2025
+              Join Remote Inbound 2025
             </h1>
             <p className="text-base sm:text-lg lg:text-xl text-gray-600 mb-6 sm:mb-8 px-4 leading-relaxed">
               Choose how you'd like to participate in our fan-driven HubSpot community event
@@ -502,7 +502,7 @@ export default function RegisterPage() {
                     <span>Creating Account...</span>
                   </div>
                 ) : (
-                  'Join RemoteInbound Free'
+                  'Join Remote Inbound Free'
                 )}
               </button>
             </form>
@@ -518,7 +518,7 @@ export default function RegisterPage() {
                 <div className="w-8 h-8 bg-orange-100 rounded-full flex items-center justify-center">
                   <Calendar className="w-4 h-4 text-orange-600" />
                 </div>
-                <span className="text-gray-700">Access to all RemoteInbound 2025 sessions</span>
+                <span className="text-gray-700">Access to all Remote Inbound 2025 sessions</span>
               </div>
               <div className="flex items-center space-x-3">
                 <div className="w-8 h-8 bg-green-100 rounded-full flex items-center justify-center">

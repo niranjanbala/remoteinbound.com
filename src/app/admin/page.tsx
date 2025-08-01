@@ -90,7 +90,7 @@ export default function AdminDashboard() {
         allEvents = [
           {
             id: '1',
-            title: 'RemoteInbound 2025',
+            title: 'Remote Inbound 2025',
             description: 'The world\'s largest gathering of inbound professionals',
             startDate: '2025-09-03T09:00:00Z',
             endDate: '2025-09-06T17:00:00Z',
@@ -187,7 +187,7 @@ export default function AdminDashboard() {
                 <div className="w-8 h-8 bg-gradient-to-r from-blue-600 to-indigo-600 rounded-lg flex items-center justify-center">
                   <span className="text-white font-bold text-sm">RI</span>
                 </div>
-                <span className="text-xl font-bold text-gray-900">RemoteInbound Admin</span>
+                <span className="text-xl font-bold text-gray-900">Remote Inbound Admin</span>
               </Link>
             </div>
             
@@ -556,7 +556,7 @@ export default function AdminDashboard() {
                   </label>
                   <input
                     type="text"
-                    defaultValue="RemoteInbound"
+                    defaultValue="Remote Inbound"
                     className="w-full px-3 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-blue-500 focus:border-transparent"
                   />
                 </div>

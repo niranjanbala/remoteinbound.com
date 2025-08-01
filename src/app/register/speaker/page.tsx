@@ -254,7 +254,7 @@ export default function SpeakerRegisterPage() {
           <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
             <CheckCircle className="w-8 h-8 text-green-600" />
           </div>
-          <h2 className="text-2xl font-bold text-gray-900 mb-2">Welcome to RemoteInbound!</h2>
+          <h2 className="text-2xl font-bold text-gray-900 mb-2">Welcome to Remote Inbound!</h2>
           <p className="text-gray-600 mb-6">
             Your speaker application has been submitted successfully. Our team will review your profile and get back to you soon.
           </p>
@@ -271,7 +271,7 @@ export default function SpeakerRegisterPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-16">
             <Link href="/" className="text-2xl font-bold text-orange-500">
-              RemoteInbound
+              Remote Inbound
             </Link>
             
             <div className="flex items-center space-x-4">
@@ -296,7 +296,7 @@ export default function SpeakerRegisterPage() {
                 <Mic className="w-6 h-6 sm:w-8 sm:h-8 text-orange-600" />
               </div>
               <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-2">
-                Become a RemoteInbound Speaker
+                Become a Remote Inbound Speaker
               </h2>
               <p className="text-sm sm:text-base text-gray-600 leading-relaxed">
                 Share your HubSpot expertise with our passionate fan community
@@ -638,7 +638,7 @@ export default function SpeakerRegisterPage() {
                     className="h-4 w-4 text-orange-600 focus:ring-orange-500 border-gray-300 rounded"
                   />
                   <label htmlFor="subscribeNewsletter" className="ml-2 block text-sm text-gray-700">
-                    Subscribe to RemoteInbound updates and speaker resources
+                    Subscribe to Remote Inbound updates and speaker resources
                   </label>
                 </div>
 
@@ -681,7 +681,7 @@ export default function SpeakerRegisterPage() {
                     <span>Submitting Application...</span>
                   </div>
                 ) : (
-                  'Apply to Speak at RemoteInbound'
+                  'Apply to Speak at Remote Inbound'
                 )}
               </button>
             </form>

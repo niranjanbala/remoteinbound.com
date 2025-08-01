@@ -55,7 +55,7 @@ export default function Home() {
           <div className="flex justify-between items-center h-16">
             <div className="flex items-center">
               <Link href="/" className="text-2xl font-bold text-orange-500">
-                RemoteInbound
+                Remote Inbound
               </Link>
             </div>
             
@@ -121,7 +121,7 @@ export default function Home() {
               <h1 className="text-5xl md:text-6xl font-bold text-white mb-6 leading-tight">
                 Build your future
                 <br />
-                at <span className="text-orange-500">RemoteInbound</span>
+                at <span className="text-orange-500">Remote Inbound</span>
               </h1>
               
               <p className="text-xl text-gray-300 mb-8 leading-relaxed">
@@ -163,7 +163,7 @@ export default function Home() {
                   <button className="w-20 h-20 bg-orange-500 rounded-full flex items-center justify-center shadow-lg hover:scale-105 transition-transform mb-4">
                     <Play className="w-8 h-8 text-white ml-1" />
                   </button>
-                  <p className="text-gray-300 text-sm">Watch: What is RemoteInbound?</p>
+                  <p className="text-gray-300 text-sm">Watch: What is Remote Inbound?</p>
                 </div>
               </div>
               
@@ -182,12 +182,12 @@ export default function Home() {
         </div>
       </section>
 
-      {/* What is RemoteInbound Section */}
+      {/* What is Remote Inbound Section */}
       <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
-              What is RemoteInbound?
+              What is Remote Inbound?
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
               The first edition of a fan-created remote event where passionate HubSpot users share insights, strategies, and innovations that drive real business growth.
@@ -359,7 +359,7 @@ export default function Home() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <div>
               <h2 className="text-4xl md:text-5xl font-bold mb-8">
-                Why attend RemoteInbound?
+                Why attend Remote Inbound?
               </h2>
               
               <div className="space-y-6">
@@ -436,7 +436,7 @@ export default function Home() {
             Ready to Level Up Your HubSpot Game?
           </h2>
           <p className="text-xl text-orange-100 mb-8">
-            Join thousands of HubSpot fans at the first-ever RemoteInbound 2025. It's free, it's remote, and it's created by fans, for fans.
+            Join thousands of HubSpot fans at the first-ever Remote Inbound 2025. It's free, it's remote, and it's created by fans, for fans.
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -462,7 +462,7 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
             <div>
-              <div className="text-2xl font-bold text-orange-500 mb-4">RemoteInbound</div>
+              <div className="text-2xl font-bold text-orange-500 mb-4">Remote Inbound</div>
               <p className="text-gray-400 mb-4">
                 The first edition remote event created by HubSpot fans for the global HubSpot community.
               </p>
@@ -504,7 +504,7 @@ export default function Home() {
           </div>
           
           <div className="border-t border-gray-800 mt-12 pt-8 text-center text-gray-400">
-            <p>&copy; 2025 RemoteInbound. Organized by HubSpot Super Users. Not affiliated with HubSpot, Inc.</p>
+            <p>&copy; 2025 Remote Inbound. Organized by HubSpot Super Users. Not affiliated with HubSpot, Inc.</p>
           </div>
         </div>
       </footer>

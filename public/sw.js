@@ -1,4 +1,4 @@
-// RemoteInbound Service Worker
+// Remote Inbound Service Worker
 // Provides offline functionality and caching for PWA
 
 const CACHE_NAME = 'remoteinbound-v1.0.0';
@@ -243,7 +243,7 @@ function createOfflinePage() {
     <head>
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <title>Offline - RemoteInbound</title>
+      <title>Offline - Remote Inbound</title>
       <style>
         body {
           font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
@@ -327,7 +327,7 @@ function createOfflinePage() {
       <div class="container">
         <div class="logo">RI</div>
         <h1>You're Offline</h1>
-        <p>Don't worry! RemoteInbound works offline too. You can still access cached content and use many features without an internet connection.</p>
+        <p>Don't worry! Remote Inbound works offline too. You can still access cached content and use many features without an internet connection.</p>
         
         <button class="button" onclick="window.location.reload()">
           Try Again
@@ -429,7 +429,7 @@ self.addEventListener('push', (event) => {
   };
   
   event.waitUntil(
-    self.registration.showNotification('RemoteInbound', options)
+    self.registration.showNotification('Remote Inbound', options)
   );
 });
 

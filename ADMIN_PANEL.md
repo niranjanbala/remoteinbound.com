@@ -1,8 +1,8 @@
-# RemoteInbound Admin Panel
+# Remote Inbound Admin Panel
 
 ## Overview
 
-The RemoteInbound Admin Panel is a comprehensive management system for administrators to manage users, events, and platform settings. It provides a secure, user-friendly interface for all administrative tasks.
+The Remote Inbound Admin Panel is a comprehensive management system for administrators to manage users, events, and platform settings. It provides a secure, user-friendly interface for all administrative tasks.
 
 ## Features
 

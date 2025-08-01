@@ -129,7 +129,7 @@ export default function LoginPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-16">
             <Link href="/" className="text-2xl font-bold text-orange-500">
-              RemoteInbound
+              Remote Inbound
             </Link>
             
             <div className="flex items-center space-x-4">
@@ -151,7 +151,7 @@ export default function LoginPage() {
           <div className="bg-white rounded-xl shadow-lg p-8">
             <div className="text-center mb-8">
               <h2 className="text-3xl font-bold text-gray-900 mb-2">
-                Welcome Back to RemoteInbound
+                Welcome Back to Remote Inbound
               </h2>
               <p className="text-gray-600">
                 Sign in to access your dashboard and join the fan-driven HubSpot community
@@ -241,7 +241,7 @@ export default function LoginPage() {
                     <span>Signing In...</span>
                   </div>
                 ) : (
-                  'Sign In to RemoteInbound'
+                  'Sign In to Remote Inbound'
                 )}
               </button>
             </form>
@@ -264,7 +264,7 @@ export default function LoginPage() {
                 <h3 className="font-medium text-orange-900 mb-1">Demo Mode</h3>
                 <p className="text-sm text-orange-700">
                   For demo purposes, you can sign in with any registered email address and any password. 
-                  In production, this would use secure authentication with the RemoteInbound community platform.
+                  In production, this would use secure authentication with the Remote Inbound community platform.
                 </p>
               </div>
             </div>

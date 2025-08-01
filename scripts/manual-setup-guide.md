@@ -71,4 +71,4 @@ Supabase requires manual table creation through their dashboard for security rea
 - **Triggers** for automatic timestamp updates
 - **Functions** for attendee count management
 
-Once completed, your RemoteInbound application will be fully connected to the live Supabase database!
+Once completed, your Remote Inbound application will be fully connected to the live Supabase database!

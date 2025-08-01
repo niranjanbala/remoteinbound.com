@@ -208,4 +208,4 @@ If you encounter any issues:
 3. Try the manual table creation approach
 4. Check the browser console for any JavaScript errors
 
-The database setup is crucial for the full functionality of your RemoteInbound event platform!
+The database setup is crucial for the full functionality of your Remote Inbound event platform!

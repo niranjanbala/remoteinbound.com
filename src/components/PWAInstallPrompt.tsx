@@ -138,7 +138,7 @@ export default function PWAInstallPrompt({ className = '' }: PWAInstallPromptPro
             </div>
             
             <div className="flex-1 min-w-0">
-              <h3 className="text-sm font-semibold text-gray-900">Install RemoteInbound</h3>
+              <h3 className="text-sm font-semibold text-gray-900">Install Remote Inbound</h3>
               <p className="text-xs text-gray-600 mt-1">
                 Get the app for offline access and a better experience
               </p>
@@ -180,7 +180,7 @@ export default function PWAInstallPrompt({ className = '' }: PWAInstallPromptPro
             <div className="flex-1 min-w-0">
               <h3 className="text-sm font-semibold text-gray-900">Update Available</h3>
               <p className="text-xs text-gray-600 mt-1">
-                A new version of RemoteInbound is ready to install
+                A new version of Remote Inbound is ready to install
               </p>
               
               <div className="flex items-center space-x-2 mt-3">
