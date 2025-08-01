@@ -107,10 +107,11 @@ export default function RegisterPage() {
       // Create new user
       const newUser: UserType = {
         id: generateId(),
-        name: formData.name.trim(),
+        fullName: formData.name.trim(),
         email: formData.email.toLowerCase().trim(),
         role: 'attendee',
-        registeredAt: new Date().toISOString(),
+        createdAt: new Date().toISOString(),
+        updatedAt: new Date().toISOString(),
         preferences: {
           notifications: formData.subscribeNewsletter,
           theme: 'system'

@@ -1,11 +1,15 @@
 export interface User {
   id: string;
-  name: string;
   email: string;
+  fullName: string;
+  company?: string;
+  jobTitle?: string;
+  phone?: string;
   avatar?: string;
-  role: 'attendee' | 'speaker' | 'admin';
-  registeredAt: string;
-  preferences: {
+  role?: 'attendee' | 'speaker' | 'admin';
+  createdAt: string;
+  updatedAt: string;
+  preferences?: {
     notifications: boolean;
     theme: 'light' | 'dark' | 'system';
   };
