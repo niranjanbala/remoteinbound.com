@@ -6,14 +6,16 @@ import {
   Play,
   ArrowRight,
   Calendar,
-  MapPin,
+  Globe,
   Users,
   Star,
   CheckCircle,
-  Globe,
   Zap,
   Heart,
-  Award
+  Award,
+  Wifi,
+  Coffee,
+  BookOpen
 } from 'lucide-react';
 
 export default function Home() {
@@ -53,19 +55,19 @@ export default function Home() {
           <div className="flex justify-between items-center h-16">
             <div className="flex items-center">
               <Link href="/" className="text-2xl font-bold text-orange-500">
-                INBOUND
+                RemoteInbound
               </Link>
             </div>
             
             <nav className="hidden md:flex items-center space-x-8">
-              <Link href="/attend" className="text-gray-700 hover:text-orange-500 font-medium">
-                Attend
+              <Link href="/events" className="text-gray-700 hover:text-orange-500 font-medium">
+                Events
               </Link>
-              <Link href="/watch" className="text-gray-700 hover:text-orange-500 font-medium">
-                Watch
+              <Link href="/speakers" className="text-gray-700 hover:text-orange-500 font-medium">
+                Speakers
               </Link>
-              <Link href="/about" className="text-gray-700 hover:text-orange-500 font-medium">
-                About
+              <Link href="/docs" className="text-gray-700 hover:text-orange-500 font-medium">
+                Resources
               </Link>
             </nav>
 
@@ -89,7 +91,7 @@ export default function Home() {
                 href="/register"
                 className="bg-orange-500 text-white px-6 py-2 rounded-full hover:bg-orange-600 transition-colors font-medium"
               >
-                Register Free
+                Join Free
               </Link>
             </div>
           </div>
@@ -97,79 +99,101 @@ export default function Home() {
       </header>
 
       {/* Hero Section */}
-      <section className="relative bg-gradient-to-br from-orange-50 to-pink-50 py-20 lg:py-32 overflow-hidden">
-        <div className="absolute inset-0 opacity-40">
+      <section className="relative bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 py-20 lg:py-32 overflow-hidden">
+        {/* Background Pattern */}
+        <div className="absolute inset-0 opacity-10">
           <div className="w-full h-full bg-repeat" style={{
-            backgroundImage: `url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23f97316' fill-opacity='0.05'%3E%3Ccircle cx='30' cy='30' r='4'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")`
+            backgroundImage: `url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23f97316' fill-opacity='0.3'%3E%3Ccircle cx='30' cy='30' r='2'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")`
           }}></div>
         </div>
         
+        {/* Orange Gradient Accents */}
+        <div className="absolute top-0 right-0 w-96 h-96 bg-gradient-to-bl from-orange-500/20 to-transparent rounded-full blur-3xl"></div>
+        <div className="absolute bottom-0 left-0 w-96 h-96 bg-gradient-to-tr from-orange-600/20 to-transparent rounded-full blur-3xl"></div>
+        
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center">
-            {/* Event Badge */}
-            <div className="inline-flex items-center px-4 py-2 bg-orange-100 text-orange-800 rounded-full text-sm font-medium mb-8">
-              <Calendar className="w-4 h-4 mr-2" />
-              September 3-6, 2025 • Fully Online
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            {/* Left Content */}
+            <div>
+              {/* Event Badge */}
+              <div className="inline-flex items-center px-4 py-2 bg-orange-500/10 border border-orange-500/20 text-orange-400 rounded-full text-sm font-medium mb-8">
+                <Calendar className="w-4 h-4 mr-2" />
+                March 15-16, 2025 • 100% Remote • Free
+              </div>
+
+              <h1 className="text-5xl md:text-6xl font-bold text-white mb-6 leading-tight">
+                Build your future
+                <br />
+                at <span className="text-orange-500">RemoteInbound</span>
+              </h1>
+              
+              <p className="text-xl text-gray-300 mb-8 leading-relaxed">
+                Join HubSpot super users from around the world for the premier remote event focused on growth, innovation, and community-driven learning.
+              </p>
+              
+              <div className="flex flex-col sm:flex-row gap-4 mb-12">
+                <Link
+                  href="/register"
+                  className="bg-orange-500 text-white px-8 py-4 rounded-full text-lg font-semibold hover:bg-orange-600 transition-colors flex items-center justify-center space-x-2 shadow-lg"
+                >
+                  <span>Register Free</span>
+                  <ArrowRight className="w-5 h-5" />
+                </Link>
+                <button className="flex items-center justify-center space-x-2 px-8 py-4 border-2 border-gray-600 text-gray-300 rounded-full text-lg font-semibold hover:border-orange-500 hover:text-orange-500 transition-colors">
+                  <Play className="w-5 h-5" />
+                  <span>Watch Preview</span>
+                </button>
+              </div>
+
+              {/* Organizer Info */}
+              <div className="flex items-center space-x-4 text-gray-400 text-sm">
+                <div className="flex items-center space-x-2">
+                  <Users className="w-4 h-4" />
+                  <span>Organized by HubSpot Super Users</span>
+                </div>
+                <div className="w-1 h-1 bg-gray-600 rounded-full"></div>
+                <div className="flex items-center space-x-2">
+                  <Heart className="w-4 h-4" />
+                  <span>Community-Driven</span>
+                </div>
+              </div>
             </div>
 
-            <h1 className="text-5xl md:text-7xl font-bold text-gray-900 mb-6 leading-tight">
-              Let&apos;s grow
-              <br />
-              <span className="text-orange-500">better</span>
-              <br />
-              together
-            </h1>
-            
-            <p className="text-xl md:text-2xl text-gray-600 mb-12 max-w-3xl mx-auto leading-relaxed">
-              Join 26,000+ marketing, sales, and customer success professionals at the world&apos;s largest gathering of inbound professionals.
-            </p>
-            
-            <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-16">
-              <Link
-                href="/register"
-                className="bg-orange-500 text-white px-8 py-4 rounded-full text-lg font-semibold hover:bg-orange-600 transition-colors flex items-center space-x-2 shadow-lg"
-              >
-                <span>Register for Free</span>
-                <ArrowRight className="w-5 h-5" />
-              </Link>
-              <button className="flex items-center space-x-2 px-8 py-4 border-2 border-gray-300 rounded-full text-lg font-semibold hover:border-orange-500 hover:text-orange-500 transition-colors">
-                <Play className="w-5 h-5" />
-                <span>Watch 2024 Highlights</span>
-              </button>
-            </div>
-
-            {/* Stats */}
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-8 max-w-4xl mx-auto">
-              <div className="text-center">
-                <div className="text-3xl md:text-4xl font-bold text-orange-500 mb-2">26K+</div>
-                <div className="text-gray-600 font-medium">Attendees</div>
+            {/* Right Content - Video/Image Placeholder */}
+            <div className="relative">
+              <div className="aspect-video bg-gradient-to-br from-orange-500/20 to-slate-800 rounded-2xl border border-orange-500/20 flex items-center justify-center backdrop-blur-sm">
+                <div className="text-center">
+                  <button className="w-20 h-20 bg-orange-500 rounded-full flex items-center justify-center shadow-lg hover:scale-105 transition-transform mb-4">
+                    <Play className="w-8 h-8 text-white ml-1" />
+                  </button>
+                  <p className="text-gray-300 text-sm">Watch: What is RemoteInbound?</p>
+                </div>
               </div>
-              <div className="text-center">
-                <div className="text-3xl md:text-4xl font-bold text-orange-500 mb-2">300+</div>
-                <div className="text-gray-600 font-medium">Sessions</div>
+              
+              {/* Floating Stats */}
+              <div className="absolute -bottom-6 -left-6 bg-white rounded-xl p-4 shadow-lg">
+                <div className="text-2xl font-bold text-orange-500">5,000+</div>
+                <div className="text-gray-600 text-sm">Expected Attendees</div>
               </div>
-              <div className="text-center">
-                <div className="text-3xl md:text-4xl font-bold text-orange-500 mb-2">4</div>
-                <div className="text-gray-600 font-medium">Days</div>
-              </div>
-              <div className="text-center">
-                <div className="text-3xl md:text-4xl font-bold text-orange-500 mb-2">100+</div>
-                <div className="text-gray-600 font-medium">Countries</div>
+              
+              <div className="absolute -top-6 -right-6 bg-white rounded-xl p-4 shadow-lg">
+                <div className="text-2xl font-bold text-orange-500">50+</div>
+                <div className="text-gray-600 text-sm">Expert Speakers</div>
               </div>
             </div>
           </div>
         </div>
       </section>
 
-      {/* What is INBOUND Section */}
+      {/* What is RemoteInbound Section */}
       <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
-              What is INBOUND?
+              What is RemoteInbound?
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              INBOUND is where the world&apos;s most innovative companies and thought leaders gather to learn, connect, and grow better together.
+              A community-driven remote event where HubSpot super users share insights, strategies, and innovations that drive real business growth.
             </p>
           </div>
 
@@ -181,8 +205,8 @@ export default function Home() {
                     <Users className="w-6 h-6 text-orange-500" />
                   </div>
                   <div>
-                    <h3 className="text-xl font-semibold text-gray-900 mb-2">Learn from the Best</h3>
-                    <p className="text-gray-600">Get insights from industry leaders, innovators, and practitioners who are shaping the future of business.</p>
+                    <h3 className="text-xl font-semibold text-gray-900 mb-2">Learn from Super Users</h3>
+                    <p className="text-gray-600">Get practical insights from HubSpot power users who have achieved exceptional results with the platform.</p>
                   </div>
                 </div>
                 
@@ -191,8 +215,8 @@ export default function Home() {
                     <Globe className="w-6 h-6 text-orange-500" />
                   </div>
                   <div>
-                    <h3 className="text-xl font-semibold text-gray-900 mb-2">Global Community</h3>
-                    <p className="text-gray-600">Connect with professionals from over 100 countries and build relationships that last beyond the event.</p>
+                    <h3 className="text-xl font-semibold text-gray-900 mb-2">Global Remote Community</h3>
+                    <p className="text-gray-600">Connect with HubSpot professionals worldwide without leaving your home or office.</p>
                   </div>
                 </div>
                 
@@ -201,171 +225,221 @@ export default function Home() {
                     <Zap className="w-6 h-6 text-orange-500" />
                   </div>
                   <div>
-                    <h3 className="text-xl font-semibold text-gray-900 mb-2">Actionable Insights</h3>
-                    <p className="text-gray-600">Take home practical strategies and tactics you can implement immediately to grow your business.</p>
+                    <h3 className="text-xl font-semibold text-gray-900 mb-2">Actionable HubSpot Strategies</h3>
+                    <p className="text-gray-600">Discover advanced techniques, workflows, and integrations you can implement immediately.</p>
                   </div>
                 </div>
               </div>
             </div>
             
             <div className="relative">
-              <div className="aspect-video bg-gradient-to-br from-orange-400 to-pink-500 rounded-2xl flex items-center justify-center">
-                <button className="w-20 h-20 bg-white rounded-full flex items-center justify-center shadow-lg hover:scale-105 transition-transform">
-                  <Play className="w-8 h-8 text-orange-500 ml-1" />
-                </button>
-              </div>
-              <div className="absolute -bottom-6 -right-6 w-24 h-24 bg-yellow-400 rounded-full flex items-center justify-center">
-                <Star className="w-8 h-8 text-white" />
+              <div className="bg-gradient-to-br from-orange-50 to-orange-100 rounded-2xl p-8">
+                <div className="text-center mb-6">
+                  <div className="text-4xl font-bold text-orange-500 mb-2">90,000+</div>
+                  <div className="text-gray-600 font-medium">Combined HubSpot Experience Hours</div>
+                </div>
+                <div className="grid grid-cols-2 gap-4 text-center">
+                  <div>
+                    <div className="text-2xl font-bold text-gray-900">2</div>
+                    <div className="text-gray-600 text-sm">Days</div>
+                  </div>
+                  <div>
+                    <div className="text-2xl font-bold text-gray-900">30+</div>
+                    <div className="text-gray-600 text-sm">Sessions</div>
+                  </div>
+                  <div>
+                    <div className="text-2xl font-bold text-gray-900">100%</div>
+                    <div className="text-gray-600 text-sm">Remote</div>
+                  </div>
+                  <div>
+                    <div className="text-2xl font-bold text-gray-900">FREE</div>
+                    <div className="text-gray-600 text-sm">Always</div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Experience Types */}
+      {/* Remote Experience Section */}
       <section className="py-20 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
-              Choose Your Experience
+              The Remote Experience
             </h2>
             <p className="text-xl text-gray-600">
-              Join us in Boston or attend virtually from anywhere in the world
+              Designed for the modern remote professional
             </p>
           </div>
 
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
-            {/* In-Person */}
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            {/* Interactive Sessions */}
             <div className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-shadow">
               <div className="text-center mb-6">
-                <div className="w-16 h-16 bg-orange-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <MapPin className="w-8 h-8 text-orange-500" />
+                <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <Wifi className="w-8 h-8 text-blue-500" />
                 </div>
-                <h3 className="text-2xl font-bold text-gray-900 mb-2">In-Person</h3>
-                <p className="text-gray-600">Boston Convention & Exhibition Center</p>
+                <h3 className="text-2xl font-bold text-gray-900 mb-2">Interactive Sessions</h3>
+                <p className="text-gray-600">Live Q&A, polls, and breakout rooms</p>
               </div>
               
-              <div className="space-y-4 mb-8">
+              <div className="space-y-4">
                 <div className="flex items-center space-x-3">
                   <CheckCircle className="w-5 h-5 text-green-500" />
-                  <span className="text-gray-700">Full access to all sessions and workshops</span>
+                  <span className="text-gray-700">Real-time audience interaction</span>
                 </div>
                 <div className="flex items-center space-x-3">
                   <CheckCircle className="w-5 h-5 text-green-500" />
-                  <span className="text-gray-700">Networking opportunities with 26,000+ attendees</span>
+                  <span className="text-gray-700">Small group discussions</span>
                 </div>
                 <div className="flex items-center space-x-3">
                   <CheckCircle className="w-5 h-5 text-green-500" />
-                  <span className="text-gray-700">Exclusive in-person experiences</span>
-                </div>
-                <div className="flex items-center space-x-3">
-                  <CheckCircle className="w-5 h-5 text-green-500" />
-                  <span className="text-gray-700">Access to the INBOUND expo</span>
+                  <span className="text-gray-700">Direct speaker access</span>
                 </div>
               </div>
-              
-              <Link
-                href="/register?type=in-person"
-                className="w-full bg-orange-500 text-white py-3 px-6 rounded-full font-semibold hover:bg-orange-600 transition-colors text-center block"
-              >
-                Register for In-Person
-              </Link>
             </div>
 
-            {/* Virtual */}
+            {/* Networking */}
+            <div className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-shadow">
+              <div className="text-center mb-6">
+                <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <Coffee className="w-8 h-8 text-green-500" />
+                </div>
+                <h3 className="text-2xl font-bold text-gray-900 mb-2">Virtual Networking</h3>
+                <p className="text-gray-600">Connect with peers worldwide</p>
+              </div>
+              
+              <div className="space-y-4">
+                <div className="flex items-center space-x-3">
+                  <CheckCircle className="w-5 h-5 text-green-500" />
+                  <span className="text-gray-700">Speed networking sessions</span>
+                </div>
+                <div className="flex items-center space-x-3">
+                  <CheckCircle className="w-5 h-5 text-green-500" />
+                  <span className="text-gray-700">Industry-specific meetups</span>
+                </div>
+                <div className="flex items-center space-x-3">
+                  <CheckCircle className="w-5 h-5 text-green-500" />
+                  <span className="text-gray-700">Slack community access</span>
+                </div>
+              </div>
+            </div>
+
+            {/* Resources */}
             <div className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-shadow border-2 border-orange-200">
               <div className="text-center mb-6">
-                <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <Globe className="w-8 h-8 text-blue-500" />
+                <div className="w-16 h-16 bg-orange-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <BookOpen className="w-8 h-8 text-orange-500" />
                 </div>
-                <h3 className="text-2xl font-bold text-gray-900 mb-2">Virtual</h3>
-                <p className="text-gray-600">Join from anywhere in the world</p>
-                <div className="inline-block bg-orange-100 text-orange-800 px-3 py-1 rounded-full text-sm font-medium mt-2">
-                  FREE
-                </div>
+                <h3 className="text-2xl font-bold text-gray-900 mb-2">Resource Library</h3>
+                <p className="text-gray-600">Take-home materials and templates</p>
               </div>
               
-              <div className="space-y-4 mb-8">
+              <div className="space-y-4">
                 <div className="flex items-center space-x-3">
                   <CheckCircle className="w-5 h-5 text-green-500" />
-                  <span className="text-gray-700">Live streaming of keynote sessions</span>
+                  <span className="text-gray-700">Session recordings</span>
                 </div>
                 <div className="flex items-center space-x-3">
                   <CheckCircle className="w-5 h-5 text-green-500" />
-                  <span className="text-gray-700">On-demand access to select content</span>
+                  <span className="text-gray-700">HubSpot templates & workflows</span>
                 </div>
                 <div className="flex items-center space-x-3">
                   <CheckCircle className="w-5 h-5 text-green-500" />
-                  <span className="text-gray-700">Virtual networking opportunities</span>
-                </div>
-                <div className="flex items-center space-x-3">
-                  <CheckCircle className="w-5 h-5 text-green-500" />
-                  <span className="text-gray-700">Digital resource library</span>
+                  <span className="text-gray-700">Implementation guides</span>
                 </div>
               </div>
-              
-              <Link
-                href="/register?type=virtual"
-                className="w-full bg-blue-500 text-white py-3 px-6 rounded-full font-semibold hover:bg-blue-600 transition-colors text-center block"
-              >
-                Register for Virtual (Free)
-              </Link>
             </div>
           </div>
         </div>
       </section>
 
       {/* Why Attend */}
-      <section className="py-20 bg-white">
+      <section className="py-20 bg-gradient-to-br from-purple-900 via-purple-800 to-purple-900 text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
-              Why Attend INBOUND?
-            </h2>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div className="text-center">
-              <div className="w-20 h-20 bg-orange-100 rounded-full flex items-center justify-center mx-auto mb-6">
-                <Award className="w-10 h-10 text-orange-500" />
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+            <div>
+              <h2 className="text-4xl md:text-5xl font-bold mb-8">
+                Why attend RemoteInbound?
+              </h2>
+              
+              <div className="space-y-6">
+                <div>
+                  <h3 className="text-2xl font-semibold text-orange-400 mb-3">Grow</h3>
+                  <p className="text-purple-100 text-lg">
+                    Discover advanced HubSpot strategies and tactics from practitioners who've achieved exceptional results.
+                  </p>
+                </div>
+                
+                <div>
+                  <h3 className="text-2xl font-semibold text-orange-400 mb-3">Connect</h3>
+                  <p className="text-purple-100 text-lg">
+                    Build meaningful relationships with HubSpot super users and expand your professional network globally.
+                  </p>
+                </div>
+                
+                <div>
+                  <h3 className="text-2xl font-semibold text-orange-400 mb-3">Learn</h3>
+                  <p className="text-purple-100 text-lg">
+                    Access cutting-edge insights, real-world case studies, and actionable takeaways you can implement immediately.
+                  </p>
+                </div>
               </div>
-              <h3 className="text-xl font-semibold text-gray-900 mb-4">World-Class Content</h3>
-              <p className="text-gray-600">
-                Learn from industry pioneers and get access to cutting-edge strategies that drive real business results.
-              </p>
+              
+              <Link
+                href="/register"
+                className="inline-flex items-center space-x-2 bg-orange-500 text-white px-8 py-4 rounded-full text-lg font-semibold hover:bg-orange-600 transition-colors mt-8"
+              >
+                <span>Join the Community</span>
+                <ArrowRight className="w-5 h-5" />
+              </Link>
             </div>
             
-            <div className="text-center">
-              <div className="w-20 h-20 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-6">
-                <Users className="w-10 h-10 text-blue-500" />
+            <div className="relative">
+              <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-8 border border-white/20">
+                <div className="text-center mb-8">
+                  <div className="text-5xl font-bold text-orange-400 mb-2">100%</div>
+                  <div className="text-purple-100">Free & Remote</div>
+                </div>
+                
+                <div className="grid grid-cols-2 gap-6 text-center">
+                  <div>
+                    <Award className="w-8 h-8 text-orange-400 mx-auto mb-2" />
+                    <div className="text-lg font-semibold">Expert-Led</div>
+                    <div className="text-purple-200 text-sm">By HubSpot Super Users</div>
+                  </div>
+                  <div>
+                    <Users className="w-8 h-8 text-orange-400 mx-auto mb-2" />
+                    <div className="text-lg font-semibold">Community</div>
+                    <div className="text-purple-200 text-sm">Driven & Collaborative</div>
+                  </div>
+                  <div>
+                    <Globe className="w-8 h-8 text-orange-400 mx-auto mb-2" />
+                    <div className="text-lg font-semibold">Global</div>
+                    <div className="text-purple-200 text-sm">Accessible Worldwide</div>
+                  </div>
+                  <div>
+                    <Heart className="w-8 h-8 text-orange-400 mx-auto mb-2" />
+                    <div className="text-lg font-semibold">Passion</div>
+                    <div className="text-purple-200 text-sm">For Growth & Learning</div>
+                  </div>
+                </div>
               </div>
-              <h3 className="text-xl font-semibold text-gray-900 mb-4">Unmatched Networking</h3>
-              <p className="text-gray-600">
-                Connect with 26,000+ like-minded professionals and build relationships that accelerate your career.
-              </p>
-            </div>
-            
-            <div className="text-center">
-              <div className="w-20 h-20 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-6">
-                <Heart className="w-10 h-10 text-green-500" />
-              </div>
-              <h3 className="text-xl font-semibold text-gray-900 mb-4">Inspiring Community</h3>
-              <p className="text-gray-600">
-                Be part of a movement that believes in growing better and making a positive impact on the world.
-              </p>
             </div>
           </div>
         </div>
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 bg-gradient-to-r from-orange-500 to-pink-500">
+      <section className="py-20 bg-gradient-to-r from-orange-500 to-orange-600">
         <div className="max-w-4xl mx-auto text-center px-4 sm:px-6 lg:px-8">
           <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
-            Ready to Grow Better?
+            Ready to Level Up Your HubSpot Game?
           </h2>
           <p className="text-xl text-orange-100 mb-8">
-            Join thousands of professionals who are transforming their businesses and careers at INBOUND 2025.
+            Join thousands of HubSpot professionals at RemoteInbound 2025. It's free, it's remote, and it's designed by the community, for the community.
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -373,14 +447,14 @@ export default function Home() {
               href="/register"
               className="bg-white text-orange-500 px-8 py-4 rounded-full text-lg font-semibold hover:bg-gray-100 transition-colors inline-flex items-center justify-center space-x-2"
             >
-              <span>Register Free</span>
+              <span>Register Free Now</span>
               <ArrowRight className="w-5 h-5" />
             </Link>
             <Link
-              href="/about"
+              href="/events"
               className="border-2 border-white text-white px-8 py-4 rounded-full text-lg font-semibold hover:bg-white hover:text-orange-500 transition-colors"
             >
-              Learn More
+              View Schedule
             </Link>
           </div>
         </div>
@@ -391,49 +465,49 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
             <div>
-              <div className="text-2xl font-bold text-orange-500 mb-4">INBOUND</div>
+              <div className="text-2xl font-bold text-orange-500 mb-4">RemoteInbound</div>
               <p className="text-gray-400 mb-4">
-                The world&apos;s largest gathering of inbound professionals.
+                The premier remote event for HubSpot super users and growth professionals.
               </p>
               <p className="text-gray-400 text-sm">
-                September 3-6, 2025<br />
-                Boston, MA + Online
+                March 15-16, 2025<br />
+                100% Remote • 100% Free
               </p>
             </div>
             
             <div>
               <h3 className="font-semibold mb-4">Event</h3>
               <ul className="space-y-2 text-gray-400">
-                <li><Link href="/attend" className="hover:text-white transition-colors">Attend</Link></li>
-                <li><Link href="/watch" className="hover:text-white transition-colors">Watch</Link></li>
-                <li><Link href="/about" className="hover:text-white transition-colors">About</Link></li>
-                <li><Link href="/faq" className="hover:text-white transition-colors">FAQ</Link></li>
+                <li><Link href="/events" className="hover:text-white transition-colors">Schedule</Link></li>
+                <li><Link href="/speakers" className="hover:text-white transition-colors">Speakers</Link></li>
+                <li><Link href="/register" className="hover:text-white transition-colors">Register</Link></li>
+                <li><Link href="/docs" className="hover:text-white transition-colors">Resources</Link></li>
               </ul>
             </div>
             
             <div>
-              <h3 className="font-semibold mb-4">Resources</h3>
+              <h3 className="font-semibold mb-4">Community</h3>
               <ul className="space-y-2 text-gray-400">
-                <li><Link href="/blog" className="hover:text-white transition-colors">Blog</Link></li>
-                <li><Link href="/resources" className="hover:text-white transition-colors">Resources</Link></li>
-                <li><Link href="/community" className="hover:text-white transition-colors">Community</Link></li>
-                <li><Link href="/contact" className="hover:text-white transition-colors">Contact</Link></li>
+                <li><Link href="/dashboard" className="hover:text-white transition-colors">Dashboard</Link></li>
+                <li><Link href="/login" className="hover:text-white transition-colors">Member Login</Link></li>
+                <li><Link href="/docs" className="hover:text-white transition-colors">Documentation</Link></li>
+                <li><Link href="/admin" className="hover:text-white transition-colors">Organizers</Link></li>
               </ul>
             </div>
             
             <div>
               <h3 className="font-semibold mb-4">Connect</h3>
               <ul className="space-y-2 text-gray-400">
-                <li><Link href="/newsletter" className="hover:text-white transition-colors">Newsletter</Link></li>
-                <li><Link href="/social" className="hover:text-white transition-colors">Social Media</Link></li>
-                <li><Link href="/press" className="hover:text-white transition-colors">Press</Link></li>
-                <li><Link href="/partners" className="hover:text-white transition-colors">Partners</Link></li>
+                <li><a href="#" className="hover:text-white transition-colors">Slack Community</a></li>
+                <li><a href="#" className="hover:text-white transition-colors">LinkedIn Group</a></li>
+                <li><a href="#" className="hover:text-white transition-colors">Twitter</a></li>
+                <li><a href="#" className="hover:text-white transition-colors">Newsletter</a></li>
               </ul>
             </div>
           </div>
           
           <div className="border-t border-gray-800 mt-12 pt-8 text-center text-gray-400">
-            <p>&copy; 2025 INBOUND. All rights reserved.</p>
+            <p>&copy; 2025 RemoteInbound. Organized by HubSpot Super Users. Not affiliated with HubSpot, Inc.</p>
           </div>
         </div>
       </footer>
