@@ -287,18 +287,18 @@ export default function SpeakerRegisterPage() {
         </div>
       </header>
 
-      <div className="flex items-center justify-center py-12 px-4 sm:px-6 lg:px-8">
-        <div className="max-w-2xl w-full space-y-8">
+      <div className="flex items-center justify-center py-6 sm:py-12 px-4 sm:px-6 lg:px-8">
+        <div className="max-w-2xl w-full space-y-6 sm:space-y-8">
           {/* Registration Form */}
-          <div className="bg-white rounded-xl shadow-lg p-8">
-            <div className="text-center mb-8">
-              <div className="w-16 h-16 bg-orange-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                <Mic className="w-8 h-8 text-orange-600" />
+          <div className="bg-white rounded-xl shadow-lg p-4 sm:p-6 lg:p-8">
+            <div className="text-center mb-6 sm:mb-8">
+              <div className="w-12 h-12 sm:w-16 sm:h-16 bg-orange-100 rounded-full flex items-center justify-center mx-auto mb-3 sm:mb-4">
+                <Mic className="w-6 h-6 sm:w-8 sm:h-8 text-orange-600" />
               </div>
-              <h2 className="text-3xl font-bold text-gray-900 mb-2">
+              <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-2">
                 Become a RemoteInbound Speaker
               </h2>
-              <p className="text-gray-600">
+              <p className="text-sm sm:text-base text-gray-600 leading-relaxed">
                 Share your HubSpot expertise with our passionate fan community
               </p>
             </div>
@@ -310,10 +310,10 @@ export default function SpeakerRegisterPage() {
               </div>
             )}
 
-            <form onSubmit={handleSubmit} className="space-y-6">
+            <form onSubmit={handleSubmit} className="space-y-4 sm:space-y-6">
               {/* Personal Information */}
-              <div className="bg-gray-50 rounded-lg p-6">
-                <h3 className="text-lg font-semibold text-gray-900 mb-4">Personal Information</h3>
+              <div className="bg-gray-50 rounded-lg p-4 sm:p-6">
+                <h3 className="text-base sm:text-lg font-semibold text-gray-900 mb-3 sm:mb-4">Personal Information</h3>
                 
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                   <div>
@@ -445,40 +445,40 @@ export default function SpeakerRegisterPage() {
                   </div>
                 </div>
 
-                <div className="mt-6">
+                <div className="mt-4 sm:mt-6">
                   <label className="block text-sm font-medium text-gray-700 mb-3">
                     Areas of Expertise * (Select all that apply)
                   </label>
-                  <div className="grid grid-cols-2 md:grid-cols-3 gap-2">
+                  <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-2 sm:gap-3">
                     {expertiseOptions.map((expertise) => (
-                      <label key={expertise} className="flex items-center space-x-2 cursor-pointer">
+                      <label key={expertise} className="flex items-start space-x-2 cursor-pointer p-2 hover:bg-gray-50 rounded">
                         <input
                           type="checkbox"
                           checked={formData.expertise.includes(expertise)}
                           onChange={() => handleExpertiseChange(expertise)}
-                          className="h-4 w-4 text-orange-600 focus:ring-orange-500 border-gray-300 rounded"
+                          className="h-4 w-4 text-orange-600 focus:ring-orange-500 border-gray-300 rounded mt-0.5 flex-shrink-0"
                         />
-                        <span className="text-sm text-gray-700">{expertise}</span>
+                        <span className="text-xs sm:text-sm text-gray-700 leading-relaxed">{expertise}</span>
                       </label>
                     ))}
                   </div>
                   {errors.expertise && <p className="mt-1 text-sm text-red-600">{errors.expertise}</p>}
                 </div>
 
-                <div className="mt-6">
+                <div className="mt-4 sm:mt-6">
                   <label className="block text-sm font-medium text-gray-700 mb-3">
                     Preferred Session Types (Optional)
                   </label>
-                  <div className="grid grid-cols-2 md:grid-cols-3 gap-2">
+                  <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-2 sm:gap-3">
                     {sessionPreferenceOptions.map((preference) => (
-                      <label key={preference} className="flex items-center space-x-2 cursor-pointer">
+                      <label key={preference} className="flex items-start space-x-2 cursor-pointer p-2 hover:bg-gray-50 rounded">
                         <input
                           type="checkbox"
                           checked={formData.sessionPreferences.includes(preference)}
                           onChange={() => handleSessionPreferenceChange(preference)}
-                          className="h-4 w-4 text-orange-600 focus:ring-orange-500 border-gray-300 rounded"
+                          className="h-4 w-4 text-orange-600 focus:ring-orange-500 border-gray-300 rounded mt-0.5 flex-shrink-0"
                         />
-                        <span className="text-sm text-gray-700">{preference}</span>
+                        <span className="text-xs sm:text-sm text-gray-700 leading-relaxed">{preference}</span>
                       </label>
                     ))}
                   </div>
