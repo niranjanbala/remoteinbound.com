@@ -1,7 +1,7 @@
 import NextAuth from 'next-auth';
 import { SupabaseAdapter } from '@auth/supabase-adapter';
 import GoogleProvider from 'next-auth/providers/google';
-import { supabaseServer } from './supabase-server';
+import { getSupabaseServer, isSupabaseConfigured } from './supabase-server';
 
 export const { handlers, auth, signIn, signOut } = NextAuth({
   adapter: SupabaseAdapter({
@@ -22,16 +22,29 @@ export const { handlers, auth, signIn, signOut } = NextAuth({
   callbacks: {
     async session({ session, user }) {
       // Add user role to session
-      if (session.user && user) {
-        // Check if user is admin by email or role in database
-        const { data: userData } = await supabaseServer
-          .from('users')
-          .select('role')
-          .eq('email', session.user.email)
-          .single();
+      if (session.user && user && isSupabaseConfigured) {
+        try {
+          // Check if user is admin by email or role in database
+          const supabaseServer = getSupabaseServer();
+          const { data: userData } = await supabaseServer
+            .from('users')
+            .select('role')
+            .eq('email', session.user.email)
+            .single();
 
-        session.user.role = userData?.role || 'attendee';
-        session.user.id = user.id;
+          session.user.role = userData?.role || 'attendee';
+          session.user.id = user.id;
+        } catch (error) {
+          console.warn('Failed to fetch user role from database:', error);
+          session.user.role = 'attendee';
+          session.user.id = user.id;
+        }
+      } else {
+        // Fallback when Supabase is not configured
+        if (session.user && user) {
+          session.user.role = 'attendee';
+          session.user.id = user.id;
+        }
       }
       return session;
     },
