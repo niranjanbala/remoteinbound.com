@@ -1,9 +1,9 @@
 [build]
   publish = "out"
-  command = "rm -rf node_modules package-lock.json && npm install && npm run build"
+  command = "rm -rf .next node_modules package-lock.json && npm install && npm run build"
 
 [build.environment]
-  NODE_VERSION = "18"
+  NODE_VERSION = "20"
   NPM_FLAGS = "--production=false"
 
 [[redirects]]
