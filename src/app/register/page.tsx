@@ -16,9 +16,8 @@ import {
   Globe,
   Smartphone
 } from 'lucide-react';
-import { User as UserType } from '@/types';
 import { userStorage } from '@/lib/storage';
-import { generateId } from '@/lib/utils';
+import { userService } from '@/lib/database';
 
 export default function RegisterPage() {
   const router = useRouter();
@@ -60,13 +59,8 @@ export default function RegisterPage() {
       newErrors.email = 'Email is required';
     } else if (!emailRegex.test(formData.email)) {
       newErrors.email = 'Please enter a valid email address';
-    } else {
-      // Check if email already exists
-      const existingUsers = userStorage.getAllUsers();
-      if (existingUsers.some(user => user.email.toLowerCase() === formData.email.toLowerCase())) {
-        newErrors.email = 'An account with this email already exists';
-      }
     }
+    // Note: Email uniqueness will be checked in handleSubmit with database
 
     // Password validation
     if (!formData.password) {
@@ -101,27 +95,60 @@ export default function RegisterPage() {
     setIsLoading(true);
 
     try {
-      // Simulate API call delay
-      await new Promise(resolve => setTimeout(resolve, 1000));
-
-      // Create new user
-      const newUser: UserType = {
-        id: generateId(),
-        fullName: formData.name.trim(),
-        email: formData.email.toLowerCase().trim(),
-        role: 'attendee',
-        createdAt: new Date().toISOString(),
-        updatedAt: new Date().toISOString(),
-        preferences: {
-          notifications: formData.subscribeNewsletter,
-          theme: 'system'
+      let newUser;
+      
+      try {
+        // Check if user already exists in database
+        const existingUser = await userService.getByEmail(formData.email.toLowerCase().trim());
+        if (existingUser) {
+          setErrors({ email: 'An account with this email already exists.' });
+          return;
         }
-      };
 
-      // Save user to local storage
-      userStorage.addUser(newUser);
+        // Create new user in database
+        newUser = await userService.create({
+          email: formData.email.toLowerCase().trim(),
+          fullName: formData.name.trim(),
+          preferences: {
+            notifications: formData.subscribeNewsletter,
+            theme: 'system'
+          }
+        });
+      } catch (dbError) {
+        console.warn('Database registration failed, using local storage fallback:', dbError);
+        
+        // Check if user exists in local storage
+        const existingUsers = JSON.parse(localStorage.getItem('remoteinbound_users') || '[]');
+        const existingLocalUser = existingUsers.find((user: any) =>
+          user.email.toLowerCase() === formData.email.toLowerCase().trim()
+        );
+        
+        if (existingLocalUser) {
+          setErrors({ email: 'An account with this email already exists.' });
+          return;
+        }
+        
+        // Fallback to local storage
+        newUser = {
+          id: `local_${Date.now()}`,
+          email: formData.email.toLowerCase().trim(),
+          fullName: formData.name.trim(),
+          preferences: {
+            notifications: formData.subscribeNewsletter,
+            theme: 'system' as const
+          },
+          createdAt: new Date().toISOString(),
+          updatedAt: new Date().toISOString()
+        };
+        
+        // Store in local storage
+        existingUsers.push(newUser);
+        localStorage.setItem('remoteinbound_users', JSON.stringify(existingUsers));
+      }
+
+      // Set user as logged in
       userStorage.setCurrentUser(newUser);
-
+      
       setRegistrationSuccess(true);
 
       // Redirect to dashboard after success message
@@ -129,7 +156,8 @@ export default function RegisterPage() {
         router.push('/dashboard');
       }, 2000);
 
-    } catch {
+    } catch (error) {
+      console.error('Registration error:', error);
       setErrors({ general: 'Registration failed. Please try again.' });
     } finally {
       setIsLoading(false);

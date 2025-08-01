@@ -1,6 +1,7 @@
 import type { Metadata, Viewport } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
+import PWAInstallPrompt from "@/components/PWAInstallPrompt";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -89,6 +90,7 @@ export default function RootLayout({
       </head>
       <body className={`font-inter antialiased bg-white text-gray-900`}>
         {children}
+        <PWAInstallPrompt />
       </body>
     </html>
   );

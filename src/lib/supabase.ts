@@ -1,38 +1,30 @@
 import { createClient } from '@supabase/supabase-js';
-import { createBrowserClient, createServerClient } from '@supabase/ssr';
-import { cookies } from 'next/headers';
+import { createBrowserClient } from '@supabase/ssr';
 
-const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL!;
-const supabaseAnonKey = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY!;
+const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL || '';
+const supabaseAnonKey = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY || '';
+
+// Check if Supabase is configured
+const isSupabaseConfigured = supabaseUrl &&
+  supabaseAnonKey &&
+  supabaseUrl !== 'your_supabase_project_url' &&
+  supabaseAnonKey !== 'your_supabase_anon_key';
 
 // Browser client for client-side operations
-export const createBrowserSupabaseClient = () =>
-  createBrowserClient(supabaseUrl, supabaseAnonKey);
-
-// Server client for server-side operations
-export const createServerSupabaseClient = async () => {
-  const cookieStore = await cookies();
-  return createServerClient(
-    supabaseUrl,
-    supabaseAnonKey,
-    {
-      cookies: {
-        get(name: string) {
-          return cookieStore.get(name)?.value;
-        },
-        set(name: string, value: string, options: Record<string, unknown>) {
-          cookieStore.set({ name, value, ...options });
-        },
-        remove(name: string, options: Record<string, unknown>) {
-          cookieStore.set({ name, value: '', ...options });
-        },
-      },
-    }
-  );
+export const createBrowserSupabaseClient = () => {
+  if (!isSupabaseConfigured) {
+    throw new Error('Supabase is not configured. Please set NEXT_PUBLIC_SUPABASE_URL and NEXT_PUBLIC_SUPABASE_ANON_KEY in your .env.local file.');
+  }
+  return createBrowserClient(supabaseUrl, supabaseAnonKey);
 };
 
-// Simple client for basic operations (fallback)
-export const supabase = createClient(supabaseUrl, supabaseAnonKey);
+// Simple client for basic operations
+export const supabase = isSupabaseConfigured
+  ? createClient(supabaseUrl, supabaseAnonKey)
+  : null;
+
+// Export configuration status
+export { isSupabaseConfigured };
 
 // Database types
 export type Database = {

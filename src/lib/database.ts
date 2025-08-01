@@ -1,4 +1,4 @@
-import { createBrowserSupabaseClient, Database } from './supabase';
+import { createBrowserSupabaseClient, Database, isSupabaseConfigured } from './supabase';
 import { User, Event, Speaker } from '@/types';
 
 // Type definitions for database operations
@@ -56,6 +56,9 @@ const transformDbSpeaker = (dbSpeaker: DbSpeaker): Speaker => ({
 export const userService = {
   // Create a new user
   async create(userData: Omit<User, 'id' | 'createdAt' | 'updatedAt'>): Promise<User> {
+    if (!isSupabaseConfigured) {
+      throw new Error('Database is not configured. Please set up your Supabase credentials in .env.local');
+    }
     const supabase = createBrowserSupabaseClient();
     
     const { data, error } = await supabase
@@ -76,6 +79,9 @@ export const userService = {
 
   // Get user by ID
   async getById(id: string): Promise<User | null> {
+    if (!isSupabaseConfigured) {
+      throw new Error('Database is not configured. Please set up your Supabase credentials in .env.local');
+    }
     const supabase = createBrowserSupabaseClient();
     
     const { data, error } = await supabase
@@ -94,6 +100,9 @@ export const userService = {
 
   // Get user by email
   async getByEmail(email: string): Promise<User | null> {
+    if (!isSupabaseConfigured) {
+      throw new Error('Database is not configured. Please set up your Supabase credentials in .env.local');
+    }
     const supabase = createBrowserSupabaseClient();
     
     const { data, error } = await supabase
@@ -108,6 +117,22 @@ export const userService = {
     }
     
     return transformDbUser(data);
+  },
+
+  // Get all users
+  async getAll(): Promise<User[]> {
+    if (!isSupabaseConfigured) {
+      throw new Error('Database is not configured. Please set up your Supabase credentials in .env.local');
+    }
+    const supabase = createBrowserSupabaseClient();
+    
+    const { data, error } = await supabase
+      .from('users')
+      .select('*')
+      .order('created_at', { ascending: false });
+
+    if (error) throw new Error(`Failed to get users: ${error.message}`);
+    return data.map(transformDbUser);
   },
 
   // Update user
@@ -239,6 +264,18 @@ export const eventService = {
 
     if (error) throw new Error(`Failed to update event: ${error.message}`);
     return transformDbEvent(data);
+  },
+
+  // Delete event
+  async delete(id: string): Promise<void> {
+    const supabase = createBrowserSupabaseClient();
+    
+    const { error } = await supabase
+      .from('events')
+      .delete()
+      .eq('id', id);
+
+    if (error) throw new Error(`Failed to delete event: ${error.message}`);
   },
 };
 
