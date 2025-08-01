@@ -118,7 +118,7 @@ export default function Home() {
               {/* Event Badge */}
               <div className="inline-flex items-center px-4 py-2 bg-orange-500/10 border border-orange-500/20 text-orange-400 rounded-full text-sm font-medium mb-8">
                 <Calendar className="w-4 h-4 mr-2" />
-                March 15-16, 2025 • First Edition • 100% Remote • Free
+                September 3-5, 2025 • First Edition • 100% Remote • Free
               </div>
 
               <h1 className="text-5xl md:text-6xl font-bold text-white mb-6 leading-tight">
