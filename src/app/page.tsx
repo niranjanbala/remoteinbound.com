@@ -118,7 +118,7 @@ export default function Home() {
               {/* Event Badge */}
               <div className="inline-flex items-center px-4 py-2 bg-orange-500/10 border border-orange-500/20 text-orange-400 rounded-full text-sm font-medium mb-8">
                 <Calendar className="w-4 h-4 mr-2" />
-                March 15-16, 2025 • 100% Remote • Free
+                March 15-16, 2025 • First Edition • 100% Remote • Free
               </div>
 
               <h1 className="text-5xl md:text-6xl font-bold text-white mb-6 leading-tight">
@@ -128,7 +128,7 @@ export default function Home() {
               </h1>
               
               <p className="text-xl text-gray-300 mb-8 leading-relaxed">
-                Join HubSpot super users from around the world for the premier remote event focused on growth, innovation, and community-driven learning.
+                The first edition of a remote event created by HubSpot fans, for HubSpot fans. Join passionate users from around the world for community-driven learning and growth.
               </p>
               
               <div className="flex flex-col sm:flex-row gap-4 mb-12">
@@ -149,12 +149,12 @@ export default function Home() {
               <div className="flex items-center space-x-4 text-gray-400 text-sm">
                 <div className="flex items-center space-x-2">
                   <Users className="w-4 h-4" />
-                  <span>Organized by HubSpot Super Users</span>
+                  <span>First Edition by HubSpot Fans</span>
                 </div>
                 <div className="w-1 h-1 bg-gray-600 rounded-full"></div>
                 <div className="flex items-center space-x-2">
                   <Heart className="w-4 h-4" />
-                  <span>Community-Driven</span>
+                  <span>Fan-Driven Community</span>
                 </div>
               </div>
             </div>
@@ -193,7 +193,7 @@ export default function Home() {
               What is RemoteInbound?
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              A community-driven remote event where HubSpot super users share insights, strategies, and innovations that drive real business growth.
+              The first edition of a fan-created remote event where passionate HubSpot users share insights, strategies, and innovations that drive real business growth.
             </p>
           </div>
 
@@ -205,8 +205,8 @@ export default function Home() {
                     <Users className="w-6 h-6 text-orange-500" />
                   </div>
                   <div>
-                    <h3 className="text-xl font-semibold text-gray-900 mb-2">Learn from Super Users</h3>
-                    <p className="text-gray-600">Get practical insights from HubSpot power users who have achieved exceptional results with the platform.</p>
+                    <h3 className="text-xl font-semibold text-gray-900 mb-2">Learn from HubSpot Fans</h3>
+                    <p className="text-gray-600">Get practical insights from passionate HubSpot users who have achieved exceptional results and want to share their knowledge.</p>
                   </div>
                 </div>
                 
@@ -215,8 +215,8 @@ export default function Home() {
                     <Globe className="w-6 h-6 text-orange-500" />
                   </div>
                   <div>
-                    <h3 className="text-xl font-semibold text-gray-900 mb-2">Global Remote Community</h3>
-                    <p className="text-gray-600">Connect with HubSpot professionals worldwide without leaving your home or office.</p>
+                    <h3 className="text-xl font-semibold text-gray-900 mb-2">Global Fan Community</h3>
+                    <p className="text-gray-600">Connect with HubSpot enthusiasts and professionals worldwide in this first-ever fan-organized remote event.</p>
                   </div>
                 </div>
                 
@@ -376,7 +376,7 @@ export default function Home() {
                 <div>
                   <h3 className="text-2xl font-semibold text-orange-400 mb-3">Connect</h3>
                   <p className="text-purple-100 text-lg">
-                    Build meaningful relationships with HubSpot super users and expand your professional network globally.
+                    Build meaningful relationships with fellow HubSpot fans and expand your professional network in this inaugural community event.
                   </p>
                 </div>
                 
@@ -407,8 +407,8 @@ export default function Home() {
                 <div className="grid grid-cols-2 gap-6 text-center">
                   <div>
                     <Award className="w-8 h-8 text-orange-400 mx-auto mb-2" />
-                    <div className="text-lg font-semibold">Expert-Led</div>
-                    <div className="text-purple-200 text-sm">By HubSpot Super Users</div>
+                    <div className="text-lg font-semibold">Fan-Led</div>
+                    <div className="text-purple-200 text-sm">First Edition by HubSpot Fans</div>
                   </div>
                   <div>
                     <Users className="w-8 h-8 text-orange-400 mx-auto mb-2" />
@@ -439,7 +439,7 @@ export default function Home() {
             Ready to Level Up Your HubSpot Game?
           </h2>
           <p className="text-xl text-orange-100 mb-8">
-            Join thousands of HubSpot professionals at RemoteInbound 2025. It's free, it's remote, and it's designed by the community, for the community.
+            Join thousands of HubSpot fans at the first-ever RemoteInbound 2025. It's free, it's remote, and it's created by fans, for fans.
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -467,11 +467,11 @@ export default function Home() {
             <div>
               <div className="text-2xl font-bold text-orange-500 mb-4">RemoteInbound</div>
               <p className="text-gray-400 mb-4">
-                The premier remote event for HubSpot super users and growth professionals.
+                The first edition remote event created by HubSpot fans for the global HubSpot community.
               </p>
               <p className="text-gray-400 text-sm">
-                March 15-16, 2025<br />
-                100% Remote • 100% Free
+                March 15-16, 2025 • First Edition<br />
+                100% Remote • 100% Free • 100% Fan-Driven
               </p>
             </div>
             
