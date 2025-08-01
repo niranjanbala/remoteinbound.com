@@ -26,122 +26,10 @@ export default function SpeakersPage() {
   const [selectedExpertise, setSelectedExpertise] = useState<string>('all');
 
   useEffect(() => {
-    // Sample speakers data
-    const sampleSpeakers: Speaker[] = [
-    {
-      id: '1',
-      name: 'Sarah Chen',
-      title: 'Chief Technology Officer',
-      company: 'TechCorp',
-      bio: 'Sarah is a visionary technology leader with over 15 years of experience in AI and machine learning. She has led digital transformation initiatives at Fortune 500 companies and is passionate about using technology to solve real-world problems. Sarah holds a PhD in Computer Science from MIT and has published over 50 research papers.',
-      avatar: '/api/placeholder/150/150',
-      social: {
-        twitter: 'https://twitter.com/sarahchen',
-        linkedin: 'https://linkedin.com/in/sarahchen',
-        website: 'https://sarahchen.dev'
-      },
-      sessions: ['1', '3']
-    },
-    {
-      id: '2',
-      name: 'Marcus Rodriguez',
-      title: 'Senior Product Manager',
-      company: 'InnovateLabs',
-      bio: 'Marcus is a product strategy expert who has launched over 20 successful digital products. He specializes in user experience design and data-driven product development. With a background in both engineering and business, Marcus bridges the gap between technical possibilities and market needs.',
-      avatar: '/api/placeholder/150/150',
-      social: {
-        twitter: 'https://twitter.com/marcusrodriguez',
-        linkedin: 'https://linkedin.com/in/marcusrodriguez'
-      },
-      sessions: ['2']
-    },
-    {
-      id: '3',
-      name: 'Dr. Emily Watson',
-      title: 'Data Science Director',
-      company: 'DataInsights Inc',
-      bio: 'Dr. Watson is a renowned data scientist and researcher with expertise in machine learning, statistical analysis, and predictive modeling. She has helped organizations across various industries leverage data for strategic decision-making. Emily is also an adjunct professor at Stanford University.',
-      avatar: '/api/placeholder/150/150',
-      social: {
-        linkedin: 'https://linkedin.com/in/emilywatson',
-        website: 'https://emilywatson.research.com'
-      },
-      sessions: ['6']
-    },
-    {
-      id: '4',
-      name: 'James Thompson',
-      title: 'Startup Founder & CEO',
-      company: 'GrowthHack Solutions',
-      bio: 'James is a serial entrepreneur who has founded three successful startups. He is an expert in growth hacking, digital marketing, and scaling businesses from zero to millions in revenue. James is also an active angel investor and startup mentor.',
-      avatar: '/api/placeholder/150/150',
-      social: {
-        twitter: 'https://twitter.com/jamesthompson',
-        linkedin: 'https://linkedin.com/in/jamesthompson',
-        website: 'https://jamesthompson.co'
-      },
-      sessions: ['4']
-    },
-    {
-      id: '5',
-      name: 'Lisa Park',
-      title: 'UX Design Lead',
-      company: 'DesignStudio Pro',
-      bio: 'Lisa is a creative design leader with a passion for creating intuitive and beautiful user experiences. She has worked with top brands to redesign their digital products and has won multiple design awards. Lisa is also a speaker at design conferences worldwide.',
-      avatar: '/api/placeholder/150/150',
-      social: {
-        twitter: 'https://twitter.com/lisapark',
-        linkedin: 'https://linkedin.com/in/lisapark',
-        website: 'https://lisapark.design'
-      },
-      sessions: ['5']
-    },
-    {
-      id: '6',
-      name: 'David Kumar',
-      title: 'DevOps Engineer',
-      company: 'CloudTech Systems',
-      bio: 'David is a DevOps expert specializing in cloud infrastructure, automation, and scalable systems. He has helped companies migrate to cloud platforms and implement CI/CD pipelines. David is passionate about open-source technologies and contributes to several projects.',
-      avatar: '/api/placeholder/150/150',
-      social: {
-        twitter: 'https://twitter.com/davidkumar',
-        linkedin: 'https://linkedin.com/in/davidkumar',
-        website: 'https://davidkumar.dev'
-      },
-      sessions: ['5']
-    },
-    {
-      id: '7',
-      name: 'Rachel Green',
-      title: 'Marketing Director',
-      company: 'BrandBoost Agency',
-      bio: 'Rachel is a marketing strategist with expertise in digital marketing, brand development, and customer acquisition. She has helped startups and established companies build strong brand presence and achieve significant growth in competitive markets.',
-      avatar: '/api/placeholder/150/150',
-      social: {
-        twitter: 'https://twitter.com/rachelgreen',
-        linkedin: 'https://linkedin.com/in/rachelgreen'
-      },
-      sessions: ['2']
-    },
-    {
-      id: '8',
-      name: 'Alex Johnson',
-      title: 'Blockchain Developer',
-      company: 'CryptoInnovate',
-      bio: 'Alex is a blockchain technology expert and cryptocurrency enthusiast. He has developed smart contracts and decentralized applications for various blockchain platforms. Alex is also an educator, teaching blockchain development courses online.',
-      avatar: '/api/placeholder/150/150',
-      social: {
-        twitter: 'https://twitter.com/alexjohnson',
-        linkedin: 'https://linkedin.com/in/alexjohnson',
-        website: 'https://alexjohnson.blockchain'
-      },
-      sessions: ['1']
-    }
-    ];
-
-    // Initialize with sample data
-    setSpeakers(sampleSpeakers);
-    setFilteredSpeakers(sampleSpeakers);
+    // Load speakers from database or API
+    // For now, initialize with empty array - speakers will be loaded from database
+    setSpeakers([]);
+    setFilteredSpeakers([]);
   }, []);
 
   useEffect(() => {
@@ -299,7 +187,7 @@ export default function SpeakersPage() {
             <div className="text-center py-12">
               <Users className="w-16 h-16 text-gray-300 mx-auto mb-4" />
               <h3 className="text-xl font-semibold text-gray-900 mb-2">No speakers found</h3>
-              <p className="text-gray-600">Try adjusting your search or filter criteria</p>
+              <p className="text-gray-600">Speakers will be announced soon. Check back later for updates.</p>
             </div>
           ) : (
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
@@ -332,15 +220,17 @@ export default function SpeakersPage() {
                     {/* Social Links */}
                     <div className="flex justify-center space-x-3 mb-4">
                       {Object.entries(speaker.social).map(([platform, url]) => (
-                        <a
-                          key={platform}
-                          href={url}
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          className="p-2 text-gray-400 hover:text-blue-600 transition-colors"
-                        >
-                          {getSocialIcon(platform)}
-                        </a>
+                        url && (
+                          <a
+                            key={platform}
+                            href={url}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="p-2 text-gray-400 hover:text-blue-600 transition-colors"
+                          >
+                            {getSocialIcon(platform)}
+                          </a>
+                        )
                       ))}
                     </div>
 

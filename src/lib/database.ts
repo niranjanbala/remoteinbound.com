@@ -367,23 +367,5 @@ export const registrationService = {
   },
 };
 
-// Initialize sample data (for development)
-export const initializeSampleData = async () => {
-  try {
-    // Check if data already exists
-    const events = await eventService.getAll();
-    if (events.length > 0) {
-      console.log('Sample data already exists');
-      return;
-    }
-
-    console.log('Initializing sample data...');
-    
-    // Create sample events (this would typically be done via admin interface)
-    // For now, we'll keep using the existing sample data in the components
-    
-    console.log('Sample data initialized successfully');
-  } catch (error) {
-    console.error('Failed to initialize sample data:', error);
-  }
-};
+// Database services are ready for production use
+// Data should be added through the admin interface or API endpoints

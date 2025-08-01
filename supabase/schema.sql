@@ -242,13 +242,5 @@ CREATE POLICY "Users can update own connections" ON networking_connections FOR U
 CREATE POLICY "Users can view own notifications" ON notifications FOR SELECT USING (auth.uid() = user_id);
 CREATE POLICY "Users can update own notifications" ON notifications FOR UPDATE USING (auth.uid() = user_id);
 
--- Insert sample data
-INSERT INTO events (id, title, description, start_date, end_date, timezone, status, current_attendees, tags, organizer_name, organizer_email) VALUES
-('550e8400-e29b-41d4-a716-446655440001', 'INBOUND 2025', 'The world''s largest gathering of inbound professionals. Join 26,000+ marketing, sales, and customer success professionals for 4 days of learning, networking, and growth.', '2025-09-03T09:00:00Z', '2025-09-06T18:00:00Z', 'EST', 'upcoming', 0, ARRAY['Marketing', 'Sales', 'Customer Success', 'Growth'], 'INBOUND Team', 'events@inbound.com'),
-('550e8400-e29b-41d4-a716-446655440002', 'Digital Marketing Masterclass', 'Learn advanced digital marketing strategies from industry experts. Cover topics including SEO, social media marketing, content strategy, and conversion optimization.', '2025-03-22T14:00:00Z', '2025-03-22T17:00:00Z', 'EST', 'upcoming', 850, ARRAY['Marketing', 'Digital', 'SEO', 'Social Media'], 'Marketing Pro Academy', 'info@marketingpro.com'),
-('550e8400-e29b-41d4-a716-446655440003', 'Remote Work Best Practices', 'Discover effective strategies for remote work, team collaboration, and maintaining work-life balance in a distributed work environment.', '2025-03-28T11:00:00Z', '2025-03-28T15:00:00Z', 'GMT', 'upcoming', 1200, ARRAY['Remote Work', 'Productivity', 'Team Management'], 'Future Work Institute', 'contact@futurework.org');
-
-INSERT INTO speakers (id, name, title, company, bio, social_twitter, social_linkedin, social_website, sessions) VALUES
-('660e8400-e29b-41d4-a716-446655440001', 'Sarah Chen', 'Chief Technology Officer', 'TechCorp', 'Sarah is a visionary technology leader with over 15 years of experience in AI and machine learning. She has led digital transformation initiatives at Fortune 500 companies and is passionate about using technology to solve real-world problems.', 'https://twitter.com/sarahchen', 'https://linkedin.com/in/sarahchen', 'https://sarahchen.dev', ARRAY['1', '3']),
-('660e8400-e29b-41d4-a716-446655440002', 'Marcus Rodriguez', 'Senior Product Manager', 'InnovateLabs', 'Marcus is a product strategy expert who has launched over 20 successful digital products. He specializes in user experience design and data-driven product development.', 'https://twitter.com/marcusrodriguez', 'https://linkedin.com/in/marcusrodriguez', NULL, ARRAY['2']),
-('660e8400-e29b-41d4-a716-446655440003', 'Dr. Emily Watson', 'Data Science Director', 'DataInsights Inc', 'Dr. Watson is a renowned data scientist and researcher with expertise in machine learning, statistical analysis, and predictive modeling.', NULL, 'https://linkedin.com/in/emilywatson', 'https://emilywatson.research.com', ARRAY['6']);
+-- Database schema is ready for production use
+-- Add your real data through the admin interface or API
