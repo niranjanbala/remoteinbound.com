@@ -37,7 +37,8 @@ const partnerTypes = [
       { name: 'Zapier', description: 'Workflow automation platform', logo: '🔗' },
       { name: 'Hotjar', description: 'Behavior analytics platform', logo: '🔥' },
       { name: 'CleverTap', description: 'Customer engagement and retention', logo: '🎯' },
-      { name: 'Typeform', description: 'Interactive form builder', logo: '📝' }
+      { name: 'Typeform', description: 'Interactive form builder', logo: '📝' },
+      { name: 'HeyGen', description: 'AI-powered video generation platform', logo: '🎬' }
     ]
   },
   {
@@ -112,7 +113,7 @@ const partnerBenefits = [
 ];
 
 const stats = [
-  { number: '8', label: 'Technology Partners', icon: Building },
+  { number: '9', label: 'Technology Partners', icon: Building },
   { number: '5K+', label: 'Community Members', icon: Users },
   { number: '100%', label: 'Remote & Free', icon: Heart },
   { number: '24/7', label: 'Community Support', icon: Zap }

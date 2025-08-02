@@ -1,6 +1,6 @@
 [
   {
-    "id": "partner_1754114231705_ztsxdun0g",
+    "id": "partner_1754116135375_v5miz6old",
     "email": "rajesh@mailmodo.com",
     "fullName": "Rajesh Kumar",
     "company": "Mailmodo",
@@ -28,10 +28,10 @@
       "approvedAt": "2025-01-16T14:30:00Z"
     },
     "createdAt": "2025-01-15T10:00:00Z",
-    "updatedAt": "2025-08-02T05:57:11.705Z"
+    "updatedAt": "2025-08-02T06:28:55.375Z"
   },
   {
-    "id": "partner_1754114231711_4jdqjj12r",
+    "id": "partner_1754116135380_i4ruezt38",
     "email": "priya@webengage.com",
     "fullName": "Priya Sharma",
     "company": "WebEngage",
@@ -59,10 +59,10 @@
       "approvedAt": "2025-01-12T11:45:00Z"
     },
     "createdAt": "2025-01-10T09:15:00Z",
-    "updatedAt": "2025-08-02T05:57:11.711Z"
+    "updatedAt": "2025-08-02T06:28:55.380Z"
   },
   {
-    "id": "partner_1754114231711_gkrb8dy9k",
+    "id": "partner_1754116135380_sny6jpo1n",
     "email": "alex@amplitude.com",
     "fullName": "Alex Thompson",
     "company": "Amplitude",
@@ -90,10 +90,10 @@
       "approvedAt": "2025-01-10T09:30:00Z"
     },
     "createdAt": "2025-01-08T16:20:00Z",
-    "updatedAt": "2025-08-02T05:57:11.711Z"
+    "updatedAt": "2025-08-02T06:28:55.380Z"
   },
   {
-    "id": "partner_1754114231711_1wzfayvbc",
+    "id": "partner_1754116135380_ncnwlvp3c",
     "email": "sarah@supabase.io",
     "fullName": "Sarah Chen",
     "company": "Supabase",
@@ -121,10 +121,10 @@
       "approvedAt": "2025-01-14T10:15:00Z"
     },
     "createdAt": "2025-01-12T13:45:00Z",
-    "updatedAt": "2025-08-02T05:57:11.711Z"
+    "updatedAt": "2025-08-02T06:28:55.380Z"
   },
   {
-    "id": "partner_1754114231711_i2znrkgx3",
+    "id": "partner_1754116135380_sh7ib25y8",
     "email": "michael@zapier.com",
     "fullName": "Michael Rodriguez",
     "company": "Zapier",
@@ -152,10 +152,10 @@
       "approvedAt": "2025-01-21T15:00:00Z"
     },
     "createdAt": "2025-01-20T11:30:00Z",
-    "updatedAt": "2025-08-02T05:57:11.711Z"
+    "updatedAt": "2025-08-02T06:28:55.380Z"
   },
   {
-    "id": "partner_1754114231711_qkxb7aibf",
+    "id": "partner_1754116135380_e60rpw0ny",
     "email": "jennifer@hotjar.com",
     "fullName": "Jennifer Lee",
     "company": "Hotjar",
@@ -182,10 +182,10 @@
       "appliedAt": "2025-01-18T14:00:00Z"
     },
     "createdAt": "2025-01-18T14:00:00Z",
-    "updatedAt": "2025-08-02T05:57:11.711Z"
+    "updatedAt": "2025-08-02T06:28:55.380Z"
   },
   {
-    "id": "partner_1754114231711_xn47hl4nh",
+    "id": "partner_1754116135380_49zh0t7cd",
     "email": "ankit@clevertap.com",
     "fullName": "Ankit Gupta",
     "company": "CleverTap",
@@ -212,10 +212,10 @@
       "appliedAt": "2025-01-22T11:00:00Z"
     },
     "createdAt": "2025-01-22T11:00:00Z",
-    "updatedAt": "2025-08-02T05:57:11.711Z"
+    "updatedAt": "2025-08-02T06:28:55.380Z"
   },
   {
-    "id": "partner_1754114231711_i0yn65b2o",
+    "id": "partner_1754116135380_b5mwiw7gv",
     "email": "david@typeform.com",
     "fullName": "David Kim",
     "company": "Typeform",
@@ -243,6 +243,37 @@
       "approvedAt": "2025-01-26T14:00:00Z"
     },
     "createdAt": "2025-01-25T09:30:00Z",
-    "updatedAt": "2025-08-02T05:57:11.711Z"
+    "updatedAt": "2025-08-02T06:28:55.380Z"
+  },
+  {
+    "id": "partner_1754116135380_o1zn8k9e2",
+    "email": "emma@heygen.com",
+    "fullName": "Emma Zhang",
+    "company": "HeyGen",
+    "jobTitle": "Partnership Director",
+    "phone": "+1-555-0130",
+    "role": "partner",
+    "preferences": {
+      "notifications": true,
+      "theme": "system"
+    },
+    "partnerProfile": {
+      "companyDescription": "AI-powered video generation platform that creates personalized videos at scale. Perfect for marketing campaigns, customer onboarding, and sales outreach.",
+      "partnershipType": "technology",
+      "website": "https://heygen.com",
+      "offerings": [
+        "AI Video Generation",
+        "Personalized Videos",
+        "Marketing Automation"
+      ],
+      "interestedInSpeaking": true
+    },
+    "partnerStatus": {
+      "status": "active",
+      "appliedAt": "2025-01-28T10:00:00Z",
+      "approvedAt": "2025-01-29T15:30:00Z"
+    },
+    "createdAt": "2025-01-28T10:00:00Z",
+    "updatedAt": "2025-08-02T06:28:55.380Z"
   }
 ]
