@@ -1,0 +1,536 @@
+[
+  {
+    "id": "fan_1754110986660_y3dskonw4",
+    "email": "alex@growthtech.com",
+    "fullName": "Alex Thompson",
+    "company": "GrowthTech Solutions",
+    "jobTitle": "Head of Marketing",
+    "phone": "+1-555-1001",
+    "role": "fan",
+    "preferences": {
+      "notifications": true,
+      "theme": "system"
+    },
+    "fanProfile": {
+      "bio": "Marketing leader with 8+ years of HubSpot experience. Passionate about growth hacking and marketing automation. Love sharing knowledge with the community.",
+      "interestedInSpeaking": true,
+      "speakingExperience": "expert",
+      "expertise": [
+        "Growth Marketing",
+        "HubSpot Automation",
+        "Lead Generation"
+      ],
+      "sessionTopics": [
+        "Advanced HubSpot Workflows",
+        "Growth Hacking Strategies"
+      ],
+      "social": {
+        "twitter": "alexgrowth",
+        "linkedin": "alex-thompson-marketing",
+        "website": "https://alexthompson.com"
+      },
+      "availableForNetworking": true,
+      "hubspotExperience": [
+        "HubSpot Implementation",
+        "Marketing Hub",
+        "Sales Hub"
+      ],
+      "interests": [
+        "Growth Marketing",
+        "Marketing Automation",
+        "Lead Generation"
+      ]
+    },
+    "registrationStatus": {
+      "status": "confirmed",
+      "registeredAt": "2025-01-05T09:00:00Z"
+    },
+    "speakerStatus": {
+      "status": "approved",
+      "appliedAt": "2025-01-05T09:00:00Z",
+      "sessionTopics": [
+        "Advanced HubSpot Workflows",
+        "Growth Hacking Strategies"
+      ]
+    },
+    "createdAt": "2025-01-05T09:00:00Z",
+    "updatedAt": "2025-08-02T05:03:06.660Z"
+  },
+  {
+    "id": "fan_1754110986661_ku4ifgfeq",
+    "email": "maria@salesforce.com",
+    "fullName": "Maria Garcia",
+    "company": "Salesforce",
+    "jobTitle": "Senior Solutions Engineer",
+    "phone": "+1-555-1002",
+    "role": "fan",
+    "preferences": {
+      "notifications": true,
+      "theme": "system"
+    },
+    "fanProfile": {
+      "bio": "Solutions engineer helping companies integrate HubSpot with Salesforce. 6 years of CRM experience and love connecting systems that work together.",
+      "interestedInSpeaking": true,
+      "speakingExperience": "intermediate",
+      "expertise": [
+        "CRM Integration",
+        "Salesforce",
+        "HubSpot"
+      ],
+      "sessionTopics": [
+        "HubSpot-Salesforce Integration Best Practices"
+      ],
+      "social": {
+        "twitter": "mariacrm",
+        "linkedin": "maria-garcia-solutions",
+        "website": "https://mariagarcia.dev"
+      },
+      "availableForNetworking": true,
+      "hubspotExperience": [
+        "CRM Management",
+        "Sales Hub",
+        "Operations Hub"
+      ],
+      "interests": [
+        "CRM Integration",
+        "Sales Operations",
+        "Data Management"
+      ]
+    },
+    "registrationStatus": {
+      "status": "confirmed",
+      "registeredAt": "2025-01-03T14:30:00Z"
+    },
+    "speakerStatus": {
+      "status": "approved",
+      "appliedAt": "2025-01-03T14:30:00Z",
+      "sessionTopics": [
+        "HubSpot-Salesforce Integration Best Practices"
+      ]
+    },
+    "createdAt": "2025-01-03T14:30:00Z",
+    "updatedAt": "2025-08-02T05:03:06.661Z"
+  },
+  {
+    "id": "fan_1754110986661_c9xm0wtsh",
+    "email": "david@startuplife.co",
+    "fullName": "David Kim",
+    "company": "StartupLife Co",
+    "jobTitle": "Founder & CEO",
+    "phone": "+1-555-1003",
+    "role": "fan",
+    "preferences": {
+      "notifications": true,
+      "theme": "system"
+    },
+    "fanProfile": {
+      "bio": "Serial entrepreneur who's built 3 successful startups using HubSpot as the growth engine. Currently scaling my latest SaaS to $10M ARR.",
+      "interestedInSpeaking": true,
+      "speakingExperience": "expert",
+      "expertise": [
+        "Startup Growth",
+        "SaaS Marketing",
+        "HubSpot Strategy"
+      ],
+      "sessionTopics": [
+        "From Zero to $10M: Scaling with HubSpot"
+      ],
+      "social": {
+        "twitter": "davidstartup",
+        "linkedin": "david-kim-ceo",
+        "website": "https://startuplife.co"
+      },
+      "availableForNetworking": true,
+      "hubspotExperience": [
+        "Marketing Hub",
+        "Sales Hub",
+        "Service Hub",
+        "Operations Hub"
+      ],
+      "interests": [
+        "Startup Growth",
+        "SaaS",
+        "Entrepreneurship",
+        "Scaling"
+      ]
+    },
+    "registrationStatus": {
+      "status": "confirmed",
+      "registeredAt": "2025-01-01T10:15:00Z"
+    },
+    "speakerStatus": {
+      "status": "featured",
+      "appliedAt": "2025-01-01T10:15:00Z",
+      "sessionTopics": [
+        "From Zero to $10M: Scaling with HubSpot"
+      ]
+    },
+    "createdAt": "2025-01-01T10:15:00Z",
+    "updatedAt": "2025-08-02T05:03:06.661Z"
+  },
+  {
+    "id": "fan_1754110986661_iiquuoikd",
+    "email": "jennifer@contentqueen.com",
+    "fullName": "Jennifer Lee",
+    "company": "Content Queen Agency",
+    "jobTitle": "Content Strategist",
+    "phone": "+1-555-1004",
+    "role": "fan",
+    "preferences": {
+      "notifications": true,
+      "theme": "system"
+    },
+    "fanProfile": {
+      "bio": "Content strategist who's created 1000+ pieces of content that generated 50M+ views. Specializing in HubSpot content tools and SEO optimization.",
+      "interestedInSpeaking": true,
+      "speakingExperience": "expert",
+      "expertise": [
+        "Content Marketing",
+        "SEO",
+        "HubSpot Content Tools"
+      ],
+      "sessionTopics": [
+        "Content That Converts: HubSpot SEO Secrets"
+      ],
+      "social": {
+        "twitter": "jennifercontentqueen",
+        "linkedin": "jennifer-lee-content",
+        "website": "https://contentqueen.com"
+      },
+      "availableForNetworking": true,
+      "hubspotExperience": [
+        "Marketing Hub",
+        "Content Strategy"
+      ],
+      "interests": [
+        "Content Marketing",
+        "SEO",
+        "Blogging",
+        "Social Media"
+      ]
+    },
+    "registrationStatus": {
+      "status": "confirmed",
+      "registeredAt": "2025-01-02T11:45:00Z"
+    },
+    "speakerStatus": {
+      "status": "approved",
+      "appliedAt": "2025-01-02T11:45:00Z",
+      "sessionTopics": [
+        "Content That Converts: HubSpot SEO Secrets"
+      ]
+    },
+    "createdAt": "2025-01-02T11:45:00Z",
+    "updatedAt": "2025-08-02T05:03:06.661Z"
+  },
+  {
+    "id": "fan_1754110986661_0plcrviw1",
+    "email": "michael@techcorp.com",
+    "fullName": "Michael Brown",
+    "company": "TechCorp Industries",
+    "jobTitle": "VP of Sales",
+    "phone": "+1-555-1005",
+    "role": "fan",
+    "preferences": {
+      "notifications": true,
+      "theme": "system"
+    },
+    "fanProfile": {
+      "bio": "Sales leader who transformed a traditional sales team into a HubSpot-powered revenue machine. Increased sales productivity by 300% in 18 months.",
+      "interestedInSpeaking": false,
+      "speakingExperience": "beginner",
+      "expertise": [
+        "Sales Leadership",
+        "Team Management"
+      ],
+      "sessionTopics": [],
+      "social": {
+        "twitter": "mikesales",
+        "linkedin": "michael-brown-vp",
+        "website": "https://techcorp.com"
+      },
+      "availableForNetworking": true,
+      "hubspotExperience": [
+        "Sales Hub",
+        "CRM Management"
+      ],
+      "interests": [
+        "Sales Leadership",
+        "Team Building",
+        "Revenue Operations"
+      ]
+    },
+    "registrationStatus": {
+      "status": "confirmed",
+      "registeredAt": "2025-01-04T16:20:00Z"
+    },
+    "createdAt": "2025-01-04T16:20:00Z",
+    "updatedAt": "2025-08-02T05:03:06.661Z"
+  },
+  {
+    "id": "fan_1754110986661_jdezg10hq",
+    "email": "lisa@designstudio.co",
+    "fullName": "Lisa Wang",
+    "company": "Creative Design Studio",
+    "jobTitle": "UX/UI Designer",
+    "phone": "+1-555-1006",
+    "role": "fan",
+    "preferences": {
+      "notifications": true,
+      "theme": "system"
+    },
+    "fanProfile": {
+      "bio": "Designer who creates beautiful HubSpot landing pages and email templates. Passionate about conversion optimization and user experience design.",
+      "interestedInSpeaking": true,
+      "speakingExperience": "intermediate",
+      "expertise": [
+        "UX/UI Design",
+        "Conversion Optimization",
+        "HubSpot Design"
+      ],
+      "sessionTopics": [
+        "Designing for Conversions in HubSpot"
+      ],
+      "social": {
+        "twitter": "lisadesigns",
+        "linkedin": "lisa-wang-designer",
+        "website": "https://lisawang.design"
+      },
+      "availableForNetworking": true,
+      "hubspotExperience": [
+        "Marketing Hub",
+        "Design Tools"
+      ],
+      "interests": [
+        "Design",
+        "UX/UI",
+        "Conversion Optimization",
+        "Visual Design"
+      ]
+    },
+    "registrationStatus": {
+      "status": "confirmed",
+      "registeredAt": "2025-01-06T13:10:00Z"
+    },
+    "speakerStatus": {
+      "status": "pending",
+      "appliedAt": "2025-01-06T13:10:00Z",
+      "sessionTopics": [
+        "Designing for Conversions in HubSpot"
+      ]
+    },
+    "createdAt": "2025-01-06T13:10:00Z",
+    "updatedAt": "2025-08-02T05:03:06.661Z"
+  },
+  {
+    "id": "fan_1754110986661_x3e7kr32p",
+    "email": "robert@analyticsplus.com",
+    "fullName": "Robert Johnson",
+    "company": "Analytics Plus",
+    "jobTitle": "Data Analyst",
+    "phone": "+1-555-1007",
+    "role": "fan",
+    "preferences": {
+      "notifications": true,
+      "theme": "system"
+    },
+    "fanProfile": {
+      "bio": "Data analyst who helps companies make sense of their HubSpot data. Expert in creating custom reports and dashboards that drive business decisions.",
+      "interestedInSpeaking": true,
+      "speakingExperience": "expert",
+      "expertise": [
+        "Data Analytics",
+        "HubSpot Reporting",
+        "Business Intelligence"
+      ],
+      "sessionTopics": [
+        "Unlocking HubSpot Data: Advanced Analytics Techniques"
+      ],
+      "social": {
+        "twitter": "robertdata",
+        "linkedin": "robert-johnson-analytics",
+        "website": "https://analyticsplus.com"
+      },
+      "availableForNetworking": true,
+      "hubspotExperience": [
+        "Operations Hub",
+        "Reporting",
+        "Analytics"
+      ],
+      "interests": [
+        "Data Analytics",
+        "Business Intelligence",
+        "Reporting",
+        "KPIs"
+      ]
+    },
+    "registrationStatus": {
+      "status": "confirmed",
+      "registeredAt": "2025-01-07T08:30:00Z"
+    },
+    "speakerStatus": {
+      "status": "approved",
+      "appliedAt": "2025-01-07T08:30:00Z",
+      "sessionTopics": [
+        "Unlocking HubSpot Data: Advanced Analytics Techniques"
+      ]
+    },
+    "createdAt": "2025-01-07T08:30:00Z",
+    "updatedAt": "2025-08-02T05:03:06.661Z"
+  },
+  {
+    "id": "fan_1754110986661_hz9uk75eb",
+    "email": "emma@hubspotfan.com",
+    "fullName": "Emma Davis",
+    "company": "HubSpot Enthusiast",
+    "jobTitle": "Marketing Manager",
+    "phone": "+1-555-1008",
+    "role": "fan",
+    "preferences": {
+      "notifications": true,
+      "theme": "system"
+    },
+    "fanProfile": {
+      "bio": "HubSpot super user and community advocate. I run the local HubSpot user group and love helping others discover the power of inbound marketing.",
+      "interestedInSpeaking": false,
+      "speakingExperience": "intermediate",
+      "expertise": [
+        "Community Building",
+        "Inbound Marketing"
+      ],
+      "sessionTopics": [],
+      "social": {
+        "twitter": "emmahubspot",
+        "linkedin": "emma-davis-marketing",
+        "website": "https://emmadavis.com"
+      },
+      "availableForNetworking": true,
+      "hubspotExperience": [
+        "Marketing Hub",
+        "Community Building"
+      ],
+      "interests": [
+        "Community Building",
+        "Inbound Marketing",
+        "User Groups",
+        "Networking"
+      ]
+    },
+    "registrationStatus": {
+      "status": "confirmed",
+      "registeredAt": "2025-01-08T12:00:00Z"
+    },
+    "createdAt": "2025-01-08T12:00:00Z",
+    "updatedAt": "2025-08-02T05:03:06.661Z"
+  },
+  {
+    "id": "fan_1754110986661_ac64dtymf",
+    "email": "carlos@ecommercepro.com",
+    "fullName": "Carlos Rodriguez",
+    "company": "EcommercePro Solutions",
+    "jobTitle": "E-commerce Specialist",
+    "phone": "+1-555-1009",
+    "role": "fan",
+    "preferences": {
+      "notifications": true,
+      "theme": "system"
+    },
+    "fanProfile": {
+      "bio": "E-commerce expert who helps online stores integrate HubSpot for better customer lifecycle management. Specialized in abandoned cart recovery and customer retention.",
+      "interestedInSpeaking": true,
+      "speakingExperience": "intermediate",
+      "expertise": [
+        "E-commerce",
+        "Customer Retention",
+        "HubSpot E-commerce"
+      ],
+      "sessionTopics": [
+        "E-commerce Growth with HubSpot: Beyond the Basics"
+      ],
+      "social": {
+        "twitter": "carlosecom",
+        "linkedin": "carlos-rodriguez-ecommerce",
+        "website": "https://ecommercepro.com"
+      },
+      "availableForNetworking": true,
+      "hubspotExperience": [
+        "Marketing Hub",
+        "E-commerce Integration"
+      ],
+      "interests": [
+        "E-commerce",
+        "Customer Retention",
+        "Online Marketing",
+        "Conversion Optimization"
+      ]
+    },
+    "registrationStatus": {
+      "status": "confirmed",
+      "registeredAt": "2025-01-09T15:45:00Z"
+    },
+    "speakerStatus": {
+      "status": "pending",
+      "appliedAt": "2025-01-09T15:45:00Z",
+      "sessionTopics": [
+        "E-commerce Growth with HubSpot: Beyond the Basics"
+      ]
+    },
+    "createdAt": "2025-01-09T15:45:00Z",
+    "updatedAt": "2025-08-02T05:03:06.661Z"
+  },
+  {
+    "id": "fan_1754110986661_916l0rxfy",
+    "email": "sophie@nonprofitgrowth.org",
+    "fullName": "Sophie Martin",
+    "company": "Nonprofit Growth Alliance",
+    "jobTitle": "Development Director",
+    "phone": "+1-555-1010",
+    "role": "fan",
+    "preferences": {
+      "notifications": true,
+      "theme": "system"
+    },
+    "fanProfile": {
+      "bio": "Nonprofit professional who's helped raise $5M+ using HubSpot for donor management and fundraising campaigns. Passionate about using technology for social good.",
+      "interestedInSpeaking": true,
+      "speakingExperience": "expert",
+      "expertise": [
+        "Nonprofit Marketing",
+        "Fundraising",
+        "Donor Management"
+      ],
+      "sessionTopics": [
+        "HubSpot for Good: Nonprofit Fundraising Strategies"
+      ],
+      "social": {
+        "twitter": "sophienonprofit",
+        "linkedin": "sophie-martin-nonprofit",
+        "website": "https://nonprofitgrowth.org"
+      },
+      "availableForNetworking": true,
+      "hubspotExperience": [
+        "Marketing Hub",
+        "CRM for Nonprofits"
+      ],
+      "interests": [
+        "Nonprofit Marketing",
+        "Fundraising",
+        "Social Impact",
+        "Donor Relations"
+      ]
+    },
+    "registrationStatus": {
+      "status": "confirmed",
+      "registeredAt": "2025-01-10T09:30:00Z"
+    },
+    "speakerStatus": {
+      "status": "approved",
+      "appliedAt": "2025-01-10T09:30:00Z",
+      "sessionTopics": [
+        "HubSpot for Good: Nonprofit Fundraising Strategies"
+      ]
+    },
+    "createdAt": "2025-01-10T09:30:00Z",
+    "updatedAt": "2025-08-02T05:03:06.661Z"
+  }
+]

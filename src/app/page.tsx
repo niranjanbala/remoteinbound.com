@@ -67,6 +67,9 @@ export default function Home() {
               <Link href="/speakers" className="text-gray-700 hover:text-orange-500 font-medium">
                 Speakers
               </Link>
+              <Link href="/partners" className="text-gray-700 hover:text-orange-500 font-medium">
+                Partners
+              </Link>
               <Link href="/sponsors" className="text-gray-700 hover:text-orange-500 font-medium">
                 Sponsors
               </Link>

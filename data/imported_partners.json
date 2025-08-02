@@ -1,0 +1,185 @@
+[
+  {
+    "id": "partner_1754110816685_6mqd1uzk5",
+    "email": "john@techsolutions.com",
+    "fullName": "John Smith",
+    "company": "TechSolutions Inc",
+    "jobTitle": "CEO",
+    "phone": "+1-555-0123",
+    "role": "partner",
+    "preferences": {
+      "notifications": true,
+      "theme": "system"
+    },
+    "partnerProfile": {
+      "companyDescription": "We help businesses implement and optimize HubSpot for maximum ROI. Our team has 10+ years of experience in marketing automation and CRM implementation.",
+      "partnershipType": "technology",
+      "website": "https://techsolutions.com",
+      "offerings": [
+        "HubSpot Implementation",
+        "Custom Integrations",
+        "Marketing Automation"
+      ],
+      "interestedInSpeaking": true
+    },
+    "partnerStatus": {
+      "status": "approved",
+      "appliedAt": "2025-01-15T10:00:00Z",
+      "approvedAt": "2025-01-16T14:30:00Z"
+    },
+    "createdAt": "2025-01-15T10:00:00Z",
+    "updatedAt": "2025-08-02T05:00:16.685Z"
+  },
+  {
+    "id": "partner_1754110816687_0yxrwd657",
+    "email": "sarah@marketingpro.com",
+    "fullName": "Sarah Johnson",
+    "company": "MarketingPro Agency",
+    "jobTitle": "Marketing Director",
+    "phone": "+1-555-0124",
+    "role": "partner",
+    "preferences": {
+      "notifications": true,
+      "theme": "system"
+    },
+    "partnerProfile": {
+      "companyDescription": "Full-service marketing agency specializing in HubSpot-powered inbound marketing strategies. We've helped 200+ companies grow their revenue through strategic marketing.",
+      "partnershipType": "service",
+      "website": "https://marketingpro.com",
+      "offerings": [
+        "HubSpot Training",
+        "Marketing Automation",
+        "Content Creation",
+        "Consulting"
+      ],
+      "interestedInSpeaking": true
+    },
+    "partnerStatus": {
+      "status": "active",
+      "appliedAt": "2025-01-10T09:15:00Z",
+      "approvedAt": "2025-01-12T11:45:00Z"
+    },
+    "createdAt": "2025-01-10T09:15:00Z",
+    "updatedAt": "2025-08-02T05:00:16.687Z"
+  },
+  {
+    "id": "partner_1754110816687_wt5iobu53",
+    "email": "mike@dataconnect.io",
+    "fullName": "Mike Chen",
+    "company": "DataConnect Solutions",
+    "jobTitle": "CTO",
+    "phone": "+1-555-0125",
+    "role": "partner",
+    "preferences": {
+      "notifications": true,
+      "theme": "system"
+    },
+    "partnerProfile": {
+      "companyDescription": "We build custom integrations and data synchronization solutions for HubSpot. Our APIs help businesses connect HubSpot with their existing tech stack seamlessly.",
+      "partnershipType": "integration",
+      "website": "https://dataconnect.io",
+      "offerings": [
+        "Custom Integrations",
+        "Data Analytics",
+        "Development Services"
+      ],
+      "interestedInSpeaking": false
+    },
+    "partnerStatus": {
+      "status": "active",
+      "appliedAt": "2025-01-08T16:20:00Z",
+      "approvedAt": "2025-01-10T09:30:00Z"
+    },
+    "createdAt": "2025-01-08T16:20:00Z",
+    "updatedAt": "2025-08-02T05:00:16.687Z"
+  },
+  {
+    "id": "partner_1754110816687_jiiv6fhue",
+    "email": "lisa@hubspotcommunity.org",
+    "fullName": "Lisa Rodriguez",
+    "company": "HubSpot User Group LA",
+    "jobTitle": "Community Manager",
+    "phone": "+1-555-0126",
+    "role": "partner",
+    "preferences": {
+      "notifications": true,
+      "theme": "system"
+    },
+    "partnerProfile": {
+      "companyDescription": "We organize monthly HubSpot user meetups in Los Angeles, bringing together 500+ HubSpot professionals for networking and knowledge sharing.",
+      "partnershipType": "community",
+      "website": "https://hubspotcommunity.org",
+      "offerings": [
+        "Content Creation",
+        "Support Services"
+      ],
+      "interestedInSpeaking": true
+    },
+    "partnerStatus": {
+      "status": "approved",
+      "appliedAt": "2025-01-12T13:45:00Z",
+      "approvedAt": "2025-01-14T10:15:00Z"
+    },
+    "createdAt": "2025-01-12T13:45:00Z",
+    "updatedAt": "2025-08-02T05:00:16.687Z"
+  },
+  {
+    "id": "partner_1754110816687_ftwqgtv1o",
+    "email": "david@salesboost.com",
+    "fullName": "David Park",
+    "company": "SalesBoost Consulting",
+    "jobTitle": "Sales Operations Lead",
+    "phone": "+1-555-0127",
+    "role": "partner",
+    "preferences": {
+      "notifications": true,
+      "theme": "system"
+    },
+    "partnerProfile": {
+      "companyDescription": "Sales enablement consultancy focused on HubSpot Sales Hub optimization. We help B2B companies increase their sales velocity and close rates.",
+      "partnershipType": "service",
+      "website": "https://salesboost.com",
+      "offerings": [
+        "Sales Enablement",
+        "HubSpot Training",
+        "Consulting"
+      ],
+      "interestedInSpeaking": false
+    },
+    "partnerStatus": {
+      "status": "pending",
+      "appliedAt": "2025-01-20T11:30:00Z"
+    },
+    "createdAt": "2025-01-20T11:30:00Z",
+    "updatedAt": "2025-08-02T05:00:16.687Z"
+  },
+  {
+    "id": "partner_1754110816687_qeip1vtxr",
+    "email": "emma@designstudio.co",
+    "fullName": "Emma Wilson",
+    "company": "Creative Design Studio",
+    "jobTitle": "Creative Director",
+    "phone": "+1-555-0128",
+    "role": "partner",
+    "preferences": {
+      "notifications": true,
+      "theme": "system"
+    },
+    "partnerProfile": {
+      "companyDescription": "Award-winning design studio creating beautiful HubSpot templates, landing pages, and email designs that convert visitors into customers.",
+      "partnershipType": "service",
+      "website": "https://designstudio.co",
+      "offerings": [
+        "Design Services",
+        "Content Creation"
+      ],
+      "interestedInSpeaking": true
+    },
+    "partnerStatus": {
+      "status": "pending",
+      "appliedAt": "2025-01-18T14:00:00Z"
+    },
+    "createdAt": "2025-01-18T14:00:00Z",
+    "updatedAt": "2025-08-02T05:00:16.687Z"
+  }
+]
