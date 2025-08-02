@@ -3,7 +3,7 @@
 import { useParams } from 'next/navigation';
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
-import { ArrowLeft, ExternalLink, Mail, Phone, Calendar, CheckCircle, Clock, AlertCircle, Users, Zap, Globe } from 'lucide-react';
+import { ArrowLeft, ExternalLink, Mail, Phone, Calendar, CheckCircle, Clock, AlertCircle, Users, Zap, Globe, UserPlus } from 'lucide-react';
 
 interface Partner {
   id: string;
@@ -101,6 +101,24 @@ export default function PartnerDetailPage() {
       default:
         return 'bg-gray-100 text-gray-800 border-gray-200';
     }
+  };
+
+  const generatePrefilledRegistrationUrl = (partner: Partner) => {
+    const baseUrl = '/register/partner';
+    const params = new URLSearchParams({
+      name: partner.fullName,
+      email: partner.email,
+      company: partner.company,
+      jobTitle: partner.jobTitle,
+      phone: partner.phone || '',
+      website: partner.partnerProfile.website,
+      companyDescription: partner.partnerProfile.companyDescription,
+      partnershipType: partner.partnerProfile.partnershipType,
+      offerings: JSON.stringify(partner.partnerProfile.offerings),
+      interestedInSpeaking: partner.partnerProfile.interestedInSpeaking.toString()
+    });
+    
+    return `${baseUrl}?${params.toString()}`;
   };
 
   if (loading) {
@@ -290,9 +308,17 @@ export default function PartnerDetailPage() {
                 <div>
                   <h2 className="text-xl font-semibold text-gray-900 mb-4">Quick Actions</h2>
                   <div className="space-y-3">
+                    <Link
+                      href={generatePrefilledRegistrationUrl(partner)}
+                      className="w-full bg-orange-600 text-white px-4 py-2 rounded-lg hover:bg-orange-700 transition-colors flex items-center justify-center gap-2"
+                    >
+                      <UserPlus className="w-4 h-4" />
+                      Register as Partner
+                    </Link>
+                    
                     <a
                       href={`mailto:${partner.email}?subject=Remote Inbound Partnership Inquiry`}
-                      className="w-full bg-orange-600 text-white px-4 py-2 rounded-lg hover:bg-orange-700 transition-colors flex items-center justify-center gap-2"
+                      className="w-full bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition-colors flex items-center justify-center gap-2"
                     >
                       <Mail className="w-4 h-4" />
                       Send Email

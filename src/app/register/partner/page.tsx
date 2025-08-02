@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
-import { useRouter } from 'next/navigation';
+import { useRouter, useSearchParams } from 'next/navigation';
 import {
   User,
   Mail,
@@ -25,6 +25,7 @@ import { userService } from '@/lib/database';
 
 export default function PartnerRegisterPage() {
   const router = useRouter();
+  const searchParams = useSearchParams();
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -47,13 +48,49 @@ export default function PartnerRegisterPage() {
   const [isLoading, setIsLoading] = useState(false);
   const [registrationSuccess, setRegistrationSuccess] = useState(false);
 
-  // Check if user is already logged in
+  // Check if user is already logged in and handle URL parameters
   useEffect(() => {
     const currentUser = userStorage.getCurrentUser();
     if (currentUser) {
       router.push('/dashboard');
+      return;
     }
-  }, [router]);
+
+    // Pre-fill form with URL parameters
+    const prefillData: Partial<typeof formData> = {};
+    
+    if (searchParams.get('name')) prefillData.name = searchParams.get('name') || '';
+    if (searchParams.get('email')) prefillData.email = searchParams.get('email') || '';
+    if (searchParams.get('company')) prefillData.company = searchParams.get('company') || '';
+    if (searchParams.get('jobTitle')) prefillData.jobTitle = searchParams.get('jobTitle') || '';
+    if (searchParams.get('phone')) prefillData.phone = searchParams.get('phone') || '';
+    if (searchParams.get('website')) prefillData.website = searchParams.get('website') || '';
+    if (searchParams.get('companyDescription')) prefillData.companyDescription = searchParams.get('companyDescription') || '';
+    if (searchParams.get('partnershipType')) {
+      const type = searchParams.get('partnershipType') as 'technology' | 'service' | 'integration' | 'community';
+      if (['technology', 'service', 'integration', 'community'].includes(type)) {
+        prefillData.partnershipType = type;
+      }
+    }
+    if (searchParams.get('offerings')) {
+      try {
+        const offerings = JSON.parse(decodeURIComponent(searchParams.get('offerings') || '[]'));
+        if (Array.isArray(offerings)) {
+          prefillData.offerings = offerings;
+        }
+      } catch (e) {
+        console.warn('Failed to parse offerings from URL parameters');
+      }
+    }
+    if (searchParams.get('interestedInSpeaking')) {
+      prefillData.interestedInSpeaking = searchParams.get('interestedInSpeaking') === 'true';
+    }
+
+    // Update form data if any prefill data exists
+    if (Object.keys(prefillData).length > 0) {
+      setFormData(prev => ({ ...prev, ...prefillData }));
+    }
+  }, [router, searchParams]);
 
   const partnershipTypes = [
     { value: 'technology', label: 'Technology Partner', description: 'Software integrations and tech solutions' },
