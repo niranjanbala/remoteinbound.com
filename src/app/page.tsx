@@ -62,11 +62,20 @@ export default function Home() {
             
             <nav className="hidden md:flex items-center space-x-8">
               <Link href="/events" className="text-gray-700 hover:text-orange-500 font-medium">
-                Events
+                Sessions
               </Link>
               <Link href="/speakers" className="text-gray-700 hover:text-orange-500 font-medium">
                 Speakers
               </Link>
+              <Link href="/sponsors" className="text-gray-700 hover:text-orange-500 font-medium">
+                Sponsors
+              </Link>
+              <a href="https://www.inbound.com/blog" target="_blank" rel="noopener noreferrer" className="text-gray-700 hover:text-orange-500 font-medium">
+                Blog
+              </a>
+              <a href="https://merchspot.inbound.com/Category" target="_blank" rel="noopener noreferrer" className="text-gray-700 hover:text-orange-500 font-medium">
+                Store
+              </a>
             </nav>
 
             <div className="flex items-center space-x-4">
