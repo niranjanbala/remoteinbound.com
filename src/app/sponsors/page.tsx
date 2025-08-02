@@ -395,7 +395,7 @@ export default function SponsorsPage() {
               <h3 className="font-semibold mb-4">Community</h3>
               <ul className="space-y-2 text-gray-400">
                 <li><Link href="/register" className="hover:text-white">Register</Link></li>
-                <li><Link href="/register/speaker" className="hover:text-white">Become a Speaker</Link></li>
+                <li><Link href="/register" className="hover:text-white">Join as Fan</Link></li>
                 <li><Link href="/register/sponsor" className="hover:text-white">Sponsor</Link></li>
               </ul>
             </div>

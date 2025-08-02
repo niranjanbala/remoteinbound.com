@@ -6,24 +6,28 @@ export interface User {
   jobTitle?: string;
   phone?: string;
   avatar?: string;
-  role?: 'attendee' | 'speaker' | 'partner' | 'sponsor' | 'admin';
+  role?: 'fan' | 'partner' | 'sponsor' | 'admin';
   createdAt: string;
   updatedAt: string;
   preferences?: {
     notifications: boolean;
     theme: 'light' | 'dark' | 'system';
   };
-  // Additional fields for speakers
-  speakerProfile?: {
-    bio: string;
-    expertise: string[];
-    social: {
+  // Unified fan profile with optional speaking preferences
+  fanProfile?: {
+    bio?: string;
+    interestedInSpeaking: boolean;
+    speakingExperience?: 'none' | 'beginner' | 'intermediate' | 'expert';
+    expertise?: string[];
+    sessionTopics?: string[];
+    social?: {
       twitter?: string;
       linkedin?: string;
       website?: string;
     };
     availableForNetworking: boolean;
-    sessionPreferences: string[];
+    hubspotExperience: string[];
+    interests: string[];
   };
   // Additional fields for partners
   partnerProfile?: {

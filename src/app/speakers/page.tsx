@@ -209,10 +209,10 @@ export default function SpeakersPage() {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link
-              href="/register/speaker"
+              href="/register"
               className="bg-orange-500 text-white px-8 py-4 rounded-full text-lg font-semibold hover:bg-orange-600 transition-colors inline-flex items-center justify-center"
             >
-              Become a Speaker
+              Join as Fan & Speaker
               <Mic className="ml-2 w-5 h-5" />
             </Link>
             <Link
@@ -423,10 +423,10 @@ export default function SpeakersPage() {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link
-              href="/register/speaker"
+              href="/register"
               className="bg-white text-orange-600 px-8 py-4 rounded-lg font-bold text-lg hover:bg-orange-50 transition-colors inline-flex items-center justify-center"
             >
-              Apply to Speak
+              Join as Fan & Speaker
               <Mic className="ml-2 w-5 h-5" />
             </Link>
             <Link
@@ -464,7 +464,7 @@ export default function SpeakersPage() {
               <h3 className="font-semibold mb-4">Community</h3>
               <ul className="space-y-2 text-gray-400">
                 <li><Link href="/register" className="hover:text-white">Register</Link></li>
-                <li><Link href="/register/speaker" className="hover:text-white">Become a Speaker</Link></li>
+                <li><Link href="/register" className="hover:text-white">Join as Fan</Link></li>
                 <li><Link href="/register/sponsor" className="hover:text-white">Sponsor</Link></li>
               </ul>
             </div>
