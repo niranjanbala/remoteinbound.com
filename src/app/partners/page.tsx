@@ -30,14 +30,14 @@ const partnerTypes = [
     description: 'Software integrations and tech solutions',
     color: 'from-blue-500 to-blue-600',
     partners: [
-      { name: 'HubSpot CRM', description: 'Customer relationship management', logo: '🧡' },
-      { name: 'Zapier', description: 'Workflow automation platform', logo: '🔗' },
-      { name: 'Google Analytics', description: 'Website analytics integration', logo: '📊' },
-      { name: 'Mailmodo', description: 'Email marketing automation', logo: '📧' },
-      { name: 'Webengage', description: 'Customer engagement platform', logo: '🎯' },
+      { name: 'Mailmodo', description: 'Interactive email marketing platform', logo: '📧' },
+      { name: 'WebEngage', description: 'Customer engagement platform', logo: '🎯' },
       { name: 'Amplitude', description: 'Product analytics platform', logo: '📈' },
       { name: 'Supabase', description: 'Open-source Firebase alternative', logo: '⚡' },
-      { name: 'Next.js', description: 'React framework for web apps', logo: '⚛️' }
+      { name: 'Zapier', description: 'Workflow automation platform', logo: '🔗' },
+      { name: 'Hotjar', description: 'Behavior analytics platform', logo: '🔥' },
+      { name: 'CleverTap', description: 'Customer engagement and retention', logo: '🎯' },
+      { name: 'Typeform', description: 'Interactive form builder', logo: '📝' }
     ]
   },
   {
@@ -187,10 +187,10 @@ export default function PartnersPage() {
                 <ArrowRight className="ml-2 w-5 h-5" />
               </Link>
               <Link
-                href="#partner-types"
+                href="/partners/directory"
                 className="inline-flex items-center bg-white text-orange-600 px-8 py-4 rounded-full text-lg font-semibold border-2 border-orange-500 hover:bg-orange-50 transition-colors"
               >
-                Explore Partners
+                View Partner Directory
                 <Eye className="ml-2 w-5 h-5" />
               </Link>
             </div>
@@ -254,6 +254,18 @@ export default function PartnersPage() {
                         </div>
                       ))}
                     </div>
+                    
+                    {category.type === 'Technology Partners' && (
+                      <div className="mt-6 pt-4 border-t border-gray-200">
+                        <Link
+                          href="/partners/directory"
+                          className="inline-flex items-center text-orange-600 hover:text-orange-700 font-medium transition-colors"
+                        >
+                          View All Technology Partners
+                          <ArrowRight className="ml-2 w-4 h-4" />
+                        </Link>
+                      </div>
+                    )}
                   </div>
                 </div>
               );
