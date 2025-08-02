@@ -30,10 +30,14 @@ const partnerTypes = [
     description: 'Software integrations and tech solutions',
     color: 'from-blue-500 to-blue-600',
     partners: [
+      { name: 'HubSpot CRM', description: 'Customer relationship management', logo: '🧡' },
       { name: 'Zapier', description: 'Workflow automation platform', logo: '🔗' },
-      { name: 'Salesforce', description: 'CRM integration solutions', logo: '☁️' },
-      { name: 'Slack', description: 'Team communication tools', logo: '💬' },
-      { name: 'Zoom', description: 'Video conferencing platform', logo: '📹' }
+      { name: 'Google Analytics', description: 'Website analytics integration', logo: '📊' },
+      { name: 'Mailmodo', description: 'Email marketing automation', logo: '📧' },
+      { name: 'Webengage', description: 'Customer engagement platform', logo: '🎯' },
+      { name: 'Amplitude', description: 'Product analytics platform', logo: '📈' },
+      { name: 'Supabase', description: 'Open-source Firebase alternative', logo: '⚡' },
+      { name: 'Next.js', description: 'React framework for web apps', logo: '⚛️' }
     ]
   },
   {
@@ -108,7 +112,7 @@ const partnerBenefits = [
 ];
 
 const stats = [
-  { number: '0', label: 'Mission Partners', icon: Building },
+  { number: '8', label: 'Technology Partners', icon: Building },
   { number: '5K+', label: 'Community Members', icon: Users },
   { number: '100%', label: 'Remote & Free', icon: Heart },
   { number: '24/7', label: 'Community Support', icon: Zap }

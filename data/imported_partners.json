@@ -1,56 +1,55 @@
 [
   {
-    "id": "partner_1754110816685_6mqd1uzk5",
-    "email": "john@techsolutions.com",
-    "fullName": "John Smith",
-    "company": "TechSolutions Inc",
-    "jobTitle": "CEO",
-    "phone": "+1-555-0123",
+    "id": "partner_1754114231705_ztsxdun0g",
+    "email": "rajesh@mailmodo.com",
+    "fullName": "Rajesh Kumar",
+    "company": "Mailmodo",
+    "jobTitle": "Head of Partnerships",
+    "phone": "+91-98765-43210",
     "role": "partner",
     "preferences": {
       "notifications": true,
       "theme": "system"
     },
     "partnerProfile": {
-      "companyDescription": "We help businesses implement and optimize HubSpot for maximum ROI. Our team has 10+ years of experience in marketing automation and CRM implementation.",
+      "companyDescription": "Interactive email marketing platform that helps businesses create AMP emails and boost engagement. Seamlessly integrates with HubSpot for advanced email campaigns.",
       "partnershipType": "technology",
-      "website": "https://techsolutions.com",
+      "website": "https://mailmodo.com",
       "offerings": [
-        "HubSpot Implementation",
-        "Custom Integrations",
-        "Marketing Automation"
+        "Email Marketing",
+        "Marketing Automation",
+        "HubSpot Integration"
       ],
       "interestedInSpeaking": true
     },
     "partnerStatus": {
-      "status": "approved",
+      "status": "active",
       "appliedAt": "2025-01-15T10:00:00Z",
       "approvedAt": "2025-01-16T14:30:00Z"
     },
     "createdAt": "2025-01-15T10:00:00Z",
-    "updatedAt": "2025-08-02T05:00:16.685Z"
+    "updatedAt": "2025-08-02T05:57:11.705Z"
   },
   {
-    "id": "partner_1754110816687_0yxrwd657",
-    "email": "sarah@marketingpro.com",
-    "fullName": "Sarah Johnson",
-    "company": "MarketingPro Agency",
-    "jobTitle": "Marketing Director",
-    "phone": "+1-555-0124",
+    "id": "partner_1754114231711_4jdqjj12r",
+    "email": "priya@webengage.com",
+    "fullName": "Priya Sharma",
+    "company": "WebEngage",
+    "jobTitle": "VP of Product",
+    "phone": "+91-98765-43211",
     "role": "partner",
     "preferences": {
       "notifications": true,
       "theme": "system"
     },
     "partnerProfile": {
-      "companyDescription": "Full-service marketing agency specializing in HubSpot-powered inbound marketing strategies. We've helped 200+ companies grow their revenue through strategic marketing.",
-      "partnershipType": "service",
-      "website": "https://marketingpro.com",
+      "companyDescription": "Customer engagement platform that helps businesses retain users through personalized messaging across web, mobile, email, and SMS channels.",
+      "partnershipType": "technology",
+      "website": "https://webengage.com",
       "offerings": [
-        "HubSpot Training",
+        "Customer Engagement",
         "Marketing Automation",
-        "Content Creation",
-        "Consulting"
+        "Analytics"
       ],
       "interestedInSpeaking": true
     },
@@ -60,14 +59,14 @@
       "approvedAt": "2025-01-12T11:45:00Z"
     },
     "createdAt": "2025-01-10T09:15:00Z",
-    "updatedAt": "2025-08-02T05:00:16.687Z"
+    "updatedAt": "2025-08-02T05:57:11.711Z"
   },
   {
-    "id": "partner_1754110816687_wt5iobu53",
-    "email": "mike@dataconnect.io",
-    "fullName": "Mike Chen",
-    "company": "DataConnect Solutions",
-    "jobTitle": "CTO",
+    "id": "partner_1754114231711_gkrb8dy9k",
+    "email": "alex@amplitude.com",
+    "fullName": "Alex Thompson",
+    "company": "Amplitude",
+    "jobTitle": "Solutions Engineer",
     "phone": "+1-555-0125",
     "role": "partner",
     "preferences": {
@@ -75,13 +74,13 @@
       "theme": "system"
     },
     "partnerProfile": {
-      "companyDescription": "We build custom integrations and data synchronization solutions for HubSpot. Our APIs help businesses connect HubSpot with their existing tech stack seamlessly.",
-      "partnershipType": "integration",
-      "website": "https://dataconnect.io",
+      "companyDescription": "Product analytics platform that helps companies understand user behavior and optimize their digital products for better engagement and retention.",
+      "partnershipType": "technology",
+      "website": "https://amplitude.com",
       "offerings": [
-        "Custom Integrations",
-        "Data Analytics",
-        "Development Services"
+        "Product Analytics",
+        "User Tracking",
+        "Data Analytics"
       ],
       "interestedInSpeaking": false
     },
@@ -91,14 +90,14 @@
       "approvedAt": "2025-01-10T09:30:00Z"
     },
     "createdAt": "2025-01-08T16:20:00Z",
-    "updatedAt": "2025-08-02T05:00:16.687Z"
+    "updatedAt": "2025-08-02T05:57:11.711Z"
   },
   {
-    "id": "partner_1754110816687_jiiv6fhue",
-    "email": "lisa@hubspotcommunity.org",
-    "fullName": "Lisa Rodriguez",
-    "company": "HubSpot User Group LA",
-    "jobTitle": "Community Manager",
+    "id": "partner_1754114231711_1wzfayvbc",
+    "email": "sarah@supabase.io",
+    "fullName": "Sarah Chen",
+    "company": "Supabase",
+    "jobTitle": "Developer Relations",
     "phone": "+1-555-0126",
     "role": "partner",
     "preferences": {
@@ -106,12 +105,13 @@
       "theme": "system"
     },
     "partnerProfile": {
-      "companyDescription": "We organize monthly HubSpot user meetups in Los Angeles, bringing together 500+ HubSpot professionals for networking and knowledge sharing.",
-      "partnershipType": "community",
-      "website": "https://hubspotcommunity.org",
+      "companyDescription": "Open-source Firebase alternative providing database, authentication, and real-time subscriptions. Perfect for modern web applications.",
+      "partnershipType": "technology",
+      "website": "https://supabase.io",
       "offerings": [
-        "Content Creation",
-        "Support Services"
+        "Database",
+        "Authentication",
+        "Real-time APIs"
       ],
       "interestedInSpeaking": true
     },
@@ -121,14 +121,14 @@
       "approvedAt": "2025-01-14T10:15:00Z"
     },
     "createdAt": "2025-01-12T13:45:00Z",
-    "updatedAt": "2025-08-02T05:00:16.687Z"
+    "updatedAt": "2025-08-02T05:57:11.711Z"
   },
   {
-    "id": "partner_1754110816687_ftwqgtv1o",
-    "email": "david@salesboost.com",
-    "fullName": "David Park",
-    "company": "SalesBoost Consulting",
-    "jobTitle": "Sales Operations Lead",
+    "id": "partner_1754114231711_i2znrkgx3",
+    "email": "michael@zapier.com",
+    "fullName": "Michael Rodriguez",
+    "company": "Zapier",
+    "jobTitle": "Partnership Manager",
     "phone": "+1-555-0127",
     "role": "partner",
     "preferences": {
@@ -136,29 +136,30 @@
       "theme": "system"
     },
     "partnerProfile": {
-      "companyDescription": "Sales enablement consultancy focused on HubSpot Sales Hub optimization. We help B2B companies increase their sales velocity and close rates.",
-      "partnershipType": "service",
-      "website": "https://salesboost.com",
+      "companyDescription": "Workflow automation platform that connects HubSpot with 5000+ apps. Helps businesses automate repetitive tasks and improve productivity.",
+      "partnershipType": "technology",
+      "website": "https://zapier.com",
       "offerings": [
-        "Sales Enablement",
-        "HubSpot Training",
-        "Consulting"
+        "Workflow Automation",
+        "App Integration",
+        "HubSpot Automation"
       ],
       "interestedInSpeaking": false
     },
     "partnerStatus": {
-      "status": "pending",
-      "appliedAt": "2025-01-20T11:30:00Z"
+      "status": "approved",
+      "appliedAt": "2025-01-20T11:30:00Z",
+      "approvedAt": "2025-01-21T15:00:00Z"
     },
     "createdAt": "2025-01-20T11:30:00Z",
-    "updatedAt": "2025-08-02T05:00:16.687Z"
+    "updatedAt": "2025-08-02T05:57:11.711Z"
   },
   {
-    "id": "partner_1754110816687_qeip1vtxr",
-    "email": "emma@designstudio.co",
-    "fullName": "Emma Wilson",
-    "company": "Creative Design Studio",
-    "jobTitle": "Creative Director",
+    "id": "partner_1754114231711_qkxb7aibf",
+    "email": "jennifer@hotjar.com",
+    "fullName": "Jennifer Lee",
+    "company": "Hotjar",
+    "jobTitle": "Customer Success Manager",
     "phone": "+1-555-0128",
     "role": "partner",
     "preferences": {
@@ -166,12 +167,13 @@
       "theme": "system"
     },
     "partnerProfile": {
-      "companyDescription": "Award-winning design studio creating beautiful HubSpot templates, landing pages, and email designs that convert visitors into customers.",
-      "partnershipType": "service",
-      "website": "https://designstudio.co",
+      "companyDescription": "Behavior analytics platform that shows how users interact with your website through heatmaps, recordings, and feedback tools.",
+      "partnershipType": "technology",
+      "website": "https://hotjar.com",
       "offerings": [
-        "Design Services",
-        "Content Creation"
+        "User Analytics",
+        "Heatmaps",
+        "Conversion Optimization"
       ],
       "interestedInSpeaking": true
     },
@@ -180,6 +182,67 @@
       "appliedAt": "2025-01-18T14:00:00Z"
     },
     "createdAt": "2025-01-18T14:00:00Z",
-    "updatedAt": "2025-08-02T05:00:16.687Z"
+    "updatedAt": "2025-08-02T05:57:11.711Z"
+  },
+  {
+    "id": "partner_1754114231711_xn47hl4nh",
+    "email": "ankit@clevertap.com",
+    "fullName": "Ankit Gupta",
+    "company": "CleverTap",
+    "jobTitle": "Head of Growth",
+    "phone": "+91-98765-43212",
+    "role": "partner",
+    "preferences": {
+      "notifications": true,
+      "theme": "system"
+    },
+    "partnerProfile": {
+      "companyDescription": "Customer engagement and retention platform that helps businesses increase user lifetime value through personalized experiences.",
+      "partnershipType": "technology",
+      "website": "https://clevertap.com",
+      "offerings": [
+        "Customer Engagement",
+        "Retention",
+        "Mobile Analytics"
+      ],
+      "interestedInSpeaking": true
+    },
+    "partnerStatus": {
+      "status": "pending",
+      "appliedAt": "2025-01-22T11:00:00Z"
+    },
+    "createdAt": "2025-01-22T11:00:00Z",
+    "updatedAt": "2025-08-02T05:57:11.711Z"
+  },
+  {
+    "id": "partner_1754114231711_i0yn65b2o",
+    "email": "david@typeform.com",
+    "fullName": "David Kim",
+    "company": "Typeform",
+    "jobTitle": "Integration Specialist",
+    "phone": "+1-555-0129",
+    "role": "partner",
+    "preferences": {
+      "notifications": true,
+      "theme": "system"
+    },
+    "partnerProfile": {
+      "companyDescription": "Interactive form builder that creates engaging surveys and forms. Seamlessly integrates with HubSpot for better lead capture and data collection.",
+      "partnershipType": "technology",
+      "website": "https://typeform.com",
+      "offerings": [
+        "Form Builder",
+        "Lead Generation",
+        "Survey Tools"
+      ],
+      "interestedInSpeaking": false
+    },
+    "partnerStatus": {
+      "status": "approved",
+      "appliedAt": "2025-01-25T09:30:00Z",
+      "approvedAt": "2025-01-26T14:00:00Z"
+    },
+    "createdAt": "2025-01-25T09:30:00Z",
+    "updatedAt": "2025-08-02T05:57:11.711Z"
   }
 ]
