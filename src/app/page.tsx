@@ -479,7 +479,6 @@ export default function Home() {
                 <li><Link href="/events" className="hover:text-white transition-colors">Schedule</Link></li>
                 <li><Link href="/speakers" className="hover:text-white transition-colors">Speakers</Link></li>
                 <li><Link href="/register" className="hover:text-white transition-colors">Register</Link></li>
-                <li><Link href="/docs" className="hover:text-white transition-colors">Resources</Link></li>
               </ul>
             </div>
             
@@ -488,7 +487,6 @@ export default function Home() {
               <ul className="space-y-2 text-gray-400">
                 <li><Link href="/dashboard" className="hover:text-white transition-colors">Dashboard</Link></li>
                 <li><Link href="/login" className="hover:text-white transition-colors">Member Login</Link></li>
-                <li><Link href="/docs" className="hover:text-white transition-colors">Documentation</Link></li>
                 <li><Link href="/admin" className="hover:text-white transition-colors">Organizers</Link></li>
               </ul>
             </div>
