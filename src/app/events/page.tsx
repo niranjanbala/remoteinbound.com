@@ -2,7 +2,7 @@
 
 import Link from 'next/link';
 import Logo from '@/components/Logo';
-import { 
+import {
   Calendar,
   Clock,
   Users,
@@ -21,131 +21,47 @@ import {
   TrendingUp,
   Heart
 } from 'lucide-react';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 
-const sessions = [
-  {
-    id: 1,
-    title: 'Scaling Growth with HubSpot: From Startup to Enterprise',
-    speaker: 'Sarah Chen',
-    company: 'TechFlow Solutions',
-    time: '09:00 AM - 09:45 AM',
-    date: '2025-09-03',
-    duration: '45 min',
-    type: 'Keynote',
-    track: 'Growth Marketing',
-    level: 'Intermediate',
-    description: 'Learn how to scale your growth marketing efforts using HubSpot as your central growth engine. Sarah will share real-world strategies from scaling multiple companies from 6 to 8 figures.',
-    attendees: 1250,
-    featured: true,
-    tags: ['Growth', 'Scaling', 'HubSpot Automation']
-  },
-  {
-    id: 2,
-    title: 'Advanced HubSpot Workflows: Beyond the Basics',
-    speaker: 'Marcus Rodriguez',
-    company: 'Digital Dynamics',
-    time: '10:00 AM - 10:30 AM',
-    date: '2025-09-03',
-    duration: '30 min',
-    type: 'Workshop',
-    track: 'Sales Automation',
-    level: 'Advanced',
-    description: 'Dive deep into advanced workflow strategies that go beyond basic automation. Perfect for HubSpot power users looking to maximize their automation potential.',
-    attendees: 850,
-    featured: true,
-    tags: ['Workflows', 'Automation', 'Advanced']
-  },
-  {
-    id: 3,
-    title: 'Content That Converts: Healthcare Marketing with HubSpot',
-    speaker: 'Dr. Emily Watson',
-    company: 'HealthTech Innovations',
-    time: '11:00 AM - 11:30 AM',
-    date: '2025-09-03',
-    duration: '30 min',
-    type: 'Session',
-    track: 'Content Marketing',
-    level: 'Beginner',
-    description: 'Discover how to create compelling healthcare content that converts while maintaining compliance and building trust with your audience.',
-    attendees: 650,
-    featured: false,
-    tags: ['Content', 'Healthcare', 'Compliance']
-  },
-  {
-    id: 4,
-    title: 'Building a Revenue Machine with HubSpot Operations Hub',
-    speaker: 'James Park',
-    company: 'SaaS Unicorn Inc',
-    time: '02:00 PM - 02:45 PM',
-    date: '2025-09-03',
-    duration: '45 min',
-    type: 'Deep Dive',
-    track: 'Revenue Operations',
-    level: 'Advanced',
-    description: 'Learn how to build a scalable revenue operations function using HubSpot Operations Hub. James will share the exact playbook used to scale ARR from $10M to $100M.',
-    attendees: 950,
-    featured: true,
-    tags: ['RevOps', 'Operations Hub', 'Scaling']
-  },
-  {
-    id: 5,
-    title: 'E-commerce Attribution: Tracking the Full Customer Journey',
-    speaker: 'Lisa Thompson',
-    company: 'E-commerce Plus',
-    time: '03:00 PM - 03:30 PM',
-    date: '2025-09-03',
-    duration: '30 min',
-    type: 'Session',
-    track: 'Analytics',
-    level: 'Intermediate',
-    description: 'Master complex e-commerce attribution models and learn how to track the complete customer journey from first touch to purchase and beyond.',
-    attendees: 720,
-    featured: false,
-    tags: ['Attribution', 'E-commerce', 'Analytics']
-  },
-  {
-    id: 6,
-    title: 'Enabling Sales Teams for HubSpot Success',
-    speaker: 'David Kumar',
-    company: 'Enterprise Solutions Co',
-    time: '04:00 PM - 04:30 PM',
-    date: '2025-09-03',
-    duration: '30 min',
-    type: 'Workshop',
-    track: 'Sales Enablement',
-    level: 'Beginner',
-    description: 'Learn proven strategies for training and enabling sales teams to maximize their success with HubSpot Sales Hub.',
-    attendees: 580,
-    featured: false,
-    tags: ['Sales Enablement', 'Training', 'Sales Hub']
-  }
-];
+// Types for our session data
+interface Speaker {
+  id: string;
+  name: string;
+  title: string;
+  company: string;
+  avatar?: string;
+  profile_image?: string;
+}
 
-const tracks = [
-  'All Tracks',
-  'Growth Marketing',
-  'Sales Automation',
-  'Content Marketing',
-  'Revenue Operations',
-  'Analytics',
-  'Sales Enablement'
-];
+interface Tag {
+  name: string;
+  category?: string;
+}
 
-const sessionTypes = [
-  'All Types',
-  'Keynote',
-  'Workshop',
-  'Session',
-  'Deep Dive'
-];
+interface Session {
+  id: string;
+  title: string;
+  description: string;
+  start_time: string;
+  end_time: string;
+  session_level: string;
+  reservation_required: boolean;
+  sponsor_name?: string;
+  sponsor_logo?: string;
+  room?: string;
+  max_attendees?: number;
+  current_attendees: number;
+  speakers: Speaker[];
+  tags: Tag[];
+  duration?: number;
+  time?: string;
+  date?: string;
+  type: string;
+  track: string;
+  featured: boolean;
+  attendees: number;
+}
 
-const levels = [
-  'All Levels',
-  'Beginner',
-  'Intermediate',
-  'Advanced'
-];
 
 export default function EventsPage() {
   const [selectedTrack, setSelectedTrack] = useState('All Tracks');
@@ -153,14 +69,53 @@ export default function EventsPage() {
   const [selectedLevel, setSelectedLevel] = useState('All Levels');
   const [searchQuery, setSearchQuery] = useState('');
   const [viewMode, setViewMode] = useState<'calendar' | 'list'>('calendar');
+  const [sessions, setSessions] = useState<Session[]>([]);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState<string | null>(null);
+
+  // Fetch sessions from API
+  useEffect(() => {
+    const fetchSessions = async () => {
+      try {
+        setLoading(true);
+        const params = new URLSearchParams();
+        if (searchQuery) params.append('search', searchQuery);
+        if (selectedTrack !== 'All Tracks') params.append('track', selectedTrack);
+        if (selectedType !== 'All Types') params.append('type', selectedType);
+        if (selectedLevel !== 'All Levels') params.append('level', selectedLevel);
+
+        const response = await fetch(`/api/sessions?${params.toString()}`);
+        if (!response.ok) {
+          throw new Error('Failed to fetch sessions');
+        }
+
+        const data = await response.json();
+        setSessions(data.sessions || []);
+        setError(null);
+      } catch (err) {
+        console.error('Error fetching sessions:', err);
+        setError('Failed to load sessions. Please try again later.');
+        setSessions([]);
+      } finally {
+        setLoading(false);
+      }
+    };
+
+    fetchSessions();
+  }, [searchQuery, selectedTrack, selectedType, selectedLevel]);
+
+  // Generate dynamic filter options from loaded sessions
+  const tracks = ['All Tracks', ...Array.from(new Set(sessions.map(s => s.track)))];
+  const sessionTypes = ['All Types', ...Array.from(new Set(sessions.map(s => s.type)))];
+  const levels = ['All Levels', ...Array.from(new Set(sessions.map(s => s.session_level)))];
 
   const filteredSessions = sessions.filter(session => {
     const matchesTrack = selectedTrack === 'All Tracks' || session.track === selectedTrack;
     const matchesType = selectedType === 'All Types' || session.type === selectedType;
-    const matchesLevel = selectedLevel === 'All Levels' || session.level === selectedLevel;
-    const matchesSearch = searchQuery === '' || 
+    const matchesLevel = selectedLevel === 'All Levels' || session.session_level === selectedLevel;
+    const matchesSearch = searchQuery === '' ||
       session.title.toLowerCase().includes(searchQuery.toLowerCase()) ||
-      session.speaker.toLowerCase().includes(searchQuery.toLowerCase()) ||
+      session.speakers.some(speaker => speaker.name.toLowerCase().includes(searchQuery.toLowerCase())) ||
       session.description.toLowerCase().includes(searchQuery.toLowerCase());
     
     return matchesTrack && matchesType && matchesLevel && matchesSearch;
@@ -349,7 +304,13 @@ export default function EventsPage() {
 
           {/* Results Count */}
           <div className="mt-4 text-sm text-gray-600">
-            Showing {filteredSessions.length} of {sessions.length} sessions
+            {loading ? (
+              'Loading sessions...'
+            ) : error ? (
+              <span className="text-red-600">{error}</span>
+            ) : (
+              `Showing ${filteredSessions.length} of ${sessions.length} sessions`
+            )}
           </div>
         </div>
       </section>
@@ -357,7 +318,37 @@ export default function EventsPage() {
       {/* Sessions Content */}
       <section className="py-12">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          {viewMode === 'calendar' ? (
+          {loading ? (
+            <div className="text-center py-12">
+              <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-orange-500 mx-auto"></div>
+              <p className="mt-4 text-gray-600">Loading sessions...</p>
+            </div>
+          ) : error ? (
+            <div className="text-center py-12">
+              <p className="text-red-600 mb-4">{error}</p>
+              <button
+                onClick={() => window.location.reload()}
+                className="bg-orange-500 text-white px-6 py-2 rounded-lg hover:bg-orange-600 transition-colors"
+              >
+                Try Again
+              </button>
+            </div>
+          ) : filteredSessions.length === 0 ? (
+            <div className="text-center py-12">
+              <p className="text-gray-600 mb-4">No sessions found matching your criteria.</p>
+              <button
+                onClick={() => {
+                  setSelectedTrack('All Tracks');
+                  setSelectedType('All Types');
+                  setSelectedLevel('All Levels');
+                  setSearchQuery('');
+                }}
+                className="bg-orange-500 text-white px-6 py-2 rounded-lg hover:bg-orange-600 transition-colors"
+              >
+                Clear Filters
+              </button>
+            </div>
+          ) : viewMode === 'calendar' ? (
             /* Calendar View */
             <div className="space-y-8">
               <div className="bg-white rounded-xl shadow-sm border border-gray-200 overflow-hidden">
@@ -376,9 +367,11 @@ export default function EventsPage() {
                         <div className="lg:w-32 flex-shrink-0">
                           <div className="flex items-center text-gray-600 mb-2">
                             <Clock className="w-4 h-4 mr-2" />
-                            <span className="font-medium">{session.time}</span>
+                            <span className="font-medium">{session.time || 'Time TBA'}</span>
                           </div>
-                          <div className="text-sm text-gray-500">{session.duration}</div>
+                          {session.duration && (
+                            <div className="text-sm text-gray-500">{session.duration} min</div>
+                          )}
                         </div>
 
                         {/* Session Content */}
@@ -392,9 +385,20 @@ export default function EventsPage() {
                                     {session.title}
                                   </h3>
                                   <div className="flex items-center text-gray-600 mb-2">
-                                    <span className="font-medium">{session.speaker}</span>
-                                    <span className="mx-2">•</span>
-                                    <span>{session.company}</span>
+                                    {session.speakers.length > 0 ? (
+                                      <>
+                                        <span className="font-medium">{session.speakers[0].name}</span>
+                                        <span className="mx-2">•</span>
+                                        <span>{session.speakers[0].company}</span>
+                                        {session.speakers.length > 1 && (
+                                          <span className="ml-2 text-sm text-gray-500">
+                                            +{session.speakers.length - 1} more
+                                          </span>
+                                        )}
+                                      </>
+                                    ) : (
+                                      <span className="text-gray-500">Speaker TBA</span>
+                                    )}
                                   </div>
                                 </div>
                                 {session.featured && (
@@ -413,8 +417,8 @@ export default function EventsPage() {
                                 <div className="bg-gray-100 text-gray-700 px-3 py-1 rounded-full text-sm font-medium">
                                   {session.track}
                                 </div>
-                                <div className={`px-3 py-1 rounded-full text-sm font-medium ${getLevelColor(session.level)}`}>
-                                  {session.level}
+                                <div className={`px-3 py-1 rounded-full text-sm font-medium ${getLevelColor(session.session_level)}`}>
+                                  {session.session_level}
                                 </div>
                               </div>
 
@@ -427,7 +431,7 @@ export default function EventsPage() {
                               <div className="flex flex-wrap gap-2 mb-4">
                                 {session.tags.map((tag, index) => (
                                   <span key={index} className="bg-gray-100 text-gray-600 px-2 py-1 rounded text-sm">
-                                    #{tag}
+                                    #{typeof tag === 'string' ? tag : tag.name}
                                   </span>
                                 ))}
                               </div>
@@ -476,9 +480,20 @@ export default function EventsPage() {
                           {session.title}
                         </h3>
                         <div className="flex items-center text-gray-600 text-sm mb-3">
-                          <span className="font-medium">{session.speaker}</span>
-                          <span className="mx-2">•</span>
-                          <span>{session.company}</span>
+                          {session.speakers.length > 0 ? (
+                            <>
+                              <span className="font-medium">{session.speakers[0].name}</span>
+                              <span className="mx-2">•</span>
+                              <span>{session.speakers[0].company}</span>
+                              {session.speakers.length > 1 && (
+                                <span className="ml-2 text-xs text-gray-500">
+                                  +{session.speakers.length - 1} more
+                                </span>
+                              )}
+                            </>
+                          ) : (
+                            <span className="text-gray-500">Speaker TBA</span>
+                          )}
                         </div>
                       </div>
                       {session.featured && (
@@ -490,9 +505,13 @@ export default function EventsPage() {
 
                     <div className="flex items-center text-sm text-gray-600 mb-4">
                       <Clock className="w-4 h-4 mr-1" />
-                      <span>{session.time}</span>
-                      <span className="mx-2">•</span>
-                      <span>{session.duration}</span>
+                      <span>{session.time || 'Time TBA'}</span>
+                      {session.duration && (
+                        <>
+                          <span className="mx-2">•</span>
+                          <span>{session.duration} min</span>
+                        </>
+                      )}
                     </div>
 
                     <div className="flex flex-wrap gap-2 mb-4">
@@ -500,8 +519,8 @@ export default function EventsPage() {
                         {getTypeIcon(session.type)}
                         <span className="ml-1">{session.type}</span>
                       </div>
-                      <div className={`px-2 py-1 rounded text-xs font-medium ${getLevelColor(session.level)}`}>
-                        {session.level}
+                      <div className={`px-2 py-1 rounded text-xs font-medium ${getLevelColor(session.session_level)}`}>
+                        {session.session_level}
                       </div>
                     </div>
 
