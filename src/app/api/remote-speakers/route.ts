@@ -92,6 +92,85 @@ export async function POST(request: NextRequest) {
       });
     }
 
+    if (action === 'sync_all_sessions') {
+      // Sync all session speakers to remote session speakers
+      const { data, error } = await supabase.rpc('sync_all_session_speakers_to_remote');
+      
+      if (error) {
+        console.error('Error syncing session speakers:', error);
+        return NextResponse.json(
+          { error: 'Failed to sync session speakers' },
+          { status: 500 }
+        );
+      }
+
+      return NextResponse.json({
+        message: 'Successfully synced all session speakers to remote session speakers',
+        synced_count: data
+      });
+    }
+
+    if (action === 'sync_session' && body.session_id) {
+      // Sync specific session speakers to remote
+      const { data, error } = await supabase.rpc('sync_session_speakers_to_remote', {
+        p_session_id: body.session_id
+      });
+      
+      if (error) {
+        console.error('Error syncing session speakers:', error);
+        return NextResponse.json(
+          { error: 'Failed to sync session speakers' },
+          { status: 500 }
+        );
+      }
+
+      return NextResponse.json({
+        message: 'Successfully synced session speakers to remote',
+        synced_count: data
+      });
+    }
+
+    if (action === 'assign_to_session' && body.session_id && body.remote_speaker_id) {
+      // Assign remote speaker to session
+      const { error } = await supabase.rpc('assign_remote_speaker_to_session', {
+        p_session_id: body.session_id,
+        p_remote_speaker_id: body.remote_speaker_id,
+        p_speaker_order: body.speaker_order || 1
+      });
+      
+      if (error) {
+        console.error('Error assigning remote speaker to session:', error);
+        return NextResponse.json(
+          { error: 'Failed to assign remote speaker to session' },
+          { status: 500 }
+        );
+      }
+
+      return NextResponse.json({
+        message: 'Successfully assigned remote speaker to session'
+      });
+    }
+
+    if (action === 'remove_from_session' && body.session_id && body.remote_speaker_id) {
+      // Remove remote speaker from session
+      const { error } = await supabase.rpc('remove_remote_speaker_from_session', {
+        p_session_id: body.session_id,
+        p_remote_speaker_id: body.remote_speaker_id
+      });
+      
+      if (error) {
+        console.error('Error removing remote speaker from session:', error);
+        return NextResponse.json(
+          { error: 'Failed to remove remote speaker from session' },
+          { status: 500 }
+        );
+      }
+
+      return NextResponse.json({
+        message: 'Successfully removed remote speaker from session'
+      });
+    }
+
     if (action === 'sync_one' && speaker_id) {
       // Sync specific speaker from speakers table to remote_speakers
       const { error } = await supabase.rpc('sync_speaker_to_remote', {

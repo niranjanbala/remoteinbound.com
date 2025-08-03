@@ -37,6 +37,25 @@ async function syncAllSpeakers() {
   }
 }
 
+async function syncAllSessionSpeakers() {
+  console.log('🔄 Syncing all session speakers to remote_session_speakers table...');
+  
+  try {
+    const { data, error } = await supabase.rpc('sync_all_session_speakers_to_remote');
+    
+    if (error) {
+      console.error('❌ Error syncing session speakers:', error);
+      return false;
+    }
+    
+    console.log(`✅ Successfully synced ${data} session speaker relationships to remote_session_speakers table`);
+    return true;
+  } catch (error) {
+    console.error('❌ Unexpected error:', error);
+    return false;
+  }
+}
+
 async function listRemoteSpeakers() {
   console.log('📋 Listing remote speakers...');
   
@@ -58,6 +77,9 @@ async function listRemoteSpeakers() {
       console.log(`   Title: ${speaker.title}`);
       console.log(`   Company: ${speaker.company}`);
       console.log(`   Sessions: ${speaker.session_count || 0}`);
+      if (speaker.session_titles && speaker.session_titles.length > 0) {
+        console.log(`   Session Titles: ${speaker.session_titles.slice(0, 2).join(', ')}${speaker.session_titles.length > 2 ? '...' : ''}`);
+      }
       if (speaker.external_id) {
         console.log(`   External ID: ${speaker.external_id}`);
       }
@@ -79,6 +101,55 @@ async function listRemoteSpeakers() {
   }
 }
 
+async function listRemoteSessions() {
+  console.log('📋 Listing sessions with remote speakers...');
+  
+  try {
+    const { data: sessions, error } = await supabase
+      .from('remote_session_details')
+      .select('*')
+      .order('start_time');
+    
+    if (error) {
+      console.error('❌ Error fetching remote sessions:', error);
+      return;
+    }
+    
+    console.log(`\n📊 Found ${sessions.length} sessions:\n`);
+    
+    const sessionsWithSpeakers = sessions.filter(s => s.remote_speaker_count > 0);
+    const sessionsWithoutSpeakers = sessions.filter(s => s.remote_speaker_count === 0);
+    
+    console.log(`📈 Session Statistics:`);
+    console.log(`   Total Sessions: ${sessions.length}`);
+    console.log(`   Sessions with Remote Speakers: ${sessionsWithSpeakers.length}`);
+    console.log(`   Sessions without Remote Speakers: ${sessionsWithoutSpeakers.length}`);
+    console.log('');
+    
+    // Show sessions with remote speakers
+    if (sessionsWithSpeakers.length > 0) {
+      console.log('🎤 Sessions with Remote Speakers:');
+      sessionsWithSpeakers.slice(0, 10).forEach((session, index) => {
+        console.log(`${index + 1}. ${session.title}`);
+        console.log(`   Time: ${new Date(session.start_time).toLocaleString()}`);
+        console.log(`   Remote Speakers: ${session.remote_speaker_count}`);
+        if (session.remote_speakers && session.remote_speakers.length > 0) {
+          const speakerNames = session.remote_speakers.map(s => s.name).join(', ');
+          console.log(`   Speaker Names: ${speakerNames}`);
+        }
+        console.log('');
+      });
+      
+      if (sessionsWithSpeakers.length > 10) {
+        console.log(`   ... and ${sessionsWithSpeakers.length - 10} more sessions with remote speakers\n`);
+      }
+    }
+    
+  } catch (error) {
+    console.error('❌ Unexpected error:', error);
+  }
+}
+
 async function compareTables() {
   console.log('🔍 Comparing speakers and remote_speakers tables...');
   
@@ -92,14 +163,30 @@ async function compareTables() {
       .from('remote_speakers')
       .select('*', { count: 'exact', head: true });
     
+    const { count: sessionSpeakersCount } = await supabase
+      .from('inbound_session_speakers')
+      .select('*', { count: 'exact', head: true });
+    
+    const { count: remoteSessionSpeakersCount } = await supabase
+      .from('remote_session_speakers')
+      .select('*', { count: 'exact', head: true });
+    
     console.log(`\n📊 Table Comparison:`);
     console.log(`   speakers table: ${speakersCount} records`);
     console.log(`   remote_speakers table: ${remoteSpeakersCount} records`);
+    console.log(`   inbound_session_speakers table: ${sessionSpeakersCount} records`);
+    console.log(`   remote_session_speakers table: ${remoteSessionSpeakersCount} records`);
     
     if (speakersCount === remoteSpeakersCount) {
-      console.log('✅ Tables have the same number of records');
+      console.log('✅ Speaker tables have the same number of records');
     } else {
-      console.log(`⚠️  Difference: ${Math.abs(speakersCount - remoteSpeakersCount)} records`);
+      console.log(`⚠️  Speaker difference: ${Math.abs(speakersCount - remoteSpeakersCount)} records`);
+    }
+    
+    if (sessionSpeakersCount === remoteSessionSpeakersCount) {
+      console.log('✅ Session speaker tables have the same number of records');
+    } else {
+      console.log(`⚠️  Session speaker difference: ${Math.abs(sessionSpeakersCount - remoteSessionSpeakersCount)} records`);
     }
     
     // Check for speakers not in remote_speakers
@@ -200,16 +287,20 @@ async function showHelp() {
 Usage: node scripts/manage-remote-speakers.js [command]
 
 Commands:
-  sync-all     Sync all speakers from speakers table to remote_speakers
-  list         List all remote speakers with details
-  compare      Compare speakers and remote_speakers tables
-  cleanup      Check for and report duplicate records
-  validate     Validate data integrity in remote_speakers table
-  help         Show this help message
+  sync-all         Sync all speakers from speakers table to remote_speakers
+  sync-sessions    Sync all session speakers to remote_session_speakers
+  sync-complete    Sync both speakers and session relationships
+  list             List all remote speakers with details
+  list-sessions    List sessions with remote speaker assignments
+  compare          Compare speakers and remote_speakers tables
+  cleanup          Check for and report duplicate records
+  validate         Validate data integrity in remote_speakers table
+  help             Show this help message
 
 Examples:
-  node scripts/manage-remote-speakers.js sync-all
+  node scripts/manage-remote-speakers.js sync-complete
   node scripts/manage-remote-speakers.js list
+  node scripts/manage-remote-speakers.js list-sessions
   node scripts/manage-remote-speakers.js compare
   
 Environment:
@@ -236,8 +327,24 @@ async function main() {
       await syncAllSpeakers();
       break;
       
+    case 'sync-sessions':
+      await syncAllSessionSpeakers();
+      break;
+      
+    case 'sync-complete':
+      console.log('🔄 Performing complete sync...');
+      const speakersSuccess = await syncAllSpeakers();
+      if (speakersSuccess) {
+        await syncAllSessionSpeakers();
+      }
+      break;
+      
     case 'list':
       await listRemoteSpeakers();
+      break;
+      
+    case 'list-sessions':
+      await listRemoteSessions();
       break;
       
     case 'compare':
