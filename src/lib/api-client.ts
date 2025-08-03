@@ -1,4 +1,5 @@
 import { User, Event, Speaker } from '@/types';
+import { cache, cacheUtils, CACHE_KEYS, CACHE_TTL } from './cache';
 
 // Base API client configuration
 const API_BASE = '/api';
@@ -210,10 +211,27 @@ export const eventService = {
 
 // Speaker operations
 export const speakerService = {
-  // Get all speakers
-  async getAll(): Promise<Speaker[]> {
+  // Get all speakers with caching
+  async getAll(useCache: boolean = true): Promise<Speaker[]> {
+    // Try to get from cache first
+    if (useCache) {
+      const cached = cacheUtils.getCachedSpeakers();
+      if (cached) {
+        console.log('📦 Speakers loaded from cache');
+        return cached.map(transformDbSpeaker);
+      }
+    }
+
+    console.log('🌐 Fetching speakers from API');
     const response = await apiRequest<any[]>('/speakers');
-    return response.map(transformDbSpeaker);
+    const speakers = response.map(transformDbSpeaker);
+    
+    // Cache the raw response for future use
+    if (useCache) {
+      cacheUtils.cacheSpeakers(response);
+    }
+    
+    return speakers;
   },
 
   // Get speaker by ID
@@ -241,8 +259,144 @@ export const speakerService = {
         sessions: speakerData.sessions,
       }),
     });
+    
+    // Clear speakers cache when new speaker is created
+    cache.remove(CACHE_KEYS.SPEAKERS);
+    
     return transformDbSpeaker(response);
   },
+};
+
+// Sessions operations with caching
+export const sessionService = {
+  // Get all sessions with caching and filtering
+  async getAll(filters?: {
+    search?: string;
+    track?: string;
+    level?: string;
+    type?: string;
+  }, useCache: boolean = true): Promise<any[]> {
+    
+    // Create cache key based on filters
+    const cacheKey = filters ? `sessions_${JSON.stringify(filters)}` : 'sessions';
+    
+    // Try to get from cache first
+    if (useCache) {
+      const cached = cache.get<any[]>(cacheKey);
+      if (cached) {
+        console.log('📦 Sessions loaded from cache', filters ? `(filtered: ${JSON.stringify(filters)})` : '');
+        return cached;
+      }
+    }
+
+    console.log('🌐 Fetching sessions from API', filters ? `(filters: ${JSON.stringify(filters)})` : '');
+    
+    // Build query parameters
+    const params = new URLSearchParams();
+    if (filters?.search) params.append('search', filters.search);
+    if (filters?.track) params.append('track', filters.track);
+    if (filters?.level) params.append('level', filters.level);
+    if (filters?.type) params.append('type', filters.type);
+    
+    const queryString = params.toString();
+    const endpoint = `/sessions${queryString ? `?${queryString}` : ''}`;
+    
+    const response = await apiRequest<{ sessions: any[]; total: number }>(endpoint);
+    const sessions = response.sessions || [];
+    
+    // Cache the results
+    if (useCache) {
+      cache.set(cacheKey, sessions, CACHE_TTL.MEDIUM);
+    }
+    
+    return sessions;
+  },
+
+  // Get session by ID
+  async getById(id: string): Promise<any | null> {
+    try {
+      // Check if we have this session in any cached sessions first
+      const allCached = cache.get<any[]>('sessions');
+      if (allCached) {
+        const cachedSession = allCached.find(session => session.id === id);
+        if (cachedSession) {
+          console.log('📦 Session loaded from cache');
+          return cachedSession;
+        }
+      }
+
+      console.log('🌐 Fetching session from API');
+      const response = await apiRequest<any>(`/sessions/${id}`);
+      return response;
+    } catch (error: any) {
+      if (error.message.includes('404')) return null;
+      throw error;
+    }
+  },
+
+  // Clear sessions cache (useful when data changes)
+  clearCache(): void {
+    // Clear all session-related cache entries
+    const keys = Object.keys(localStorage);
+    keys.forEach(key => {
+      if (key.includes('remoteinbound_cache_sessions')) {
+        localStorage.removeItem(key);
+      }
+    });
+    console.log('🗑️ Sessions cache cleared');
+  },
+
+  // Preload sessions and speakers data
+  async preloadData(): Promise<{ sessions: any[]; speakers: any[] }> {
+    console.log('🚀 Preloading sessions and speakers data...');
+    
+    try {
+      // Load both sessions and speakers in parallel
+      const [sessions, speakers] = await Promise.all([
+        this.getAll(undefined, true), // Load all sessions with caching
+        speakerService.getAll(true)    // Load all speakers with caching
+      ]);
+
+      console.log(`✅ Preloaded ${sessions.length} sessions and ${speakers.length} speakers`);
+      
+      return { sessions, speakers };
+    } catch (error) {
+      console.error('❌ Failed to preload data:', error);
+      throw error;
+    }
+  }
+};
+
+// Cache management utilities
+export const cacheManager = {
+  // Get cache statistics
+  getStats() {
+    return cache.getCacheInfo();
+  },
+
+  // Clear all cache
+  clearAll() {
+    cache.clear();
+    console.log('🗑️ All cache cleared');
+  },
+
+  // Update cache version (invalidates all cache)
+  updateVersion(version: string) {
+    cache.updateVersion(version);
+    console.log(`🔄 Cache version updated to ${version}`);
+  },
+
+  // Check if cache is available
+  isAvailable(): boolean {
+    try {
+      const testKey = 'cache_test';
+      localStorage.setItem(testKey, 'test');
+      localStorage.removeItem(testKey);
+      return true;
+    } catch {
+      return false;
+    }
+  }
 };
 
 // Registration operations
