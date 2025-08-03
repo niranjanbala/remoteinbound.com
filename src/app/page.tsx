@@ -461,49 +461,28 @@ export default function Home() {
       {/* Footer */}
       <footer className="bg-gray-900 text-white py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
-            <div>
-              <div className="text-2xl font-bold text-orange-500 mb-4">Remote Inbound</div>
-              <p className="text-gray-400 mb-4">
-                The first edition remote event created by HubSpot fans for the global HubSpot community.
+          <div className="text-center">
+            <div className="text-2xl font-bold text-orange-500 mb-4">Remote Inbound</div>
+            <p className="text-gray-400 mb-6 max-w-2xl mx-auto">
+              The first edition remote event created by HubSpot fans for the global HubSpot community.
+            </p>
+            <p className="text-gray-400 text-sm mb-8">
+              September 3-5, 2025 • First Edition<br />
+              100% Remote • 100% Free • 100% Fan-Driven
+            </p>
+            
+            <div className="border-t border-gray-800 pt-8 space-y-4">
+              <div className="flex items-center justify-center space-x-2 text-gray-400">
+                <span>Built in Public & Open Source</span>
+                <span>•</span>
+                <span>Made with</span>
+                <span className="text-red-500">❤️</span>
+                <span>from India for the World</span>
+              </div>
+              <p className="text-gray-500 text-sm">
+                &copy; 2025 Remote Inbound. Organized by HubSpot Super Users. Not affiliated with HubSpot, Inc.
               </p>
-              <p className="text-gray-400 text-sm">
-                March 15-16, 2025 • First Edition<br />
-                100% Remote • 100% Free • 100% Fan-Driven
-              </p>
             </div>
-            
-            <div>
-              <h3 className="font-semibold mb-4">Event</h3>
-              <ul className="space-y-2 text-gray-400">
-                <li><Link href="/events" className="hover:text-white transition-colors">Schedule</Link></li>
-                <li><Link href="/speakers" className="hover:text-white transition-colors">Speakers</Link></li>
-                <li><Link href="/register" className="hover:text-white transition-colors">Register</Link></li>
-              </ul>
-            </div>
-            
-            <div>
-              <h3 className="font-semibold mb-4">Community</h3>
-              <ul className="space-y-2 text-gray-400">
-                <li><Link href="/dashboard" className="hover:text-white transition-colors">Dashboard</Link></li>
-                <li><Link href="/login" className="hover:text-white transition-colors">Member Login</Link></li>
-                <li><Link href="/admin" className="hover:text-white transition-colors">Organizers</Link></li>
-              </ul>
-            </div>
-            
-            <div>
-              <h3 className="font-semibold mb-4">Connect</h3>
-              <ul className="space-y-2 text-gray-400">
-                <li><a href="#" className="hover:text-white transition-colors">Slack Community</a></li>
-                <li><a href="#" className="hover:text-white transition-colors">LinkedIn Group</a></li>
-                <li><a href="#" className="hover:text-white transition-colors">Twitter</a></li>
-                <li><a href="#" className="hover:text-white transition-colors">Newsletter</a></li>
-              </ul>
-            </div>
-          </div>
-          
-          <div className="border-t border-gray-800 mt-12 pt-8 text-center text-gray-400">
-            <p>&copy; 2025 Remote Inbound. Organized by HubSpot Super Users. Not affiliated with HubSpot, Inc.</p>
           </div>
         </div>
       </footer>

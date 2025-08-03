@@ -468,42 +468,24 @@ export default function SpeakersPage() {
       {/* Footer */}
       <footer className="bg-slate-900 text-white py-12 border-t border-slate-800">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
-            <div>
-              <div className="text-2xl font-bold text-orange-500 mb-4">Remote Inbound</div>
-              <p className="text-gray-400 mb-4">
-                The first fan-driven HubSpot community event. Created by super users, for the community.
+          <div className="text-center">
+            <div className="text-2xl font-bold text-orange-500 mb-4">Remote Inbound</div>
+            <p className="text-gray-400 mb-6 max-w-2xl mx-auto">
+              The first fan-driven HubSpot community event. Created by super users, for the community.
+            </p>
+            
+            <div className="border-t border-slate-800 pt-8 space-y-4">
+              <div className="flex items-center justify-center space-x-2 text-gray-400">
+                <span>Built in Public & Open Source</span>
+                <span>•</span>
+                <span>Made with</span>
+                <span className="text-red-500">❤️</span>
+                <span>from India for the World</span>
+              </div>
+              <p className="text-gray-500 text-sm">
+                &copy; 2025 Remote Inbound. Organized by HubSpot Super Users. Not affiliated with HubSpot, Inc.
               </p>
             </div>
-            
-            <div>
-              <h3 className="font-semibold mb-4">Event</h3>
-              <ul className="space-y-2 text-gray-400">
-                <li><Link href="/events" className="hover:text-white">Sessions</Link></li>
-                <li><Link href="/speakers" className="hover:text-white">Speakers</Link></li>
-              </ul>
-            </div>
-            
-            <div>
-              <h3 className="font-semibold mb-4">Community</h3>
-              <ul className="space-y-2 text-gray-400">
-                <li><Link href="/register" className="hover:text-white">Register</Link></li>
-                <li><Link href="/register" className="hover:text-white">Join as Fan</Link></li>
-                <li><Link href="/register/sponsor" className="hover:text-white">Sponsor</Link></li>
-              </ul>
-            </div>
-            
-            <div>
-              <h3 className="font-semibold mb-4">Connect</h3>
-              <ul className="space-y-2 text-gray-400">
-                <li><Link href="/contact" className="hover:text-white">Contact</Link></li>
-                <li><Link href="/about" className="hover:text-white">About</Link></li>
-              </ul>
-            </div>
-          </div>
-          
-          <div className="border-t border-slate-800 mt-12 pt-8 text-center text-gray-400">
-            <p>&copy; 2025 Remote Inbound. Organized by HubSpot Super Users. Not affiliated with HubSpot, Inc.</p>
           </div>
         </div>
       </footer>

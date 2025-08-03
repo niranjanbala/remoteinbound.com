@@ -15,8 +15,18 @@ export async function GET(request: NextRequest) {
 
     // Get all sessions with speakers to extract unique speakers
     const { data: sessionDetails, error } = await supabaseServer
-      .from('session_details')
-      .select('*')
+      .from('sessions')
+      .select(`
+        *,
+        speakers:speaker_ids (
+          id,
+          name,
+          title,
+          company,
+          avatar,
+          bio
+        )
+      `)
       .order('start_time', { ascending: true });
 
     if (error) {
@@ -42,7 +52,7 @@ export async function GET(request: NextRequest) {
                 name: speaker.name,
                 title: speaker.title,
                 company: speaker.company,
-                avatar: speaker.avatar || speaker.profile_image,
+                avatar: speaker.avatar,
                 bio: speaker.bio || `${speaker.title} at ${speaker.company}`,
                 expertise: [], // Will be populated from session tags
                 sessions: [],
@@ -72,18 +82,16 @@ export async function GET(request: NextRequest) {
       const expertiseSet = new Set();
       sessions.forEach((session: any) => {
         if (session.tags && Array.isArray(session.tags)) {
-          session.tags.forEach((tag: any) => {
-            if (tag && tag.name) {
-              expertiseSet.add(tag.name);
+          session.tags.forEach((tag: string) => {
+            if (tag) {
+              expertiseSet.add(tag);
             }
           });
         }
       });
 
-      // Determine if speaker is featured (has multiple sessions or sponsored sessions)
-      const featured = sessions.length > 1 || sessions.some((s: any) => 
-        sessionDetails?.find(sd => sd.id === s.id)?.sponsor_name
-      );
+      // Determine if speaker is featured (has multiple sessions)
+      const featured = sessions.length > 1;
 
       return {
         ...speaker,
