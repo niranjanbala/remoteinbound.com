@@ -16,9 +16,9 @@ export async function GET(request: NextRequest) {
     const level = searchParams.get('level');
     const type = searchParams.get('type');
 
-    // Build query using the session_details view for proper speaker/tag aggregation
+    // Build query using the existing sessions table structure
     let query = supabaseServer
-      .from('session_details')
+      .from('sessions')
       .select('*')
       .order('start_time', { ascending: true });
 
@@ -31,9 +31,6 @@ export async function GET(request: NextRequest) {
       query = query.eq('session_level', level);
     }
 
-    // For track and type filtering, we'll need to handle these in the frontend
-    // since they might be stored in tags or other fields
-
     const { data: sessions, error } = await query;
 
     if (error) {
@@ -44,20 +41,36 @@ export async function GET(request: NextRequest) {
       );
     }
 
-    // Transform the data to match the frontend expectations
-    const transformedSessions = sessions?.map(session => {
-      // Parse speakers and tags from JSON if they're strings
-      const speakers = typeof session.speakers === 'string'
-        ? JSON.parse(session.speakers)
-        : session.speakers || [];
-      const tags = typeof session.tags === 'string'
-        ? JSON.parse(session.tags)
-        : session.tags || [];
+    // Get unique speaker IDs from all sessions
+    const allSpeakerIds = new Set<string>();
+    sessions?.forEach(session => {
+      if (session.speaker_ids && Array.isArray(session.speaker_ids)) {
+        session.speaker_ids.forEach((id: string) => allSpeakerIds.add(id));
+      }
+    });
 
-      // Extract tag names for easier processing
-      const tagNames = tags.map((tag: any) =>
-        typeof tag === 'object' ? tag.name : tag
-      ).filter(Boolean);
+    // Fetch speaker details if we have speaker IDs
+    let speakersMap = new Map();
+    if (allSpeakerIds.size > 0) {
+      const { data: speakersData } = await supabaseServer
+        .from('speakers')
+        .select('id, name, title, company, avatar')
+        .in('id', Array.from(allSpeakerIds));
+      
+      speakersData?.forEach(speaker => {
+        speakersMap.set(speaker.id, speaker);
+      });
+    }
+
+    // Transform the data to match the frontend expectations
+    let transformedSessions = sessions?.map(session => {
+      // Get speaker details for this session
+      const speakers = session.speaker_ids && Array.isArray(session.speaker_ids)
+        ? session.speaker_ids.map((id: string) => speakersMap.get(id)).filter(Boolean)
+        : [];
+
+      // Handle tags array
+      const tags = session.tags || [];
 
       return {
         id: session.id,
@@ -65,15 +78,15 @@ export async function GET(request: NextRequest) {
         description: session.description,
         start_time: session.start_time,
         end_time: session.end_time,
-        session_level: session.session_level || 'OPEN TO ALL LEVELS',
-        reservation_required: session.reservation_required || false,
-        sponsor_name: session.sponsor_name,
-        sponsor_logo: session.sponsor_logo,
+        session_level: 'OPEN TO ALL LEVELS', // Default for existing schema
+        reservation_required: false, // Default for existing schema
+        sponsor_name: null, // Not in existing schema
+        sponsor_logo: null, // Not in existing schema
         room: session.room,
         max_attendees: session.max_attendees,
         current_attendees: session.current_attendees,
         speakers: speakers,
-        tags: tagNames,
+        tags: tags,
         // Calculate duration
         duration: session.start_time && session.end_time
           ? Math.round((new Date(session.end_time).getTime() - new Date(session.start_time).getTime()) / (1000 * 60))
@@ -91,19 +104,32 @@ export async function GET(request: NextRequest) {
           ? new Date(session.start_time).toISOString().split('T')[0]
           : null,
         // Determine session type from tags
-        type: tagNames.length > 0
-          ? (tagNames.find((tag: string) =>
+        type: tags.length > 0
+          ? (tags.find((tag: string) =>
               ['Keynote', 'Workshop', 'Session', 'Deep Dive'].includes(tag)
             ) || 'Session')
           : 'Session',
         // Determine track from tags
-        track: tagNames.length > 0 ? (tagNames[0] || 'General') : 'General',
+        track: tags.length > 0 ? (tags[0] || 'General') : 'General',
         // Featured status (could be based on speaker count or other criteria)
         featured: speakers && speakers.length > 1,
         // Attendee count for display
         attendees: session.current_attendees || 0
       };
     }) || [];
+
+    // Apply client-side filtering for track and type since they're derived from tags
+    if (track && track !== 'All Tracks') {
+      transformedSessions = transformedSessions.filter(session =>
+        session.track === track
+      );
+    }
+
+    if (type && type !== 'All Types') {
+      transformedSessions = transformedSessions.filter(session =>
+        session.type === type
+      );
+    }
 
     return NextResponse.json({
       sessions: transformedSessions,
