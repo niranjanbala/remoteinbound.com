@@ -1,8 +1,11 @@
 'use client';
 
-import { useState, useEffect } from 'react';
+import { useState, useEffect, Suspense } from 'react';
 import Link from 'next/link';
 import { useRouter, useSearchParams } from 'next/navigation';
+
+// Force dynamic rendering to prevent static generation issues with useSearchParams
+export const dynamic = 'force-dynamic';
 import {
   User,
   Mail,
@@ -23,7 +26,7 @@ import Logo from '@/components/Logo';
 import { userStorage } from '@/lib/storage';
 import { userService } from '@/lib/database';
 
-export default function PartnerRegisterPage() {
+function PartnerRegisterForm() {
   const router = useRouter();
   const searchParams = useSearchParams();
   const [formData, setFormData] = useState({
@@ -741,5 +744,17 @@ export default function PartnerRegisterPage() {
         </div>
       </div>
     </div>
+  );
+}
+
+export default function PartnerRegisterPage() {
+  return (
+    <Suspense fallback={
+      <div className="min-h-screen bg-gradient-to-br from-orange-50 via-white to-orange-50 flex items-center justify-center">
+        <div className="animate-spin w-8 h-8 border-2 border-orange-600 border-t-transparent rounded-full"></div>
+      </div>
+    }>
+      <PartnerRegisterForm />
+    </Suspense>
   );
 }

@@ -31,6 +31,7 @@ interface Partner {
   };
   createdAt: string;
   updatedAt: string;
+  country?: string;
 }
 
 export default function PartnerDetailPage() {
@@ -46,8 +47,8 @@ export default function PartnerDetailPage() {
         const response = await fetch('/data/imported_partners.json');
         if (response.ok) {
           const partners: Partner[] = await response.json();
-          const foundPartner = partners.find(p => 
-            p.company.toLowerCase().replace(/\s+/g, '-') === slug
+          const foundPartner = partners.find(p =>
+            p.company.toLowerCase().replace(/[\s.]+/g, '-') === slug
           );
           if (foundPartner) {
             setPartner(foundPartner);
@@ -60,8 +61,8 @@ export default function PartnerDetailPage() {
         const storedPartners = localStorage.getItem('partners');
         if (storedPartners) {
           const partners: Partner[] = JSON.parse(storedPartners);
-          const foundPartner = partners.find(p => 
-            p.company.toLowerCase().replace(/\s+/g, '-') === slug
+          const foundPartner = partners.find(p =>
+            p.company.toLowerCase().replace(/[\s.]+/g, '-') === slug
           );
           if (foundPartner) {
             setPartner(foundPartner);
@@ -189,8 +190,23 @@ export default function PartnerDetailPage() {
           <div className="bg-gradient-to-r from-orange-600 to-orange-700 p-8 text-white">
             <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4">
               <div>
-                <h1 className="text-3xl font-bold mb-2">{partner.company}</h1>
+                <div className="flex items-center gap-3 mb-2">
+                  <h1 className="text-3xl font-bold">{partner.company}</h1>
+                  {partner.country === 'India' && (
+                    <div className="flex items-center gap-2 bg-white/20 backdrop-blur-sm text-white px-3 py-1 rounded-full text-sm font-medium border border-white/30">
+                      <span className="text-sm">🇮🇳</span>
+                      <span>Made in India</span>
+                    </div>
+                  )}
+                </div>
                 <p className="text-orange-100 text-lg">{partner.partnerProfile.companyDescription}</p>
+                {partner.country === 'India' && (
+                  <div className="mt-2">
+                    <span className="inline-flex items-center gap-1 bg-white/10 backdrop-blur-sm text-orange-100 px-2 py-1 rounded-full text-xs font-medium border border-white/20">
+                      Built with ❤️ from India
+                    </span>
+                  </div>
+                )}
               </div>
               <div className="flex items-center gap-2">
                 {getStatusIcon(partner.partnerStatus.status)}

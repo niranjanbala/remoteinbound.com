@@ -6,6 +6,9 @@ import { useSearchParams } from 'next/navigation';
 import Link from 'next/link';
 import { Mail, Chrome, ArrowLeft } from 'lucide-react';
 
+// Force dynamic rendering to prevent static generation issues with useSearchParams
+export const dynamic = 'force-dynamic';
+
 function SignInContent() {
   const [providers, setProviders] = useState<any>(null);
   const [email, setEmail] = useState('');

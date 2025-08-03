@@ -1,24 +1,633 @@
 [
   {
-    "id": "partner_1754116135375_v5miz6old",
-    "email": "rajesh@mailmodo.com",
-    "fullName": "Rajesh Kumar",
-    "company": "Mailmodo",
-    "jobTitle": "Head of Partnerships",
-    "phone": "+91-98765-43210",
+    "id": "partner_1754120122299_brxit2nfq",
+    "email": "rapti@hsrfoundersclub.com",
+    "fullName": "Rapti Gupta",
+    "company": "HSR Founders Club",
+    "jobTitle": "Community Manager",
+    "phone": "+91-80-4719-7005",
     "role": "partner",
     "preferences": {
       "notifications": true,
       "theme": "system"
     },
     "partnerProfile": {
-      "companyDescription": "Interactive email marketing platform that helps businesses create AMP emails and boost engagement. Seamlessly integrates with HubSpot for advanced email campaigns.",
+      "companyDescription": "Indian community platform connecting founders, entrepreneurs, and startup enthusiasts in HSR Layout and Bangalore for networking, mentorship, and collaboration.",
+      "partnershipType": "community",
+      "website": "https://hsrfoundersclub.com",
+      "offerings": [
+        "Founder Networking",
+        "Startup Community",
+        "Mentorship",
+        "Entrepreneurship Events"
+      ],
+      "interestedInSpeaking": true
+    },
+    "partnerStatus": {
+      "status": "active",
+      "appliedAt": "2025-01-01T06:30:00Z",
+      "approvedAt": "2025-01-02T10:30:00Z"
+    },
+    "createdAt": "2025-01-01T06:30:00Z",
+    "updatedAt": "2025-08-02T07:35:22.299Z"
+  },
+  {
+    "id": "partner_1754120122299_8nym5qerg",
+    "email": "john.doe@goniyo.com",
+    "fullName": "John Doe",
+    "company": "Niyo",
+    "jobTitle": "Partnership Manager",
+    "phone": "+91-80-4719-7004",
+    "role": "partner",
+    "preferences": {
+      "notifications": true,
+      "theme": "system"
+    },
+    "partnerProfile": {
+      "companyDescription": "Indian fintech company providing zero forex cards for global needs with seamless international transactions and travel solutions.",
+      "partnershipType": "technology",
+      "website": "https://goniyo.com",
+      "offerings": [
+        "Zero Forex Cards",
+        "International Transactions",
+        "Travel Solutions",
+        "Fintech"
+      ],
+      "interestedInSpeaking": true
+    },
+    "partnerStatus": {
+      "status": "active",
+      "appliedAt": "2025-01-01T06:45:00Z",
+      "approvedAt": "2025-01-02T10:45:00Z"
+    },
+    "createdAt": "2025-01-01T06:45:00Z",
+    "updatedAt": "2025-08-02T07:35:22.299Z"
+  },
+  {
+    "id": "partner_1754120122299_fqtoy15wt",
+    "email": "sri@factors.ai",
+    "fullName": "Sri",
+    "company": "Factors.ai",
+    "jobTitle": "Partnership Manager",
+    "phone": "+91-80-4719-7003",
+    "role": "partner",
+    "preferences": {
+      "notifications": true,
+      "theme": "system"
+    },
+    "partnerProfile": {
+      "companyDescription": "Indian AI-powered demand generation platform for B2B teams providing advanced analytics and marketing automation solutions.",
+      "partnershipType": "technology",
+      "website": "https://factors.ai",
+      "offerings": [
+        "AI-Powered Demand Generation",
+        "B2B Marketing",
+        "Marketing Analytics",
+        "Lead Generation"
+      ],
+      "interestedInSpeaking": true
+    },
+    "partnerStatus": {
+      "status": "active",
+      "appliedAt": "2025-01-01T07:00:00Z",
+      "approvedAt": "2025-01-02T11:00:00Z"
+    },
+    "createdAt": "2025-01-01T07:00:00Z",
+    "updatedAt": "2025-08-02T07:35:22.299Z"
+  },
+  {
+    "id": "partner_1754120122299_b4tn48o6k",
+    "email": "john.doe@chosenly.com",
+    "fullName": "John Doe",
+    "company": "Chosenly",
+    "jobTitle": "Partnership Manager",
+    "phone": "+91-80-4719-7002",
+    "role": "partner",
+    "preferences": {
+      "notifications": true,
+      "theme": "system"
+    },
+    "partnerProfile": {
+      "companyDescription": "Indian technology platform providing innovative solutions for business growth and digital transformation.",
+      "partnershipType": "technology",
+      "website": "https://chosenly.com",
+      "offerings": [
+        "Business Solutions",
+        "Digital Transformation",
+        "Technology Platform",
+        "Growth Solutions"
+      ],
+      "interestedInSpeaking": true
+    },
+    "partnerStatus": {
+      "status": "active",
+      "appliedAt": "2025-01-01T07:15:00Z",
+      "approvedAt": "2025-01-02T11:15:00Z"
+    },
+    "createdAt": "2025-01-01T07:15:00Z",
+    "updatedAt": "2025-08-02T07:35:22.299Z"
+  },
+  {
+    "id": "partner_1754120122300_jhznga8f6",
+    "email": "sid@yellowkyte.com",
+    "fullName": "Siddharth Sharma",
+    "company": "Yellow Kyte",
+    "jobTitle": "Partnership Manager",
+    "phone": "+91-80-4719-7001",
+    "role": "partner",
+    "preferences": {
+      "notifications": true,
+      "theme": "system"
+    },
+    "partnerProfile": {
+      "companyDescription": "Indian full-stack SaaS marketing agency providing comprehensive digital marketing solutions for SaaS companies.",
+      "partnershipType": "technology",
+      "website": "https://yellowkyte.com",
+      "offerings": [
+        "SaaS Marketing",
+        "Digital Marketing",
+        "Growth Strategy",
+        "Marketing Automation"
+      ],
+      "interestedInSpeaking": true
+    },
+    "partnerStatus": {
+      "status": "active",
+      "appliedAt": "2025-01-01T07:30:00Z",
+      "approvedAt": "2025-01-02T11:30:00Z"
+    },
+    "createdAt": "2025-01-01T07:30:00Z",
+    "updatedAt": "2025-08-02T07:35:22.300Z"
+  },
+  {
+    "id": "partner_1754120122300_vti0fw3r3",
+    "email": "yash@getsaral.com",
+    "fullName": "Yash Chavan",
+    "company": "Saral",
+    "jobTitle": "Partnership Manager",
+    "phone": "+91-80-4719-7000",
+    "role": "partner",
+    "preferences": {
+      "notifications": true,
+      "theme": "system"
+    },
+    "partnerProfile": {
+      "companyDescription": "Indian influencer marketing OS platform helping brands connect with creators and manage influencer campaigns effectively.",
+      "partnershipType": "technology",
+      "website": "https://getsaral.com",
+      "offerings": [
+        "Influencer Marketing",
+        "Creator Management",
+        "Campaign Management",
+        "Marketing OS"
+      ],
+      "interestedInSpeaking": true
+    },
+    "partnerStatus": {
+      "status": "active",
+      "appliedAt": "2025-01-01T07:45:00Z",
+      "approvedAt": "2025-01-02T11:45:00Z"
+    },
+    "createdAt": "2025-01-01T07:45:00Z",
+    "updatedAt": "2025-08-02T07:35:22.300Z"
+  },
+  {
+    "id": "partner_1754120122300_wnqyxcuu3",
+    "email": "john.doe@zoho.com",
+    "fullName": "John Doe",
+    "company": "Zoho",
+    "jobTitle": "Partnership Manager",
+    "phone": "+91-44-6741-9999",
+    "role": "partner",
+    "preferences": {
+      "notifications": true,
+      "theme": "system"
+    },
+    "partnerProfile": {
+      "companyDescription": "Indian multinational technology company providing comprehensive business software suite including CRM, email marketing, and productivity tools.",
+      "partnershipType": "technology",
+      "website": "https://zoho.com",
+      "offerings": [
+        "CRM",
+        "Email Marketing",
+        "Business Automation",
+        "Productivity Suite"
+      ],
+      "interestedInSpeaking": true
+    },
+    "partnerStatus": {
+      "status": "active",
+      "appliedAt": "2025-01-01T08:00:00Z",
+      "approvedAt": "2025-01-02T12:00:00Z"
+    },
+    "createdAt": "2025-01-01T08:00:00Z",
+    "updatedAt": "2025-08-02T07:35:22.300Z"
+  },
+  {
+    "id": "partner_1754120122300_hbcvo24pb",
+    "email": "john.doe@freshworks.com",
+    "fullName": "John Doe",
+    "company": "Freshworks",
+    "jobTitle": "Partnership Manager",
+    "phone": "+91-44-6741-1000",
+    "role": "partner",
+    "preferences": {
+      "notifications": true,
+      "theme": "system"
+    },
+    "partnerProfile": {
+      "companyDescription": "Indian SaaS company providing customer experience software including CRM, helpdesk, and marketing automation solutions.",
+      "partnershipType": "technology",
+      "website": "https://freshworks.com",
+      "offerings": [
+        "CRM",
+        "Customer Support",
+        "Marketing Automation",
+        "Sales Automation"
+      ],
+      "interestedInSpeaking": true
+    },
+    "partnerStatus": {
+      "status": "active",
+      "appliedAt": "2025-01-01T08:15:00Z",
+      "approvedAt": "2025-01-02T12:15:00Z"
+    },
+    "createdAt": "2025-01-01T08:15:00Z",
+    "updatedAt": "2025-08-02T07:35:22.300Z"
+  },
+  {
+    "id": "partner_1754120122300_s8eos8ccg",
+    "email": "john.doe@razorpay.com",
+    "fullName": "John Doe",
+    "company": "Razorpay",
+    "jobTitle": "Partnership Manager",
+    "phone": "+91-80-6190-6000",
+    "role": "partner",
+    "preferences": {
+      "notifications": true,
+      "theme": "system"
+    },
+    "partnerProfile": {
+      "companyDescription": "Indian fintech company providing comprehensive payment solutions for businesses including payment gateway, banking, and lending services.",
+      "partnershipType": "technology",
+      "website": "https://razorpay.com",
+      "offerings": [
+        "Payment Gateway",
+        "Digital Banking",
+        "Business Banking",
+        "Lending"
+      ],
+      "interestedInSpeaking": true
+    },
+    "partnerStatus": {
+      "status": "active",
+      "appliedAt": "2025-01-01T08:30:00Z",
+      "approvedAt": "2025-01-02T12:30:00Z"
+    },
+    "createdAt": "2025-01-01T08:30:00Z",
+    "updatedAt": "2025-08-02T07:35:22.300Z"
+  },
+  {
+    "id": "partner_1754120122300_07l512uxn",
+    "email": "john.doe@chargebee.com",
+    "fullName": "John Doe",
+    "company": "Chargebee",
+    "jobTitle": "Partnership Manager",
+    "phone": "+91-44-4208-0004",
+    "role": "partner",
+    "preferences": {
+      "notifications": true,
+      "theme": "system"
+    },
+    "partnerProfile": {
+      "companyDescription": "Indian SaaS platform for effective revenue growth management helping businesses optimize subscription billing and revenue operations.",
+      "partnershipType": "technology",
+      "website": "https://chargebee.com",
+      "offerings": [
+        "Revenue Growth Management",
+        "Subscription Management",
+        "Recurring Billing",
+        "SaaS Platform"
+      ],
+      "interestedInSpeaking": true
+    },
+    "partnerStatus": {
+      "status": "active",
+      "appliedAt": "2025-01-01T08:45:00Z",
+      "approvedAt": "2025-01-02T12:45:00Z"
+    },
+    "createdAt": "2025-01-01T08:45:00Z",
+    "updatedAt": "2025-08-02T07:35:22.300Z"
+  },
+  {
+    "id": "partner_1754120122300_3z4gdiaoh",
+    "email": "john.doe@postman.com",
+    "fullName": "John Doe",
+    "company": "Postman",
+    "jobTitle": "Partnership Manager",
+    "phone": "+91-80-4718-4000",
+    "role": "partner",
+    "preferences": {
+      "notifications": true,
+      "theme": "system"
+    },
+    "partnerProfile": {
+      "companyDescription": "Indian API development platform used by millions of developers worldwide for building, testing, and managing APIs.",
+      "partnershipType": "technology",
+      "website": "https://postman.com",
+      "offerings": [
+        "API Development",
+        "API Testing",
+        "API Management",
+        "Developer Tools"
+      ],
+      "interestedInSpeaking": true
+    },
+    "partnerStatus": {
+      "status": "active",
+      "appliedAt": "2025-01-01T09:00:00Z",
+      "approvedAt": "2025-01-02T13:00:00Z"
+    },
+    "createdAt": "2025-01-01T09:00:00Z",
+    "updatedAt": "2025-08-02T07:35:22.300Z"
+  },
+  {
+    "id": "partner_1754120122300_y0yaj6pqm",
+    "email": "john.doe@clevertap.com",
+    "fullName": "John Doe",
+    "company": "CleverTap",
+    "jobTitle": "Partnership Manager",
+    "phone": "+91-22-6280-5000",
+    "role": "partner",
+    "preferences": {
+      "notifications": true,
+      "theme": "system"
+    },
+    "partnerProfile": {
+      "companyDescription": "Indian customer engagement and analytics platform for mobile and web applications with advanced segmentation and personalization.",
+      "partnershipType": "technology",
+      "website": "https://clevertap.com",
+      "offerings": [
+        "Customer Engagement",
+        "Mobile Analytics",
+        "Push Notifications",
+        "Personalization"
+      ],
+      "interestedInSpeaking": true
+    },
+    "partnerStatus": {
+      "status": "active",
+      "appliedAt": "2025-01-01T09:15:00Z",
+      "approvedAt": "2025-01-02T13:15:00Z"
+    },
+    "createdAt": "2025-01-01T09:15:00Z",
+    "updatedAt": "2025-08-02T07:35:22.300Z"
+  },
+  {
+    "id": "partner_1754120122300_no95thp4m",
+    "email": "john.doe@webengage.com",
+    "fullName": "John Doe",
+    "company": "WebEngage",
+    "jobTitle": "Partnership Manager",
+    "phone": "+91-22-6742-8000",
+    "role": "partner",
+    "preferences": {
+      "notifications": true,
+      "theme": "system"
+    },
+    "partnerProfile": {
+      "companyDescription": "Indian customer engagement platform that helps businesses retain users through personalized messaging and analytics.",
+      "partnershipType": "technology",
+      "website": "https://webengage.com",
+      "offerings": [
+        "Customer Engagement",
+        "Push Notifications",
+        "Email Marketing",
+        "Analytics"
+      ],
+      "interestedInSpeaking": true
+    },
+    "partnerStatus": {
+      "status": "active",
+      "appliedAt": "2025-01-01T09:30:00Z",
+      "approvedAt": "2025-01-02T13:30:00Z"
+    },
+    "createdAt": "2025-01-01T09:30:00Z",
+    "updatedAt": "2025-08-02T07:35:22.300Z"
+  },
+  {
+    "id": "partner_1754120122300_7vrsvh25o",
+    "email": "john.doe@haptik.ai",
+    "fullName": "John Doe",
+    "company": "Haptik",
+    "jobTitle": "Partnership Manager",
+    "phone": "+91-22-6742-9000",
+    "role": "partner",
+    "preferences": {
+      "notifications": true,
+      "theme": "system"
+    },
+    "partnerProfile": {
+      "companyDescription": "Indian conversational AI platform providing chatbot and virtual assistant solutions for customer support and engagement.",
+      "partnershipType": "technology",
+      "website": "https://haptik.ai",
+      "offerings": [
+        "Conversational AI",
+        "Chatbots",
+        "Virtual Assistants",
+        "Customer Support"
+      ],
+      "interestedInSpeaking": true
+    },
+    "partnerStatus": {
+      "status": "active",
+      "appliedAt": "2025-01-01T09:45:00Z",
+      "approvedAt": "2025-01-02T13:45:00Z"
+    },
+    "createdAt": "2025-01-01T09:45:00Z",
+    "updatedAt": "2025-08-02T07:35:22.300Z"
+  },
+  {
+    "id": "partner_1754120122300_tqlrzhzxt",
+    "email": "john.doe@exotel.com",
+    "fullName": "John Doe",
+    "company": "Exotel",
+    "jobTitle": "Partnership Manager",
+    "phone": "+91-80-4040-1000",
+    "role": "partner",
+    "preferences": {
+      "notifications": true,
+      "theme": "system"
+    },
+    "partnerProfile": {
+      "companyDescription": "Indian cloud telephony platform providing voice and SMS solutions for customer communication and support.",
+      "partnershipType": "technology",
+      "website": "https://exotel.com",
+      "offerings": [
+        "Cloud Telephony",
+        "Voice Solutions",
+        "SMS Platform",
+        "Customer Communication"
+      ],
+      "interestedInSpeaking": true
+    },
+    "partnerStatus": {
+      "status": "active",
+      "appliedAt": "2025-01-01T10:00:00Z",
+      "approvedAt": "2025-01-02T14:00:00Z"
+    },
+    "createdAt": "2025-01-01T10:00:00Z",
+    "updatedAt": "2025-08-02T07:35:22.300Z"
+  },
+  {
+    "id": "partner_1754120122300_e83u2l6db",
+    "email": "john.doe@policybazaar.com",
+    "fullName": "John Doe",
+    "company": "PolicyBazaar",
+    "jobTitle": "Partnership Manager",
+    "phone": "+91-124-4003000",
+    "role": "partner",
+    "preferences": {
+      "notifications": true,
+      "theme": "system"
+    },
+    "partnerProfile": {
+      "companyDescription": "Indian online insurance aggregator platform helping customers compare and purchase insurance policies.",
+      "partnershipType": "technology",
+      "website": "https://policybazaar.com",
+      "offerings": [
+        "Insurance Technology",
+        "Policy Comparison",
+        "Insurance Aggregation",
+        "Financial Services"
+      ],
+      "interestedInSpeaking": true
+    },
+    "partnerStatus": {
+      "status": "active",
+      "appliedAt": "2025-01-01T10:45:00Z",
+      "approvedAt": "2025-01-02T14:45:00Z"
+    },
+    "createdAt": "2025-01-01T10:45:00Z",
+    "updatedAt": "2025-08-02T07:35:22.300Z"
+  },
+  {
+    "id": "partner_1754120122300_v7gevdk79",
+    "email": "john.doe@paytm.com",
+    "fullName": "John Doe",
+    "company": "Paytm",
+    "jobTitle": "Partnership Manager",
+    "phone": "+91-120-4770770",
+    "role": "partner",
+    "preferences": {
+      "notifications": true,
+      "theme": "system"
+    },
+    "partnerProfile": {
+      "companyDescription": "Indian digital payments and financial services company providing wallet, UPI, and banking solutions.",
+      "partnershipType": "technology",
+      "website": "https://paytm.com",
+      "offerings": [
+        "Digital Payments",
+        "Mobile Wallet",
+        "UPI",
+        "Digital Banking"
+      ],
+      "interestedInSpeaking": true
+    },
+    "partnerStatus": {
+      "status": "active",
+      "appliedAt": "2025-01-01T11:00:00Z",
+      "approvedAt": "2025-01-02T15:00:00Z"
+    },
+    "createdAt": "2025-01-01T11:00:00Z",
+    "updatedAt": "2025-08-02T07:35:22.300Z"
+  },
+  {
+    "id": "partner_1754120122300_g6z03tz67",
+    "email": "john.doe@phonepe.com",
+    "fullName": "John Doe",
+    "company": "PhonePe",
+    "jobTitle": "Partnership Manager",
+    "phone": "+91-80-4719-4000",
+    "role": "partner",
+    "preferences": {
+      "notifications": true,
+      "theme": "system"
+    },
+    "partnerProfile": {
+      "companyDescription": "Indian digital payments platform providing UPI, wallet, and financial services solutions.",
+      "partnershipType": "technology",
+      "website": "https://phonepe.com",
+      "offerings": [
+        "Digital Payments",
+        "UPI",
+        "Mobile Wallet",
+        "Financial Services"
+      ],
+      "interestedInSpeaking": true
+    },
+    "partnerStatus": {
+      "status": "active",
+      "appliedAt": "2025-01-01T11:15:00Z",
+      "approvedAt": "2025-01-02T15:15:00Z"
+    },
+    "createdAt": "2025-01-01T11:15:00Z",
+    "updatedAt": "2025-08-02T07:35:22.300Z"
+  },
+  {
+    "id": "partner_1754120122300_673j7ln94",
+    "email": "john.doe@nykaa.com",
+    "fullName": "John Doe",
+    "company": "Nykaa",
+    "jobTitle": "Partnership Manager",
+    "phone": "+91-22-6742-1000",
+    "role": "partner",
+    "preferences": {
+      "notifications": true,
+      "theme": "system"
+    },
+    "partnerProfile": {
+      "companyDescription": "Indian e-commerce platform specializing in beauty, wellness, and fashion products with omnichannel retail presence.",
+      "partnershipType": "technology",
+      "website": "https://nykaa.com",
+      "offerings": [
+        "E-commerce",
+        "Beauty Tech",
+        "Omnichannel Retail",
+        "Fashion Technology"
+      ],
+      "interestedInSpeaking": true
+    },
+    "partnerStatus": {
+      "status": "active",
+      "appliedAt": "2025-01-01T11:30:00Z",
+      "approvedAt": "2025-01-02T15:30:00Z"
+    },
+    "createdAt": "2025-01-01T11:30:00Z",
+    "updatedAt": "2025-08-02T07:35:22.300Z"
+  },
+  {
+    "id": "partner_1754120122300_qeebloa2r",
+    "email": "john.doe@mailmodo.com",
+    "fullName": "John Doe",
+    "company": "Mailmodo",
+    "jobTitle": "Partnership Manager",
+    "phone": "+91-11-4001-5000",
+    "role": "partner",
+    "preferences": {
+      "notifications": true,
+      "theme": "system"
+    },
+    "partnerProfile": {
+      "companyDescription": "Indian email marketing automation platform that helps businesses create AMP emails and boost engagement.",
       "partnershipType": "technology",
       "website": "https://mailmodo.com",
       "offerings": [
         "Email Marketing",
         "Marketing Automation",
-        "HubSpot Integration"
+        "AMP Emails",
+        "Customer Engagement"
       ],
       "interestedInSpeaking": true
     },
@@ -28,28 +637,28 @@
       "approvedAt": "2025-01-16T14:30:00Z"
     },
     "createdAt": "2025-01-15T10:00:00Z",
-    "updatedAt": "2025-08-02T06:28:55.375Z"
+    "updatedAt": "2025-08-02T07:35:22.300Z"
   },
   {
-    "id": "partner_1754116135380_i4ruezt38",
-    "email": "priya@webengage.com",
-    "fullName": "Priya Sharma",
-    "company": "WebEngage",
-    "jobTitle": "VP of Product",
-    "phone": "+91-98765-43211",
+    "id": "partner_1754120122300_wm8tbbzbw",
+    "email": "john.doe@brevo.com",
+    "fullName": "John Doe",
+    "company": "Brevo",
+    "jobTitle": "Partnership Manager",
+    "phone": "+1-555-0002",
     "role": "partner",
     "preferences": {
       "notifications": true,
       "theme": "system"
     },
     "partnerProfile": {
-      "companyDescription": "Customer engagement platform that helps businesses retain users through personalized messaging across web, mobile, email, and SMS channels.",
+      "companyDescription": "Email marketing platform providing comprehensive email marketing and automation solutions.",
       "partnershipType": "technology",
-      "website": "https://webengage.com",
+      "website": "https://brevo.com",
       "offerings": [
-        "Customer Engagement",
+        "Email Marketing",
         "Marketing Automation",
-        "Analytics"
+        "SMS Marketing"
       ],
       "interestedInSpeaking": true
     },
@@ -59,28 +668,28 @@
       "approvedAt": "2025-01-12T11:45:00Z"
     },
     "createdAt": "2025-01-10T09:15:00Z",
-    "updatedAt": "2025-08-02T06:28:55.380Z"
+    "updatedAt": "2025-08-02T07:35:22.300Z"
   },
   {
-    "id": "partner_1754116135380_sny6jpo1n",
-    "email": "alex@amplitude.com",
-    "fullName": "Alex Thompson",
-    "company": "Amplitude",
-    "jobTitle": "Solutions Engineer",
-    "phone": "+1-555-0125",
+    "id": "partner_1754120122300_9v0c5bp29",
+    "email": "john.doe@sendgrid.com",
+    "fullName": "John Doe",
+    "company": "SendGrid",
+    "jobTitle": "Partnership Manager",
+    "phone": "+1-555-0003",
     "role": "partner",
     "preferences": {
       "notifications": true,
       "theme": "system"
     },
     "partnerProfile": {
-      "companyDescription": "Product analytics platform that helps companies understand user behavior and optimize their digital products for better engagement and retention.",
+      "companyDescription": "Email delivery and marketing campaigns platform for reliable email infrastructure.",
       "partnershipType": "technology",
-      "website": "https://amplitude.com",
+      "website": "https://sendgrid.com",
       "offerings": [
-        "Product Analytics",
-        "User Tracking",
-        "Data Analytics"
+        "Email Delivery",
+        "Marketing Campaigns",
+        "Email API"
       ],
       "interestedInSpeaking": false
     },
@@ -90,150 +699,90 @@
       "approvedAt": "2025-01-10T09:30:00Z"
     },
     "createdAt": "2025-01-08T16:20:00Z",
-    "updatedAt": "2025-08-02T06:28:55.380Z"
+    "updatedAt": "2025-08-02T07:35:22.300Z"
   },
   {
-    "id": "partner_1754116135380_ncnwlvp3c",
-    "email": "sarah@supabase.io",
-    "fullName": "Sarah Chen",
-    "company": "Supabase",
-    "jobTitle": "Developer Relations",
-    "phone": "+1-555-0126",
-    "role": "partner",
-    "preferences": {
-      "notifications": true,
-      "theme": "system"
-    },
-    "partnerProfile": {
-      "companyDescription": "Open-source Firebase alternative providing database, authentication, and real-time subscriptions. Perfect for modern web applications.",
-      "partnershipType": "technology",
-      "website": "https://supabase.io",
-      "offerings": [
-        "Database",
-        "Authentication",
-        "Real-time APIs"
-      ],
-      "interestedInSpeaking": true
-    },
-    "partnerStatus": {
-      "status": "approved",
-      "appliedAt": "2025-01-12T13:45:00Z",
-      "approvedAt": "2025-01-14T10:15:00Z"
-    },
-    "createdAt": "2025-01-12T13:45:00Z",
-    "updatedAt": "2025-08-02T06:28:55.380Z"
-  },
-  {
-    "id": "partner_1754116135380_sh7ib25y8",
-    "email": "michael@zapier.com",
-    "fullName": "Michael Rodriguez",
-    "company": "Zapier",
+    "id": "partner_1754120122300_3azl2kdtq",
+    "email": "john.doe@customer.io",
+    "fullName": "John Doe",
+    "company": "Customer.io",
     "jobTitle": "Partnership Manager",
-    "phone": "+1-555-0127",
+    "phone": "+1-555-0006",
     "role": "partner",
     "preferences": {
       "notifications": true,
       "theme": "system"
     },
     "partnerProfile": {
-      "companyDescription": "Workflow automation platform that connects HubSpot with 5000+ apps. Helps businesses automate repetitive tasks and improve productivity.",
+      "companyDescription": "Customer engagement platform for data-driven email, push, and SMS messaging.",
       "partnershipType": "technology",
-      "website": "https://zapier.com",
+      "website": "https://customer.io",
       "offerings": [
-        "Workflow Automation",
-        "App Integration",
-        "HubSpot Automation"
+        "Customer Engagement",
+        "Email Automation",
+        "Behavioral Messaging"
       ],
       "interestedInSpeaking": false
     },
     "partnerStatus": {
       "status": "approved",
-      "appliedAt": "2025-01-20T11:30:00Z",
-      "approvedAt": "2025-01-21T15:00:00Z"
-    },
-    "createdAt": "2025-01-20T11:30:00Z",
-    "updatedAt": "2025-08-02T06:28:55.380Z"
-  },
-  {
-    "id": "partner_1754116135380_e60rpw0ny",
-    "email": "jennifer@hotjar.com",
-    "fullName": "Jennifer Lee",
-    "company": "Hotjar",
-    "jobTitle": "Customer Success Manager",
-    "phone": "+1-555-0128",
-    "role": "partner",
-    "preferences": {
-      "notifications": true,
-      "theme": "system"
-    },
-    "partnerProfile": {
-      "companyDescription": "Behavior analytics platform that shows how users interact with your website through heatmaps, recordings, and feedback tools.",
-      "partnershipType": "technology",
-      "website": "https://hotjar.com",
-      "offerings": [
-        "User Analytics",
-        "Heatmaps",
-        "Conversion Optimization"
-      ],
-      "interestedInSpeaking": true
-    },
-    "partnerStatus": {
-      "status": "pending",
-      "appliedAt": "2025-01-18T14:00:00Z"
+      "appliedAt": "2025-01-18T14:00:00Z",
+      "approvedAt": "2025-01-19T16:30:00Z"
     },
     "createdAt": "2025-01-18T14:00:00Z",
-    "updatedAt": "2025-08-02T06:28:55.380Z"
+    "updatedAt": "2025-08-02T07:35:22.300Z"
   },
   {
-    "id": "partner_1754116135380_49zh0t7cd",
-    "email": "ankit@clevertap.com",
-    "fullName": "Ankit Gupta",
-    "company": "CleverTap",
-    "jobTitle": "Head of Growth",
-    "phone": "+91-98765-43212",
+    "id": "partner_1754120122300_zx63zzdlj",
+    "email": "john.doe@firebase.google.com",
+    "fullName": "John Doe",
+    "company": "Firebase Cloud Messaging",
+    "jobTitle": "Partnership Manager",
+    "phone": "+1-555-0007",
     "role": "partner",
     "preferences": {
       "notifications": true,
       "theme": "system"
     },
     "partnerProfile": {
-      "companyDescription": "Customer engagement and retention platform that helps businesses increase user lifetime value through personalized experiences.",
+      "companyDescription": "Mobile and web push notifications service by Google for cross-platform messaging.",
       "partnershipType": "technology",
-      "website": "https://clevertap.com",
+      "website": "https://firebase.google.com",
       "offerings": [
-        "Customer Engagement",
-        "Retention",
-        "Mobile Analytics"
+        "Push Notifications",
+        "Mobile Messaging",
+        "Cross-platform"
       ],
       "interestedInSpeaking": true
     },
     "partnerStatus": {
-      "status": "pending",
-      "appliedAt": "2025-01-22T11:00:00Z"
+      "status": "active",
+      "appliedAt": "2025-01-22T11:00:00Z",
+      "approvedAt": "2025-01-23T15:45:00Z"
     },
     "createdAt": "2025-01-22T11:00:00Z",
-    "updatedAt": "2025-08-02T06:28:55.380Z"
+    "updatedAt": "2025-08-02T07:35:22.300Z"
   },
   {
-    "id": "partner_1754116135380_b5mwiw7gv",
-    "email": "david@typeform.com",
-    "fullName": "David Kim",
-    "company": "Typeform",
-    "jobTitle": "Integration Specialist",
-    "phone": "+1-555-0129",
+    "id": "partner_1754120122300_ts52mi3sf",
+    "email": "john.doe@linkedin.com",
+    "fullName": "John Doe",
+    "company": "LinkedIn Ads",
+    "jobTitle": "Partnership Manager",
+    "phone": "+1-555-0008",
     "role": "partner",
     "preferences": {
       "notifications": true,
       "theme": "system"
     },
     "partnerProfile": {
-      "companyDescription": "Interactive form builder that creates engaging surveys and forms. Seamlessly integrates with HubSpot for better lead capture and data collection.",
+      "companyDescription": "Professional network advertising platform for B2B marketing and lead generation.",
       "partnershipType": "technology",
-      "website": "https://typeform.com",
+      "website": "https://business.linkedin.com",
       "offerings": [
-        "Form Builder",
+        "B2B Advertising",
         "Lead Generation",
-        "Survey Tools"
+        "Professional Targeting"
       ],
       "interestedInSpeaking": false
     },
@@ -243,28 +792,28 @@
       "approvedAt": "2025-01-26T14:00:00Z"
     },
     "createdAt": "2025-01-25T09:30:00Z",
-    "updatedAt": "2025-08-02T06:28:55.380Z"
+    "updatedAt": "2025-08-02T07:35:22.300Z"
   },
   {
-    "id": "partner_1754116135380_o1zn8k9e2",
-    "email": "emma@heygen.com",
-    "fullName": "Emma Zhang",
-    "company": "HeyGen",
-    "jobTitle": "Partnership Director",
-    "phone": "+1-555-0130",
+    "id": "partner_1754120122300_ucvzi39fa",
+    "email": "john.doe@google.com",
+    "fullName": "John Doe",
+    "company": "Google Ads",
+    "jobTitle": "Partnership Manager",
+    "phone": "+1-555-0009",
     "role": "partner",
     "preferences": {
       "notifications": true,
       "theme": "system"
     },
     "partnerProfile": {
-      "companyDescription": "AI-powered video generation platform that creates personalized videos at scale. Perfect for marketing campaigns, customer onboarding, and sales outreach.",
+      "companyDescription": "Search and display advertising platform for comprehensive digital marketing campaigns.",
       "partnershipType": "technology",
-      "website": "https://heygen.com",
+      "website": "https://ads.google.com",
       "offerings": [
-        "AI Video Generation",
-        "Personalized Videos",
-        "Marketing Automation"
+        "Search Advertising",
+        "Display Ads",
+        "Video Advertising"
       ],
       "interestedInSpeaking": true
     },
@@ -274,6 +823,4250 @@
       "approvedAt": "2025-01-29T15:30:00Z"
     },
     "createdAt": "2025-01-28T10:00:00Z",
-    "updatedAt": "2025-08-02T06:28:55.380Z"
+    "updatedAt": "2025-08-02T07:35:22.300Z"
+  },
+  {
+    "id": "partner_1754120122300_h5bn22cvz",
+    "email": "john.doe@facebook.com",
+    "fullName": "John Doe",
+    "company": "Facebook Ads",
+    "jobTitle": "Partnership Manager",
+    "phone": "+1-555-0010",
+    "role": "partner",
+    "preferences": {
+      "notifications": true,
+      "theme": "system"
+    },
+    "partnerProfile": {
+      "companyDescription": "Social media advertising platform for targeted marketing across Facebook and Instagram.",
+      "partnershipType": "technology",
+      "website": "https://business.facebook.com",
+      "offerings": [
+        "Social Media Advertising",
+        "Audience Targeting",
+        "Creative Tools"
+      ],
+      "interestedInSpeaking": false
+    },
+    "partnerStatus": {
+      "status": "active",
+      "appliedAt": "2025-01-30T11:15:00Z",
+      "approvedAt": "2025-01-31T16:45:00Z"
+    },
+    "createdAt": "2025-01-30T11:15:00Z",
+    "updatedAt": "2025-08-02T07:35:22.300Z"
+  },
+  {
+    "id": "partner_1754120122300_smz7374me",
+    "email": "john.doe@reddit.com",
+    "fullName": "John Doe",
+    "company": "Reddit Ads",
+    "jobTitle": "Partnership Manager",
+    "phone": "+1-555-0011",
+    "role": "partner",
+    "preferences": {
+      "notifications": true,
+      "theme": "system"
+    },
+    "partnerProfile": {
+      "companyDescription": "Social media advertising platform for community-based marketing and engagement.",
+      "partnershipType": "technology",
+      "website": "https://ads.reddit.com",
+      "offerings": [
+        "Community Advertising",
+        "Social Marketing",
+        "Audience Engagement"
+      ],
+      "interestedInSpeaking": true
+    },
+    "partnerStatus": {
+      "status": "pending",
+      "appliedAt": "2025-02-01T09:30:00Z"
+    },
+    "createdAt": "2025-02-01T09:30:00Z",
+    "updatedAt": "2025-08-02T07:35:22.300Z"
+  },
+  {
+    "id": "partner_1754120122300_r9i5s77ly",
+    "email": "john.doe@twitter.com",
+    "fullName": "John Doe",
+    "company": "Twitter Ads",
+    "jobTitle": "Partnership Manager",
+    "phone": "+1-555-0012",
+    "role": "partner",
+    "preferences": {
+      "notifications": true,
+      "theme": "system"
+    },
+    "partnerProfile": {
+      "companyDescription": "Social media advertising platform for real-time marketing and brand engagement.",
+      "partnershipType": "technology",
+      "website": "https://ads.twitter.com",
+      "offerings": [
+        "Social Media Advertising",
+        "Real-time Marketing",
+        "Brand Engagement"
+      ],
+      "interestedInSpeaking": false
+    },
+    "partnerStatus": {
+      "status": "pending",
+      "appliedAt": "2025-02-02T14:20:00Z"
+    },
+    "createdAt": "2025-02-02T14:20:00Z",
+    "updatedAt": "2025-08-02T07:35:22.300Z"
+  },
+  {
+    "id": "partner_1754120122300_2tl7bhori",
+    "email": "john.doe@youtube.com",
+    "fullName": "John Doe",
+    "company": "YouTube Ads",
+    "jobTitle": "Partnership Manager",
+    "phone": "+1-555-0013",
+    "role": "partner",
+    "preferences": {
+      "notifications": true,
+      "theme": "system"
+    },
+    "partnerProfile": {
+      "companyDescription": "Video advertising platform for comprehensive video marketing campaigns.",
+      "partnershipType": "technology",
+      "website": "https://ads.youtube.com",
+      "offerings": [
+        "Video Advertising",
+        "YouTube Marketing",
+        "Content Promotion"
+      ],
+      "interestedInSpeaking": true
+    },
+    "partnerStatus": {
+      "status": "approved",
+      "appliedAt": "2025-02-03T08:45:00Z",
+      "approvedAt": "2025-02-04T12:30:00Z"
+    },
+    "createdAt": "2025-02-03T08:45:00Z",
+    "updatedAt": "2025-08-02T07:35:22.300Z"
+  },
+  {
+    "id": "partner_1754120122300_5cduekbpr",
+    "email": "john.doe@adroll.com",
+    "fullName": "John Doe",
+    "company": "AdRoll",
+    "jobTitle": "Partnership Manager",
+    "phone": "+1-555-0014",
+    "role": "partner",
+    "preferences": {
+      "notifications": true,
+      "theme": "system"
+    },
+    "partnerProfile": {
+      "companyDescription": "Retargeting and display advertising platform for comprehensive digital marketing.",
+      "partnershipType": "technology",
+      "website": "https://adroll.com",
+      "offerings": [
+        "Retargeting",
+        "Display Advertising",
+        "Cross-platform Marketing"
+      ],
+      "interestedInSpeaking": false
+    },
+    "partnerStatus": {
+      "status": "approved",
+      "appliedAt": "2025-02-05T13:15:00Z",
+      "approvedAt": "2025-02-06T17:00:00Z"
+    },
+    "createdAt": "2025-02-05T13:15:00Z",
+    "updatedAt": "2025-08-02T07:35:22.300Z"
+  },
+  {
+    "id": "partner_1754120122300_swu7f91ls",
+    "email": "john.doe@taboola.com",
+    "fullName": "John Doe",
+    "company": "Taboola",
+    "jobTitle": "Partnership Manager",
+    "phone": "+1-555-0015",
+    "role": "partner",
+    "preferences": {
+      "notifications": true,
+      "theme": "system"
+    },
+    "partnerProfile": {
+      "companyDescription": "Content discovery and native advertising platform for audience engagement.",
+      "partnershipType": "technology",
+      "website": "https://taboola.com",
+      "offerings": [
+        "Native Advertising",
+        "Content Discovery",
+        "Audience Engagement"
+      ],
+      "interestedInSpeaking": true
+    },
+    "partnerStatus": {
+      "status": "active",
+      "appliedAt": "2025-02-07T10:30:00Z",
+      "approvedAt": "2025-02-08T14:45:00Z"
+    },
+    "createdAt": "2025-02-07T10:30:00Z",
+    "updatedAt": "2025-08-02T07:35:22.300Z"
+  },
+  {
+    "id": "partner_1754120122300_7s4ynopkd",
+    "email": "john.doe@outbrain.com",
+    "fullName": "John Doe",
+    "company": "Outbrain",
+    "jobTitle": "Partnership Manager",
+    "phone": "+1-555-0016",
+    "role": "partner",
+    "preferences": {
+      "notifications": true,
+      "theme": "system"
+    },
+    "partnerProfile": {
+      "companyDescription": "Content recommendation and native advertising platform for content marketing.",
+      "partnershipType": "technology",
+      "website": "https://outbrain.com",
+      "offerings": [
+        "Content Recommendation",
+        "Native Advertising",
+        "Content Marketing"
+      ],
+      "interestedInSpeaking": false
+    },
+    "partnerStatus": {
+      "status": "pending",
+      "appliedAt": "2025-02-09T11:45:00Z"
+    },
+    "createdAt": "2025-02-09T11:45:00Z",
+    "updatedAt": "2025-08-02T07:35:22.300Z"
+  },
+  {
+    "id": "partner_1754120122300_sbswijqle",
+    "email": "john.doe@instapage.com",
+    "fullName": "John Doe",
+    "company": "Instapage",
+    "jobTitle": "Partnership Manager",
+    "phone": "+1-555-0017",
+    "role": "partner",
+    "preferences": {
+      "notifications": true,
+      "theme": "system"
+    },
+    "partnerProfile": {
+      "companyDescription": "Landing page builder platform for conversion optimization and marketing campaigns.",
+      "partnershipType": "technology",
+      "website": "https://instapage.com",
+      "offerings": [
+        "Landing Pages",
+        "Conversion Optimization",
+        "A/B Testing"
+      ],
+      "interestedInSpeaking": true
+    },
+    "partnerStatus": {
+      "status": "approved",
+      "appliedAt": "2025-02-10T09:00:00Z",
+      "approvedAt": "2025-02-11T13:30:00Z"
+    },
+    "createdAt": "2025-02-10T09:00:00Z",
+    "updatedAt": "2025-08-02T07:35:22.300Z"
+  },
+  {
+    "id": "partner_1754120122300_gnclski5v",
+    "email": "john.doe@unbounce.com",
+    "fullName": "John Doe",
+    "company": "Unbounce",
+    "jobTitle": "Partnership Manager",
+    "phone": "+1-555-0018",
+    "role": "partner",
+    "preferences": {
+      "notifications": true,
+      "theme": "system"
+    },
+    "partnerProfile": {
+      "companyDescription": "Landing page optimization platform for high-converting marketing campaigns.",
+      "partnershipType": "technology",
+      "website": "https://unbounce.com",
+      "offerings": [
+        "Landing Page Optimization",
+        "Conversion Rate Optimization",
+        "Marketing Tools"
+      ],
+      "interestedInSpeaking": false
+    },
+    "partnerStatus": {
+      "status": "active",
+      "appliedAt": "2025-02-12T15:20:00Z",
+      "approvedAt": "2025-02-13T18:45:00Z"
+    },
+    "createdAt": "2025-02-12T15:20:00Z",
+    "updatedAt": "2025-08-02T07:35:22.300Z"
+  },
+  {
+    "id": "partner_1754120122300_xnv8a81yf",
+    "email": "john.doe@leadpages.com",
+    "fullName": "John Doe",
+    "company": "Leadpages",
+    "jobTitle": "Partnership Manager",
+    "phone": "+1-555-0019",
+    "role": "partner",
+    "preferences": {
+      "notifications": true,
+      "theme": "system"
+    },
+    "partnerProfile": {
+      "companyDescription": "Landing page creation platform for lead generation and conversion optimization.",
+      "partnershipType": "technology",
+      "website": "https://leadpages.com",
+      "offerings": [
+        "Landing Page Creation",
+        "Lead Generation",
+        "Conversion Tools"
+      ],
+      "interestedInSpeaking": true
+    },
+    "partnerStatus": {
+      "status": "approved",
+      "appliedAt": "2025-02-14T08:30:00Z",
+      "approvedAt": "2025-02-15T12:15:00Z"
+    },
+    "createdAt": "2025-02-14T08:30:00Z",
+    "updatedAt": "2025-08-02T07:35:22.300Z"
+  },
+  {
+    "id": "partner_1754120122300_328l1r2mt",
+    "email": "john.doe@strapi.io",
+    "fullName": "John Doe",
+    "company": "Strapi",
+    "jobTitle": "Partnership Manager",
+    "phone": "+1-555-0020",
+    "role": "partner",
+    "preferences": {
+      "notifications": true,
+      "theme": "system"
+    },
+    "partnerProfile": {
+      "companyDescription": "Open-source headless CMS for flexible content management and API-first development.",
+      "partnershipType": "technology",
+      "website": "https://strapi.io",
+      "offerings": [
+        "Headless CMS",
+        "Content Management",
+        "API Development"
+      ],
+      "interestedInSpeaking": false
+    },
+    "partnerStatus": {
+      "status": "active",
+      "appliedAt": "2025-02-16T14:10:00Z",
+      "approvedAt": "2025-02-17T16:30:00Z"
+    },
+    "createdAt": "2025-02-16T14:10:00Z",
+    "updatedAt": "2025-08-02T07:35:22.300Z"
+  },
+  {
+    "id": "partner_1754120122300_4p7dpbq6w",
+    "email": "john.doe@ghost.org",
+    "fullName": "John Doe",
+    "company": "Ghost",
+    "jobTitle": "Partnership Manager",
+    "phone": "+1-555-0021",
+    "role": "partner",
+    "preferences": {
+      "notifications": true,
+      "theme": "system"
+    },
+    "partnerProfile": {
+      "companyDescription": "Blogging platform for professional publishing and content management.",
+      "partnershipType": "technology",
+      "website": "https://ghost.org",
+      "offerings": [
+        "Blogging Platform",
+        "Content Publishing",
+        "Newsletter Management"
+      ],
+      "interestedInSpeaking": true
+    },
+    "partnerStatus": {
+      "status": "approved",
+      "appliedAt": "2025-02-18T10:45:00Z",
+      "approvedAt": "2025-02-19T14:20:00Z"
+    },
+    "createdAt": "2025-02-18T10:45:00Z",
+    "updatedAt": "2025-08-02T07:35:22.300Z"
+  },
+  {
+    "id": "partner_1754120122300_yuwzhz4jx",
+    "email": "john.doe@contentstack.com",
+    "fullName": "John Doe",
+    "company": "ContentStack",
+    "jobTitle": "Partnership Manager",
+    "phone": "+1-555-0022",
+    "role": "partner",
+    "preferences": {
+      "notifications": true,
+      "theme": "system"
+    },
+    "partnerProfile": {
+      "companyDescription": "Headless CMS for content management and digital experience delivery.",
+      "partnershipType": "technology",
+      "website": "https://contentstack.com",
+      "offerings": [
+        "Headless CMS",
+        "Content Management",
+        "Digital Experience"
+      ],
+      "interestedInSpeaking": false
+    },
+    "partnerStatus": {
+      "status": "pending",
+      "appliedAt": "2025-02-20T12:30:00Z"
+    },
+    "createdAt": "2025-02-20T12:30:00Z",
+    "updatedAt": "2025-08-02T07:35:22.300Z"
+  },
+  {
+    "id": "partner_1754120122300_ndvc2nx4q",
+    "email": "john.doe@contentful.com",
+    "fullName": "John Doe",
+    "company": "Contentful",
+    "jobTitle": "Partnership Manager",
+    "phone": "+1-555-0023",
+    "role": "partner",
+    "preferences": {
+      "notifications": true,
+      "theme": "system"
+    },
+    "partnerProfile": {
+      "companyDescription": "Headless CMS platform for content management and digital experience creation.",
+      "partnershipType": "technology",
+      "website": "https://contentful.com",
+      "offerings": [
+        "Headless CMS",
+        "Content Management",
+        "API-first CMS"
+      ],
+      "interestedInSpeaking": true
+    },
+    "partnerStatus": {
+      "status": "active",
+      "appliedAt": "2025-02-21T09:15:00Z",
+      "approvedAt": "2025-02-22T13:45:00Z"
+    },
+    "createdAt": "2025-02-21T09:15:00Z",
+    "updatedAt": "2025-08-02T07:35:22.300Z"
+  },
+  {
+    "id": "partner_1754120122300_bcdij90aa",
+    "email": "john.doe@sanity.io",
+    "fullName": "John Doe",
+    "company": "Sanity",
+    "jobTitle": "Partnership Manager",
+    "phone": "+1-555-0024",
+    "role": "partner",
+    "preferences": {
+      "notifications": true,
+      "theme": "system"
+    },
+    "partnerProfile": {
+      "companyDescription": "Headless CMS for structured content management and real-time collaboration.",
+      "partnershipType": "technology",
+      "website": "https://sanity.io",
+      "offerings": [
+        "Headless CMS",
+        "Structured Content",
+        "Real-time Collaboration"
+      ],
+      "interestedInSpeaking": false
+    },
+    "partnerStatus": {
+      "status": "approved",
+      "appliedAt": "2025-02-23T11:00:00Z",
+      "approvedAt": "2025-02-24T15:30:00Z"
+    },
+    "createdAt": "2025-02-23T11:00:00Z",
+    "updatedAt": "2025-08-02T07:35:22.300Z"
+  },
+  {
+    "id": "partner_1754120122300_syt0y1okb",
+    "email": "john.doe@prismic.io",
+    "fullName": "John Doe",
+    "company": "Prismic",
+    "jobTitle": "Partnership Manager",
+    "phone": "+1-555-0025",
+    "role": "partner",
+    "preferences": {
+      "notifications": true,
+      "theme": "system"
+    },
+    "partnerProfile": {
+      "companyDescription": "Headless CMS for content management and website development.",
+      "partnershipType": "technology",
+      "website": "https://prismic.io",
+      "offerings": [
+        "Headless CMS",
+        "Content Management",
+        "Website Development"
+      ],
+      "interestedInSpeaking": true
+    },
+    "partnerStatus": {
+      "status": "pending",
+      "appliedAt": "2025-02-25T13:20:00Z"
+    },
+    "createdAt": "2025-02-25T13:20:00Z",
+    "updatedAt": "2025-08-02T07:35:22.300Z"
+  },
+  {
+    "id": "partner_1754120122300_7sfn92uh4",
+    "email": "john.doe@amplitude.com",
+    "fullName": "John Doe",
+    "company": "Amplitude",
+    "jobTitle": "Partnership Manager",
+    "phone": "+1-555-0026",
+    "role": "partner",
+    "preferences": {
+      "notifications": true,
+      "theme": "system"
+    },
+    "partnerProfile": {
+      "companyDescription": "Product analytics and user engagement platform for data-driven insights.",
+      "partnershipType": "technology",
+      "website": "https://amplitude.com",
+      "offerings": [
+        "Product Analytics",
+        "User Engagement",
+        "Data Analytics"
+      ],
+      "interestedInSpeaking": false
+    },
+    "partnerStatus": {
+      "status": "active",
+      "appliedAt": "2025-02-26T08:45:00Z",
+      "approvedAt": "2025-02-27T12:30:00Z"
+    },
+    "createdAt": "2025-02-26T08:45:00Z",
+    "updatedAt": "2025-08-02T07:35:22.300Z"
+  },
+  {
+    "id": "partner_1754120122300_af8a0srcl",
+    "email": "john.doe@google.com",
+    "fullName": "John Doe",
+    "company": "Google Analytics",
+    "jobTitle": "Partnership Manager",
+    "phone": "+1-555-0027",
+    "role": "partner",
+    "preferences": {
+      "notifications": true,
+      "theme": "system"
+    },
+    "partnerProfile": {
+      "companyDescription": "Website analytics integration platform for comprehensive web analytics.",
+      "partnershipType": "technology",
+      "website": "https://analytics.google.com",
+      "offerings": [
+        "Website Analytics",
+        "Traffic Analysis",
+        "Conversion Tracking"
+      ],
+      "interestedInSpeaking": true
+    },
+    "partnerStatus": {
+      "status": "active",
+      "appliedAt": "2025-02-28T10:30:00Z",
+      "approvedAt": "2025-03-01T14:15:00Z"
+    },
+    "createdAt": "2025-02-28T10:30:00Z",
+    "updatedAt": "2025-08-02T07:35:22.300Z"
+  },
+  {
+    "id": "partner_1754120122300_9k45uoqkn",
+    "email": "john.doe@hotjar.com",
+    "fullName": "John Doe",
+    "company": "Hotjar",
+    "jobTitle": "Partnership Manager",
+    "phone": "+1-555-0028",
+    "role": "partner",
+    "preferences": {
+      "notifications": true,
+      "theme": "system"
+    },
+    "partnerProfile": {
+      "companyDescription": "Heatmaps and user behavior analytics platform for website optimization.",
+      "partnershipType": "technology",
+      "website": "https://hotjar.com",
+      "offerings": [
+        "Heatmaps",
+        "User Behavior Analytics",
+        "Website Optimization"
+      ],
+      "interestedInSpeaking": false
+    },
+    "partnerStatus": {
+      "status": "approved",
+      "appliedAt": "2025-03-02T12:15:00Z",
+      "approvedAt": "2025-03-03T16:45:00Z"
+    },
+    "createdAt": "2025-03-02T12:15:00Z",
+    "updatedAt": "2025-08-02T07:35:22.300Z"
+  },
+  {
+    "id": "partner_1754120122300_nlgo0q7s9",
+    "email": "john.doe@mixpanel.com",
+    "fullName": "John Doe",
+    "company": "Mixpanel",
+    "jobTitle": "Partnership Manager",
+    "phone": "+1-555-0029",
+    "role": "partner",
+    "preferences": {
+      "notifications": true,
+      "theme": "system"
+    },
+    "partnerProfile": {
+      "companyDescription": "Product analytics and user tracking platform for mobile and web applications.",
+      "partnershipType": "technology",
+      "website": "https://mixpanel.com",
+      "offerings": [
+        "Product Analytics",
+        "User Tracking",
+        "Event Analytics"
+      ],
+      "interestedInSpeaking": true
+    },
+    "partnerStatus": {
+      "status": "pending",
+      "appliedAt": "2025-03-04T09:30:00Z"
+    },
+    "createdAt": "2025-03-04T09:30:00Z",
+    "updatedAt": "2025-08-02T07:35:22.300Z"
+  },
+  {
+    "id": "partner_1754120122300_ibrk2t05c",
+    "email": "john.doe@segment.com",
+    "fullName": "John Doe",
+    "company": "Segment",
+    "jobTitle": "Partnership Manager",
+    "phone": "+1-555-0030",
+    "role": "partner",
+    "preferences": {
+      "notifications": true,
+      "theme": "system"
+    },
+    "partnerProfile": {
+      "companyDescription": "Customer data platform for data collection and integration across tools.",
+      "partnershipType": "technology",
+      "website": "https://segment.com",
+      "offerings": [
+        "Customer Data Platform",
+        "Data Integration",
+        "Analytics Infrastructure"
+      ],
+      "interestedInSpeaking": false
+    },
+    "partnerStatus": {
+      "status": "approved",
+      "appliedAt": "2025-03-05T11:45:00Z",
+      "approvedAt": "2025-03-06T15:20:00Z"
+    },
+    "createdAt": "2025-03-05T11:45:00Z",
+    "updatedAt": "2025-08-02T07:35:22.300Z"
+  },
+  {
+    "id": "partner_1754120122300_zw12rmvrf",
+    "email": "john.doe@tableau.com",
+    "fullName": "John Doe",
+    "company": "Tableau",
+    "jobTitle": "Partnership Manager",
+    "phone": "+1-555-0031",
+    "role": "partner",
+    "preferences": {
+      "notifications": true,
+      "theme": "system"
+    },
+    "partnerProfile": {
+      "companyDescription": "Business intelligence and data visualization platform for analytics insights.",
+      "partnershipType": "technology",
+      "website": "https://tableau.com",
+      "offerings": [
+        "Business Intelligence",
+        "Data Visualization",
+        "Analytics Dashboards"
+      ],
+      "interestedInSpeaking": true
+    },
+    "partnerStatus": {
+      "status": "active",
+      "appliedAt": "2025-03-07T13:00:00Z",
+      "approvedAt": "2025-03-08T17:30:00Z"
+    },
+    "createdAt": "2025-03-07T13:00:00Z",
+    "updatedAt": "2025-08-02T07:35:22.300Z"
+  },
+  {
+    "id": "partner_1754120122300_9grcy3gum",
+    "email": "john.doe@seobot.ai",
+    "fullName": "John Doe",
+    "company": "SeoBot.ai",
+    "jobTitle": "Partnership Manager",
+    "phone": "+1-555-0032",
+    "role": "partner",
+    "preferences": {
+      "notifications": true,
+      "theme": "system"
+    },
+    "partnerProfile": {
+      "companyDescription": "AI-powered SEO optimization tool for automated search engine optimization.",
+      "partnershipType": "technology",
+      "website": "https://seobot.ai",
+      "offerings": [
+        "AI SEO",
+        "Search Optimization",
+        "Automated SEO"
+      ],
+      "interestedInSpeaking": false
+    },
+    "partnerStatus": {
+      "status": "pending",
+      "appliedAt": "2025-03-09T08:15:00Z"
+    },
+    "createdAt": "2025-03-09T08:15:00Z",
+    "updatedAt": "2025-08-02T07:35:22.300Z"
+  },
+  {
+    "id": "partner_1754120122300_42hcn4ggp",
+    "email": "john.doe@semrush.com",
+    "fullName": "John Doe",
+    "company": "SEMrush",
+    "jobTitle": "Partnership Manager",
+    "phone": "+1-555-0033",
+    "role": "partner",
+    "preferences": {
+      "notifications": true,
+      "theme": "system"
+    },
+    "partnerProfile": {
+      "companyDescription": "All-in-one SEO platform for comprehensive search engine optimization.",
+      "partnershipType": "technology",
+      "website": "https://semrush.com",
+      "offerings": [
+        "SEO Platform",
+        "Keyword Research",
+        "Competitive Analysis"
+      ],
+      "interestedInSpeaking": true
+    },
+    "partnerStatus": {
+      "status": "active",
+      "appliedAt": "2025-03-10T10:45:00Z",
+      "approvedAt": "2025-03-11T14:30:00Z"
+    },
+    "createdAt": "2025-03-10T10:45:00Z",
+    "updatedAt": "2025-08-02T07:35:22.300Z"
+  },
+  {
+    "id": "partner_1754120122300_fkgu38foe",
+    "email": "john.doe@ahrefs.com",
+    "fullName": "John Doe",
+    "company": "Ahrefs",
+    "jobTitle": "Partnership Manager",
+    "phone": "+1-555-0034",
+    "role": "partner",
+    "preferences": {
+      "notifications": true,
+      "theme": "system"
+    },
+    "partnerProfile": {
+      "companyDescription": "SEO toolset for backlink analysis and keyword research optimization.",
+      "partnershipType": "technology",
+      "website": "https://ahrefs.com",
+      "offerings": [
+        "SEO Tools",
+        "Backlink Analysis",
+        "Keyword Research"
+      ],
+      "interestedInSpeaking": false
+    },
+    "partnerStatus": {
+      "status": "approved",
+      "appliedAt": "2025-03-12T12:30:00Z",
+      "approvedAt": "2025-03-13T16:15:00Z"
+    },
+    "createdAt": "2025-03-12T12:30:00Z",
+    "updatedAt": "2025-08-02T07:35:22.300Z"
+  },
+  {
+    "id": "partner_1754120122300_290xbbhez",
+    "email": "john.doe@moz.com",
+    "fullName": "John Doe",
+    "company": "Moz",
+    "jobTitle": "Partnership Manager",
+    "phone": "+1-555-0035",
+    "role": "partner",
+    "preferences": {
+      "notifications": true,
+      "theme": "system"
+    },
+    "partnerProfile": {
+      "companyDescription": "SEO software and link building tools for search engine optimization.",
+      "partnershipType": "technology",
+      "website": "https://moz.com",
+      "offerings": [
+        "SEO Software",
+        "Link Building",
+        "Search Optimization"
+      ],
+      "interestedInSpeaking": true
+    },
+    "partnerStatus": {
+      "status": "pending",
+      "appliedAt": "2025-03-14T09:00:00Z"
+    },
+    "createdAt": "2025-03-14T09:00:00Z",
+    "updatedAt": "2025-08-02T07:35:22.300Z"
+  },
+  {
+    "id": "partner_1754120122300_hi01hql3t",
+    "email": "john.doe@screamingfrog.co.uk",
+    "fullName": "John Doe",
+    "company": "Screaming Frog",
+    "jobTitle": "Partnership Manager",
+    "phone": "+1-555-0036",
+    "role": "partner",
+    "preferences": {
+      "notifications": true,
+      "theme": "system"
+    },
+    "partnerProfile": {
+      "companyDescription": "SEO spider tool for website analysis and technical SEO optimization.",
+      "partnershipType": "technology",
+      "website": "https://screamingfrog.co.uk",
+      "offerings": [
+        "SEO Spider",
+        "Website Analysis",
+        "Technical SEO"
+      ],
+      "interestedInSpeaking": false
+    },
+    "partnerStatus": {
+      "status": "approved",
+      "appliedAt": "2025-03-15T11:30:00Z",
+      "approvedAt": "2025-03-16T15:45:00Z"
+    },
+    "createdAt": "2025-03-15T11:30:00Z",
+    "updatedAt": "2025-08-02T07:35:22.300Z"
+  },
+  {
+    "id": "partner_1754120122300_5m809473d",
+    "email": "john.doe@google.com",
+    "fullName": "John Doe",
+    "company": "Google Search Console",
+    "jobTitle": "Partnership Manager",
+    "phone": "+1-555-0037",
+    "role": "partner",
+    "preferences": {
+      "notifications": true,
+      "theme": "system"
+    },
+    "partnerProfile": {
+      "companyDescription": "Website performance and SEO insights platform by Google.",
+      "partnershipType": "technology",
+      "website": "https://search.google.com",
+      "offerings": [
+        "SEO Insights",
+        "Website Performance",
+        "Search Analytics"
+      ],
+      "interestedInSpeaking": true
+    },
+    "partnerStatus": {
+      "status": "active",
+      "appliedAt": "2025-03-17T13:15:00Z",
+      "approvedAt": "2025-03-18T17:00:00Z"
+    },
+    "createdAt": "2025-03-17T13:15:00Z",
+    "updatedAt": "2025-08-02T07:35:22.300Z"
+  },
+  {
+    "id": "partner_1754120122300_7qgm4bclh",
+    "email": "john.doe@gtmetrix.com",
+    "fullName": "John Doe",
+    "company": "GTmetrix",
+    "jobTitle": "Partnership Manager",
+    "phone": "+1-555-0038",
+    "role": "partner",
+    "preferences": {
+      "notifications": true,
+      "theme": "system"
+    },
+    "partnerProfile": {
+      "companyDescription": "Website performance analysis platform for speed optimization.",
+      "partnershipType": "technology",
+      "website": "https://gtmetrix.com",
+      "offerings": [
+        "Website Performance",
+        "Speed Analysis",
+        "Performance Optimization"
+      ],
+      "interestedInSpeaking": false
+    },
+    "partnerStatus": {
+      "status": "approved",
+      "appliedAt": "2025-03-19T08:45:00Z",
+      "approvedAt": "2025-03-20T12:30:00Z"
+    },
+    "createdAt": "2025-03-19T08:45:00Z",
+    "updatedAt": "2025-08-02T07:35:22.300Z"
+  },
+  {
+    "id": "partner_1754120122300_xf0l2wwka",
+    "email": "john.doe@developers.google.com",
+    "fullName": "John Doe",
+    "company": "Lighthouse",
+    "jobTitle": "Partnership Manager",
+    "phone": "+1-555-0039",
+    "role": "partner",
+    "preferences": {
+      "notifications": true,
+      "theme": "system"
+    },
+    "partnerProfile": {
+      "companyDescription": "Website performance and SEO auditing tool by Google for optimization insights.",
+      "partnershipType": "technology",
+      "website": "https://developers.google.com/web/tools/lighthouse",
+      "offerings": [
+        "Performance Auditing",
+        "SEO Analysis",
+        "Web Optimization"
+      ],
+      "interestedInSpeaking": true
+    },
+    "partnerStatus": {
+      "status": "pending",
+      "appliedAt": "2025-03-21T10:30:00Z"
+    },
+    "createdAt": "2025-03-21T10:30:00Z",
+    "updatedAt": "2025-08-02T07:35:22.300Z"
+  },
+  {
+    "id": "partner_1754120122300_x86ry0zmg",
+    "email": "john.doe@sandesh.com",
+    "fullName": "John Doe",
+    "company": "Sandesh",
+    "jobTitle": "Partnership Manager",
+    "phone": "+91-80-4719-5000",
+    "role": "partner",
+    "preferences": {
+      "notifications": true,
+      "theme": "system"
+    },
+    "partnerProfile": {
+      "companyDescription": "Indian messaging platform for team communication and collaboration with focus on privacy and security.",
+      "partnershipType": "technology",
+      "website": "https://sandesh.com",
+      "offerings": [
+        "Team Communication",
+        "Messaging Platform",
+        "Privacy-focused Communication",
+        "Made in India"
+      ],
+      "interestedInSpeaking": false
+    },
+    "partnerStatus": {
+      "status": "active",
+      "appliedAt": "2025-03-22T12:15:00Z",
+      "approvedAt": "2025-03-23T16:45:00Z"
+    },
+    "createdAt": "2025-03-22T12:15:00Z",
+    "updatedAt": "2025-08-02T07:35:22.300Z"
+  },
+  {
+    "id": "partner_1754120122300_vbutsky33",
+    "email": "john.doe@google.com",
+    "fullName": "John Doe",
+    "company": "Google Chat",
+    "jobTitle": "Partnership Manager",
+    "phone": "+1-555-0041",
+    "role": "partner",
+    "preferences": {
+      "notifications": true,
+      "theme": "system"
+    },
+    "partnerProfile": {
+      "companyDescription": "Team communication and collaboration platform by Google Workspace.",
+      "partnershipType": "technology",
+      "website": "https://chat.google.com",
+      "offerings": [
+        "Team Communication",
+        "Collaboration",
+        "Google Workspace"
+      ],
+      "interestedInSpeaking": true
+    },
+    "partnerStatus": {
+      "status": "approved",
+      "appliedAt": "2025-03-24T09:30:00Z",
+      "approvedAt": "2025-03-25T13:15:00Z"
+    },
+    "createdAt": "2025-03-24T09:30:00Z",
+    "updatedAt": "2025-08-02T07:35:22.300Z"
+  },
+  {
+    "id": "partner_1754120122300_mqhxjbt8q",
+    "email": "john.doe@arratai.com",
+    "fullName": "John Doe",
+    "company": "Arratai",
+    "jobTitle": "Partnership Manager",
+    "phone": "+91-80-4719-6000",
+    "role": "partner",
+    "preferences": {
+      "notifications": true,
+      "theme": "system"
+    },
+    "partnerProfile": {
+      "companyDescription": "Indian team communication and collaboration platform with advanced project management features.",
+      "partnershipType": "technology",
+      "website": "https://arratai.com",
+      "offerings": [
+        "Team Communication",
+        "Project Management",
+        "Collaboration Tools",
+        "Made in India"
+      ],
+      "interestedInSpeaking": false
+    },
+    "partnerStatus": {
+      "status": "pending",
+      "appliedAt": "2025-03-26T11:45:00Z"
+    },
+    "createdAt": "2025-03-26T11:45:00Z",
+    "updatedAt": "2025-08-02T07:35:22.300Z"
+  },
+  {
+    "id": "partner_1754120122300_qkyrz59kx",
+    "email": "john.doe@google.com",
+    "fullName": "John Doe",
+    "company": "Google Meet",
+    "jobTitle": "Partnership Manager",
+    "phone": "+1-555-0043",
+    "role": "partner",
+    "preferences": {
+      "notifications": true,
+      "theme": "system"
+    },
+    "partnerProfile": {
+      "companyDescription": "Video conferencing platform by Google for virtual meetings and collaboration.",
+      "partnershipType": "technology",
+      "website": "https://meet.google.com",
+      "offerings": [
+        "Video Conferencing",
+        "Virtual Meetings",
+        "Google Workspace"
+      ],
+      "interestedInSpeaking": true
+    },
+    "partnerStatus": {
+      "status": "active",
+      "appliedAt": "2025-03-27T13:30:00Z",
+      "approvedAt": "2025-03-28T17:15:00Z"
+    },
+    "createdAt": "2025-03-27T13:30:00Z",
+    "updatedAt": "2025-08-02T07:35:22.300Z"
+  },
+  {
+    "id": "partner_1754120122300_u4lkjptqv",
+    "email": "john.doe@zoom.us",
+    "fullName": "John Doe",
+    "company": "Zoom",
+    "jobTitle": "Partnership Manager",
+    "phone": "+1-555-0044",
+    "role": "partner",
+    "preferences": {
+      "notifications": true,
+      "theme": "system"
+    },
+    "partnerProfile": {
+      "companyDescription": "Video conferencing and webinars platform for virtual communication.",
+      "partnershipType": "technology",
+      "website": "https://zoom.us",
+      "offerings": [
+        "Video Conferencing",
+        "Webinars",
+        "Virtual Communication"
+      ],
+      "interestedInSpeaking": false
+    },
+    "partnerStatus": {
+      "status": "approved",
+      "appliedAt": "2025-03-29T08:00:00Z",
+      "approvedAt": "2025-03-30T12:45:00Z"
+    },
+    "createdAt": "2025-03-29T08:00:00Z",
+    "updatedAt": "2025-08-02T07:35:22.300Z"
+  },
+  {
+    "id": "partner_1754120122300_0wys2mvvm",
+    "email": "john.doe@microsoft.com",
+    "fullName": "John Doe",
+    "company": "Microsoft Teams",
+    "jobTitle": "Partnership Manager",
+    "phone": "+1-555-0045",
+    "role": "partner",
+    "preferences": {
+      "notifications": true,
+      "theme": "system"
+    },
+    "partnerProfile": {
+      "companyDescription": "Collaboration and communication platform by Microsoft for team productivity.",
+      "partnershipType": "technology",
+      "website": "https://teams.microsoft.com",
+      "offerings": [
+        "Team Collaboration",
+        "Communication",
+        "Microsoft 365"
+      ],
+      "interestedInSpeaking": true
+    },
+    "partnerStatus": {
+      "status": "active",
+      "appliedAt": "2025-03-31T10:15:00Z",
+      "approvedAt": "2025-04-01T14:30:00Z"
+    },
+    "createdAt": "2025-03-31T10:15:00Z",
+    "updatedAt": "2025-08-02T07:35:22.300Z"
+  },
+  {
+    "id": "partner_1754120122300_7jac4krtt",
+    "email": "john.doe@discord.com",
+    "fullName": "John Doe",
+    "company": "Discord",
+    "jobTitle": "Partnership Manager",
+    "phone": "+1-555-0046",
+    "role": "partner",
+    "preferences": {
+      "notifications": true,
+      "theme": "system"
+    },
+    "partnerProfile": {
+      "companyDescription": "Community and team communication platform for voice, video, and text chat.",
+      "partnershipType": "technology",
+      "website": "https://discord.com",
+      "offerings": [
+        "Community Communication",
+        "Voice Chat",
+        "Team Collaboration"
+      ],
+      "interestedInSpeaking": false
+    },
+    "partnerStatus": {
+      "status": "pending",
+      "appliedAt": "2025-04-02T12:00:00Z"
+    },
+    "createdAt": "2025-04-02T12:00:00Z",
+    "updatedAt": "2025-08-02T07:35:22.300Z"
+  },
+  {
+    "id": "partner_1754120122300_s0g69pisc",
+    "email": "john.doe@slack.com",
+    "fullName": "John Doe",
+    "company": "Slack",
+    "jobTitle": "Partnership Manager",
+    "phone": "+1-555-0047",
+    "role": "partner",
+    "preferences": {
+      "notifications": true,
+      "theme": "system"
+    },
+    "partnerProfile": {
+      "companyDescription": "Team communication and notifications platform for workplace collaboration.",
+      "partnershipType": "technology",
+      "website": "https://slack.com",
+      "offerings": [
+        "Team Communication",
+        "Workplace Collaboration",
+        "Notifications"
+      ],
+      "interestedInSpeaking": true
+    },
+    "partnerStatus": {
+      "status": "approved",
+      "appliedAt": "2025-04-03T09:45:00Z",
+      "approvedAt": "2025-04-04T13:30:00Z"
+    },
+    "createdAt": "2025-04-03T09:45:00Z",
+    "updatedAt": "2025-08-02T07:35:22.300Z"
+  },
+  {
+    "id": "partner_1754120122300_cqrhi50cd",
+    "email": "john.doe@freshdesk.com",
+    "fullName": "John Doe",
+    "company": "Freshdesk",
+    "jobTitle": "Partnership Manager",
+    "phone": "+91-44-6741-2000",
+    "role": "partner",
+    "preferences": {
+      "notifications": true,
+      "theme": "system"
+    },
+    "partnerProfile": {
+      "companyDescription": "Indian customer support software for helpdesk and customer service management with AI-powered automation.",
+      "partnershipType": "technology",
+      "website": "https://freshdesk.com",
+      "offerings": [
+        "Customer Support",
+        "Helpdesk Software",
+        "AI Automation",
+        "Made in India"
+      ],
+      "interestedInSpeaking": false
+    },
+    "partnerStatus": {
+      "status": "active",
+      "appliedAt": "2025-04-05T11:30:00Z",
+      "approvedAt": "2025-04-06T15:15:00Z"
+    },
+    "createdAt": "2025-04-05T11:30:00Z",
+    "updatedAt": "2025-08-02T07:35:22.300Z"
+  },
+  {
+    "id": "partner_1754120122300_5fi5a20yj",
+    "email": "john.doe@hubspot.com",
+    "fullName": "John Doe",
+    "company": "HubSpot Service Hub",
+    "jobTitle": "Partnership Manager",
+    "phone": "+1-555-0049",
+    "role": "partner",
+    "preferences": {
+      "notifications": true,
+      "theme": "system"
+    },
+    "partnerProfile": {
+      "companyDescription": "Customer service platform integrated with HubSpot CRM for support management.",
+      "partnershipType": "technology",
+      "website": "https://hubspot.com",
+      "offerings": [
+        "Customer Service",
+        "Support Management",
+        "CRM Integration"
+      ],
+      "interestedInSpeaking": true
+    },
+    "partnerStatus": {
+      "status": "active",
+      "appliedAt": "2025-04-07T13:15:00Z",
+      "approvedAt": "2025-04-08T17:00:00Z"
+    },
+    "createdAt": "2025-04-07T13:15:00Z",
+    "updatedAt": "2025-08-02T07:35:22.300Z"
+  },
+  {
+    "id": "partner_1754120122300_8lwknbbol",
+    "email": "john.doe@intercom.com",
+    "fullName": "John Doe",
+    "company": "Intercom",
+    "jobTitle": "Partnership Manager",
+    "phone": "+1-555-0050",
+    "role": "partner",
+    "preferences": {
+      "notifications": true,
+      "theme": "system"
+    },
+    "partnerProfile": {
+      "companyDescription": "Customer messaging and support platform for conversational customer service.",
+      "partnershipType": "technology",
+      "website": "https://intercom.com",
+      "offerings": [
+        "Customer Messaging",
+        "Live Chat",
+        "Customer Support"
+      ],
+      "interestedInSpeaking": false
+    },
+    "partnerStatus": {
+      "status": "approved",
+      "appliedAt": "2025-04-09T08:30:00Z",
+      "approvedAt": "2025-04-10T12:15:00Z"
+    },
+    "createdAt": "2025-04-09T08:30:00Z",
+    "updatedAt": "2025-08-02T07:35:22.300Z"
+  },
+  {
+    "id": "partner_1754120122300_b8lioehcv",
+    "email": "john.doe@zendesk.com",
+    "fullName": "John Doe",
+    "company": "Zendesk",
+    "jobTitle": "Partnership Manager",
+    "phone": "+1-555-0051",
+    "role": "partner",
+    "preferences": {
+      "notifications": true,
+      "theme": "system"
+    },
+    "partnerProfile": {
+      "companyDescription": "Customer support and ticketing platform for comprehensive customer service.",
+      "partnershipType": "technology",
+      "website": "https://zendesk.com",
+      "offerings": [
+        "Customer Support",
+        "Ticketing System",
+        "Help Desk"
+      ],
+      "interestedInSpeaking": true
+    },
+    "partnerStatus": {
+      "status": "pending",
+      "appliedAt": "2025-04-11T10:45:00Z"
+    },
+    "createdAt": "2025-04-11T10:45:00Z",
+    "updatedAt": "2025-08-02T07:35:22.300Z"
+  },
+  {
+    "id": "partner_1754120122300_kml08b20n",
+    "email": "john.doe@drift.com",
+    "fullName": "John Doe",
+    "company": "Drift",
+    "jobTitle": "Partnership Manager",
+    "phone": "+1-555-0052",
+    "role": "partner",
+    "preferences": {
+      "notifications": true,
+      "theme": "system"
+    },
+    "partnerProfile": {
+      "companyDescription": "Conversational marketing and sales platform for customer engagement.",
+      "partnershipType": "technology",
+      "website": "https://drift.com",
+      "offerings": [
+        "Conversational Marketing",
+        "Live Chat",
+        "Sales Automation"
+      ],
+      "interestedInSpeaking": false
+    },
+    "partnerStatus": {
+      "status": "approved",
+      "appliedAt": "2025-04-12T12:30:00Z",
+      "approvedAt": "2025-04-13T16:45:00Z"
+    },
+    "createdAt": "2025-04-12T12:30:00Z",
+    "updatedAt": "2025-08-02T07:35:22.300Z"
+  },
+  {
+    "id": "partner_1754120122300_wsiq8o9ra",
+    "email": "john.doe@tawk.to",
+    "fullName": "John Doe",
+    "company": "Tawk.to",
+    "jobTitle": "Partnership Manager",
+    "phone": "+1-555-0053",
+    "role": "partner",
+    "preferences": {
+      "notifications": true,
+      "theme": "system"
+    },
+    "partnerProfile": {
+      "companyDescription": "Live chat support platform for customer service and website engagement.",
+      "partnershipType": "technology",
+      "website": "https://tawk.to",
+      "offerings": [
+        "Live Chat",
+        "Customer Support",
+        "Website Engagement"
+      ],
+      "interestedInSpeaking": true
+    },
+    "partnerStatus": {
+      "status": "active",
+      "appliedAt": "2025-04-14T09:15:00Z",
+      "approvedAt": "2025-04-15T13:00:00Z"
+    },
+    "createdAt": "2025-04-14T09:15:00Z",
+    "updatedAt": "2025-08-02T07:35:22.300Z"
+  },
+  {
+    "id": "partner_1754120122300_lf4v61w5e",
+    "email": "john.doe@perplexity.ai",
+    "fullName": "John Doe",
+    "company": "Perplexity AI",
+    "jobTitle": "Partnership Manager",
+    "phone": "+1-555-0054",
+    "role": "partner",
+    "preferences": {
+      "notifications": true,
+      "theme": "system"
+    },
+    "partnerProfile": {
+      "companyDescription": "Conversational AI platform for intelligent question answering and research.",
+      "partnershipType": "technology",
+      "website": "https://perplexity.ai",
+      "offerings": [
+        "Conversational AI",
+        "Question Answering",
+        "AI Research"
+      ],
+      "interestedInSpeaking": false
+    },
+    "partnerStatus": {
+      "status": "pending",
+      "appliedAt": "2025-04-16T11:00:00Z"
+    },
+    "createdAt": "2025-04-16T11:00:00Z",
+    "updatedAt": "2025-08-02T07:35:22.300Z"
+  },
+  {
+    "id": "partner_1754120122300_3zlw795cd",
+    "email": "john.doe@anthropic.com",
+    "fullName": "John Doe",
+    "company": "Claude",
+    "jobTitle": "Partnership Manager",
+    "phone": "+1-555-0055",
+    "role": "partner",
+    "preferences": {
+      "notifications": true,
+      "theme": "system"
+    },
+    "partnerProfile": {
+      "companyDescription": "AI language model for conversational interfaces and intelligent automation.",
+      "partnershipType": "technology",
+      "website": "https://anthropic.com",
+      "offerings": [
+        "AI Language Model",
+        "Conversational AI",
+        "Intelligent Automation"
+      ],
+      "interestedInSpeaking": true
+    },
+    "partnerStatus": {
+      "status": "approved",
+      "appliedAt": "2025-04-17T13:45:00Z",
+      "approvedAt": "2025-04-18T17:30:00Z"
+    },
+    "createdAt": "2025-04-17T13:45:00Z",
+    "updatedAt": "2025-08-02T07:35:22.300Z"
+  },
+  {
+    "id": "partner_1754120122300_ygb1a29li",
+    "email": "john.doe@openai.com",
+    "fullName": "John Doe",
+    "company": "ChatGPT",
+    "jobTitle": "Partnership Manager",
+    "phone": "+1-555-0056",
+    "role": "partner",
+    "preferences": {
+      "notifications": true,
+      "theme": "system"
+    },
+    "partnerProfile": {
+      "companyDescription": "AI language model for conversational interfaces and content generation.",
+      "partnershipType": "technology",
+      "website": "https://openai.com",
+      "offerings": [
+        "AI Language Model",
+        "Conversational AI",
+        "Content Generation"
+      ],
+      "interestedInSpeaking": false
+    },
+    "partnerStatus": {
+      "status": "active",
+      "appliedAt": "2025-04-19T08:15:00Z",
+      "approvedAt": "2025-04-20T12:00:00Z"
+    },
+    "createdAt": "2025-04-19T08:15:00Z",
+    "updatedAt": "2025-08-02T07:35:22.300Z"
+  },
+  {
+    "id": "partner_1754120122300_2yl0e7asv",
+    "email": "john.doe@botpress.com",
+    "fullName": "John Doe",
+    "company": "Botpress",
+    "jobTitle": "Partnership Manager",
+    "phone": "+1-555-0057",
+    "role": "partner",
+    "preferences": {
+      "notifications": true,
+      "theme": "system"
+    },
+    "partnerProfile": {
+      "companyDescription": "Open-source chatbot framework for building conversational AI applications.",
+      "partnershipType": "technology",
+      "website": "https://botpress.com",
+      "offerings": [
+        "Chatbot Framework",
+        "Conversational AI",
+        "Open Source"
+      ],
+      "interestedInSpeaking": true
+    },
+    "partnerStatus": {
+      "status": "pending",
+      "appliedAt": "2025-04-21T10:30:00Z"
+    },
+    "createdAt": "2025-04-21T10:30:00Z",
+    "updatedAt": "2025-08-02T07:35:22.300Z"
+  },
+  {
+    "id": "partner_1754120122300_qompgbg4h",
+    "email": "john.doe@rasa.com",
+    "fullName": "John Doe",
+    "company": "Rasa",
+    "jobTitle": "Partnership Manager",
+    "phone": "+1-555-0058",
+    "role": "partner",
+    "preferences": {
+      "notifications": true,
+      "theme": "system"
+    },
+    "partnerProfile": {
+      "companyDescription": "Open-source conversational AI platform for building intelligent chatbots.",
+      "partnershipType": "technology",
+      "website": "https://rasa.com",
+      "offerings": [
+        "Conversational AI",
+        "Chatbot Platform",
+        "Open Source"
+      ],
+      "interestedInSpeaking": false
+    },
+    "partnerStatus": {
+      "status": "approved",
+      "appliedAt": "2025-04-22T12:15:00Z",
+      "approvedAt": "2025-04-23T16:00:00Z"
+    },
+    "createdAt": "2025-04-22T12:15:00Z",
+    "updatedAt": "2025-08-02T07:35:22.300Z"
+  },
+  {
+    "id": "partner_1754120122300_ciwoakb60",
+    "email": "john.doe@zapier.com",
+    "fullName": "John Doe",
+    "company": "Zapier",
+    "jobTitle": "Partnership Manager",
+    "phone": "+1-555-0059",
+    "role": "partner",
+    "preferences": {
+      "notifications": true,
+      "theme": "system"
+    },
+    "partnerProfile": {
+      "companyDescription": "Workflow automation and app connections platform for productivity enhancement.",
+      "partnershipType": "technology",
+      "website": "https://zapier.com",
+      "offerings": [
+        "Workflow Automation",
+        "App Integration",
+        "Productivity Tools"
+      ],
+      "interestedInSpeaking": true
+    },
+    "partnerStatus": {
+      "status": "active",
+      "appliedAt": "2025-04-24T09:00:00Z",
+      "approvedAt": "2025-04-25T13:45:00Z"
+    },
+    "createdAt": "2025-04-24T09:00:00Z",
+    "updatedAt": "2025-08-02T07:35:22.300Z"
+  },
+  {
+    "id": "partner_1754120122300_4rb0r91es",
+    "email": "john.doe@make.com",
+    "fullName": "John Doe",
+    "company": "Integromat (Make)",
+    "jobTitle": "Partnership Manager",
+    "phone": "+1-555-0060",
+    "role": "partner",
+    "preferences": {
+      "notifications": true,
+      "theme": "system"
+    },
+    "partnerProfile": {
+      "companyDescription": "Advanced automation platform for complex workflow automation and integration.",
+      "partnershipType": "technology",
+      "website": "https://make.com",
+      "offerings": [
+        "Advanced Automation",
+        "Workflow Integration",
+        "Complex Automations"
+      ],
+      "interestedInSpeaking": false
+    },
+    "partnerStatus": {
+      "status": "approved",
+      "appliedAt": "2025-04-26T11:45:00Z",
+      "approvedAt": "2025-04-27T15:30:00Z"
+    },
+    "createdAt": "2025-04-26T11:45:00Z",
+    "updatedAt": "2025-08-02T07:35:22.300Z"
+  },
+  {
+    "id": "partner_1754120122300_ek924ysxj",
+    "email": "john.doe@hubspot.com",
+    "fullName": "John Doe",
+    "company": "PieSync (HubSpot)",
+    "jobTitle": "Partnership Manager",
+    "phone": "+1-555-0061",
+    "role": "partner",
+    "preferences": {
+      "notifications": true,
+      "theme": "system"
+    },
+    "partnerProfile": {
+      "companyDescription": "Contact synchronization platform integrated with HubSpot for data management.",
+      "partnershipType": "technology",
+      "website": "https://hubspot.com",
+      "offerings": [
+        "Contact Synchronization",
+        "Data Management",
+        "HubSpot Integration"
+      ],
+      "interestedInSpeaking": true
+    },
+    "partnerStatus": {
+      "status": "pending",
+      "appliedAt": "2025-04-28T13:30:00Z"
+    },
+    "createdAt": "2025-04-28T13:30:00Z",
+    "updatedAt": "2025-08-02T07:35:22.300Z"
+  },
+  {
+    "id": "partner_1754120122300_jsjcp0mam",
+    "email": "john.doe@hubspot.com",
+    "fullName": "John Doe",
+    "company": "HubSpot CRM",
+    "jobTitle": "Partnership Manager",
+    "phone": "+1-555-0062",
+    "role": "partner",
+    "preferences": {
+      "notifications": true,
+      "theme": "system"
+    },
+    "partnerProfile": {
+      "companyDescription": "Customer relationship management platform for sales and marketing automation.",
+      "partnershipType": "technology",
+      "website": "https://hubspot.com",
+      "offerings": [
+        "CRM",
+        "Sales Automation",
+        "Marketing Automation"
+      ],
+      "interestedInSpeaking": false
+    },
+    "partnerStatus": {
+      "status": "active",
+      "appliedAt": "2025-04-29T08:45:00Z",
+      "approvedAt": "2025-04-30T12:30:00Z"
+    },
+    "createdAt": "2025-04-29T08:45:00Z",
+    "updatedAt": "2025-08-02T07:35:22.300Z"
+  },
+  {
+    "id": "partner_1754120122300_3vc2ghz1l",
+    "email": "john.doe@freshsales.com",
+    "fullName": "John Doe",
+    "company": "FreshSales",
+    "jobTitle": "Partnership Manager",
+    "phone": "+91-44-6741-3000",
+    "role": "partner",
+    "preferences": {
+      "notifications": true,
+      "theme": "system"
+    },
+    "partnerProfile": {
+      "companyDescription": "Indian sales CRM platform for lead management and sales automation with AI-powered insights.",
+      "partnershipType": "technology",
+      "website": "https://freshsales.com",
+      "offerings": [
+        "Sales CRM",
+        "Lead Management",
+        "AI Sales Insights",
+        "Made in India"
+      ],
+      "interestedInSpeaking": true
+    },
+    "partnerStatus": {
+      "status": "approved",
+      "appliedAt": "2025-05-01T10:15:00Z",
+      "approvedAt": "2025-05-02T14:00:00Z"
+    },
+    "createdAt": "2025-05-01T10:15:00Z",
+    "updatedAt": "2025-08-02T07:35:22.300Z"
+  },
+  {
+    "id": "partner_1754120122300_ruv5doi4k",
+    "email": "john.doe@close.io",
+    "fullName": "John Doe",
+    "company": "Close.io",
+    "jobTitle": "Partnership Manager",
+    "phone": "+1-555-0065",
+    "role": "partner",
+    "preferences": {
+      "notifications": true,
+      "theme": "system"
+    },
+    "partnerProfile": {
+      "companyDescription": "Sales CRM and communication platform for inside sales teams.",
+      "partnershipType": "technology",
+      "website": "https://close.io",
+      "offerings": [
+        "Sales CRM",
+        "Inside Sales",
+        "Communication Platform"
+      ],
+      "interestedInSpeaking": true
+    },
+    "partnerStatus": {
+      "status": "approved",
+      "appliedAt": "2025-05-04T09:30:00Z",
+      "approvedAt": "2025-05-05T13:15:00Z"
+    },
+    "createdAt": "2025-05-04T09:30:00Z",
+    "updatedAt": "2025-08-02T07:35:22.300Z"
+  },
+  {
+    "id": "partner_1754120122300_gpauh12do",
+    "email": "john.doe@salesforce.com",
+    "fullName": "John Doe",
+    "company": "Salesforce",
+    "jobTitle": "Partnership Manager",
+    "phone": "+1-555-0066",
+    "role": "partner",
+    "preferences": {
+      "notifications": true,
+      "theme": "system"
+    },
+    "partnerProfile": {
+      "companyDescription": "CRM integration platform for comprehensive customer relationship management.",
+      "partnershipType": "technology",
+      "website": "https://salesforce.com",
+      "offerings": [
+        "CRM Integration",
+        "Customer Management",
+        "Sales Automation"
+      ],
+      "interestedInSpeaking": false
+    },
+    "partnerStatus": {
+      "status": "active",
+      "appliedAt": "2025-05-06T11:15:00Z",
+      "approvedAt": "2025-05-07T15:00:00Z"
+    },
+    "createdAt": "2025-05-06T11:15:00Z",
+    "updatedAt": "2025-08-02T07:35:22.300Z"
+  },
+  {
+    "id": "partner_1754120122300_v0xz5iklw",
+    "email": "john.doe@pipedrive.com",
+    "fullName": "John Doe",
+    "company": "Pipedrive",
+    "jobTitle": "Partnership Manager",
+    "phone": "+1-555-0067",
+    "role": "partner",
+    "preferences": {
+      "notifications": true,
+      "theme": "system"
+    },
+    "partnerProfile": {
+      "companyDescription": "Sales CRM integration platform for pipeline management and sales tracking.",
+      "partnershipType": "technology",
+      "website": "https://pipedrive.com",
+      "offerings": [
+        "Sales CRM",
+        "Pipeline Management",
+        "Sales Tracking"
+      ],
+      "interestedInSpeaking": true
+    },
+    "partnerStatus": {
+      "status": "pending",
+      "appliedAt": "2025-05-08T13:00:00Z"
+    },
+    "createdAt": "2025-05-08T13:00:00Z",
+    "updatedAt": "2025-08-02T07:35:22.300Z"
+  },
+  {
+    "id": "partner_1754120122300_dpggnqd3u",
+    "email": "john.doe@linkedin.com",
+    "fullName": "John Doe",
+    "company": "LinkedIn Sales Navigator",
+    "jobTitle": "Partnership Manager",
+    "phone": "+1-555-0068",
+    "role": "partner",
+    "preferences": {
+      "notifications": true,
+      "theme": "system"
+    },
+    "partnerProfile": {
+      "companyDescription": "Social selling integration platform for B2B sales and lead generation.",
+      "partnershipType": "technology",
+      "website": "https://business.linkedin.com",
+      "offerings": [
+        "Social Selling",
+        "B2B Sales",
+        "Lead Generation"
+      ],
+      "interestedInSpeaking": false
+    },
+    "partnerStatus": {
+      "status": "approved",
+      "appliedAt": "2025-05-09T08:30:00Z",
+      "approvedAt": "2025-05-10T12:45:00Z"
+    },
+    "createdAt": "2025-05-09T08:30:00Z",
+    "updatedAt": "2025-08-02T07:35:22.300Z"
+  },
+  {
+    "id": "partner_1754120122300_j03h7jj8l",
+    "email": "john.doe@outreach.io",
+    "fullName": "John Doe",
+    "company": "Outreach",
+    "jobTitle": "Partnership Manager",
+    "phone": "+1-555-0069",
+    "role": "partner",
+    "preferences": {
+      "notifications": true,
+      "theme": "system"
+    },
+    "partnerProfile": {
+      "companyDescription": "Sales engagement platform for sales automation and communication.",
+      "partnershipType": "technology",
+      "website": "https://outreach.io",
+      "offerings": [
+        "Sales Engagement",
+        "Sales Automation",
+        "Communication Platform"
+      ],
+      "interestedInSpeaking": true
+    },
+    "partnerStatus": {
+      "status": "active",
+      "appliedAt": "2025-05-11T10:45:00Z",
+      "approvedAt": "2025-05-12T14:30:00Z"
+    },
+    "createdAt": "2025-05-11T10:45:00Z",
+    "updatedAt": "2025-08-02T07:35:22.300Z"
+  },
+  {
+    "id": "partner_1754120122300_hka6y3g6o",
+    "email": "john.doe@salesloft.com",
+    "fullName": "John Doe",
+    "company": "SalesLoft",
+    "jobTitle": "Partnership Manager",
+    "phone": "+1-555-0070",
+    "role": "partner",
+    "preferences": {
+      "notifications": true,
+      "theme": "system"
+    },
+    "partnerProfile": {
+      "companyDescription": "Sales development platform for sales engagement and automation.",
+      "partnershipType": "technology",
+      "website": "https://salesloft.com",
+      "offerings": [
+        "Sales Development",
+        "Sales Engagement",
+        "Sales Automation"
+      ],
+      "interestedInSpeaking": false
+    },
+    "partnerStatus": {
+      "status": "approved",
+      "appliedAt": "2025-05-13T12:30:00Z",
+      "approvedAt": "2025-05-14T16:15:00Z"
+    },
+    "createdAt": "2025-05-13T12:30:00Z",
+    "updatedAt": "2025-08-02T07:35:22.300Z"
+  },
+  {
+    "id": "partner_1754120122300_o3klf1d63",
+    "email": "john.doe@shopify.com",
+    "fullName": "John Doe",
+    "company": "Shopify",
+    "jobTitle": "Partnership Manager",
+    "phone": "+1-555-0071",
+    "role": "partner",
+    "preferences": {
+      "notifications": true,
+      "theme": "system"
+    },
+    "partnerProfile": {
+      "companyDescription": "E-commerce platform integration for online store management and sales.",
+      "partnershipType": "technology",
+      "website": "https://shopify.com",
+      "offerings": [
+        "E-commerce Platform",
+        "Online Store",
+        "Sales Management"
+      ],
+      "interestedInSpeaking": true
+    },
+    "partnerStatus": {
+      "status": "pending",
+      "appliedAt": "2025-05-15T09:15:00Z"
+    },
+    "createdAt": "2025-05-15T09:15:00Z",
+    "updatedAt": "2025-08-02T07:35:22.300Z"
+  },
+  {
+    "id": "partner_1754120122300_qm2sbyigx",
+    "email": "john.doe@woocommerce.com",
+    "fullName": "John Doe",
+    "company": "WooCommerce",
+    "jobTitle": "Partnership Manager",
+    "phone": "+1-555-0072",
+    "role": "partner",
+    "preferences": {
+      "notifications": true,
+      "theme": "system"
+    },
+    "partnerProfile": {
+      "companyDescription": "WordPress e-commerce integration for online store development.",
+      "partnershipType": "technology",
+      "website": "https://woocommerce.com",
+      "offerings": [
+        "WordPress E-commerce",
+        "Online Store",
+        "E-commerce Integration"
+      ],
+      "interestedInSpeaking": false
+    },
+    "partnerStatus": {
+      "status": "approved",
+      "appliedAt": "2025-05-16T11:00:00Z",
+      "approvedAt": "2025-05-17T15:45:00Z"
+    },
+    "createdAt": "2025-05-16T11:00:00Z",
+    "updatedAt": "2025-08-02T07:35:22.300Z"
+  },
+  {
+    "id": "partner_1754120122300_zuhtqgon4",
+    "email": "john.doe@bigcommerce.com",
+    "fullName": "John Doe",
+    "company": "BigCommerce",
+    "jobTitle": "Partnership Manager",
+    "phone": "+1-555-0073",
+    "role": "partner",
+    "preferences": {
+      "notifications": true,
+      "theme": "system"
+    },
+    "partnerProfile": {
+      "companyDescription": "E-commerce platform for comprehensive online store solutions.",
+      "partnershipType": "technology",
+      "website": "https://bigcommerce.com",
+      "offerings": [
+        "E-commerce Platform",
+        "Online Store",
+        "E-commerce Solutions"
+      ],
+      "interestedInSpeaking": true
+    },
+    "partnerStatus": {
+      "status": "active",
+      "appliedAt": "2025-05-18T13:45:00Z",
+      "approvedAt": "2025-05-19T17:30:00Z"
+    },
+    "createdAt": "2025-05-18T13:45:00Z",
+    "updatedAt": "2025-08-02T07:35:22.300Z"
+  },
+  {
+    "id": "partner_1754120122300_514a0s052",
+    "email": "john.doe@dodo.com",
+    "fullName": "John Doe",
+    "company": "Dodo",
+    "jobTitle": "Partnership Manager",
+    "phone": "+1-555-0074",
+    "role": "partner",
+    "preferences": {
+      "notifications": true,
+      "theme": "system"
+    },
+    "partnerProfile": {
+      "companyDescription": "E-commerce platform for modern online store management and sales.",
+      "partnershipType": "technology",
+      "website": "https://dodo.com",
+      "offerings": [
+        "E-commerce Platform",
+        "Online Store",
+        "Modern Commerce"
+      ],
+      "interestedInSpeaking": false
+    },
+    "partnerStatus": {
+      "status": "pending",
+      "appliedAt": "2025-05-20T08:00:00Z"
+    },
+    "createdAt": "2025-05-20T08:00:00Z",
+    "updatedAt": "2025-08-02T07:35:22.300Z"
+  },
+  {
+    "id": "partner_1754120122300_akhghdrwl",
+    "email": "john.doe@paddle.com",
+    "fullName": "John Doe",
+    "company": "Paddle",
+    "jobTitle": "Partnership Manager",
+    "phone": "+1-555-0075",
+    "role": "partner",
+    "preferences": {
+      "notifications": true,
+      "theme": "system"
+    },
+    "partnerProfile": {
+      "companyDescription": "Payment processing platform for subscription billing and revenue management.",
+      "partnershipType": "technology",
+      "website": "https://paddle.com",
+      "offerings": [
+        "Payment Processing",
+        "Subscription Billing",
+        "Revenue Management"
+      ],
+      "interestedInSpeaking": true
+    },
+    "partnerStatus": {
+      "status": "approved",
+      "appliedAt": "2025-05-21T10:30:00Z",
+      "approvedAt": "2025-05-22T14:15:00Z"
+    },
+    "createdAt": "2025-05-21T10:30:00Z",
+    "updatedAt": "2025-08-02T07:35:22.300Z"
+  },
+  {
+    "id": "partner_1754120122300_xyuke5dkf",
+    "email": "john.doe@stripe.com",
+    "fullName": "John Doe",
+    "company": "Stripe",
+    "jobTitle": "Partnership Manager",
+    "phone": "+1-555-0076",
+    "role": "partner",
+    "preferences": {
+      "notifications": true,
+      "theme": "system"
+    },
+    "partnerProfile": {
+      "companyDescription": "Payment processing platform for online payments and financial infrastructure.",
+      "partnershipType": "technology",
+      "website": "https://stripe.com",
+      "offerings": [
+        "Payment Processing",
+        "Online Payments",
+        "Financial Infrastructure"
+      ],
+      "interestedInSpeaking": false
+    },
+    "partnerStatus": {
+      "status": "active",
+      "appliedAt": "2025-05-23T12:15:00Z",
+      "approvedAt": "2025-05-24T16:00:00Z"
+    },
+    "createdAt": "2025-05-23T12:15:00Z",
+    "updatedAt": "2025-08-02T07:35:22.300Z"
+  },
+  {
+    "id": "partner_1754120122300_iva1d9ika",
+    "email": "john.doe@paypal.com",
+    "fullName": "John Doe",
+    "company": "PayPal",
+    "jobTitle": "Partnership Manager",
+    "phone": "+1-555-0077",
+    "role": "partner",
+    "preferences": {
+      "notifications": true,
+      "theme": "system"
+    },
+    "partnerProfile": {
+      "companyDescription": "Payment gateway integration for online payments and e-commerce transactions.",
+      "partnershipType": "technology",
+      "website": "https://paypal.com",
+      "offerings": [
+        "Payment Gateway",
+        "Online Payments",
+        "E-commerce Transactions"
+      ],
+      "interestedInSpeaking": true
+    },
+    "partnerStatus": {
+      "status": "approved",
+      "appliedAt": "2025-05-25T09:45:00Z",
+      "approvedAt": "2025-05-26T13:30:00Z"
+    },
+    "createdAt": "2025-05-25T09:45:00Z",
+    "updatedAt": "2025-08-02T07:35:22.300Z"
+  },
+  {
+    "id": "partner_1754120122300_wvwgv7f8v",
+    "email": "john.doe@hootsuite.com",
+    "fullName": "John Doe",
+    "company": "Hootsuite",
+    "jobTitle": "Partnership Manager",
+    "phone": "+1-555-0078",
+    "role": "partner",
+    "preferences": {
+      "notifications": true,
+      "theme": "system"
+    },
+    "partnerProfile": {
+      "companyDescription": "Social media management platform for content scheduling and social marketing.",
+      "partnershipType": "technology",
+      "website": "https://hootsuite.com",
+      "offerings": [
+        "Social Media Management",
+        "Content Scheduling",
+        "Social Marketing"
+      ],
+      "interestedInSpeaking": false
+    },
+    "partnerStatus": {
+      "status": "pending",
+      "appliedAt": "2025-05-27T11:30:00Z"
+    },
+    "createdAt": "2025-05-27T11:30:00Z",
+    "updatedAt": "2025-08-02T07:35:22.300Z"
+  },
+  {
+    "id": "partner_1754120122300_0rc11dok8",
+    "email": "john.doe@buffer.com",
+    "fullName": "John Doe",
+    "company": "Buffer",
+    "jobTitle": "Partnership Manager",
+    "phone": "+1-555-0079",
+    "role": "partner",
+    "preferences": {
+      "notifications": true,
+      "theme": "system"
+    },
+    "partnerProfile": {
+      "companyDescription": "Social media scheduling platform for content management and social marketing.",
+      "partnershipType": "technology",
+      "website": "https://buffer.com",
+      "offerings": [
+        "Social Media Scheduling",
+        "Content Management",
+        "Social Marketing"
+      ],
+      "interestedInSpeaking": true
+    },
+    "partnerStatus": {
+      "status": "approved",
+      "appliedAt": "2025-05-28T13:15:00Z",
+      "approvedAt": "2025-05-29T17:00:00Z"
+    },
+    "createdAt": "2025-05-28T13:15:00Z",
+    "updatedAt": "2025-08-02T07:35:22.300Z"
+  },
+  {
+    "id": "partner_1754120122300_p4ngmmnj8",
+    "email": "john.doe@canva.com",
+    "fullName": "John Doe",
+    "company": "Canva",
+    "jobTitle": "Partnership Manager",
+    "phone": "+1-555-0080",
+    "role": "partner",
+    "preferences": {
+      "notifications": true,
+      "theme": "system"
+    },
+    "partnerProfile": {
+      "companyDescription": "Design and content creation platform for visual marketing and branding.",
+      "partnershipType": "technology",
+      "website": "https://canva.com",
+      "offerings": [
+        "Design Platform",
+        "Content Creation",
+        "Visual Marketing"
+      ],
+      "interestedInSpeaking": false
+    },
+    "partnerStatus": {
+      "status": "active",
+      "appliedAt": "2025-05-30T08:45:00Z",
+      "approvedAt": "2025-05-31T12:30:00Z"
+    },
+    "createdAt": "2025-05-30T08:45:00Z",
+    "updatedAt": "2025-08-02T07:35:22.300Z"
+  },
+  {
+    "id": "partner_1754120122300_c9g7geyuc",
+    "email": "john.doe@youtube.com",
+    "fullName": "John Doe",
+    "company": "YouTube",
+    "jobTitle": "Partnership Manager",
+    "phone": "+1-555-0081",
+    "role": "partner",
+    "preferences": {
+      "notifications": true,
+      "theme": "system"
+    },
+    "partnerProfile": {
+      "companyDescription": "Video content integration platform for video marketing and content distribution.",
+      "partnershipType": "technology",
+      "website": "https://youtube.com",
+      "offerings": [
+        "Video Content",
+        "Video Marketing",
+        "Content Distribution"
+      ],
+      "interestedInSpeaking": true
+    },
+    "partnerStatus": {
+      "status": "pending",
+      "appliedAt": "2025-06-01T10:00:00Z"
+    },
+    "createdAt": "2025-06-01T10:00:00Z",
+    "updatedAt": "2025-08-02T07:35:22.300Z"
+  },
+  {
+    "id": "partner_1754120122300_svy2r1t1i",
+    "email": "john.doe@youform.com",
+    "fullName": "John Doe",
+    "company": "YouForm",
+    "jobTitle": "Partnership Manager",
+    "phone": "+1-555-0082",
+    "role": "partner",
+    "preferences": {
+      "notifications": true,
+      "theme": "system"
+    },
+    "partnerProfile": {
+      "companyDescription": "Online form builder platform for lead generation and data collection.",
+      "partnershipType": "technology",
+      "website": "https://youform.com",
+      "offerings": [
+        "Form Builder",
+        "Lead Generation",
+        "Data Collection"
+      ],
+      "interestedInSpeaking": false
+    },
+    "partnerStatus": {
+      "status": "approved",
+      "appliedAt": "2025-06-02T12:45:00Z",
+      "approvedAt": "2025-06-03T16:30:00Z"
+    },
+    "createdAt": "2025-06-02T12:45:00Z",
+    "updatedAt": "2025-08-02T07:35:22.300Z"
+  },
+  {
+    "id": "partner_1754120122300_bkmecetzb",
+    "email": "john.doe@typeform.com",
+    "fullName": "John Doe",
+    "company": "Typeform",
+    "jobTitle": "Partnership Manager",
+    "phone": "+1-555-0083",
+    "role": "partner",
+    "preferences": {
+      "notifications": true,
+      "theme": "system"
+    },
+    "partnerProfile": {
+      "companyDescription": "Interactive form and survey builder for engaging data collection.",
+      "partnershipType": "technology",
+      "website": "https://typeform.com",
+      "offerings": [
+        "Interactive Forms",
+        "Survey Builder",
+        "Data Collection"
+      ],
+      "interestedInSpeaking": true
+    },
+    "partnerStatus": {
+      "status": "active",
+      "appliedAt": "2025-06-04T09:30:00Z",
+      "approvedAt": "2025-06-05T13:15:00Z"
+    },
+    "createdAt": "2025-06-04T09:30:00Z",
+    "updatedAt": "2025-08-02T07:35:22.300Z"
+  },
+  {
+    "id": "partner_1754120122300_88gs2yrfe",
+    "email": "john.doe@runpod.io",
+    "fullName": "John Doe",
+    "company": "Runpod",
+    "jobTitle": "Partnership Manager",
+    "phone": "+1-555-0084",
+    "role": "partner",
+    "preferences": {
+      "notifications": true,
+      "theme": "system"
+    },
+    "partnerProfile": {
+      "companyDescription": "Cloud-based development environment for scalable computing and AI workloads.",
+      "partnershipType": "technology",
+      "website": "https://runpod.io",
+      "offerings": [
+        "Cloud Development",
+        "Scalable Computing",
+        "AI Workloads"
+      ],
+      "interestedInSpeaking": false
+    },
+    "partnerStatus": {
+      "status": "pending",
+      "appliedAt": "2025-06-06T11:15:00Z"
+    },
+    "createdAt": "2025-06-06T11:15:00Z",
+    "updatedAt": "2025-08-02T07:35:22.300Z"
+  },
+  {
+    "id": "partner_1754120122300_gq0xf6m4e",
+    "email": "john.doe@netlify.com",
+    "fullName": "John Doe",
+    "company": "Netlify",
+    "jobTitle": "Partnership Manager",
+    "phone": "+1-555-0085",
+    "role": "partner",
+    "preferences": {
+      "notifications": true,
+      "theme": "system"
+    },
+    "partnerProfile": {
+      "companyDescription": "Static site hosting and deployment platform for modern web development.",
+      "partnershipType": "technology",
+      "website": "https://netlify.com",
+      "offerings": [
+        "Static Site Hosting",
+        "Web Deployment",
+        "Modern Web Development"
+      ],
+      "interestedInSpeaking": true
+    },
+    "partnerStatus": {
+      "status": "approved",
+      "appliedAt": "2025-06-07T13:00:00Z",
+      "approvedAt": "2025-06-08T17:45:00Z"
+    },
+    "createdAt": "2025-06-07T13:00:00Z",
+    "updatedAt": "2025-08-02T07:35:22.300Z"
+  },
+  {
+    "id": "partner_1754120122300_uz3waq7cs",
+    "email": "john.doe@supabase.io",
+    "fullName": "John Doe",
+    "company": "Supabase",
+    "jobTitle": "Partnership Manager",
+    "phone": "+1-555-0086",
+    "role": "partner",
+    "preferences": {
+      "notifications": true,
+      "theme": "system"
+    },
+    "partnerProfile": {
+      "companyDescription": "Open-source Firebase alternative for database and authentication services.",
+      "partnershipType": "technology",
+      "website": "https://supabase.io",
+      "offerings": [
+        "Database",
+        "Authentication",
+        "Open Source Firebase"
+      ],
+      "interestedInSpeaking": false
+    },
+    "partnerStatus": {
+      "status": "active",
+      "appliedAt": "2025-06-09T08:15:00Z",
+      "approvedAt": "2025-06-10T12:00:00Z"
+    },
+    "createdAt": "2025-06-09T08:15:00Z",
+    "updatedAt": "2025-08-02T07:35:22.300Z"
+  },
+  {
+    "id": "partner_1754120122300_ijp4mij1a",
+    "email": "john.doe@nextjs.org",
+    "fullName": "John Doe",
+    "company": "Next.js",
+    "jobTitle": "Partnership Manager",
+    "phone": "+1-555-0087",
+    "role": "partner",
+    "preferences": {
+      "notifications": true,
+      "theme": "system"
+    },
+    "partnerProfile": {
+      "companyDescription": "React framework for server-side rendering and modern web application development.",
+      "partnershipType": "technology",
+      "website": "https://nextjs.org",
+      "offerings": [
+        "React Framework",
+        "Server-side Rendering",
+        "Web Development"
+      ],
+      "interestedInSpeaking": true
+    },
+    "partnerStatus": {
+      "status": "approved",
+      "appliedAt": "2025-06-11T10:45:00Z",
+      "approvedAt": "2025-06-12T14:30:00Z"
+    },
+    "createdAt": "2025-06-11T10:45:00Z",
+    "updatedAt": "2025-08-02T07:35:22.300Z"
+  },
+  {
+    "id": "partner_1754120122300_3zw86sj17",
+    "email": "john.doe@reactjs.org",
+    "fullName": "John Doe",
+    "company": "React",
+    "jobTitle": "Partnership Manager",
+    "phone": "+1-555-0088",
+    "role": "partner",
+    "preferences": {
+      "notifications": true,
+      "theme": "system"
+    },
+    "partnerProfile": {
+      "companyDescription": "JavaScript library for building user interfaces and interactive web applications.",
+      "partnershipType": "technology",
+      "website": "https://reactjs.org",
+      "offerings": [
+        "JavaScript Library",
+        "User Interfaces",
+        "Web Applications"
+      ],
+      "interestedInSpeaking": false
+    },
+    "partnerStatus": {
+      "status": "pending",
+      "appliedAt": "2025-06-13T12:30:00Z"
+    },
+    "createdAt": "2025-06-13T12:30:00Z",
+    "updatedAt": "2025-08-02T07:35:22.300Z"
+  },
+  {
+    "id": "partner_1754120122300_euzsepbrw",
+    "email": "john.doe@bolt.new",
+    "fullName": "John Doe",
+    "company": "Bolt.engine",
+    "jobTitle": "Partnership Manager",
+    "phone": "+1-555-0089",
+    "role": "partner",
+    "preferences": {
+      "notifications": true,
+      "theme": "system"
+    },
+    "partnerProfile": {
+      "companyDescription": "Low-code development platform for rapid application development and deployment.",
+      "partnershipType": "technology",
+      "website": "https://bolt.new",
+      "offerings": [
+        "Low-code Development",
+        "Rapid Development",
+        "Application Platform"
+      ],
+      "interestedInSpeaking": true
+    },
+    "partnerStatus": {
+      "status": "approved",
+      "appliedAt": "2025-06-14T09:00:00Z",
+      "approvedAt": "2025-06-15T13:45:00Z"
+    },
+    "createdAt": "2025-06-14T09:00:00Z",
+    "updatedAt": "2025-08-02T07:35:22.300Z"
+  },
+  {
+    "id": "partner_1754120122300_l9imk0dgi",
+    "email": "john.doe@kilo.com",
+    "fullName": "John Doe",
+    "company": "Kilo",
+    "jobTitle": "Partnership Manager",
+    "phone": "+1-555-0090",
+    "role": "partner",
+    "preferences": {
+      "notifications": true,
+      "theme": "system"
+    },
+    "partnerProfile": {
+      "companyDescription": "Development environment and collaboration platform for team productivity.",
+      "partnershipType": "technology",
+      "website": "https://kilo.com",
+      "offerings": [
+        "Development Environment",
+        "Team Collaboration",
+        "Developer Tools"
+      ],
+      "interestedInSpeaking": false
+    },
+    "partnerStatus": {
+      "status": "active",
+      "appliedAt": "2025-06-16T11:30:00Z",
+      "approvedAt": "2025-06-17T15:15:00Z"
+    },
+    "createdAt": "2025-06-16T11:30:00Z",
+    "updatedAt": "2025-08-02T07:35:22.300Z"
+  },
+  {
+    "id": "partner_1754120122300_k0z15l0rm",
+    "email": "john.doe@github.com",
+    "fullName": "John Doe",
+    "company": "GitHub",
+    "jobTitle": "Partnership Manager",
+    "phone": "+1-555-0091",
+    "role": "partner",
+    "preferences": {
+      "notifications": true,
+      "theme": "system"
+    },
+    "partnerProfile": {
+      "companyDescription": "Version control and collaboration platform for software development and code management.",
+      "partnershipType": "technology",
+      "website": "https://github.com",
+      "offerings": [
+        "Version Control",
+        "Code Collaboration",
+        "Software Development"
+      ],
+      "interestedInSpeaking": true
+    },
+    "partnerStatus": {
+      "status": "active",
+      "appliedAt": "2025-06-18T13:15:00Z",
+      "approvedAt": "2025-06-19T17:00:00Z"
+    },
+    "createdAt": "2025-06-18T13:15:00Z",
+    "updatedAt": "2025-08-02T07:35:22.300Z"
+  },
+  {
+    "id": "partner_1754120122300_ij9l2zbmk",
+    "email": "john.doe@gitlab.com",
+    "fullName": "John Doe",
+    "company": "GitLab",
+    "jobTitle": "Partnership Manager",
+    "phone": "+1-555-0092",
+    "role": "partner",
+    "preferences": {
+      "notifications": true,
+      "theme": "system"
+    },
+    "partnerProfile": {
+      "companyDescription": "DevOps platform for version control, CI/CD, and project management.",
+      "partnershipType": "technology",
+      "website": "https://gitlab.com",
+      "offerings": [
+        "DevOps Platform",
+        "Version Control",
+        "CI/CD"
+      ],
+      "interestedInSpeaking": false
+    },
+    "partnerStatus": {
+      "status": "approved",
+      "appliedAt": "2025-06-20T08:30:00Z",
+      "approvedAt": "2025-06-21T12:15:00Z"
+    },
+    "createdAt": "2025-06-20T08:30:00Z",
+    "updatedAt": "2025-08-02T07:35:22.300Z"
+  },
+  {
+    "id": "partner_1754120122300_tdrvcniys",
+    "email": "john.doe@bitbucket.org",
+    "fullName": "John Doe",
+    "company": "Bitbucket",
+    "jobTitle": "Partnership Manager",
+    "phone": "+1-555-0093",
+    "role": "partner",
+    "preferences": {
+      "notifications": true,
+      "theme": "system"
+    },
+    "partnerProfile": {
+      "companyDescription": "Git repository management and collaboration platform for development teams.",
+      "partnershipType": "technology",
+      "website": "https://bitbucket.org",
+      "offerings": [
+        "Git Repository",
+        "Code Collaboration",
+        "Development Teams"
+      ],
+      "interestedInSpeaking": true
+    },
+    "partnerStatus": {
+      "status": "pending",
+      "appliedAt": "2025-06-22T10:45:00Z"
+    },
+    "createdAt": "2025-06-22T10:45:00Z",
+    "updatedAt": "2025-08-02T07:35:22.300Z"
+  },
+  {
+    "id": "partner_1754120122300_zkdhp3ztr",
+    "email": "john.doe@vercel.com",
+    "fullName": "John Doe",
+    "company": "Vercel",
+    "jobTitle": "Partnership Manager",
+    "phone": "+1-555-0094",
+    "role": "partner",
+    "preferences": {
+      "notifications": true,
+      "theme": "system"
+    },
+    "partnerProfile": {
+      "companyDescription": "Frontend deployment platform for modern web applications and static sites.",
+      "partnershipType": "technology",
+      "website": "https://vercel.com",
+      "offerings": [
+        "Frontend Deployment",
+        "Web Applications",
+        "Static Sites"
+      ],
+      "interestedInSpeaking": false
+    },
+    "partnerStatus": {
+      "status": "active",
+      "appliedAt": "2025-06-23T12:30:00Z",
+      "approvedAt": "2025-06-24T16:15:00Z"
+    },
+    "createdAt": "2025-06-23T12:30:00Z",
+    "updatedAt": "2025-08-02T07:35:22.300Z"
+  },
+  {
+    "id": "partner_1754120122300_6bpiuksxi",
+    "email": "john.doe@railway.app",
+    "fullName": "John Doe",
+    "company": "Railway",
+    "jobTitle": "Partnership Manager",
+    "phone": "+1-555-0095",
+    "role": "partner",
+    "preferences": {
+      "notifications": true,
+      "theme": "system"
+    },
+    "partnerProfile": {
+      "companyDescription": "Cloud deployment platform for full-stack applications and databases.",
+      "partnershipType": "technology",
+      "website": "https://railway.app",
+      "offerings": [
+        "Cloud Deployment",
+        "Full-stack Applications",
+        "Database Hosting"
+      ],
+      "interestedInSpeaking": true
+    },
+    "partnerStatus": {
+      "status": "approved",
+      "appliedAt": "2025-06-25T09:15:00Z",
+      "approvedAt": "2025-06-26T13:00:00Z"
+    },
+    "createdAt": "2025-06-25T09:15:00Z",
+    "updatedAt": "2025-08-02T07:35:22.300Z"
+  },
+  {
+    "id": "partner_1754120122300_yj4pjrisb",
+    "email": "john.doe@render.com",
+    "fullName": "John Doe",
+    "company": "Render",
+    "jobTitle": "Partnership Manager",
+    "phone": "+1-555-0096",
+    "role": "partner",
+    "preferences": {
+      "notifications": true,
+      "theme": "system"
+    },
+    "partnerProfile": {
+      "companyDescription": "Cloud platform for hosting web applications, APIs, and static sites.",
+      "partnershipType": "technology",
+      "website": "https://render.com",
+      "offerings": [
+        "Cloud Hosting",
+        "Web Applications",
+        "API Hosting"
+      ],
+      "interestedInSpeaking": false
+    },
+    "partnerStatus": {
+      "status": "pending",
+      "appliedAt": "2025-06-27T11:00:00Z"
+    },
+    "createdAt": "2025-06-27T11:00:00Z",
+    "updatedAt": "2025-08-02T07:35:22.300Z"
+  },
+  {
+    "id": "partner_1754120122300_nyjaa6klp",
+    "email": "john.doe@heroku.com",
+    "fullName": "John Doe",
+    "company": "Heroku",
+    "jobTitle": "Partnership Manager",
+    "phone": "+1-555-0097",
+    "role": "partner",
+    "preferences": {
+      "notifications": true,
+      "theme": "system"
+    },
+    "partnerProfile": {
+      "companyDescription": "Cloud application platform for deploying and scaling web applications.",
+      "partnershipType": "technology",
+      "website": "https://heroku.com",
+      "offerings": [
+        "Cloud Platform",
+        "Application Deployment",
+        "Web Scaling"
+      ],
+      "interestedInSpeaking": true
+    },
+    "partnerStatus": {
+      "status": "approved",
+      "appliedAt": "2025-06-28T13:45:00Z",
+      "approvedAt": "2025-06-29T17:30:00Z"
+    },
+    "createdAt": "2025-06-28T13:45:00Z",
+    "updatedAt": "2025-08-02T07:35:22.300Z"
+  },
+  {
+    "id": "partner_1754120122300_iubjagn4i",
+    "email": "john.doe@aws.amazon.com",
+    "fullName": "John Doe",
+    "company": "AWS",
+    "jobTitle": "Partnership Manager",
+    "phone": "+1-555-0098",
+    "role": "partner",
+    "preferences": {
+      "notifications": true,
+      "theme": "system"
+    },
+    "partnerProfile": {
+      "companyDescription": "Cloud computing platform for comprehensive cloud infrastructure and services.",
+      "partnershipType": "technology",
+      "website": "https://aws.amazon.com",
+      "offerings": [
+        "Cloud Computing",
+        "Infrastructure",
+        "Cloud Services"
+      ],
+      "interestedInSpeaking": false
+    },
+    "partnerStatus": {
+      "status": "active",
+      "appliedAt": "2025-06-30T08:00:00Z",
+      "approvedAt": "2025-07-01T12:45:00Z"
+    },
+    "createdAt": "2025-06-30T08:00:00Z",
+    "updatedAt": "2025-08-02T07:35:22.300Z"
+  },
+  {
+    "id": "partner_1754120122300_eqjlrn1s3",
+    "email": "john.doe@cloud.google.com",
+    "fullName": "John Doe",
+    "company": "Google Cloud",
+    "jobTitle": "Partnership Manager",
+    "phone": "+1-555-0099",
+    "role": "partner",
+    "preferences": {
+      "notifications": true,
+      "theme": "system"
+    },
+    "partnerProfile": {
+      "companyDescription": "Cloud computing platform for scalable infrastructure and AI services.",
+      "partnershipType": "technology",
+      "website": "https://cloud.google.com",
+      "offerings": [
+        "Cloud Computing",
+        "Scalable Infrastructure",
+        "AI Services"
+      ],
+      "interestedInSpeaking": true
+    },
+    "partnerStatus": {
+      "status": "approved",
+      "appliedAt": "2025-07-02T10:30:00Z",
+      "approvedAt": "2025-07-03T14:15:00Z"
+    },
+    "createdAt": "2025-07-02T10:30:00Z",
+    "updatedAt": "2025-08-02T07:35:22.300Z"
+  },
+  {
+    "id": "partner_1754120122300_5n2o6ync1",
+    "email": "john.doe@azure.microsoft.com",
+    "fullName": "John Doe",
+    "company": "Microsoft Azure",
+    "jobTitle": "Partnership Manager",
+    "phone": "+1-555-0100",
+    "role": "partner",
+    "preferences": {
+      "notifications": true,
+      "theme": "system"
+    },
+    "partnerProfile": {
+      "companyDescription": "Cloud computing platform for enterprise applications and services.",
+      "partnershipType": "technology",
+      "website": "https://azure.microsoft.com",
+      "offerings": [
+        "Cloud Computing",
+        "Enterprise Applications",
+        "Cloud Services"
+      ],
+      "interestedInSpeaking": false
+    },
+    "partnerStatus": {
+      "status": "pending",
+      "appliedAt": "2025-07-04T12:15:00Z"
+    },
+    "createdAt": "2025-07-04T12:15:00Z",
+    "updatedAt": "2025-08-02T07:35:22.300Z"
+  },
+  {
+    "id": "partner_1754120122300_ojg55bl35",
+    "email": "john.doe@digitalocean.com",
+    "fullName": "John Doe",
+    "company": "DigitalOcean",
+    "jobTitle": "Partnership Manager",
+    "phone": "+1-555-0101",
+    "role": "partner",
+    "preferences": {
+      "notifications": true,
+      "theme": "system"
+    },
+    "partnerProfile": {
+      "companyDescription": "Cloud infrastructure platform for developers and small businesses.",
+      "partnershipType": "technology",
+      "website": "https://digitalocean.com",
+      "offerings": [
+        "Cloud Infrastructure",
+        "Developer Platform",
+        "Small Business"
+      ],
+      "interestedInSpeaking": true
+    },
+    "partnerStatus": {
+      "status": "active",
+      "appliedAt": "2025-07-05T09:00:00Z",
+      "approvedAt": "2025-07-06T13:45:00Z"
+    },
+    "createdAt": "2025-07-05T09:00:00Z",
+    "updatedAt": "2025-08-02T07:35:22.300Z"
+  },
+  {
+    "id": "partner_1754120122300_3t1uusg00",
+    "email": "john.doe@linode.com",
+    "fullName": "John Doe",
+    "company": "Linode",
+    "jobTitle": "Partnership Manager",
+    "phone": "+1-555-0102",
+    "role": "partner",
+    "preferences": {
+      "notifications": true,
+      "theme": "system"
+    },
+    "partnerProfile": {
+      "companyDescription": "Cloud computing platform for high-performance applications and infrastructure.",
+      "partnershipType": "technology",
+      "website": "https://linode.com",
+      "offerings": [
+        "Cloud Computing",
+        "High Performance",
+        "Infrastructure"
+      ],
+      "interestedInSpeaking": false
+    },
+    "partnerStatus": {
+      "status": "approved",
+      "appliedAt": "2025-07-07T11:45:00Z",
+      "approvedAt": "2025-07-08T15:30:00Z"
+    },
+    "createdAt": "2025-07-07T11:45:00Z",
+    "updatedAt": "2025-08-02T07:35:22.300Z"
+  },
+  {
+    "id": "partner_1754120122300_9qdl57ga8",
+    "email": "john.doe@vultr.com",
+    "fullName": "John Doe",
+    "company": "Vultr",
+    "jobTitle": "Partnership Manager",
+    "phone": "+1-555-0103",
+    "role": "partner",
+    "preferences": {
+      "notifications": true,
+      "theme": "system"
+    },
+    "partnerProfile": {
+      "companyDescription": "Cloud infrastructure platform for global deployment and high performance.",
+      "partnershipType": "technology",
+      "website": "https://vultr.com",
+      "offerings": [
+        "Cloud Infrastructure",
+        "Global Deployment",
+        "High Performance"
+      ],
+      "interestedInSpeaking": true
+    },
+    "partnerStatus": {
+      "status": "pending",
+      "appliedAt": "2025-07-09T13:30:00Z"
+    },
+    "createdAt": "2025-07-09T13:30:00Z",
+    "updatedAt": "2025-08-02T07:35:22.300Z"
+  },
+  {
+    "id": "partner_1754120122300_u7s5jrf37",
+    "email": "john.doe@cloudflare.com",
+    "fullName": "John Doe",
+    "company": "Cloudflare",
+    "jobTitle": "Partnership Manager",
+    "phone": "+1-555-0104",
+    "role": "partner",
+    "preferences": {
+      "notifications": true,
+      "theme": "system"
+    },
+    "partnerProfile": {
+      "companyDescription": "CDN and security platform for website performance and protection.",
+      "partnershipType": "technology",
+      "website": "https://cloudflare.com",
+      "offerings": [
+        "CDN",
+        "Website Security",
+        "Performance Optimization"
+      ],
+      "interestedInSpeaking": false
+    },
+    "partnerStatus": {
+      "status": "active",
+      "appliedAt": "2025-07-10T08:15:00Z",
+      "approvedAt": "2025-07-11T12:00:00Z"
+    },
+    "createdAt": "2025-07-10T08:15:00Z",
+    "updatedAt": "2025-08-02T07:35:22.300Z"
+  },
+  {
+    "id": "partner_1754120122300_6neuawsnq",
+    "email": "john.doe@fastly.com",
+    "fullName": "John Doe",
+    "company": "Fastly",
+    "jobTitle": "Partnership Manager",
+    "phone": "+1-555-0105",
+    "role": "partner",
+    "preferences": {
+      "notifications": true,
+      "theme": "system"
+    },
+    "partnerProfile": {
+      "companyDescription": "Edge cloud platform for content delivery and application acceleration.",
+      "partnershipType": "technology",
+      "website": "https://fastly.com",
+      "offerings": [
+        "Edge Cloud",
+        "Content Delivery",
+        "Application Acceleration"
+      ],
+      "interestedInSpeaking": true
+    },
+    "partnerStatus": {
+      "status": "approved",
+      "appliedAt": "2025-07-12T10:45:00Z",
+      "approvedAt": "2025-07-13T14:30:00Z"
+    },
+    "createdAt": "2025-07-12T10:45:00Z",
+    "updatedAt": "2025-08-02T07:35:22.300Z"
+  },
+  {
+    "id": "partner_1754120122300_ykrnitebw",
+    "email": "john.doe@auth0.com",
+    "fullName": "John Doe",
+    "company": "Auth0",
+    "jobTitle": "Partnership Manager",
+    "phone": "+1-555-0106",
+    "role": "partner",
+    "preferences": {
+      "notifications": true,
+      "theme": "system"
+    },
+    "partnerProfile": {
+      "companyDescription": "Identity and access management platform for secure authentication.",
+      "partnershipType": "technology",
+      "website": "https://auth0.com",
+      "offerings": [
+        "Identity Management",
+        "Authentication",
+        "Access Control"
+      ],
+      "interestedInSpeaking": false
+    },
+    "partnerStatus": {
+      "status": "pending",
+      "appliedAt": "2025-07-14T12:30:00Z"
+    },
+    "createdAt": "2025-07-14T12:30:00Z",
+    "updatedAt": "2025-08-02T07:35:22.300Z"
+  },
+  {
+    "id": "partner_1754120122300_ih2d7rn82",
+    "email": "john.doe@okta.com",
+    "fullName": "John Doe",
+    "company": "Okta",
+    "jobTitle": "Partnership Manager",
+    "phone": "+1-555-0107",
+    "role": "partner",
+    "preferences": {
+      "notifications": true,
+      "theme": "system"
+    },
+    "partnerProfile": {
+      "companyDescription": "Identity and access management platform for enterprise security.",
+      "partnershipType": "technology",
+      "website": "https://okta.com",
+      "offerings": [
+        "Identity Management",
+        "Enterprise Security",
+        "Access Management"
+      ],
+      "interestedInSpeaking": true
+    },
+    "partnerStatus": {
+      "status": "approved",
+      "appliedAt": "2025-07-15T09:15:00Z",
+      "approvedAt": "2025-07-16T13:00:00Z"
+    },
+    "createdAt": "2025-07-15T09:15:00Z",
+    "updatedAt": "2025-08-02T07:35:22.300Z"
+  },
+  {
+    "id": "partner_1754120122300_p0bvldbqf",
+    "email": "john.doe@1password.com",
+    "fullName": "John Doe",
+    "company": "1Password",
+    "jobTitle": "Partnership Manager",
+    "phone": "+1-555-0108",
+    "role": "partner",
+    "preferences": {
+      "notifications": true,
+      "theme": "system"
+    },
+    "partnerProfile": {
+      "companyDescription": "Password management and security platform for teams and individuals.",
+      "partnershipType": "technology",
+      "website": "https://1password.com",
+      "offerings": [
+        "Password Management",
+        "Security",
+        "Team Collaboration"
+      ],
+      "interestedInSpeaking": false
+    },
+    "partnerStatus": {
+      "status": "active",
+      "appliedAt": "2025-07-17T11:30:00Z",
+      "approvedAt": "2025-07-18T15:15:00Z"
+    },
+    "createdAt": "2025-07-17T11:30:00Z",
+    "updatedAt": "2025-08-02T07:35:22.300Z"
+  },
+  {
+    "id": "partner_1754120122300_f64s61e6b",
+    "email": "john.doe@bitwarden.com",
+    "fullName": "John Doe",
+    "company": "Bitwarden",
+    "jobTitle": "Partnership Manager",
+    "phone": "+1-555-0109",
+    "role": "partner",
+    "preferences": {
+      "notifications": true,
+      "theme": "system"
+    },
+    "partnerProfile": {
+      "companyDescription": "Open-source password management platform for secure credential storage.",
+      "partnershipType": "technology",
+      "website": "https://bitwarden.com",
+      "offerings": [
+        "Password Management",
+        "Open Source",
+        "Credential Security"
+      ],
+      "interestedInSpeaking": true
+    },
+    "partnerStatus": {
+      "status": "pending",
+      "appliedAt": "2025-07-19T13:15:00Z"
+    },
+    "createdAt": "2025-07-19T13:15:00Z",
+    "updatedAt": "2025-08-02T07:35:22.300Z"
+  },
+  {
+    "id": "partner_1754120122300_lic2ipy7f",
+    "email": "john.doe@lastpass.com",
+    "fullName": "John Doe",
+    "company": "LastPass",
+    "jobTitle": "Partnership Manager",
+    "phone": "+1-555-0110",
+    "role": "partner",
+    "preferences": {
+      "notifications": true,
+      "theme": "system"
+    },
+    "partnerProfile": {
+      "companyDescription": "Password management platform for secure password storage and sharing.",
+      "partnershipType": "technology",
+      "website": "https://lastpass.com",
+      "offerings": [
+        "Password Management",
+        "Secure Storage",
+        "Password Sharing"
+      ],
+      "interestedInSpeaking": false
+    },
+    "partnerStatus": {
+      "status": "approved",
+      "appliedAt": "2025-07-20T08:45:00Z",
+      "approvedAt": "2025-07-21T12:30:00Z"
+    },
+    "createdAt": "2025-07-20T08:45:00Z",
+    "updatedAt": "2025-08-02T07:35:22.300Z"
+  },
+  {
+    "id": "partner_1754120122300_c9akkvelc",
+    "email": "john.doe@dashlane.com",
+    "fullName": "John Doe",
+    "company": "Dashlane",
+    "jobTitle": "Partnership Manager",
+    "phone": "+1-555-0111",
+    "role": "partner",
+    "preferences": {
+      "notifications": true,
+      "theme": "system"
+    },
+    "partnerProfile": {
+      "companyDescription": "Password management and digital wallet platform for online security.",
+      "partnershipType": "technology",
+      "website": "https://dashlane.com",
+      "offerings": [
+        "Password Management",
+        "Digital Wallet",
+        "Online Security"
+      ],
+      "interestedInSpeaking": true
+    },
+    "partnerStatus": {
+      "status": "active",
+      "appliedAt": "2025-07-22T10:00:00Z",
+      "approvedAt": "2025-07-23T14:45:00Z"
+    },
+    "createdAt": "2025-07-22T10:00:00Z",
+    "updatedAt": "2025-08-02T07:35:22.300Z"
+  },
+  {
+    "id": "partner_1754120122300_nvrsmsdgl",
+    "email": "john.doe@nordpass.com",
+    "fullName": "John Doe",
+    "company": "NordPass",
+    "jobTitle": "Partnership Manager",
+    "phone": "+1-555-0112",
+    "role": "partner",
+    "preferences": {
+      "notifications": true,
+      "theme": "system"
+    },
+    "partnerProfile": {
+      "companyDescription": "Password management platform for secure credential storage and sharing.",
+      "partnershipType": "technology",
+      "website": "https://nordpass.com",
+      "offerings": [
+        "Password Management",
+        "Credential Security",
+        "Secure Sharing"
+      ],
+      "interestedInSpeaking": false
+    },
+    "partnerStatus": {
+      "status": "approved",
+      "appliedAt": "2025-07-24T12:45:00Z",
+      "approvedAt": "2025-07-25T16:30:00Z"
+    },
+    "createdAt": "2025-07-24T12:45:00Z",
+    "updatedAt": "2025-08-02T07:35:22.300Z"
+  },
+  {
+    "id": "partner_1754120122300_okygltx76",
+    "email": "john.doe@keeper.io",
+    "fullName": "John Doe",
+    "company": "Keeper",
+    "jobTitle": "Partnership Manager",
+    "phone": "+1-555-0113",
+    "role": "partner",
+    "preferences": {
+      "notifications": true,
+      "theme": "system"
+    },
+    "partnerProfile": {
+      "companyDescription": "Password management and cybersecurity platform for enterprise security.",
+      "partnershipType": "technology",
+      "website": "https://keeper.io",
+      "offerings": [
+        "Password Management",
+        "Cybersecurity",
+        "Enterprise Security"
+      ],
+      "interestedInSpeaking": true
+    },
+    "partnerStatus": {
+      "status": "pending",
+      "appliedAt": "2025-07-26T09:30:00Z"
+    },
+    "createdAt": "2025-07-26T09:30:00Z",
+    "updatedAt": "2025-08-02T07:35:22.300Z"
+  },
+  {
+    "id": "partner_1754120122300_kftyy5g8f",
+    "email": "john.doe@nordvpn.com",
+    "fullName": "John Doe",
+    "company": "NordVPN",
+    "jobTitle": "Partnership Manager",
+    "phone": "+1-555-0114",
+    "role": "partner",
+    "preferences": {
+      "notifications": true,
+      "theme": "system"
+    },
+    "partnerProfile": {
+      "companyDescription": "VPN service for online privacy and security protection.",
+      "partnershipType": "technology",
+      "website": "https://nordvpn.com",
+      "offerings": [
+        "VPN Service",
+        "Online Privacy",
+        "Security Protection"
+      ],
+      "interestedInSpeaking": false
+    },
+    "partnerStatus": {
+      "status": "approved",
+      "appliedAt": "2025-07-27T11:15:00Z",
+      "approvedAt": "2025-07-28T15:00:00Z"
+    },
+    "createdAt": "2025-07-27T11:15:00Z",
+    "updatedAt": "2025-08-02T07:35:22.300Z"
+  },
+  {
+    "id": "partner_1754120122300_5u6jg1pk1",
+    "email": "john.doe@expressvpn.com",
+    "fullName": "John Doe",
+    "company": "ExpressVPN",
+    "jobTitle": "Partnership Manager",
+    "phone": "+1-555-0115",
+    "role": "partner",
+    "preferences": {
+      "notifications": true,
+      "theme": "system"
+    },
+    "partnerProfile": {
+      "companyDescription": "VPN service for secure internet browsing and privacy protection.",
+      "partnershipType": "technology",
+      "website": "https://expressvpn.com",
+      "offerings": [
+        "VPN Service",
+        "Secure Browsing",
+        "Privacy Protection"
+      ],
+      "interestedInSpeaking": true
+    },
+    "partnerStatus": {
+      "status": "active",
+      "appliedAt": "2025-07-29T13:00:00Z",
+      "approvedAt": "2025-07-30T17:45:00Z"
+    },
+    "createdAt": "2025-07-29T13:00:00Z",
+    "updatedAt": "2025-08-02T07:35:22.300Z"
+  },
+  {
+    "id": "partner_1754120122300_awjc6a0if",
+    "email": "john.doe@surfshark.com",
+    "fullName": "John Doe",
+    "company": "Surfshark",
+    "jobTitle": "Partnership Manager",
+    "phone": "+1-555-0116",
+    "role": "partner",
+    "preferences": {
+      "notifications": true,
+      "theme": "system"
+    },
+    "partnerProfile": {
+      "companyDescription": "VPN service for online privacy and unlimited device protection.",
+      "partnershipType": "technology",
+      "website": "https://surfshark.com",
+      "offerings": [
+        "VPN Service",
+        "Online Privacy",
+        "Device Protection"
+      ],
+      "interestedInSpeaking": false
+    },
+    "partnerStatus": {
+      "status": "pending",
+      "appliedAt": "2025-07-31T08:30:00Z"
+    },
+    "createdAt": "2025-07-31T08:30:00Z",
+    "updatedAt": "2025-08-02T07:35:22.300Z"
+  },
+  {
+    "id": "partner_1754120122300_kv6v0vq2n",
+    "email": "john.doe@cyberghostvpn.com",
+    "fullName": "John Doe",
+    "company": "CyberGhost VPN",
+    "jobTitle": "Partnership Manager",
+    "phone": "+1-555-0117",
+    "role": "partner",
+    "preferences": {
+      "notifications": true,
+      "theme": "system"
+    },
+    "partnerProfile": {
+      "companyDescription": "VPN service for anonymous browsing and online security.",
+      "partnershipType": "technology",
+      "website": "https://cyberghostvpn.com",
+      "offerings": [
+        "VPN Service",
+        "Anonymous Browsing",
+        "Online Security"
+      ],
+      "interestedInSpeaking": true
+    },
+    "partnerStatus": {
+      "status": "approved",
+      "appliedAt": "2025-08-01T10:15:00Z",
+      "approvedAt": "2025-08-02T14:00:00Z"
+    },
+    "createdAt": "2025-08-01T10:15:00Z",
+    "updatedAt": "2025-08-02T07:35:22.300Z"
+  },
+  {
+    "id": "partner_1754120122300_z3ginq41r",
+    "email": "john.doe@protonvpn.com",
+    "fullName": "John Doe",
+    "company": "ProtonVPN",
+    "jobTitle": "Partnership Manager",
+    "phone": "+1-555-0118",
+    "role": "partner",
+    "preferences": {
+      "notifications": true,
+      "theme": "system"
+    },
+    "partnerProfile": {
+      "companyDescription": "Secure VPN service with privacy-focused features and encryption.",
+      "partnershipType": "technology",
+      "website": "https://protonvpn.com",
+      "offerings": [
+        "Secure VPN",
+        "Privacy Focus",
+        "Encryption"
+      ],
+      "interestedInSpeaking": false
+    },
+    "partnerStatus": {
+      "status": "active",
+      "appliedAt": "2025-08-03T12:00:00Z",
+      "approvedAt": "2025-08-04T16:45:00Z"
+    },
+    "createdAt": "2025-08-03T12:00:00Z",
+    "updatedAt": "2025-08-02T07:35:22.300Z"
+  },
+  {
+    "id": "partner_1754120122300_4n57zb3cn",
+    "email": "john.doe@malwarebytes.com",
+    "fullName": "John Doe",
+    "company": "Malwarebytes",
+    "jobTitle": "Partnership Manager",
+    "phone": "+1-555-0119",
+    "role": "partner",
+    "preferences": {
+      "notifications": true,
+      "theme": "system"
+    },
+    "partnerProfile": {
+      "companyDescription": "Anti-malware and cybersecurity platform for threat protection.",
+      "partnershipType": "technology",
+      "website": "https://malwarebytes.com",
+      "offerings": [
+        "Anti-malware",
+        "Cybersecurity",
+        "Threat Protection"
+      ],
+      "interestedInSpeaking": true
+    },
+    "partnerStatus": {
+      "status": "approved",
+      "appliedAt": "2025-08-05T09:45:00Z",
+      "approvedAt": "2025-08-06T13:30:00Z"
+    },
+    "createdAt": "2025-08-05T09:45:00Z",
+    "updatedAt": "2025-08-02T07:35:22.300Z"
+  },
+  {
+    "id": "partner_1754120122300_ngyy0lcpi",
+    "email": "john.doe@norton.com",
+    "fullName": "John Doe",
+    "company": "Norton",
+    "jobTitle": "Partnership Manager",
+    "phone": "+1-555-0120",
+    "role": "partner",
+    "preferences": {
+      "notifications": true,
+      "theme": "system"
+    },
+    "partnerProfile": {
+      "companyDescription": "Antivirus and cybersecurity platform for comprehensive protection.",
+      "partnershipType": "technology",
+      "website": "https://norton.com",
+      "offerings": [
+        "Antivirus",
+        "Cybersecurity",
+        "Comprehensive Protection"
+      ],
+      "interestedInSpeaking": false
+    },
+    "partnerStatus": {
+      "status": "pending",
+      "appliedAt": "2025-08-07T11:30:00Z"
+    },
+    "createdAt": "2025-08-07T11:30:00Z",
+    "updatedAt": "2025-08-02T07:35:22.300Z"
+  },
+  {
+    "id": "partner_1754120122300_jrwp84dnn",
+    "email": "john.doe@mcafee.com",
+    "fullName": "John Doe",
+    "company": "McAfee",
+    "jobTitle": "Partnership Manager",
+    "phone": "+1-555-0121",
+    "role": "partner",
+    "preferences": {
+      "notifications": true,
+      "theme": "system"
+    },
+    "partnerProfile": {
+      "companyDescription": "Cybersecurity platform for antivirus and online protection.",
+      "partnershipType": "technology",
+      "website": "https://mcafee.com",
+      "offerings": [
+        "Cybersecurity",
+        "Antivirus",
+        "Online Protection"
+      ],
+      "interestedInSpeaking": true
+    },
+    "partnerStatus": {
+      "status": "approved",
+      "appliedAt": "2025-08-08T13:15:00Z",
+      "approvedAt": "2025-08-09T17:00:00Z"
+    },
+    "createdAt": "2025-08-08T13:15:00Z",
+    "updatedAt": "2025-08-02T07:35:22.300Z"
+  },
+  {
+    "id": "partner_1754120122300_1tnal6dcw",
+    "email": "john.doe@kaspersky.com",
+    "fullName": "John Doe",
+    "company": "Kaspersky",
+    "jobTitle": "Partnership Manager",
+    "phone": "+1-555-0122",
+    "role": "partner",
+    "preferences": {
+      "notifications": true,
+      "theme": "system"
+    },
+    "partnerProfile": {
+      "companyDescription": "Cybersecurity and antivirus platform for advanced threat protection.",
+      "partnershipType": "technology",
+      "website": "https://kaspersky.com",
+      "offerings": [
+        "Cybersecurity",
+        "Antivirus",
+        "Advanced Protection"
+      ],
+      "interestedInSpeaking": false
+    },
+    "partnerStatus": {
+      "status": "active",
+      "appliedAt": "2025-08-10T08:00:00Z",
+      "approvedAt": "2025-08-11T12:45:00Z"
+    },
+    "createdAt": "2025-08-10T08:00:00Z",
+    "updatedAt": "2025-08-02T07:35:22.300Z"
+  },
+  {
+    "id": "partner_1754120122300_0pedfimtv",
+    "email": "john.doe@avast.com",
+    "fullName": "John Doe",
+    "company": "Avast",
+    "jobTitle": "Partnership Manager",
+    "phone": "+1-555-0123",
+    "role": "partner",
+    "preferences": {
+      "notifications": true,
+      "theme": "system"
+    },
+    "partnerProfile": {
+      "companyDescription": "Antivirus and cybersecurity platform for digital security.",
+      "partnershipType": "technology",
+      "website": "https://avast.com",
+      "offerings": [
+        "Antivirus",
+        "Cybersecurity",
+        "Digital Security"
+      ],
+      "interestedInSpeaking": true
+    },
+    "partnerStatus": {
+      "status": "pending",
+      "appliedAt": "2025-08-12T10:30:00Z"
+    },
+    "createdAt": "2025-08-12T10:30:00Z",
+    "updatedAt": "2025-08-02T07:35:22.300Z"
+  },
+  {
+    "id": "partner_1754120122300_e9lz8s2kf",
+    "email": "john.doe@avg.com",
+    "fullName": "John Doe",
+    "company": "AVG",
+    "jobTitle": "Partnership Manager",
+    "phone": "+1-555-0124",
+    "role": "partner",
+    "preferences": {
+      "notifications": true,
+      "theme": "system"
+    },
+    "partnerProfile": {
+      "companyDescription": "Antivirus and internet security platform for online protection.",
+      "partnershipType": "technology",
+      "website": "https://avg.com",
+      "offerings": [
+        "Antivirus",
+        "Internet Security",
+        "Online Protection"
+      ],
+      "interestedInSpeaking": false
+    },
+    "partnerStatus": {
+      "status": "approved",
+      "appliedAt": "2025-08-13T12:15:00Z",
+      "approvedAt": "2025-08-14T16:00:00Z"
+    },
+    "createdAt": "2025-08-13T12:15:00Z",
+    "updatedAt": "2025-08-02T07:35:22.300Z"
+  },
+  {
+    "id": "partner_1754120122300_iixk1uw4r",
+    "email": "john.doe@bitdefender.com",
+    "fullName": "John Doe",
+    "company": "Bitdefender",
+    "jobTitle": "Partnership Manager",
+    "phone": "+1-555-0125",
+    "role": "partner",
+    "preferences": {
+      "notifications": true,
+      "theme": "system"
+    },
+    "partnerProfile": {
+      "companyDescription": "Advanced cybersecurity platform for comprehensive threat protection.",
+      "partnershipType": "technology",
+      "website": "https://bitdefender.com",
+      "offerings": [
+        "Advanced Cybersecurity",
+        "Threat Protection",
+        "Security Platform"
+      ],
+      "interestedInSpeaking": true
+    },
+    "partnerStatus": {
+      "status": "active",
+      "appliedAt": "2025-08-15T09:00:00Z",
+      "approvedAt": "2025-08-16T13:45:00Z"
+    },
+    "createdAt": "2025-08-15T09:00:00Z",
+    "updatedAt": "2025-08-02T07:35:22.300Z"
+  },
+  {
+    "id": "partner_1754120122300_i508lj8zi",
+    "email": "john.doe@crowdstrike.com",
+    "fullName": "John Doe",
+    "company": "CrowdStrike",
+    "jobTitle": "Partnership Manager",
+    "phone": "+1-555-0126",
+    "role": "partner",
+    "preferences": {
+      "notifications": true,
+      "theme": "system"
+    },
+    "partnerProfile": {
+      "companyDescription": "Endpoint security and threat intelligence platform for enterprise protection.",
+      "partnershipType": "technology",
+      "website": "https://crowdstrike.com",
+      "offerings": [
+        "Endpoint Security",
+        "Threat Intelligence",
+        "Enterprise Protection"
+      ],
+      "interestedInSpeaking": false
+    },
+    "partnerStatus": {
+      "status": "approved",
+      "appliedAt": "2025-08-17T11:45:00Z",
+      "approvedAt": "2025-08-18T15:30:00Z"
+    },
+    "createdAt": "2025-08-17T11:45:00Z",
+    "updatedAt": "2025-08-02T07:35:22.300Z"
+  },
+  {
+    "id": "partner_1754120122300_n98aqegy5",
+    "email": "john.doe@sentinelone.com",
+    "fullName": "John Doe",
+    "company": "SentinelOne",
+    "jobTitle": "Partnership Manager",
+    "phone": "+1-555-0127",
+    "role": "partner",
+    "preferences": {
+      "notifications": true,
+      "theme": "system"
+    },
+    "partnerProfile": {
+      "companyDescription": "AI-powered cybersecurity platform for autonomous threat detection.",
+      "partnershipType": "technology",
+      "website": "https://sentinelone.com",
+      "offerings": [
+        "AI Cybersecurity",
+        "Autonomous Detection",
+        "Threat Protection"
+      ],
+      "interestedInSpeaking": true
+    },
+    "partnerStatus": {
+      "status": "pending",
+      "appliedAt": "2025-08-19T13:30:00Z"
+    },
+    "createdAt": "2025-08-19T13:30:00Z",
+    "updatedAt": "2025-08-02T07:35:22.300Z"
+  },
+  {
+    "id": "partner_1754120122300_3e1e8hbs0",
+    "email": "john.doe@paloaltonetworks.com",
+    "fullName": "John Doe",
+    "company": "Palo Alto Networks",
+    "jobTitle": "Partnership Manager",
+    "phone": "+1-555-0128",
+    "role": "partner",
+    "preferences": {
+      "notifications": true,
+      "theme": "system"
+    },
+    "partnerProfile": {
+      "companyDescription": "Enterprise cybersecurity platform for network and cloud security.",
+      "partnershipType": "technology",
+      "website": "https://paloaltonetworks.com",
+      "offerings": [
+        "Enterprise Cybersecurity",
+        "Network Security",
+        "Cloud Security"
+      ],
+      "interestedInSpeaking": false
+    },
+    "partnerStatus": {
+      "status": "approved",
+      "appliedAt": "2025-08-20T08:15:00Z",
+      "approvedAt": "2025-08-21T12:00:00Z"
+    },
+    "createdAt": "2025-08-20T08:15:00Z",
+    "updatedAt": "2025-08-02T07:35:22.300Z"
+  },
+  {
+    "id": "partner_1754120122300_dplv3bux6",
+    "email": "john.doe@fortinet.com",
+    "fullName": "John Doe",
+    "company": "Fortinet",
+    "jobTitle": "Partnership Manager",
+    "phone": "+1-555-0129",
+    "role": "partner",
+    "preferences": {
+      "notifications": true,
+      "theme": "system"
+    },
+    "partnerProfile": {
+      "companyDescription": "Network security platform for comprehensive cybersecurity solutions.",
+      "partnershipType": "technology",
+      "website": "https://fortinet.com",
+      "offerings": [
+        "Network Security",
+        "Cybersecurity Solutions",
+        "Enterprise Protection"
+      ],
+      "interestedInSpeaking": true
+    },
+    "partnerStatus": {
+      "status": "active",
+      "appliedAt": "2025-08-22T10:45:00Z",
+      "approvedAt": "2025-08-23T14:30:00Z"
+    },
+    "createdAt": "2025-08-22T10:45:00Z",
+    "updatedAt": "2025-08-02T07:35:22.300Z"
+  },
+  {
+    "id": "partner_1754120122300_gg1lm9sy3",
+    "email": "john.doe@checkpoint.com",
+    "fullName": "John Doe",
+    "company": "Check Point",
+    "jobTitle": "Partnership Manager",
+    "phone": "+1-555-0130",
+    "role": "partner",
+    "preferences": {
+      "notifications": true,
+      "theme": "system"
+    },
+    "partnerProfile": {
+      "companyDescription": "Cybersecurity platform for threat prevention and network security.",
+      "partnershipType": "technology",
+      "website": "https://checkpoint.com",
+      "offerings": [
+        "Cybersecurity",
+        "Threat Prevention",
+        "Network Security"
+      ],
+      "interestedInSpeaking": false
+    },
+    "partnerStatus": {
+      "status": "pending",
+      "appliedAt": "2025-08-24T12:30:00Z"
+    },
+    "createdAt": "2025-08-24T12:30:00Z",
+    "updatedAt": "2025-08-02T07:35:22.300Z"
+  },
+  {
+    "id": "partner_1754120122300_rqqnnedp5",
+    "email": "john.doe@sophos.com",
+    "fullName": "John Doe",
+    "company": "Sophos",
+    "jobTitle": "Partnership Manager",
+    "phone": "+1-555-0131",
+    "role": "partner",
+    "preferences": {
+      "notifications": true,
+      "theme": "system"
+    },
+    "partnerProfile": {
+      "companyDescription": "Cybersecurity platform for endpoint and network protection.",
+      "partnershipType": "technology",
+      "website": "https://sophos.com",
+      "offerings": [
+        "Cybersecurity",
+        "Endpoint Protection",
+        "Network Security"
+      ],
+      "interestedInSpeaking": true
+    },
+    "partnerStatus": {
+      "status": "approved",
+      "appliedAt": "2025-08-25T09:15:00Z",
+      "approvedAt": "2025-08-26T13:00:00Z"
+    },
+    "createdAt": "2025-08-25T09:15:00Z",
+    "updatedAt": "2025-08-02T07:35:22.300Z"
+  },
+  {
+    "id": "partner_1754120122300_ajj0kaahy",
+    "email": "john.doe@trendmicro.com",
+    "fullName": "John Doe",
+    "company": "Trend Micro",
+    "jobTitle": "Partnership Manager",
+    "phone": "+1-555-0132",
+    "role": "partner",
+    "preferences": {
+      "notifications": true,
+      "theme": "system"
+    },
+    "partnerProfile": {
+      "companyDescription": "Cybersecurity platform for cloud and enterprise security solutions.",
+      "partnershipType": "technology",
+      "website": "https://trendmicro.com",
+      "offerings": [
+        "Cybersecurity",
+        "Cloud Security",
+        "Enterprise Solutions"
+      ],
+      "interestedInSpeaking": false
+    },
+    "partnerStatus": {
+      "status": "active",
+      "appliedAt": "2025-08-27T11:30:00Z",
+      "approvedAt": "2025-08-28T15:15:00Z"
+    },
+    "createdAt": "2025-08-27T11:30:00Z",
+    "updatedAt": "2025-08-02T07:35:22.300Z"
+  },
+  {
+    "id": "partner_1754120122300_6bdaoh2sx",
+    "email": "john.doe@symantec.com",
+    "fullName": "John Doe",
+    "company": "Symantec",
+    "jobTitle": "Partnership Manager",
+    "phone": "+1-555-0133",
+    "role": "partner",
+    "preferences": {
+      "notifications": true,
+      "theme": "system"
+    },
+    "partnerProfile": {
+      "companyDescription": "Enterprise cybersecurity platform for comprehensive threat protection.",
+      "partnershipType": "technology",
+      "website": "https://symantec.com",
+      "offerings": [
+        "Enterprise Cybersecurity",
+        "Threat Protection",
+        "Security Solutions"
+      ],
+      "interestedInSpeaking": true
+    },
+    "partnerStatus": {
+      "status": "approved",
+      "appliedAt": "2025-08-29T13:15:00Z",
+      "approvedAt": "2025-08-30T17:00:00Z"
+    },
+    "createdAt": "2025-08-29T13:15:00Z",
+    "updatedAt": "2025-08-02T07:35:22.300Z"
+  },
+  {
+    "id": "partner_1754120122300_g1sazd6b4",
+    "email": "john.doe@rapid7.com",
+    "fullName": "John Doe",
+    "company": "Rapid7",
+    "jobTitle": "Partnership Manager",
+    "phone": "+1-555-0134",
+    "role": "partner",
+    "preferences": {
+      "notifications": true,
+      "theme": "system"
+    },
+    "partnerProfile": {
+      "companyDescription": "Security analytics and vulnerability management platform.",
+      "partnershipType": "technology",
+      "website": "https://rapid7.com",
+      "offerings": [
+        "Security Analytics",
+        "Vulnerability Management",
+        "Threat Detection"
+      ],
+      "interestedInSpeaking": false
+    },
+    "partnerStatus": {
+      "status": "pending",
+      "appliedAt": "2025-08-31T08:45:00Z"
+    },
+    "createdAt": "2025-08-31T08:45:00Z",
+    "updatedAt": "2025-08-02T07:35:22.300Z"
+  },
+  {
+    "id": "partner_1754120122300_6rqe5p6t4",
+    "email": "john.doe@qualys.com",
+    "fullName": "John Doe",
+    "company": "Qualys",
+    "jobTitle": "Partnership Manager",
+    "phone": "+1-555-0135",
+    "role": "partner",
+    "preferences": {
+      "notifications": true,
+      "theme": "system"
+    },
+    "partnerProfile": {
+      "companyDescription": "Cloud security and vulnerability management platform.",
+      "partnershipType": "technology",
+      "website": "https://qualys.com",
+      "offerings": [
+        "Cloud Security",
+        "Vulnerability Management",
+        "Security Assessment"
+      ],
+      "interestedInSpeaking": true
+    },
+    "partnerStatus": {
+      "status": "approved",
+      "appliedAt": "2025-09-01T10:00:00Z",
+      "approvedAt": "2025-09-02T14:45:00Z"
+    },
+    "createdAt": "2025-09-01T10:00:00Z",
+    "updatedAt": "2025-08-02T07:35:22.300Z"
+  },
+  {
+    "id": "partner_1754120122300_a6ldgvb9b",
+    "email": "john.doe@tenable.com",
+    "fullName": "John Doe",
+    "company": "Tenable",
+    "jobTitle": "Partnership Manager",
+    "phone": "+1-555-0136",
+    "role": "partner",
+    "preferences": {
+      "notifications": true,
+      "theme": "system"
+    },
+    "partnerProfile": {
+      "companyDescription": "Vulnerability management and cybersecurity platform for risk assessment.",
+      "partnershipType": "technology",
+      "website": "https://tenable.com",
+      "offerings": [
+        "Vulnerability Management",
+        "Cybersecurity",
+        "Risk Assessment"
+      ],
+      "interestedInSpeaking": false
+    },
+    "partnerStatus": {
+      "status": "active",
+      "appliedAt": "2025-09-03T12:45:00Z",
+      "approvedAt": "2025-09-04T16:30:00Z"
+    },
+    "createdAt": "2025-09-03T12:45:00Z",
+    "updatedAt": "2025-08-02T07:35:22.300Z"
+  },
+  {
+    "id": "partner_1754120122300_87dttml4q",
+    "email": "john.doe@nessus.org",
+    "fullName": "John Doe",
+    "company": "Nessus",
+    "jobTitle": "Partnership Manager",
+    "phone": "+1-555-0137",
+    "role": "partner",
+    "preferences": {
+      "notifications": true,
+      "theme": "system"
+    },
+    "partnerProfile": {
+      "companyDescription": "Vulnerability scanner for security assessment and compliance.",
+      "partnershipType": "technology",
+      "website": "https://nessus.org",
+      "offerings": [
+        "Vulnerability Scanner",
+        "Security Assessment",
+        "Compliance"
+      ],
+      "interestedInSpeaking": true
+    },
+    "partnerStatus": {
+      "status": "pending",
+      "appliedAt": "2025-09-05T09:30:00Z"
+    },
+    "createdAt": "2025-09-05T09:30:00Z",
+    "updatedAt": "2025-08-02T07:35:22.300Z"
+  },
+  {
+    "id": "partner_1754120122300_x906tj0cu",
+    "email": "john.doe@openvas.org",
+    "fullName": "John Doe",
+    "company": "OpenVAS",
+    "jobTitle": "Partnership Manager",
+    "phone": "+1-555-0138",
+    "role": "partner",
+    "preferences": {
+      "notifications": true,
+      "theme": "system"
+    },
+    "partnerProfile": {
+      "companyDescription": "Open-source vulnerability scanner for security testing.",
+      "partnershipType": "technology",
+      "website": "https://openvas.org",
+      "offerings": [
+        "Open Source",
+        "Vulnerability Scanner",
+        "Security Testing"
+      ],
+      "interestedInSpeaking": false
+    },
+    "partnerStatus": {
+      "status": "approved",
+      "appliedAt": "2025-09-06T11:15:00Z",
+      "approvedAt": "2025-09-07T15:00:00Z"
+    },
+    "createdAt": "2025-09-06T11:15:00Z",
+    "updatedAt": "2025-08-02T07:35:22.300Z"
+  },
+  {
+    "id": "partner_1754120122300_k9bvc4k05",
+    "email": "john.doe@nmap.org",
+    "fullName": "John Doe",
+    "company": "Nmap",
+    "jobTitle": "Partnership Manager",
+    "phone": "+1-555-0139",
+    "role": "partner",
+    "preferences": {
+      "notifications": true,
+      "theme": "system"
+    },
+    "partnerProfile": {
+      "companyDescription": "Network discovery and security auditing tool for penetration testing.",
+      "partnershipType": "technology",
+      "website": "https://nmap.org",
+      "offerings": [
+        "Network Discovery",
+        "Security Auditing",
+        "Penetration Testing"
+      ],
+      "interestedInSpeaking": true
+    },
+    "partnerStatus": {
+      "status": "active",
+      "appliedAt": "2025-09-08T13:00:00Z",
+      "approvedAt": "2025-09-09T17:45:00Z"
+    },
+    "createdAt": "2025-09-08T13:00:00Z",
+    "updatedAt": "2025-08-02T07:35:22.300Z"
+  },
+  {
+    "id": "partner_1754120122300_i6w9of9lj",
+    "email": "john.doe@wireshark.org",
+    "fullName": "John Doe",
+    "company": "Wireshark",
+    "jobTitle": "Partnership Manager",
+    "phone": "+1-555-0140",
+    "role": "partner",
+    "preferences": {
+      "notifications": true,
+      "theme": "system"
+    },
+    "partnerProfile": {
+      "companyDescription": "Network protocol analyzer for network troubleshooting and analysis.",
+      "partnershipType": "technology",
+      "website": "https://wireshark.org",
+      "offerings": [
+        "Network Analysis",
+        "Protocol Analyzer",
+        "Network Troubleshooting"
+      ],
+      "interestedInSpeaking": false
+    },
+    "partnerStatus": {
+      "status": "approved",
+      "appliedAt": "2025-09-10T08:30:00Z",
+      "approvedAt": "2025-09-11T12:15:00Z"
+    },
+    "createdAt": "2025-09-10T08:30:00Z",
+    "updatedAt": "2025-08-02T07:35:22.300Z"
+  },
+  {
+    "id": "partner_1754120122300_hsb0n1zh1",
+    "email": "john.doe@metasploit.com",
+    "fullName": "John Doe",
+    "company": "Metasploit",
+    "jobTitle": "Partnership Manager",
+    "phone": "+1-555-0141",
+    "role": "partner",
+    "preferences": {
+      "notifications": true,
+      "theme": "system"
+    },
+    "partnerProfile": {
+      "companyDescription": "Penetration testing framework for security assessment and exploitation.",
+      "partnershipType": "technology",
+      "website": "https://metasploit.com",
+      "offerings": [
+        "Penetration Testing",
+        "Security Assessment",
+        "Exploitation Framework"
+      ],
+      "interestedInSpeaking": true
+    },
+    "partnerStatus": {
+      "status": "pending",
+      "appliedAt": "2025-09-12T10:15:00Z"
+    },
+    "createdAt": "2025-09-12T10:15:00Z",
+    "updatedAt": "2025-08-02T07:35:22.300Z"
+  },
+  {
+    "id": "partner_1754120122300_xcxv9hdom",
+    "email": "john.doe@burpsuite.net",
+    "fullName": "John Doe",
+    "company": "Burp Suite",
+    "jobTitle": "Partnership Manager",
+    "phone": "+1-555-0142",
+    "role": "partner",
+    "preferences": {
+      "notifications": true,
+      "theme": "system"
+    },
+    "partnerProfile": {
+      "companyDescription": "Web application security testing platform for vulnerability assessment.",
+      "partnershipType": "technology",
+      "website": "https://portswigger.net/burp",
+      "offerings": [
+        "Web Security Testing",
+        "Vulnerability Assessment",
+        "Application Security"
+      ],
+      "interestedInSpeaking": false
+    },
+    "partnerStatus": {
+      "status": "approved",
+      "appliedAt": "2025-09-13T12:00:00Z",
+      "approvedAt": "2025-09-14T16:45:00Z"
+    },
+    "createdAt": "2025-09-13T12:00:00Z",
+    "updatedAt": "2025-08-02T07:35:22.300Z"
+  },
+  {
+    "id": "partner_1754120122300_19mktcaoe",
+    "email": "john.doe@owasp.org",
+    "fullName": "John Doe",
+    "company": "OWASP ZAP",
+    "jobTitle": "Partnership Manager",
+    "phone": "+1-555-0143",
+    "role": "partner",
+    "preferences": {
+      "notifications": true,
+      "theme": "system"
+    },
+    "partnerProfile": {
+      "companyDescription": "Open-source web application security scanner for vulnerability testing.",
+      "partnershipType": "technology",
+      "website": "https://owasp.org/www-project-zap",
+      "offerings": [
+        "Open Source",
+        "Web Security",
+        "Vulnerability Testing"
+      ],
+      "interestedInSpeaking": true
+    },
+    "partnerStatus": {
+      "status": "active",
+      "appliedAt": "2025-09-15T09:45:00Z",
+      "approvedAt": "2025-09-16T13:30:00Z"
+    },
+    "createdAt": "2025-09-15T09:45:00Z",
+    "updatedAt": "2025-08-02T07:35:22.300Z"
+  },
+  {
+    "id": "partner_1754120122300_mksmqmmx9",
+    "email": "john.doe@kalilinux.org",
+    "fullName": "John Doe",
+    "company": "Kali Linux",
+    "jobTitle": "Partnership Manager",
+    "phone": "+1-555-0144",
+    "role": "partner",
+    "preferences": {
+      "notifications": true,
+      "theme": "system"
+    },
+    "partnerProfile": {
+      "companyDescription": "Penetration testing and security auditing Linux distribution.",
+      "partnershipType": "technology",
+      "website": "https://kalilinux.org",
+      "offerings": [
+        "Penetration Testing",
+        "Security Auditing",
+        "Linux Distribution"
+      ],
+      "interestedInSpeaking": false
+    },
+    "partnerStatus": {
+      "status": "pending",
+      "appliedAt": "2025-09-17T11:30:00Z"
+    },
+    "createdAt": "2025-09-17T11:30:00Z",
+    "updatedAt": "2025-08-02T07:35:22.300Z"
+  },
+  {
+    "id": "partner_1754120122300_3yr47i5t5",
+    "email": "john.doe@parrotsec.org",
+    "fullName": "John Doe",
+    "company": "Parrot Security OS",
+    "jobTitle": "Partnership Manager",
+    "phone": "+1-555-0145",
+    "role": "partner",
+    "preferences": {
+      "notifications": true,
+      "theme": "system"
+    },
+    "partnerProfile": {
+      "companyDescription": "Security-focused Linux distribution for penetration testing and forensics.",
+      "partnershipType": "technology",
+      "website": "https://parrotsec.org",
+      "offerings": [
+        "Security Linux",
+        "Penetration Testing",
+        "Digital Forensics"
+      ],
+      "interestedInSpeaking": true
+    },
+    "partnerStatus": {
+      "status": "approved",
+      "appliedAt": "2025-09-18T13:15:00Z",
+      "approvedAt": "2025-09-19T17:00:00Z"
+    },
+    "createdAt": "2025-09-18T13:15:00Z",
+    "updatedAt": "2025-08-02T07:35:22.300Z"
+  },
+  {
+    "id": "partner_1754120122300_bb6dd7unv",
+    "email": "john.doe@blackarch.org",
+    "fullName": "John Doe",
+    "company": "BlackArch Linux",
+    "jobTitle": "Partnership Manager",
+    "phone": "+1-555-0146",
+    "role": "partner",
+    "preferences": {
+      "notifications": true,
+      "theme": "system"
+    },
+    "partnerProfile": {
+      "companyDescription": "Penetration testing distribution with comprehensive security tools.",
+      "partnershipType": "technology",
+      "website": "https://blackarch.org",
+      "offerings": [
+        "Penetration Testing",
+        "Security Tools",
+        "Linux Distribution"
+      ],
+      "interestedInSpeaking": false
+    },
+    "partnerStatus": {
+      "status": "active",
+      "appliedAt": "2025-09-20T08:00:00Z",
+      "approvedAt": "2025-09-21T12:45:00Z"
+    },
+    "createdAt": "2025-09-20T08:00:00Z",
+    "updatedAt": "2025-08-02T07:35:22.300Z"
+  },
+  {
+    "id": "partner_1754120122300_eo3sz3xao",
+    "email": "john.doe@superblog.ai",
+    "fullName": "John Doe",
+    "company": "SuperBlog",
+    "jobTitle": "Partnership Manager",
+    "phone": "+1-555-0147",
+    "role": "partner",
+    "preferences": {
+      "notifications": true,
+      "theme": "system"
+    },
+    "partnerProfile": {
+      "companyDescription": "AI-powered blogging platform for content creation and SEO optimization.",
+      "partnershipType": "technology",
+      "website": "https://superblog.ai",
+      "offerings": [
+        "AI Blogging",
+        "Content Creation",
+        "SEO Optimization"
+      ],
+      "interestedInSpeaking": true
+    },
+    "partnerStatus": {
+      "status": "approved",
+      "appliedAt": "2025-09-22T10:30:00Z",
+      "approvedAt": "2025-09-23T14:15:00Z"
+    },
+    "createdAt": "2025-09-22T10:30:00Z",
+    "updatedAt": "2025-08-02T07:35:22.300Z"
+  },
+  {
+    "id": "partner_1754120122300_078o88ts2",
+    "email": "john.doe@heygen.com",
+    "fullName": "John Doe",
+    "company": "HeyGen",
+    "jobTitle": "Partnership Manager",
+    "phone": "+1-555-0148",
+    "role": "partner",
+    "preferences": {
+      "notifications": true,
+      "theme": "system"
+    },
+    "partnerProfile": {
+      "companyDescription": "AI video generation platform for creating personalized video content.",
+      "partnershipType": "technology",
+      "website": "https://heygen.com",
+      "offerings": [
+        "AI Video Generation",
+        "Personalized Content",
+        "Video Creation"
+      ],
+      "interestedInSpeaking": false
+    },
+    "partnerStatus": {
+      "status": "active",
+      "appliedAt": "2025-09-24T12:15:00Z",
+      "approvedAt": "2025-09-25T16:00:00Z"
+    },
+    "createdAt": "2025-09-24T12:15:00Z",
+    "updatedAt": "2025-08-02T07:35:22.300Z"
   }
 ]

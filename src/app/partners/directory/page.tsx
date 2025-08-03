@@ -30,6 +30,7 @@ interface Partner {
   };
   createdAt: string;
   updatedAt: string;
+  country?: string;
 }
 
 export default function PartnerDirectoryPage() {
@@ -73,13 +74,23 @@ export default function PartnerDirectoryPage() {
   const filteredPartners = partners.filter(partner => {
     const matchesSearch = partner.company.toLowerCase().includes(searchTerm.toLowerCase()) ||
                          partner.partnerProfile.companyDescription.toLowerCase().includes(searchTerm.toLowerCase()) ||
-                         partner.partnerProfile.offerings.some(offering => 
+                         partner.partnerProfile.offerings.some(offering =>
                            offering.toLowerCase().includes(searchTerm.toLowerCase())
                          );
     
     const matchesStatus = statusFilter === 'all' || partner.partnerStatus.status === statusFilter;
     
     return matchesSearch && matchesStatus;
+  }).sort((a, b) => {
+    // Prioritize Indian companies at the top
+    const aIsIndian = a.country === 'India';
+    const bIsIndian = b.country === 'India';
+    
+    if (aIsIndian && !bIsIndian) return -1;
+    if (!aIsIndian && bIsIndian) return 1;
+    
+    // Then sort by company name
+    return a.company.localeCompare(b.company);
   });
 
   const getStatusIcon = (status: string) => {
@@ -109,7 +120,7 @@ export default function PartnerDirectoryPage() {
   };
 
   const getPartnerSlug = (company: string) => {
-    return company.toLowerCase().replace(/\s+/g, '-');
+    return company.toLowerCase().replace(/[\s.]+/g, '-');
   };
 
   const activePartners = partners.filter(p => p.partnerStatus.status === 'active').length;
@@ -249,9 +260,17 @@ export default function PartnerDirectoryPage() {
                   <div className="flex items-start justify-between mb-4">
                     <div className="flex-1">
                       <div className="flex items-center justify-between">
-                        <h3 className="text-xl font-semibold text-gray-900 mb-1 group-hover:text-orange-600 transition-colors">
-                          {partner.company}
-                        </h3>
+                        <div className="flex items-center gap-2">
+                          <h3 className="text-xl font-semibold text-gray-900 mb-1 group-hover:text-orange-600 transition-colors">
+                            {partner.company}
+                          </h3>
+                          {partner.country === 'India' && (
+                            <div className="flex items-center gap-1 bg-gradient-to-r from-orange-500 to-red-500 text-white px-2 py-1 rounded-full text-xs font-medium">
+                              <span className="text-xs">🇮🇳</span>
+                              <span>Made in India</span>
+                            </div>
+                          )}
+                        </div>
                         <ArrowRight className="w-5 h-5 text-gray-400 group-hover:text-orange-600 transition-colors" />
                       </div>
                       <div className="flex items-center gap-2 mb-2">
@@ -259,6 +278,11 @@ export default function PartnerDirectoryPage() {
                         <span className={`px-2 py-1 rounded-full text-xs font-medium border ${getStatusColor(partner.partnerStatus.status)}`}>
                           {partner.partnerStatus.status.charAt(0).toUpperCase() + partner.partnerStatus.status.slice(1)}
                         </span>
+                        {partner.country === 'India' && (
+                          <span className="px-2 py-1 rounded-full text-xs font-medium bg-gradient-to-r from-green-100 to-orange-100 text-orange-800 border border-orange-200">
+                            Built with ❤️ from India
+                          </span>
+                        )}
                       </div>
                     </div>
                   </div>
