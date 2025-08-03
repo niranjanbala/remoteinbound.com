@@ -39,13 +39,13 @@
     "typescript": "^5.8.3",
     "@types/node": "^20.19.9",
     "@types/react": "^19.1.9",
-    "@types/react-dom": "^19.1.7",
-    "puppeteer": "^23.9.0"
+    "@types/react-dom": "^19.1.7"
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3",
     "eslint": "^9",
     "eslint-config-next": "15.4.5",
+    "puppeteer": "^23.9.0",
     "supabase": "^2.33.7"
   }
 }
