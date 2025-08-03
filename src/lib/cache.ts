@@ -13,7 +13,7 @@ interface CacheConfig {
 class DataCache {
   private static instance: DataCache;
   private config: CacheConfig = {
-    ttl: 30 * 60 * 1000, // 30 minutes default
+    ttl: 10 * 60 * 60 * 1000, // 10 hours default
     version: '1.0.0'
   };
 
@@ -158,9 +158,9 @@ export const CACHE_KEYS = {
 
 // Cache TTL constants (in milliseconds)
 export const CACHE_TTL = {
-  SHORT: 5 * 60 * 1000,      // 5 minutes
-  MEDIUM: 30 * 60 * 1000,    // 30 minutes  
-  LONG: 2 * 60 * 60 * 1000,  // 2 hours
+  SHORT: 30 * 60 * 1000,     // 30 minutes
+  MEDIUM: 2 * 60 * 60 * 1000, // 2 hours
+  LONG: 10 * 60 * 60 * 1000, // 10 hours (perfect for event data)
   DAY: 24 * 60 * 60 * 1000   // 24 hours
 } as const;
 

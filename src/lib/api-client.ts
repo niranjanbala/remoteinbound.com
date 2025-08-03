@@ -304,9 +304,9 @@ export const sessionService = {
     const response = await apiRequest<{ sessions: any[]; total: number }>(endpoint);
     const sessions = response.sessions || [];
     
-    // Cache the results
+    // Cache the results with longer TTL for event data
     if (useCache) {
-      cache.set(cacheKey, sessions, CACHE_TTL.MEDIUM);
+      cache.set(cacheKey, sessions, CACHE_TTL.LONG);
     }
     
     return sessions;
