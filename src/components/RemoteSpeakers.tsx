@@ -37,6 +37,7 @@ export default function RemoteSpeakers() {
   const [error, setError] = useState<string | null>(null);
   const [searchTerm, setSearchTerm] = useState('');
   const [selectedCompany, setSelectedCompany] = useState('');
+  const [dayFilter, setDayFilter] = useState('');
   const [currentPage, setCurrentPage] = useState(1);
   const [includeDetails, setIncludeDetails] = useState(false);
   const [pagination, setPagination] = useState({
@@ -147,7 +148,7 @@ export default function RemoteSpeakers() {
 
   useEffect(() => {
     fetchSpeakers();
-  }, [currentPage, searchTerm, selectedCompany, includeDetails]);
+  }, [currentPage, searchTerm, selectedCompany, dayFilter, includeDetails]);
 
   const handleSearch = (e: React.FormEvent) => {
     e.preventDefault();
@@ -211,6 +212,17 @@ export default function RemoteSpeakers() {
             {companies.map(company => (
               <option key={company} value={company}>{company}</option>
             ))}
+          </select>
+
+          <select
+            value={dayFilter}
+            onChange={(e) => setDayFilter(e.target.value)}
+            className="border rounded px-3 py-2"
+          >
+            <option value="">All Days</option>
+            <option value="Sep 3">Sep 3 (Day 1)</option>
+            <option value="Sep 4">Sep 4 (Day 2)</option>
+            <option value="Sep 5">Sep 5 (Day 3)</option>
           </select>
 
           <label className="flex items-center gap-2">

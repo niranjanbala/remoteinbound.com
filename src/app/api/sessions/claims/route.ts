@@ -15,6 +15,7 @@ export async function GET(request: NextRequest) {
     const status = searchParams.get('status') || 'available';
     const userId = searchParams.get('userId');
     const eventYear = searchParams.get('eventYear') || '2025';
+    const day = searchParams.get('day') || ''; // Sep 3, Sep 4, Sep 5
     
     let query = supabaseServer
       .from('session_claims_overview')
@@ -27,6 +28,39 @@ export async function GET(request: NextRequest) {
     
     if (userId) {
       query = query.eq('new_speaker_id', userId);
+    }
+
+    // Filter by day (Sep 3, 4, 5 = 2025-09-03, 2025-09-04, 2025-09-05)
+    if (day) {
+      let dateFilter = '';
+      switch (day.toLowerCase()) {
+        case 'sep 3':
+        case 'sep-3':
+        case 'september 3':
+        case '2025-09-03':
+        case 'day1':
+          dateFilter = '2025-09-03';
+          break;
+        case 'sep 4':
+        case 'sep-4':
+        case 'september 4':
+        case '2025-09-04':
+        case 'day2':
+          dateFilter = '2025-09-04';
+          break;
+        case 'sep 5':
+        case 'sep-5':
+        case 'september 5':
+        case '2025-09-05':
+        case 'day3':
+          dateFilter = '2025-09-05';
+          break;
+      }
+      
+      if (dateFilter) {
+        query = query.gte('start_time', `${dateFilter}T00:00:00Z`)
+                    .lt('start_time', `${dateFilter}T23:59:59Z`);
+      }
     }
     
     const { data: sessions, error } = await query.order('start_time', { ascending: true });

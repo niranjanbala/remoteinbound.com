@@ -35,6 +35,7 @@ export function AvailableSessions({ currentUserId, isAdmin = false }: AvailableS
   const [sessions, setSessions] = useState<Session[]>([]);
   const [loading, setLoading] = useState(true);
   const [filter, setFilter] = useState('available');
+  const [dayFilter, setDayFilter] = useState('');
   const [summary, setSummary] = useState({
     available: 0,
     claimed: 0,
@@ -45,14 +46,15 @@ export function AvailableSessions({ currentUserId, isAdmin = false }: AvailableS
 
   useEffect(() => {
     loadSessions();
-  }, [filter]);
+  }, [filter, dayFilter]);
 
   const loadSessions = async () => {
     try {
       setLoading(true);
       const params = new URLSearchParams({
         status: filter,
-        ...(currentUserId && { userId: currentUserId })
+        ...(currentUserId && { userId: currentUserId }),
+        ...(dayFilter && { day: dayFilter })
       });
       
       const response = await fetch(`/api/sessions/claims?${params}`);
@@ -169,6 +171,21 @@ export function AvailableSessions({ currentUserId, isAdmin = false }: AvailableS
 
   return (
     <div className="space-y-6">
+      {/* Day Filter */}
+      <div className="flex flex-wrap gap-4 items-center">
+        <label className="text-sm font-medium text-gray-700">Filter by Day:</label>
+        <select
+          value={dayFilter}
+          onChange={(e) => setDayFilter(e.target.value)}
+          className="border border-gray-300 rounded-lg px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+        >
+          <option value="">All Days</option>
+          <option value="Sep 3">Sep 3 (Day 1)</option>
+          <option value="Sep 4">Sep 4 (Day 2)</option>
+          <option value="Sep 5">Sep 5 (Day 3)</option>
+        </select>
+      </div>
+
       {/* Filter Tabs */}
       <div className="flex flex-wrap gap-2">
         <button
