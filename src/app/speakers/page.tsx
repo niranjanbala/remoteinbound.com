@@ -157,15 +157,6 @@ export default function SpeakersPage() {
               <Link href="/speakers" className="text-orange-400 font-medium">
                 Speakers
               </Link>
-              <Link href="/sponsors" className="text-gray-300 hover:text-orange-400 font-medium">
-                Sponsors
-              </Link>
-              <a href="https://www.inbound.com/blog" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-orange-400 font-medium">
-                Blog
-              </a>
-              <a href="https://merchspot.inbound.com/Category" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-orange-400 font-medium">
-                Store
-              </a>
             </nav>
 
             <div className="flex items-center space-x-4">
@@ -456,7 +447,6 @@ export default function SpeakersPage() {
               <ul className="space-y-2 text-gray-400">
                 <li><Link href="/events" className="hover:text-white">Sessions</Link></li>
                 <li><Link href="/speakers" className="hover:text-white">Speakers</Link></li>
-                <li><Link href="/sponsors" className="hover:text-white">Sponsors</Link></li>
               </ul>
             </div>
             
@@ -472,8 +462,8 @@ export default function SpeakersPage() {
             <div>
               <h3 className="font-semibold mb-4">Connect</h3>
               <ul className="space-y-2 text-gray-400">
-                <li><a href="https://www.inbound.com/blog" target="_blank" rel="noopener noreferrer" className="hover:text-white">Blog</a></li>
-                <li><a href="https://merchspot.inbound.com/Category" target="_blank" rel="noopener noreferrer" className="hover:text-white">Store</a></li>
+                <li><Link href="/contact" className="hover:text-white">Contact</Link></li>
+                <li><Link href="/about" className="hover:text-white">About</Link></li>
               </ul>
             </div>
           </div>
