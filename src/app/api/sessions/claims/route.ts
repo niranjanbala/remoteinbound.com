@@ -16,6 +16,7 @@ export async function GET(request: NextRequest) {
     const userId = searchParams.get('userId');
     const eventYear = searchParams.get('eventYear') || '2025';
     const day = searchParams.get('day') || ''; // Sep 3, Sep 4, Sep 5
+    const topic = searchParams.get('topic') || ''; // Filter by topic
     
     let query = supabaseServer
       .from('session_claims_overview')
@@ -61,6 +62,12 @@ export async function GET(request: NextRequest) {
         query = query.gte('start_time', `${dateFilter}T00:00:00Z`)
                     .lt('start_time', `${dateFilter}T23:59:59Z`);
       }
+    }
+
+    // Filter by topic
+    if (topic) {
+      // Use ilike for case-insensitive partial matching in tags or title/description
+      query = query.or(`tags.cs.{${topic}},title.ilike.%${topic}%,description.ilike.%${topic}%`);
     }
     
     const { data: sessions, error } = await query.order('start_time', { ascending: true });

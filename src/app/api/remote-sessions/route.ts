@@ -15,6 +15,7 @@ export async function GET(request: NextRequest) {
     const hasRemoteSpeakers = searchParams.get('has_remote_speakers');
     const speakerName = searchParams.get('speaker_name') || '';
     const day = searchParams.get('day') || ''; // Sep 3, Sep 4, Sep 5
+    const topic = searchParams.get('topic') || ''; // Filter by topic
     
     const offset = (page - 1) * limit;
 
@@ -108,6 +109,12 @@ export async function GET(request: NextRequest) {
         query = query.gte('start_time', `${dateFilter}T00:00:00Z`)
                     .lt('start_time', `${dateFilter}T23:59:59Z`);
       }
+    }
+
+    // Filter by topic
+    if (topic) {
+      // Use ilike for case-insensitive partial matching in tags or title/description
+      query = query.or(`title.ilike.%${topic}%,description.ilike.%${topic}%`);
     }
 
     // Apply pagination

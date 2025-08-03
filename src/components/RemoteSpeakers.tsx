@@ -38,6 +38,7 @@ export default function RemoteSpeakers() {
   const [searchTerm, setSearchTerm] = useState('');
   const [selectedCompany, setSelectedCompany] = useState('');
   const [dayFilter, setDayFilter] = useState('');
+  const [topicFilter, setTopicFilter] = useState('');
   const [currentPage, setCurrentPage] = useState(1);
   const [includeDetails, setIncludeDetails] = useState(false);
   const [pagination, setPagination] = useState({
@@ -148,7 +149,7 @@ export default function RemoteSpeakers() {
 
   useEffect(() => {
     fetchSpeakers();
-  }, [currentPage, searchTerm, selectedCompany, dayFilter, includeDetails]);
+  }, [currentPage, searchTerm, selectedCompany, dayFilter, topicFilter, includeDetails]);
 
   const handleSearch = (e: React.FormEvent) => {
     e.preventDefault();
@@ -223,6 +224,22 @@ export default function RemoteSpeakers() {
             <option value="Sep 3">Sep 3 (Day 1)</option>
             <option value="Sep 4">Sep 4 (Day 2)</option>
             <option value="Sep 5">Sep 5 (Day 3)</option>
+          </select>
+
+          <select
+            value={topicFilter}
+            onChange={(e) => setTopicFilter(e.target.value)}
+            className="border rounded px-3 py-2"
+          >
+            <option value="">All Topics</option>
+            <option value="Culture & Trends">Culture & Trends</option>
+            <option value="Customer Success">Customer Success</option>
+            <option value="GTM Data & Systems">GTM Data & Systems</option>
+            <option value="HubSpot Products">HubSpot Products</option>
+            <option value="Marketing">Marketing</option>
+            <option value="Networking">Networking</option>
+            <option value="RevOps">RevOps</option>
+            <option value="Sales">Sales</option>
           </select>
 
           <label className="flex items-center gap-2">

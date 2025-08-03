@@ -36,6 +36,7 @@ export function AvailableSessions({ currentUserId, isAdmin = false }: AvailableS
   const [loading, setLoading] = useState(true);
   const [filter, setFilter] = useState('available');
   const [dayFilter, setDayFilter] = useState('');
+  const [topicFilter, setTopicFilter] = useState('');
   const [summary, setSummary] = useState({
     available: 0,
     claimed: 0,
@@ -46,7 +47,7 @@ export function AvailableSessions({ currentUserId, isAdmin = false }: AvailableS
 
   useEffect(() => {
     loadSessions();
-  }, [filter, dayFilter]);
+  }, [filter, dayFilter, topicFilter]);
 
   const loadSessions = async () => {
     try {
@@ -54,7 +55,8 @@ export function AvailableSessions({ currentUserId, isAdmin = false }: AvailableS
       const params = new URLSearchParams({
         status: filter,
         ...(currentUserId && { userId: currentUserId }),
-        ...(dayFilter && { day: dayFilter })
+        ...(dayFilter && { day: dayFilter }),
+        ...(topicFilter && { topic: topicFilter })
       });
       
       const response = await fetch(`/api/sessions/claims?${params}`);
@@ -171,19 +173,40 @@ export function AvailableSessions({ currentUserId, isAdmin = false }: AvailableS
 
   return (
     <div className="space-y-6">
-      {/* Day Filter */}
+      {/* Filters */}
       <div className="flex flex-wrap gap-4 items-center">
-        <label className="text-sm font-medium text-gray-700">Filter by Day:</label>
-        <select
-          value={dayFilter}
-          onChange={(e) => setDayFilter(e.target.value)}
-          className="border border-gray-300 rounded-lg px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
-        >
-          <option value="">All Days</option>
-          <option value="Sep 3">Sep 3 (Day 1)</option>
-          <option value="Sep 4">Sep 4 (Day 2)</option>
-          <option value="Sep 5">Sep 5 (Day 3)</option>
-        </select>
+        <div className="flex items-center gap-2">
+          <label className="text-sm font-medium text-gray-700">Day:</label>
+          <select
+            value={dayFilter}
+            onChange={(e) => setDayFilter(e.target.value)}
+            className="border border-gray-300 rounded-lg px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+          >
+            <option value="">All Days</option>
+            <option value="Sep 3">Sep 3 (Day 1)</option>
+            <option value="Sep 4">Sep 4 (Day 2)</option>
+            <option value="Sep 5">Sep 5 (Day 3)</option>
+          </select>
+        </div>
+
+        <div className="flex items-center gap-2">
+          <label className="text-sm font-medium text-gray-700">Topic:</label>
+          <select
+            value={topicFilter}
+            onChange={(e) => setTopicFilter(e.target.value)}
+            className="border border-gray-300 rounded-lg px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+          >
+            <option value="">All Topics</option>
+            <option value="Culture & Trends">Culture & Trends</option>
+            <option value="Customer Success">Customer Success</option>
+            <option value="GTM Data & Systems">GTM Data & Systems</option>
+            <option value="HubSpot Products">HubSpot Products</option>
+            <option value="Marketing">Marketing</option>
+            <option value="Networking">Networking</option>
+            <option value="RevOps">RevOps</option>
+            <option value="Sales">Sales</option>
+          </select>
+        </div>
       </div>
 
       {/* Filter Tabs */}
