@@ -13,56 +13,73 @@ export async function GET(request: NextRequest) {
     const { searchParams } = new URL(request.url);
     const category = searchParams.get('category');
 
-    // Get all sessions with speakers to extract unique speakers
-    const { data: sessionDetails, error } = await supabaseServer
+    // Get all sessions first
+    const { data: sessions, error: sessionsError } = await supabaseServer
       .from('sessions')
-      .select(`
-        *,
-        speakers:speaker_ids (
-          id,
-          name,
-          title,
-          company,
-          avatar,
-          bio
-        )
-      `)
+      .select('*')
       .order('start_time', { ascending: true });
 
-    if (error) {
-      console.error('Error fetching session details:', error);
+    if (sessionsError) {
+      console.error('Error fetching sessions:', sessionsError);
       return NextResponse.json(
-        { error: 'Failed to fetch speakers' },
+        { error: 'Failed to fetch sessions' },
         { status: 500 }
       );
     }
 
-    // Extract unique speakers from sessions
+    // Get unique speaker IDs from all sessions
+    const allSpeakerIds = new Set<string>();
+    sessions?.forEach(session => {
+      if (session.speaker_ids && Array.isArray(session.speaker_ids)) {
+        session.speaker_ids.forEach((id: string) => allSpeakerIds.add(id));
+      }
+    });
+
+    // Fetch speaker details if we have speaker IDs
+    let speakersData: any[] = [];
+    if (allSpeakerIds.size > 0) {
+      const { data, error: speakersError } = await supabaseServer
+        .from('speakers')
+        .select('id, name, title, company, avatar, bio')
+        .in('id', Array.from(allSpeakerIds));
+      
+      if (speakersError) {
+        console.error('Error fetching speakers:', speakersError);
+        return NextResponse.json(
+          { error: 'Failed to fetch speaker details' },
+          { status: 500 }
+        );
+      }
+      
+      speakersData = data || [];
+    }
+
+    // Create speakers map and session mapping
     const speakersMap = new Map();
     const speakerSessions = new Map();
 
-    sessionDetails?.forEach(session => {
-      if (session.speakers && Array.isArray(session.speakers)) {
-        session.speakers.forEach((speaker: any) => {
-          if (speaker && speaker.id) {
-            // Store speaker info
-            if (!speakersMap.has(speaker.id)) {
-              speakersMap.set(speaker.id, {
-                id: speaker.id,
-                name: speaker.name,
-                title: speaker.title,
-                company: speaker.company,
-                avatar: speaker.avatar,
-                bio: speaker.bio || `${speaker.title} at ${speaker.company}`,
-                expertise: [], // Will be populated from session tags
-                sessions: [],
-                featured: false // Will be determined by session count or other criteria
-              });
-              speakerSessions.set(speaker.id, []);
-            }
+    // Initialize speakers map
+    speakersData.forEach(speaker => {
+      speakersMap.set(speaker.id, {
+        id: speaker.id,
+        name: speaker.name,
+        title: speaker.title,
+        company: speaker.company,
+        avatar: speaker.avatar,
+        bio: speaker.bio || `${speaker.title} at ${speaker.company}`,
+        expertise: [], // Will be populated from session tags
+        sessions: [],
+        featured: false // Will be determined by session count or other criteria
+      });
+      speakerSessions.set(speaker.id, []);
+    });
 
-            // Add session to speaker's sessions
-            speakerSessions.get(speaker.id).push({
+    // Map sessions to speakers
+    sessions?.forEach(session => {
+      if (session.speaker_ids && Array.isArray(session.speaker_ids)) {
+        session.speaker_ids.forEach((speakerId: string) => {
+          if (speakersMap.has(speakerId)) {
+            speakerSessions.get(speakerId).push({
               id: session.id,
               title: session.title,
               description: session.description,
