@@ -11,7 +11,10 @@
     "setup-inbound-schema": "node scripts/setup-inbound-schema.js",
     "extract-inbound-sessions": "node scripts/extract-inbound-sessions.js",
     "init-session-claims": "node scripts/initialize-session-claims.js",
-    "init-claims-dry-run": "node scripts/initialize-session-claims.js --dry-run"
+    "init-claims-dry-run": "node scripts/initialize-session-claims.js --dry-run",
+    "manage-remote-speakers": "node scripts/manage-remote-speakers.js",
+    "sync-remote-speakers": "node scripts/manage-remote-speakers.js sync-all",
+    "list-remote-speakers": "node scripts/manage-remote-speakers.js list"
   },
   "dependencies": {
     "@asteasolutions/zod-to-openapi": "^8.0.0",

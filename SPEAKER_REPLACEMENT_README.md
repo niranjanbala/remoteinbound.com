@@ -9,8 +9,10 @@ This system transforms Inbound 2024 into Inbound 2025 by allowing new speakers t
 ### Database Schema
 - **session_claims**: Tracks which sessions have been claimed by speakers
 - **speaker_applications**: Manages new speaker applications and approvals
+- **remote_speakers**: Clone of speakers table for remote speaker management
 - **sessions**: Extended with claim tracking columns
 - **session_claims_overview**: Optimized view for efficient querying
+- **remote_speaker_details**: View with session statistics for remote speakers
 
 ### API Endpoints
 
@@ -26,8 +28,15 @@ This system transforms Inbound 2024 into Inbound 2025 by allowing new speakers t
 - `POST /api/speakers/applications` - Submit new speaker application
 - `GET /api/speakers/applications` - List applications (admin only)
 
+#### Remote Speakers Management
+- `GET /api/remote-speakers` - List remote speakers with filtering and pagination
+- `POST /api/remote-speakers` - Sync speakers or create new remote speakers
+- `PUT /api/remote-speakers` - Update remote speaker details
+- `DELETE /api/remote-speakers` - Delete remote speaker
+
 ### Frontend Components
 - **AvailableSessions**: Interactive session browser with claiming interface
+- **RemoteSpeakers**: Management interface for remote speakers with sync capabilities
 - **SpeakerApplication**: Form for new speaker registration
 - **AdminDashboard**: Management interface for approvals and oversight
 
@@ -51,7 +60,19 @@ npm run init-claims-dry-run
 npm run init-session-claims
 ```
 
-### 3. Environment Variables
+### 3. Setup Remote Speakers
+```bash
+# Sync all speakers to remote_speakers table
+npm run sync-remote-speakers
+
+# List remote speakers with statistics
+npm run list-remote-speakers
+
+# Full management script with options
+npm run manage-remote-speakers help
+```
+
+### 4. Environment Variables
 Ensure these are set in your `.env.local`:
 ```env
 NEXT_PUBLIC_SUPABASE_URL=your_supabase_url
@@ -212,8 +233,80 @@ npm run init-claims-dry-run
 # Initialize session claims
 npm run init-session-claims
 
+# Sync all speakers to remote_speakers
+npm run sync-remote-speakers
+
+# List remote speakers with details
+npm run list-remote-speakers
+
+# Full remote speakers management
+npm run manage-remote-speakers [command]
+
 # Start development server
 npm run dev
+```
+
+## Remote Speakers Management
+
+The `remote_speakers` table is a complete clone of the `speakers` table, designed for separate management of remote speakers in Inbound 2025. This allows you to:
+
+### Key Features
+- **Independent Management**: Modify remote speakers without affecting original data
+- **Sync Capabilities**: Keep remote speakers in sync with main speakers table
+- **Enhanced Views**: Access session statistics and relationships
+- **Bulk Operations**: Sync all speakers or individual records
+
+### Management Commands
+```bash
+# Sync all speakers from speakers to remote_speakers
+node scripts/manage-remote-speakers.js sync-all
+
+# List all remote speakers with statistics
+node scripts/manage-remote-speakers.js list
+
+# Compare speakers and remote_speakers tables
+node scripts/manage-remote-speakers.js compare
+
+# Check for duplicate records
+node scripts/manage-remote-speakers.js cleanup
+
+# Validate data integrity
+node scripts/manage-remote-speakers.js validate
+```
+
+### API Usage Examples
+
+#### Sync All Speakers
+```javascript
+const response = await fetch('/api/remote-speakers', {
+  method: 'POST',
+  headers: { 'Content-Type': 'application/json' },
+  body: JSON.stringify({ action: 'sync_all' })
+});
+```
+
+#### Get Remote Speakers with Details
+```javascript
+const response = await fetch('/api/remote-speakers?include_details=true&page=1&limit=20');
+const data = await response.json();
+```
+
+#### Create New Remote Speaker
+```javascript
+const response = await fetch('/api/remote-speakers', {
+  method: 'POST',
+  headers: { 'Content-Type': 'application/json' },
+  body: JSON.stringify({
+    action: 'create',
+    speaker_data: {
+      name: 'John Doe',
+      title: 'Senior Developer',
+      company: 'Tech Corp',
+      bio: 'Experienced developer...',
+      social_linkedin: 'https://linkedin.com/in/johndoe'
+    }
+  })
+});
 ```
 
 ## API Response Examples
